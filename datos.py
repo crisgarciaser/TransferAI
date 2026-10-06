@@ -51,3 +51,37 @@ def buscar_jugadores(posicion, edad_max=None, valor_max=None, excluir_club=None)
     if excluir_club is not None:
         resultado = [j for j in resultado if j["club"] != excluir_club]
     return sorted(resultado, key=lambda j: j["rating"], reverse=True)
+
+def evaluar_encaje(id_jugador, club):
+    try:
+        id_jugador = int(id_jugador)
+    except (TypeError, ValueError):
+        return {"error": "id_jugador debe ser un número entero"}
+
+    jugador = next((j for j in cargar_jugadores() if j["id"] == id_jugador), None)
+    if jugador is None:
+        return {"error": f"No existe un jugador con id {id_jugador}"}
+
+    clubes = {c["club"]: c for c in cargar_clubes()}
+    if club not in clubes:
+        return {"error": f"No existe el club {club}"}
+
+    ratings_actuales = [
+        j["rating"] for j in obtener_plantilla(club) if j["posicion"] == jugador["posicion"]
+    ]
+    mejor_actual = max(ratings_actuales, default=0)
+
+    return {
+        "id": jugador["id"],
+        "nombre": jugador["nombre"],
+        "posicion": jugador["posicion"],
+        "edad": jugador["edad"],
+        "rating": jugador["rating"],
+        "club_actual": jugador["club"],
+        "es_titular_en_su_club": jugador["titular"] == "si",
+        "anios_contrato": jugador["anios_contrato"],
+        "nivel_club_actual": clubes[jugador["club"]]["nivel"],
+        "nivel_tu_club": clubes[club]["nivel"],
+        "mejor_rating_actual_en_tu_club": mejor_actual,
+        "mejora_sobre_el_mejor_actual": jugador["rating"] - mejor_actual,
+    }

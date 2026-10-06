@@ -30,3 +30,45 @@ def consultar_json(sistema, usuario):
     except json.JSONDecodeError:
         print("La respuesta del modelo no fue un JSON válido:\n", texto)
         raise
+
+def extraer_json(texto):
+    inicio, fin = texto.find("{"), texto.rfind("}")
+    return json.loads(texto[inicio : fin + 1])
+
+
+def ejecutar_con_herramientas(sistema, usuario, herramientas, funciones, max_pasos=8):
+    """Ciclo Pensar-Actuar-Observar. Devuelve el texto final del modelo (o None)."""
+    mensajes = [
+        {"role": "system", "content": sistema},
+        {"role": "user", "content": usuario},
+    ]
+    for _ in range(max_pasos):
+        respuesta = client.chat.completions.create(
+            model=MODELO,
+            messages=mensajes,
+            tools=herramientas,
+            temperature=0.2,
+        )
+        mensaje = respuesta.choices[0].message
+
+        if not mensaje.tool_calls:
+            return mensaje.content
+
+        mensajes.append(mensaje.model_dump(exclude_none=True))
+        for llamada in mensaje.tool_calls:
+            nombre = llamada.function.name
+            try:
+                argumentos = json.loads(llamada.function.arguments)
+                print(f"  ACTUAR: {nombre}({argumentos})")
+                resultado = funciones[nombre](**argumentos)
+            except Exception as error:
+                resultado = {"error": str(error)}
+                print(f"  ERROR en {nombre}: {error}")
+            mensajes.append(
+                {
+                    "role": "tool",
+                    "tool_call_id": llamada.id,
+                    "content": json.dumps(resultado, ensure_ascii=False),
+                }
+            )
+    return None
