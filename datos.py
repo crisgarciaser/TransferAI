@@ -85,3 +85,41 @@ def evaluar_encaje(id_jugador, club):
         "mejor_rating_actual_en_tu_club": mejor_actual,
         "mejora_sobre_el_mejor_actual": jugador["rating"] - mejor_actual,
     }
+
+def analizar_viabilidad(jugador, resumen):
+    traspaso = jugador["valor_mercado"]
+    salario = jugador["salario_anual"]
+    presupuesto = resumen["presupuesto_fichajes"]
+    margen = resumen["margen_salarial"]
+
+    uso_presupuesto = round(100 * traspaso / presupuesto, 1) if presupuesto > 0 else 100.0
+    uso_margen = round(100 * salario / margen, 1) if margen > 0 else 100.0
+
+    alertas = []
+    if traspaso > presupuesto:
+        alertas.append("el traspaso estimado supera el presupuesto de fichajes")
+    if salario > margen:
+        alertas.append("el salario supera el margen salarial disponible")
+
+    if alertas:
+        veredicto = "inviable"
+    else:
+        veredicto = "viable"
+        if uso_presupuesto > 70:
+            alertas.append(f"consume {uso_presupuesto}% del presupuesto de fichajes")
+            veredicto = "ajustado"
+        if uso_margen > 50:
+            alertas.append(f"consume {uso_margen}% del margen salarial")
+            veredicto = "ajustado"
+
+    return {
+        "veredicto": veredicto,
+        "traspaso_estimado": traspaso,
+        "salario_anual": salario,
+        "presupuesto_restante": round(presupuesto - traspaso, 2),
+        "margen_salarial_restante": round(margen - salario, 2),
+        "masa_salarial_resultante": round(resumen["masa_salarial_actual"] + salario, 2),
+        "uso_presupuesto_pct": uso_presupuesto,
+        "uso_margen_pct": uso_margen,
+        "alertas": alertas,
+    }
