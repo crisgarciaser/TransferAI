@@ -19,12 +19,18 @@ def _leer_csv(nombre, campos_numericos):
     return filas
 
 def cargar_clubes():
-    return _leer_csv("clubes.csv", ["nivel", "presupuesto_fichajes", "tope_salarial"])
+    return _leer_csv(
+        "clubes.csv",
+        ["nivel", "presupuesto_fichajes", "tope_salarial", "rating_club", "ataque",
+         "mediocampo", "defensa", "prestigio_domestico", "rank_ataque", "rank_mediocampo",
+         "rank_defensa", "n_clubes_liga", "edad_media", "valor_plantilla"],
+    )
 
 def cargar_jugadores():
     return _leer_csv(
         "jugadores.csv",
-        ["id", "edad", "valor_mercado", "salario_anual", "anios_contrato", "rating"],
+        ["id", "edad", "valor_mercado", "salario_anual", "anios_contrato", "rating",
+         "potencial", "reputacion_internacional", "clausula_rescision"],
     )
 
 def obtener_plantilla(club):

@@ -55,6 +55,13 @@ def cargar_equipos():
     ultima = max(a_numero(f["fifa_update"]) or 0 for f in filas)
     filas = [f for f in filas if (a_numero(f["fifa_update"]) or 0) == ultima]
 
+    # nombres de todos los equipos de esta versión/actualización (para resolver "rival")
+    nombres = {}
+    for f in filas:
+        tid = a_numero(f["team_id"])
+        if tid is not None:
+            nombres[int(tid)] = f["team_name"]
+
     equipos, ligas_vistas = {}, {}
     for f in filas:
         liga_id = a_numero(f["league_id"])
@@ -72,10 +79,26 @@ def cargar_equipos():
             "overall": a_numero(f["overall"]) or 0,
             "prestigio": a_numero(f["international_prestige"]) or 1,
             "presupuesto": (a_numero(f["transfer_budget_eur"]) or 0) / 1e6,
-            "rival": f["rival_team"],
+            "rival": resolver_rival(f["rival_team"], nombres),
             "team_id": int(team_id),
+            "ataque": int(a_numero(f["attack"]) or 0),
+            "mediocampo": int(a_numero(f["midfield"]) or 0),
+            "defensa": int(a_numero(f["defence"]) or 0),
+            "prestigio_domestico": int(a_numero(f["domestic_prestige"]) or 0),
         }
     return equipos, ultima, ligas_vistas
+
+
+def resolver_rival(valor, nombres):
+    """Convierte el team_id del rival en su nombre; si no se puede, deja el valor original."""
+    tid = a_numero(valor)
+    if tid is not None and int(tid) in nombres:
+        return nombres[int(tid)]
+    return valor
+
+
+def traducir_pie(texto):
+    return {"left": "izquierdo", "right": "derecho"}.get((texto or "").strip().lower(), "")
 
 
 def cargar_jugadores():
@@ -97,6 +120,10 @@ def cargar_jugadores():
             "club_position": f["club_position"],
             "anio_contrato": f["club_contract_valid_until_year"],
             "nacionalidad": f["nationality_name"],
+            "potential": f["potential"],
+            "international_reputation": f["international_reputation"],
+            "release_clause_eur": f["release_clause_eur"],
+            "preferred_foot": f["preferred_foot"],
             "upd": upd,
         })
     return [r for r in filas if r["upd"] == ultima], ultima
@@ -133,6 +160,8 @@ def main():
             descartes["datos incompletos"] += 1
             continue
         titular = "no" if (r["club_position"] or "").strip().upper() in ("", "SUB", "RES") else "si"
+        potencial = a_numero(r["potential"])
+        clausula = a_numero(r["release_clause_eur"])
         por_club[int(team_id)].append({
             "id": int(pid),
             "nombre": r["short_name"],
@@ -145,6 +174,10 @@ def main():
             "anios_contrato": max(1, int(anio) - ANIO_BASE),
             "rating": int(rating),
             "titular": titular,
+            "potencial": max(int(rating), int(potencial if potencial is not None else rating)),
+            "reputacion_internacional": int(a_numero(r["international_reputation"]) or 1),
+            "clausula_rescision": round(clausula / 1e6, 2) if clausula and clausula > 0 else 0,
+            "pie": traducir_pie(r["preferred_foot"]),
         })
 
     clubes, jugadores = [], []
@@ -165,6 +198,13 @@ def main():
             "competicion_internacional": "no",
             "rival": eq["rival"],
             "team_id": eq["team_id"],
+            "rating_club": int(eq["overall"]),
+            "ataque": eq["ataque"],
+            "mediocampo": eq["mediocampo"],
+            "defensa": eq["defensa"],
+            "prestigio_domestico": eq["prestigio_domestico"],
+            "edad_media": round(sum(j["edad"] for j in plantilla) / len(plantilla), 1),
+            "valor_plantilla": round(valor_plantilla, 1),
             "_overall": eq["overall"],
             "_masa": round(masa, 1),
             "_n": len(plantilla),
@@ -178,20 +218,29 @@ def main():
         lista.sort(key=lambda c: c["_overall"], reverse=True)
         for i, c in enumerate(lista):
             c["competicion_internacional"] = "si" if i < TOP_INTERNACIONAL else "no"
+            c["n_clubes_liga"] = len(lista)
+        # ranking por línea dentro de la liga (1 = la mejor; empates comparten puesto)
+        for linea in ("ataque", "mediocampo", "defensa"):
+            for c in lista:
+                c[f"rank_{linea}"] = 1 + sum(1 for o in lista if o[linea] > c[linea])
 
     clubes.sort(key=lambda c: c["club"])
     jugadores.sort(key=lambda j: j["id"])
 
     DESTINO.mkdir(exist_ok=True)
     campos_clubes = ["club", "liga", "nivel", "presupuesto_fichajes", "tope_salarial",
-                     "competicion_internacional", "rival", "team_id"]
+                     "competicion_internacional", "rival", "team_id", "rating_club", "ataque",
+                     "mediocampo", "defensa", "prestigio_domestico", "rank_ataque",
+                     "rank_mediocampo", "rank_defensa", "n_clubes_liga", "edad_media",
+                     "valor_plantilla"]
     with open(DESTINO / "clubes.csv", "w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=campos_clubes, extrasaction="ignore")
         w.writeheader()
         w.writerows(clubes)
 
     campos_jug = ["id", "nombre", "edad", "posicion", "club", "nacionalidad", "valor_mercado",
-                  "salario_anual", "anios_contrato", "rating", "titular"]
+                  "salario_anual", "anios_contrato", "rating", "titular", "potencial",
+                  "reputacion_internacional", "clausula_rescision", "pie"]
     with open(DESTINO / "jugadores.csv", "w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=campos_jug)
         w.writeheader()
@@ -211,6 +260,32 @@ def main():
     print("\nMuestra de jugadores:")
     for j in jugadores[:5]:
         print("  ", j)
+
+    print("\n--- Datos ampliados ---")
+    en_cero = [c["club"] for c in clubes if 0 in (c["ataque"], c["mediocampo"], c["defensa"])]
+    print("Clubes con alguna línea (ataque/medio/defensa) en cero:", en_cero or "ninguno")
+    sin_resolver = [c["club"] for c in clubes if a_numero(c["rival"]) is not None or not c["rival"]]
+    print("Clubes con rival sin resolver a nombre:", sin_resolver or "ninguno")
+    print(f"Jugadores con potencial > rating: {sum(1 for j in jugadores if j['potencial'] > j['rating'])}"
+          f" de {len(jugadores)}")
+    print(f"Jugadores con cláusula de rescisión > 0: "
+          f"{sum(1 for j in jugadores if j['clausula_rescision'] > 0)} de {len(jugadores)}")
+    pies = defaultdict(int)
+    for j in jugadores:
+        pies[j["pie"] or "(vacío)"] += 1
+    print("Distribución de pie hábil:", dict(pies))
+    print("\nClubes de control:")
+    for nombre in ("Fiorentina", "Newcastle United", "FC Barcelona"):
+        c = next((c for c in clubes if c["club"] == nombre), None)
+        if c is None:
+            print(f"  {nombre}: no está en los datos")
+            continue
+        n = c["n_clubes_liga"]
+        print(f"  {c['club']} ({c['liga']}) rival={c['rival']} | "
+              f"ataque={c['ataque']} (#{c['rank_ataque']}/{n}) "
+              f"medio={c['mediocampo']} (#{c['rank_mediocampo']}/{n}) "
+              f"defensa={c['defensa']} (#{c['rank_defensa']}/{n}) | "
+              f"pres={c['presupuesto_fichajes']} tope={c['tope_salarial']}")
 
 
 if __name__ == "__main__":
