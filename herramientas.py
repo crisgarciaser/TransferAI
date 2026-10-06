@@ -22,7 +22,7 @@ HERRAMIENTAS_SCOUTING = [
         "type": "function",
         "function": {
             "name": "evaluar_encaje",
-            "description": "Evalúa qué tanto mejora un jugador a la plantilla del club: compara su rating con el mejor actual en esa posición y entrega edad, contrato y nivel de clubes.",
+            "description": "Evalúa qué tanto aporta un jugador a la plantilla del club: compara su rating con el mejor actual en esa posición y entrega edad, contrato y nivel de clubes. Incluye tipo_de_fichaje (mejora_inmediata, sucesor_joven o no_aporta).",
             "parameters": {
                 "type": "object",
                 "properties": {

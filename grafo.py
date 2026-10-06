@@ -10,6 +10,7 @@ from datos import (
     analizar_viabilidad,
     cargar_clubes,
     cargar_jugadores,
+    evaluar_encaje,
     obtener_plantilla,
     obtener_resumen_club,
 )
@@ -147,9 +148,11 @@ SISTEMA_SCOUT = """Eres el Scouting & Tactical Agent de un club de fútbol. Reci
 Tu tarea es proponer candidatos de OTROS clubes para esas posiciones.
 
 Proceso:
-1. Para cada posición prioritaria, usa buscar_jugadores con excluir_club igual al club del usuario y valor_max igual al presupuesto de fichajes.
+Proceso:
+1. Para cada posición prioritaria, usa buscar_jugadores con excluir_club igual al club del usuario y valor_max igual al presupuesto de fichajes. Haz una búsqueda general y otra de jugadores jóvenes con edad_max 24.
 2. Evalúa a los mejores candidatos con evaluar_encaje, usando el id que entrega la búsqueda.
-3. Propón como máximo 3 candidatos por posición. Si ningún jugador mejora al mejor actual de esa posición (mejora_sobre_el_mejor_actual menor o igual a 0), no propongas a nadie para ella.
+3. Cada evaluación incluye un tipo_de_fichaje. Propón SOLO candidatos con tipo mejora_inmediata (supera al mejor actual) o sucesor_joven (joven que puede relevar a un titular veterano, aunque tenga algo menos de rating). Nunca propongas un candidato con tipo no_aporta.
+4. Propón como máximo 3 candidatos por posición e intenta incluir ambos tipos cuando existan. Si hay un sucesor_joven, explica en la justificación que es un relevo a futuro, citando su edad, su rating y la edad_del_mejor_actual.
 
 Reglas estrictas:
 - Usa SOLO datos entregados por las herramientas. No inventes jugadores, ids ni cifras.
@@ -180,12 +183,16 @@ def validar_candidatos(candidatos, club, prioridades, excluidos=()):
         if jugador["club"] == club or jugador["posicion"] not in prioridades:
             print(f"AVISO: candidato no válido descartado: {jugador['nombre']}")
             continue
+        tipo = evaluar_encaje(jugador["id"], club).get("tipo_de_fichaje", "no_aporta")
+        if tipo == "no_aporta":
+            print(f"AVISO: candidato descartado por no aportar al club: {jugador['nombre']}")
+            continue
         if any(v["id"] == jugador["id"] for v in validos):
             continue
         if por_posicion.get(jugador["posicion"], 0) >= 3:
             continue
         por_posicion[jugador["posicion"]] = por_posicion.get(jugador["posicion"], 0) + 1
-        validos.append({**jugador, "justificacion": c.get("justificacion", "")})
+        validos.append({**jugador, "justificacion": c.get("justificacion", ""), "tipo_de_fichaje": tipo})
     return validos
 
 
@@ -386,8 +393,9 @@ if __name__ == "__main__":
                 print("No hay candidatos viables en esta ronda.")
             for c in pausa["candidatos"]:
                 a = c["analisis"]
+                tipo = c.get("tipo_de_fichaje", "").replace("_", " ")
                 print(f"[id {c['id']}] {c['nombre']} ({c['posicion']}, {c['edad']} años, {c['club']}) "
-                      f"rating {c['rating']} - {a['veredicto'].upper()}")
+                      f"rating {c['rating']} - {tipo} - {a['veredicto'].upper()}")
                 print(f"   Traspaso estimado {a['traspaso_estimado']} | salario {a['salario_anual']} | "
                       f"presupuesto restante {a['presupuesto_restante']} | "
                       f"margen salarial restante {a['margen_salarial_restante']}")
