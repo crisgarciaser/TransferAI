@@ -4,9 +4,11 @@ from typing import TypedDict
 from langgraph.checkpoint.memory import InMemorySaver
 from langgraph.graph import StateGraph, START, END
 from langgraph.types import Command, interrupt
+import unicodedata
 
 from datos import (
     analizar_viabilidad,
+    cargar_clubes,
     cargar_jugadores,
     obtener_plantilla,
     obtener_resumen_club,
@@ -341,11 +343,33 @@ constructor.add_conditional_edges(
 
 app = constructor.compile(checkpointer=InMemorySaver())
 
+def _normalizar(texto):
+    sin_tildes = unicodedata.normalize("NFKD", texto).encode("ascii", "ignore").decode()
+    return sin_tildes.lower().strip()
+
+
+def elegir_club():
+    clubes = [c["club"] for c in cargar_clubes()]
+    while True:
+        texto = _normalizar(input("\nEscribe el club que quieres gestionar (o parte del nombre): "))
+        if not texto:
+            continue
+        exactas = [c for c in clubes if _normalizar(c) == texto]
+        if exactas:
+            return exactas[0]
+        coincidencias = [c for c in clubes if texto in _normalizar(c)]
+        if len(coincidencias) == 1:
+            return coincidencias[0]
+        if not coincidencias:
+            print("No encontré ningún club con ese nombre. Intenta de nuevo.")
+        else:
+            print("Hay varias coincidencias:", ", ".join(coincidencias[:10]))
 
 # ----------------------------------------------------------- EJECUCIÓN
 if __name__ == "__main__":
     config = {"configurable": {"thread_id": "sesion-1"}}
-    resultado = app.invoke({"club": "Deportivo Mirador"}, config)
+    club = elegir_club()
+    resultado = app.invoke({"club": club}, config)
 
     while "__interrupt__" in resultado:
         pausa = resultado["__interrupt__"][0].value

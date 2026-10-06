@@ -1,0 +1,2809 @@
+id,nombre,edad,posicion,club,nacionalidad,valor_mercado,salario_anual,anios_contrato,rating,titular
+24630,Pepe Reina,40,POR,Villarreal,Spain,1.2,0.728,1,77,no
+49472,L. Butelle,40,POR,Stade de Reims,France,0.13,0.208,1,68,no
+106795,G. Pegolo,42,POR,Sassuolo,Italy,0.15,0.208,1,69,no
+118794,A. Lonergan,39,POR,Everton,England,0.03,0.156,1,58,no
+138412,J. Milner,37,MED,Brighton & Hove Albion,England,3.3,2.704,1,77,no
+140233,G. Ochoa,37,POR,Salernitana,Mexico,2.9,1.092,2,81,si
+140293,A. Mirante,39,POR,Milan,Italy,0.21,0.728,1,71,no
+146439,Negredo,37,DEL,Cádiz,Spain,1.9,1.144,1,75,no
+146536,Jesús Navas,37,LAT,Sevilla,Spain,4.7,1.144,1,80,si
+146947,Vesga,30,MED,Athletic Club,Spain,13.5,1.508,1,78,si
+146952,Iván Cuéllar,39,POR,Mallorca,Spain,0.13,0.26,1,68,no
+152908,A. Young,37,LAT,Everton,England,1.7,1.3,1,76,si
+153275,J. Leca,37,POR,Lens,France,0.25,0.572,1,72,no
+155862,Sergio Ramos,37,DFC,Sevilla,Spain,6.5,1.456,1,83,si
+156437,P. Pentke,38,POR,FC Köln,Germany,0.09,0.208,1,66,no
+157481,Raúl Albiol,37,DFC,Villarreal,Spain,4.6,1.404,1,81,si
+157804,S. Carson,37,POR,Manchester City,England,0.08,0.572,1,65,no
+158121,B. Costil,35,POR,Salernitana,France,0.35,0.624,1,73,no
+158625,Dante,39,DFC,Nice,Brazil,2.5,1.352,1,78,si
+162297,D. Padelli,37,POR,Udinese,Italy,0.21,0.26,2,71,no
+163264,T. Heaton,37,POR,Manchester United,England,0.25,1.56,1,72,no
+163489,A. Consigli,36,POR,Sassuolo,Italy,1.9,0.572,1,79,si
+163705,S. Mandanda,38,POR,Rennes,France,1.9,1.3,1,79,si
+164240,Thiago Silva,38,DFC,Chelsea,Brazil,7.5,5.2,1,84,si
+164835,Ł. Fabiański,38,POR,West Ham United,Poland,1.9,1.82,1,79,no
+166074,Bebé,32,EXT,Rayo Vallecano,Cape Verde Islands,3.3,0.936,2,74,no
+167397,Falcao,37,DEL,Rayo Vallecano,Colombia,1.9,0.832,1,75,si
+167495,M. Neuer,37,POR,FC Bayern München,Germany,9.0,2.86,1,87,no
+167948,H. Lloris,36,POR,Tottenham Hotspur,France,4.0,2.808,1,83,no
+168651,I. Rakitić,35,MED,Sevilla,Croatia,10.5,1.404,1,81,si
+168965,R. Riou,35,POR,Olympique Lyonnais,France,0.15,0.364,1,69,no
+169588,J. Evans,35,DFC,Manchester United,Northern Ireland,1.5,2.808,1,75,no
+169697,D. Randolph,36,POR,AFC Bournemouth,Republic of Ireland,0.25,0.78,1,72,no
+169706,J. Cork,34,MED,Burnley,England,1.0,1.716,1,73,no
+169792,J. Rodriguez,33,DEL,Burnley,England,1.9,2.028,1,73,no
+170084,W. Hennessey,36,POR,Nottingham Forest,Wales,0.35,1.144,1,73,no
+170320,L. De Silvestri,35,LAT,Bologna,Italy,0.93,0.832,1,73,no
+170368,E. Lamela,31,EXT,Sevilla,Argentina,17.5,1.872,1,80,si
+170597,T. Krul,35,POR,Luton Town,Netherlands,0.35,0.884,2,73,no
+171490,S. Aresti,37,POR,Cagliari,Italy,0.08,0.156,1,65,no
+171579,Raúl García,36,DEL,Athletic Club,Spain,3.6,1.144,1,77,no
+171897,A. Guardado,36,MED,Real Betis,Mexico,1.5,0.78,1,76,no
+172203,F. Forster,35,POR,Tottenham Hotspur,England,0.82,1.664,1,76,no
+172786,M. Mancosu,34,MED,Cagliari,Italy,1.4,1.04,1,73,no
+173030,Ó. Trejo,35,MED,Rayo Vallecano,Argentina,6.0,0.884,1,78,si
+173160,N. Viola,33,MED,Cagliari,Italy,1.2,0.832,1,71,no
+173221,A. Candreva,36,DEL,Salernitana,Italy,6.0,1.664,1,79,si
+173546,J. Tomkins,34,DFC,Crystal Palace,England,0.75,1.3,1,72,no
+173608,Joselu,33,DEL,Real Madrid,Spain,19.5,0.988,1,82,si
+174543,C. Bravo,40,POR,Real Betis,Chile,2.3,0.676,1,80,no
+176600,K. Gameiro,36,DEL,Strasbourg,France,2.6,0.988,1,76,si
+176772,A. Oukidja,34,POR,Metz,Algeria,0.53,0.624,2,73,si
+177003,L. Modrić,37,MED,Real Madrid,Croatia,25.0,9.88,1,87,no
+177340,P. Frattali,37,POR,Frosinone,Italy,0.08,0.104,2,65,no
+177413,A. Witsel,34,MED,Atlético Madrid,Belgium,6.0,2.652,1,79,si
+177475,T. Sippel,35,POR,Borussia Mönchengladbach,Germany,0.18,0.364,1,70,no
+177683,Y. Sommer,34,POR,Inter,Switzerland,7.0,4.368,3,84,si
+178005,Rui Patrício,35,POR,Roma,Portugal,2.9,1.872,1,81,si
+178213,E. Capoue,34,MED,Villarreal,France,12.0,2.184,1,81,si
+178509,O. Giroud,36,DEL,Milan,France,10.5,3.432,1,82,si
+178603,M. Hummels,34,DFC,Borussia Dortmund,Germany,12.0,3.12,1,83,si
+179547,V. Mannone,35,POR,Lille,Italy,0.25,0.572,2,72,no
+179645,S. Kjær,34,DFC,Milan,Denmark,8.5,3.536,1,81,si
+179847,F. Fazio,36,DFC,Salernitana,Argentina,0.33,0.676,1,71,no
+180216,S. Coleman,34,LAT,Everton,Republic of Ireland,2.1,1.716,1,75,no
+180403,Willian,34,EXT,Fulham,Brazil,4.9,3.692,1,77,no
+180819,A. Lallana,35,MED,Brighton & Hove Albion,England,3.1,2.548,1,76,no
+181098,M. Hasebe,39,DFC,Eintracht Frankfurt,Japan,0.55,0.884,1,73,no
+181458,I. Perišić,34,EXT,Tottenham Hotspur,Croatia,8.0,4.68,1,79,no
+182521,T. Kroos,33,MED,Real Madrid,Germany,42.0,12.48,1,86,no
+183285,M. Sakho,33,DFC,Montpellier,France,1.5,0.884,1,73,no
+183353,Víctor Díaz,35,DFC,Granada,Spain,1.5,0.676,1,75,no
+183394,M. Sissoko,33,MED,Nantes,France,1.9,0.988,1,73,si
+183491,Zanka,33,DFC,Brentford,Denmark,2.0,2.028,2,74,no
+183512,Yuri Berchiche,33,LAT,Athletic Club,Spain,9.0,1.508,1,79,si
+183513,J. Grahl,34,POR,Eintracht Frankfurt,Germany,0.15,0.364,3,66,no
+183569,E. Choupo-Moting,34,DEL,FC Bayern München,Cameroon,7.0,3.12,1,78,no
+183573,N. Theuerkauf,36,MED,Heidenheim,Germany,0.28,0.468,1,69,no
+183855,A. Ogbonna,35,DFC,West Ham United,Italy,2.0,1.976,1,76,no
+184134,Fernando,35,MED,Sevilla,Brazil,8.5,1.3,1,82,no
+184200,M. Arnautović,34,DEL,Inter,Austria,10.5,2.288,1,80,no
+184274,C. Basham,34,DFC,Sheffield United,England,1.0,1.3,1,73,no
+184344,L. Bonucci,36,DFC,FC Union Berlin,Italy,3.8,1.456,1,80,no
+184392,M. Darmian,33,DFC,Inter,Italy,10.0,3.848,1,80,si
+184432,Azpilicueta,33,LAT,Atlético Madrid,Spain,9.0,2.652,1,79,no
+184781,D. Petrić,35,POR,Nantes,Slovenia,0.11,0.208,1,67,no
+184873,I. Traoré,36,DFC,Metz,Côte d'Ivoire,0.55,0.52,1,73,si
+184941,A. Sánchez,34,DEL,Inter,Chile,12.5,4.94,1,81,no
+185020,José Callejón,36,EXT,Granada,Spain,1.8,0.728,1,75,si
+185122,P. Gulácsi,33,POR,RB Leipzig,Hungary,13.5,3.12,2,84,si
+185172,V. Fiorillo,33,POR,Salernitana,Italy,0.4,0.468,2,68,no
+185427,Ø. Nyland,32,POR,Sevilla,Norway,0.7,0.468,2,69,no
+186143,O. Norwood,32,MED,Sheffield United,Northern Ireland,2.8,1.404,1,74,si
+186146,D. Welbeck,32,DEL,Brighton & Hove Albion,England,6.0,3.744,1,76,si
+186153,W. Szczęsny,33,POR,Juventus,Poland,22.0,6.5,2,86,si
+186345,K. Trippier,32,LAT,Newcastle United,England,37.5,7.8,2,85,si
+186392,J. Ward,33,LAT,Crystal Palace,England,2.2,1.56,1,74,si
+186395,M. Ritchie,33,EXT,Newcastle United,Scotland,1.5,3.016,1,72,no
+186521,B. Espinosa,33,DFC,Girona,Colombia,1.5,0.988,1,73,no
+186537,C. Stuani,36,DEL,Girona,Uruguay,3.6,1.144,3,77,si
+186569,S. Ulreich,34,POR,FC Bayern München,Germany,0.72,1.664,1,74,si
+186680,Raúl Fernández,35,POR,Granada,Spain,0.21,0.312,1,71,si
+186801,C. Kouyaté,33,MED,Nottingham Forest,Senegal,2.8,2.548,1,75,no
+186942,İ. Gündoğan,32,MED,FC Barcelona,Germany,53.5,11.44,2,86,si
+187598,Rafael Tolói,32,DFC,Atalanta,Italy,13.5,2.652,1,80,no
+188335,A. Budimir,31,DEL,Osasuna,Croatia,9.0,1.612,2,77,si
+188350,M. Reus,34,MED,Borussia Dortmund,Germany,17.0,3.432,1,83,no
+188377,K. Walker,33,LAT,Manchester City,England,22.0,8.06,1,84,si
+188400,T. Kaminski,30,POR,Luton Town,Belgium,2.3,1.404,3,73,no
+188537,L. Négo,32,LAT,Le Havre,Hungary,1.1,0.52,2,70,si
+188545,R. Lewandowski,34,DEL,FC Barcelona,Poland,58.0,17.68,3,90,si
+188567,P. Aubameyang,34,DEL,Olympique de Marseille,Gabon,10.5,2.652,3,80,si
+188836,J. Steele,32,POR,Brighton & Hove Albion,England,0.93,1.612,2,71,si
+188881,G. Lembet,34,POR,Rennes,Central African Republic,0.12,0.416,1,65,no
+188943,K. Trapp,32,POR,Eintracht Frankfurt,Germany,26.5,2.652,3,85,si
+189053,F. Caputo,35,DEL,Empoli,Italy,3.2,0.52,2,76,si
+189125,G. Bonaventura,33,MED,Fiorentina,Italy,11.0,3.016,1,79,si
+189177,J. Fleck,31,MED,Sheffield United,Scotland,1.5,1.144,1,71,no
+189271,F. Coquelin,32,MED,Villarreal,France,16.5,2.028,1,80,no
+189296,E. Berisha,34,POR,Empoli,Albania,0.33,0.312,1,71,si
+189342,C. Pinsoglio,33,POR,Juventus,Italy,0.75,2.184,2,72,no
+189472,Aridane,34,DFC,Rayo Vallecano,Spain,2.4,0.936,2,76,si
+189505,Pedro,35,EXT,Lazio,Spain,7.0,2.288,1,79,no
+189509,Thiago,32,MED,Liverpool,Spain,33.0,7.8,1,84,no
+189513,Parejo,34,MED,Villarreal,Spain,31.5,3.328,1,86,si
+189575,Muniain,30,MED,Athletic Club,Spain,25.0,1.872,1,81,si
+189596,T. Müller,33,MED,FC Bayern München,Germany,26.5,4.68,1,84,no
+189615,A. Cresswell,33,LAT,West Ham United,England,5.5,2.912,1,77,no
+189682,B. Mee,33,DFC,Brentford,England,8.5,2.912,1,79,si
+189690,Guaita,36,POR,Celta de Vigo,Spain,1.6,0.676,1,78,no
+189712,K. Strootman,33,MED,Genoa,Netherlands,1.9,1.04,1,73,si
+189860,Kiko Femenía,32,LAT,Villarreal,Spain,2.9,1.248,2,74,no
+189881,C. Smalling,33,DFC,Roma,England,20.0,4.576,2,84,si
+189908,Ł. Skorupski,32,POR,Bologna,Poland,5.0,1.248,2,77,si
+190149,De Marcos,34,LAT,Athletic Club,Spain,7.5,1.612,1,80,si
+190324,C. Kabasele,32,DFC,Udinese,Belgium,1.2,0.52,2,71,no
+190456,N. Clyne,32,LAT,Crystal Palace,England,2.9,1.56,1,74,no
+190460,C. Eriksen,31,MED,Manchester United,Denmark,30.0,7.54,2,83,si
+190520,T. Jantschke,33,DFC,Borussia Mönchengladbach,Germany,0.9,0.832,1,71,no
+190666,M. Gulde,32,DFC,SC Freiburg,Germany,2.0,1.04,3,73,no
+190674,B. André,32,MED,Lille,France,11.5,1.82,3,79,si
+190717,M. Antonio,33,DEL,West Ham United,Jamaica,9.0,3.692,1,78,si
+190745,M. Silvestri,32,POR,Udinese,Italy,8.5,0.832,2,79,si
+190765,P. Groß,32,MED,Brighton & Hove Albion,Germany,11.0,3.952,2,78,si
+190769,E. Lamanna,33,POR,Monza,Italy,0.28,0.468,1,66,no
+190813,S. El Shaarawy,30,EXT,Roma,Italy,13.5,3.068,2,78,no
+190815,D. Blind,33,DFC,Girona,Netherlands,5.0,1.3,2,77,si
+190885,A. Smith,32,LAT,AFC Bournemouth,England,2.9,1.872,1,74,no
+190941,L. Hrádecký,33,POR,Bayer 04 Leverkusen,Finland,8.5,2.392,3,81,si
+190982,Alberto Perea,32,EXT,Granada,Spain,1.9,0.728,1,72,no
+191011,L. Sepe,32,POR,Lazio,Italy,1.5,0.936,1,73,no
+191043,Alex Sandro,32,LAT,Juventus,Brazil,9.5,4.264,1,78,no
+191076,J. Guðmundsson,32,MED,Burnley,Iceland,2.4,1.872,1,73,si
+191202,N. Matić,34,MED,Rennes,Serbia,9.0,2.756,2,81,si
+191740,Ander Herrera,33,MED,Athletic Club,Spain,11.0,1.664,1,79,no
+192119,T. Courtois,31,POR,Real Madrid,Belgium,63.0,13.0,3,90,no
+192123,C. Wood,31,DEL,Nottingham Forest,New Zealand,4.8,3.016,2,75,no
+192318,M. Götze,31,MED,Eintracht Frankfurt,Germany,25.0,2.756,2,82,si
+192365,S. Bidaoui,33,EXT,Frosinone,Morocco,0.62,0.26,1,67,no
+192387,C. Immobile,33,DEL,Lazio,Italy,34.5,4.68,3,85,si
+192448,M. ter Stegen,31,POR,FC Barcelona,Germany,54.5,11.44,5,89,si
+192505,R. Lukaku,30,DEL,Roma,Belgium,41.5,8.58,1,84,no
+192563,B. Leno,31,POR,Fulham,Germany,13.5,3.64,2,81,si
+192629,Iago Aspas,35,DEL,Celta de Vigo,Spain,23.0,1.976,2,85,si
+192638,Marcos Alonso,32,LAT,FC Barcelona,Spain,12.0,5.98,1,79,no
+192641,K. Vogt,31,DFC,TSG Hoffenheim,Germany,5.0,1.508,2,76,si
+192678,Kike García,33,DEL,Deportivo Alavés,Spain,2.7,1.196,2,74,si
+192715,Juanpe,32,DFC,Girona,Spain,1.2,0.78,1,71,no
+192840,M. Đurić,33,DEL,Hellas Verona,Bosnia and Herzegovina,1.2,0.936,2,71,si
+192883,H. Mkhitaryan,34,MED,Inter,Armenia,12.0,4.524,1,81,si
+192984,K. Casteels,31,POR,VfL Wolfsburg,Belgium,22.5,2.86,1,84,si
+192985,K. De Bruyne,32,MED,Manchester City,Belgium,103.0,18.2,2,91,no
+193013,J. Shea,32,POR,Luton Town,England,0.5,0.572,1,67,si
+193041,K. Navas,36,POR,Paris Saint Germain,Costa Rica,6.0,3.12,1,85,no
+193061,R. Pereyra,32,MED,Udinese,Argentina,11.0,1.04,1,78,no
+193082,J. Cuadrado,35,EXT,Inter,Colombia,8.5,3.12,1,80,no
+193105,A. Areola,30,POR,West Ham United,France,10.5,2.548,4,78,si
+193116,M. Gonalons,34,MED,Clermont,France,1.4,0.832,1,74,si
+193148,V. Le Goff,33,LAT,Lorient,France,2.2,0.988,1,74,si
+193171,Jaume Costa,35,LAT,Mallorca,Spain,3.2,0.936,1,77,si
+193182,W. Foderingham,32,POR,Sheffield United,England,2.8,1.248,1,75,si
+193198,N. Gudelj,31,DFC,Sevilla,Serbia,14.5,1.612,3,80,si
+193254,C. Trimmel,36,LAT,FC Union Berlin,Austria,2.3,1.196,3,77,no
+193301,A. Lacazette,32,DEL,Olympique Lyonnais,France,29.5,3.12,2,83,si
+193314,Aitor,32,POR,Osasuna,Spain,7.0,1.144,2,78,si
+193338,M. Destro,32,DEL,Empoli,Italy,1.9,0.52,1,72,no
+193352,R. Rodríguez,30,DFC,Torino,Switzerland,4.6,1.768,1,75,si
+193474,I. Gueye,33,MED,Everton,Senegal,5.0,1.924,1,77,si
+193476,R. Cabella,33,MED,Lille,France,11.0,1.976,2,79,si
+193601,G. Pezzella,32,DFC,Real Betis,Argentina,4.9,1.092,2,76,si
+193631,C. Groß,34,MED,Werder Bremen,Germany,0.47,0.52,1,69,no
+193698,O. Baumann,33,POR,TSG Hoffenheim,Germany,7.0,1.664,1,80,si
+193747,Koke,31,MED,Atlético Madrid,Spain,29.5,3.848,1,84,si
+193794,Villalibre,25,DEL,Athletic Club,Spain,4.5,1.092,2,73,no
+194404,Neto,33,POR,AFC Bournemouth,Brazil,4.6,1.924,3,78,si
+194665,S. Ilsanker,34,DFC,Genoa,Austria,0.53,0.624,1,70,no
+194730,Juan Carlos,35,POR,Girona,Spain,0.35,0.52,1,73,no
+194761,Borja García,32,MED,Girona,Spain,3.3,1.144,1,74,si
+194765,A. Griezmann,32,DEL,Atlético Madrid,France,74.0,7.02,3,88,si
+194806,C. Dawson,33,DFC,Wolverhampton Wanderers,England,5.0,2.86,2,77,si
+194845,W. Khazri,32,DEL,Montpellier,Tunisia,3.4,1.144,2,74,si
+194894,F. Rossi,32,POR,Atalanta,Italy,0.16,0.26,1,61,no
+194911,Adrián,36,POR,Liverpool,Spain,0.25,1.456,1,72,no
+195038,F. Kainz,30,MED,FC Köln,Austria,13.5,1.612,2,78,si
+195086,D. Lovren,33,DFC,Olympique Lyonnais,Croatia,6.5,1.768,2,78,si
+195093,Willian José,31,DEL,Real Betis,Brazil,6.5,1.3,3,76,no
+195202,T. Cairney,32,MED,Fulham,Scotland,3.3,3.016,1,74,no
+195272,M. Faraoni,31,LAT,Hellas Verona,Italy,5.5,1.248,2,76,no
+195365,K. Kampl,32,MED,RB Leipzig,Slovenia,14.0,2.86,1,79,si
+195859,D. Ings,30,DEL,West Ham United,England,10.5,3.484,2,77,no
+196935,Ignasi Miquel,30,DFC,Granada,Spain,1.3,0.52,2,70,si
+196978,C. Wilson,31,DEL,Newcastle United,England,25.5,7.02,1,82,no
+197031,M. Ducksch,29,DEL,Werder Bremen,Germany,10.5,1.56,3,77,si
+197061,J. Matip,31,DFC,Liverpool,Cameroon,14.5,5.2,1,80,no
+197445,D. Alaba,31,DFC,Real Madrid,Austria,37.0,10.4,3,85,si
+197756,J. Ayew,31,EXT,Crystal Palace,Ghana,3.5,1.872,1,74,si
+197781,Isco,31,MED,Real Betis,Spain,17.5,1.56,1,80,no
+197813,J. Martin,33,MED,Brest,France,1.2,0.676,2,72,si
+197853,S. Aurier,30,LAT,Nottingham Forest,Côte d'Ivoire,12.0,3.016,1,78,si
+197948,F. Lejeune,32,DFC,Rayo Vallecano,France,7.0,1.04,4,77,si
+198009,M. Perin,30,POR,Juventus,Italy,13.0,3.796,2,79,no
+198032,D. Burn,31,DFC,Newcastle United,England,12.0,4.94,2,79,si
+198039,M. Gillespie,31,POR,Newcastle United,England,0.45,0.884,1,66,no
+198077,P. Herrmann,32,EXT,Borussia Mönchengladbach,Germany,1.5,0.884,1,71,no
+198141,Marc Bartra,32,DFC,Real Betis,Spain,11.5,1.352,1,79,si
+198164,Jonathan Viera,33,MED,Las Palmas,Spain,13.0,1.404,3,80,si
+198176,S. de Vrij,31,DFC,Inter,Netherlands,21.0,4.472,2,82,si
+198220,M. Bourabia,31,MED,Frosinone,Morocco,1.3,0.416,1,70,no
+198261,T. Ream,35,DFC,Fulham,United States,0.8,1.82,1,73,si
+198350,D. Bentley,29,POR,Wolverhampton Wanderers,England,2.3,1.872,2,73,no
+198352,S. Bell,31,DFC,FSV Mainz 05,Germany,3.8,1.196,1,75,no
+198451,Dani Rodríguez,35,EXT,Mallorca,Spain,6.0,1.092,1,78,si
+198553,C. Gamboa,33,LAT,VfL Bochum 1848,Costa Rica,1.2,0.832,1,72,si
+198706,Luis Alberto,30,MED,Lazio,Spain,40.5,4.056,2,84,si
+198719,N. Redmond,29,EXT,Burnley,England,10.5,2.548,2,77,no
+198731,E. Rashani,30,EXT,Clermont,Kosovo,2.3,0.78,2,72,si
+198857,S. Romagnoli,33,DFC,Frosinone,Italy,0.75,0.364,2,70,si
+198861,N. Mendy,31,MED,Lens,Senegal,3.0,1.352,2,74,no
+198946,D. D'Ambrosio,34,DFC,Monza,Italy,3.4,2.236,1,77,no
+198950,Pablo Sarabia,31,EXT,Wolverhampton Wanderers,Spain,11.5,3.328,2,78,si
+199027,J. Robinson,29,DFC,Sheffield United,England,2.0,1.196,2,72,si
+199110,L. Muriel,32,DEL,Atalanta,Colombia,14.0,2.964,1,79,no
+199189,R. Barkley,29,MED,Luton Town,England,4.1,2.132,1,74,si
+199247,Álex Fernández,30,MED,Cádiz,Spain,5.5,1.404,2,75,no
+199288,A. Losilla,37,MED,VfL Bochum 1848,France,1.1,0.78,1,75,si
+199304,Danilo,31,DFC,Juventus,Brazil,17.5,5.2,2,81,si
+199339,M. Riemann,34,POR,VfL Bochum 1848,Germany,1.8,0.988,2,77,si
+199393,N. Pallois,35,DFC,Nantes,France,1.5,0.78,1,75,si
+199413,T. Kempe,34,MED,Darmstadt 98,Germany,0.88,0.78,2,71,no
+199439,M. Gregoritsch,29,DEL,SC Freiburg,Austria,17.5,1.976,4,79,si
+199451,W. Ben Yedder,32,DEL,Monaco,France,29.5,4.16,1,83,si
+199482,A. Lopes,32,POR,Olympique Lyonnais,Portugal,15.0,1.924,2,82,si
+199493,Diego Mariño,33,POR,Almería,Spain,0.53,0.52,1,70,no
+199503,G. Xhaka,30,MED,Bayer 04 Leverkusen,Switzerland,29.0,3.536,5,82,si
+199564,Sergi Roberto,31,LAT,FC Barcelona,Spain,15.5,6.5,1,80,no
+199574,A. Letellier,32,POR,Paris Saint Germain,France,0.6,0.936,1,68,no
+199576,Oriol Romeu,31,MED,FC Barcelona,Spain,15.0,6.5,3,80,si
+199641,M. Sels,31,POR,Strasbourg,Belgium,9.5,1.144,3,79,si
+199715,Vitolo,33,EXT,Atlético Madrid,Spain,1.2,1.456,1,71,no
+199721,M. Gorgelin,32,POR,Le Havre,France,0.5,0.26,2,67,no
+199763,B. Bereszyński,30,LAT,Empoli,Poland,2.0,0.156,1,72,no
+199776,L. Caldirola,32,DFC,Monza,Italy,2.7,1.82,1,74,si
+199803,D. Batz,32,POR,FSV Mainz 05,Germany,0.8,0.572,2,70,no
+199845,F. Acerbi,35,DFC,Inter,Italy,9.5,3.484,2,83,no
+199897,N. Höfler,33,MED,SC Freiburg,Germany,3.7,1.3,4,76,si
+199909,P. Pervan,35,POR,VfL Wolfsburg,Austria,0.35,0.832,1,73,no
+199915,L. Dunk,31,DFC,Brighton & Hove Albion,England,17.5,4.472,3,81,si
+200054,Pedro Obiang,31,MED,Sassuolo,Equatorial Guinea,1.6,0.624,2,72,no
+200104,H. Son,30,EXT,Tottenham Hotspur,Korea Republic,77.0,8.84,2,87,si
+200110,M. Bizot,32,POR,Brest,Netherlands,3.7,0.78,3,76,si
+200145,Casemiro,31,MED,Manchester United,Brazil,72.0,12.48,3,89,si
+200159,S. Ortega,30,POR,Manchester City,Germany,11.5,4.472,2,79,no
+200212,M. Esser,35,POR,VfL Bochum 1848,Germany,0.25,0.468,1,72,no
+200215,S. Rode,32,MED,Eintracht Frankfurt,Germany,11.5,2.028,1,79,si
+200318,M. Uth,31,MED,FC Köln,Germany,4.7,1.352,2,75,no
+200332,T. Koubek,30,POR,FC Augsburg,Czech Republic,1.6,0.728,1,72,no
+200353,A. Soumaoro,31,DFC,Bologna,France,2.1,1.196,1,73,no
+200389,J. Oblak,30,POR,Atlético Madrid,Slovenia,61.0,4.68,5,88,si
+200458,L. Digne,29,LAT,Aston Villa,France,15.5,4.16,3,79,si
+200466,V. Eicher,32,POR,Heidenheim,Germany,0.42,0.312,2,66,no
+200610,K. Volland,30,DEL,FC Union Berlin,Germany,17.0,2.288,3,79,no
+200715,A. Davies,30,POR,Sheffield United,Wales,1.1,0.728,1,70,no
+200724,Nacho Fernández,33,DFC,Real Madrid,Spain,17.5,8.84,1,83,no
+200726,B. Lecomte,32,POR,Montpellier,France,3.7,0.884,4,76,si
+200752,Juan Jesus,32,DFC,Napoli,Brazil,3.6,2.028,2,75,si
+200759,J. Schlupp,30,MED,Crystal Palace,Ghana,6.5,1.768,1,76,si
+200855,G. Baldock,30,LAT,Sheffield United,Greece,1.6,1.04,1,71,si
+200888,Danilo Pereira,31,MED,Paris Saint Germain,Portugal,18.0,4.212,2,81,no
+200954,D. Thomalla,30,MED,Heidenheim,Germany,1.3,0.728,2,69,no
+200968,F. Ogier,34,DFC,Clermont,France,0.53,0.52,1,70,no
+201046,R. Saponara,31,EXT,Hellas Verona,Italy,6.0,1.352,1,76,no
+201049,L. Tonelli,33,DFC,Empoli,Italy,0.9,0.364,1,71,no
+201095,A. Marchesín,35,POR,Celta de Vigo,Argentina,1.6,0.676,2,78,no
+201118,Cédric,31,LAT,Arsenal,Portugal,2.2,3.12,1,73,no
+201119,Ismaily,33,LAT,Lille,Brazil,7.5,1.664,1,78,si
+201136,M. Colin,31,LAT,Metz,France,1.2,0.52,2,70,si
+201143,A. Mandi,31,DFC,Villarreal,Algeria,5.0,1.404,2,76,no
+201144,M. Badelj,34,MED,Genoa,Croatia,0.8,0.832,1,72,si
+201153,Morata,30,DEL,Atlético Madrid,Spain,35.5,4.16,3,83,si
+201269,F. Rønnow,30,POR,FC Union Berlin,Denmark,11.5,1.56,1,79,si
+201299,N. Leali,30,POR,Genoa,Italy,1.0,0.468,3,69,no
+201305,Gabriel Paulista,32,DFC,Valencia,Brazil,9.0,1.716,1,78,si
+201389,C. Biraghi,30,LAT,Fiorentina,Italy,18.0,2.912,2,80,si
+201417,M. Doherty,31,LAT,Wolverhampton Wanderers,Republic of Ireland,4.1,2.548,3,75,no
+201455,G. Kondogbia,30,MED,Olympique de Marseille,Central African Republic,24.5,2.6,4,81,si
+201505,David López,33,DFC,Girona,Spain,8.5,1.508,1,79,si
+201510,L. Kurzawa,30,LAT,Paris Saint Germain,France,2.6,2.392,1,73,no
+201519,J. Veretout,30,MED,Olympique de Marseille,France,20.0,2.444,2,80,no
+201535,R. Varane,30,DFC,Manchester United,France,44.0,8.32,2,85,no
+201858,N. Sansone,31,MED,Lecce,Italy,4.7,0.884,2,75,si
+201955,M. Haïdara,30,LAT,Lens,Mali,6.5,1.56,2,76,no
+201976,A. Gomis,29,POR,Lorient,Senegal,1.4,1.04,1,71,no
+201995,Felipe Anderson,30,EXT,Lazio,Brazil,25.0,3.38,1,81,si
+202024,R. Freuler,31,MED,Bologna,Switzerland,10.0,1.664,4,78,si
+202126,H. Kane,29,DEL,FC Bayern München,England,119.5,8.84,4,90,si
+202166,J. Draxler,29,EXT,Paris Saint Germain,Germany,10.5,3.9,1,77,no
+202201,J. Gouweleeuw,31,DFC,FC Augsburg,Netherlands,3.8,1.196,1,75,no
+202316,T. Chandler,33,EXT,Eintracht Frankfurt,United States,1.0,0.988,2,70,no
+202325,D. Demme,31,MED,Napoli,Germany,3.9,2.028,1,75,no
+202335,E. Dier,29,DFC,Tottenham Hotspur,England,9.0,3.536,1,77,no
+202371,T. Meunier,31,LAT,Borussia Dortmund,Belgium,5.5,1.872,1,76,no
+202429,D. da Costa,29,LAT,FSV Mainz 05,Germany,3.7,1.196,2,74,si
+202464,J. Clark,29,MED,Luton Town,England,1.8,1.508,3,71,no
+202477,Deulofeu,29,DEL,Udinese,Spain,21.0,1.352,3,80,si
+202556,M. Depay,29,DEL,Atlético Madrid,Netherlands,42.0,4.68,2,84,no
+202562,J. Roussillon,30,LAT,FC Union Berlin,France,6.5,1.508,4,76,no
+202648,Sergi Darder,29,MED,Mallorca,Spain,35.5,2.288,5,83,si
+202651,Suso,29,EXT,Sevilla,Spain,20.5,1.976,2,80,si
+202652,R. Sterling,28,EXT,Chelsea,England,36.5,8.06,4,83,si
+202695,J. Tarkowski,30,DFC,Everton,England,14.5,2.236,3,79,si
+202716,Abdón Prats,30,DEL,Mallorca,Spain,1.8,0.884,1,71,no
+202750,W. Boly,32,DFC,Nottingham Forest,Côte d'Ivoire,4.9,2.652,1,76,si
+202789,A. Schwolow,31,POR,FC Union Berlin,Germany,0.85,0.676,4,70,no
+202793,A. Berardi,32,POR,Hellas Verona,Italy,0.2,0.208,2,62,no
+202811,E. Martínez,30,POR,Aston Villa,Argentina,36.0,5.2,4,85,si
+202848,G. Caprari,29,DEL,Monza,Italy,10.5,2.756,4,77,si
+202851,G. Defrel,32,DEL,Sassuolo,France,2.5,0.832,1,73,no
+202873,K. Müller,32,POR,Heidenheim,Germany,1.5,0.936,2,73,si
+202884,L. Spinazzola,30,LAT,Roma,Italy,18.0,3.276,1,80,si
+203030,R. Knoche,31,DFC,FC Union Berlin,Germany,7.0,1.612,1,77,si
+203106,L. Bittencourt,29,MED,Werder Bremen,Germany,3.0,1.092,2,73,no
+203177,D. Foulquier,30,LAT,Valencia,France,3.6,1.3,2,74,no
+203263,H. Maguire,30,DFC,Manchester United,England,14.5,5.2,1,79,no
+203357,D. Potts,29,DFC,Luton Town,England,1.0,0.884,1,68,no
+203376,V. van Dijk,31,DFC,Liverpool,Netherlands,70.5,11.44,2,89,si
+203483,D. Klaassen,30,MED,Inter,Netherlands,7.0,3.172,1,76,no
+203487,J. Lascelles,29,DFC,Newcastle United,England,4.7,3.848,1,75,no
+203502,B. De Cordova-Reid,30,EXT,Fulham,Jamaica,7.0,3.432,1,76,si
+203551,A. Florenzi,32,LAT,Milan,Italy,3.9,2.34,2,75,no
+203574,J. Stones,29,DFC,Manchester City,England,49.5,9.36,3,85,si
+203581,I. Balliu,31,LAT,Rayo Vallecano,Albania,7.5,1.04,2,77,si
+203605,P. Kadeřábek,31,LAT,TSG Hoffenheim,Czech Republic,4.1,1.456,2,75,si
+203741,T. Delaine,31,LAT,Strasbourg,France,1.7,0.78,2,72,si
+203747,Héctor Bellerín,28,LAT,Real Betis,Spain,12.5,1.3,5,78,si
+203775,L. Karius,30,POR,Newcastle United,Germany,1.6,2.236,1,72,no
+203824,R. Matthews,29,POR,Crystal Palace,England,0.47,0.364,1,64,no
+203841,N. Pope,31,POR,Newcastle United,England,22.5,5.72,3,84,si
+203843,D. Suárez,35,LAT,Getafe,Uruguay,3.2,0.988,1,77,si
+203884,K. Djidji,30,DFC,Torino,Côte d'Ivoire,2.5,1.508,1,73,no
+204024,C. Kramer,32,MED,Borussia Mönchengladbach,Germany,7.0,1.352,2,77,no
+204082,J. Brooks,30,DFC,TSG Hoffenheim,United States,6.0,1.508,1,76,si
+204092,J. Blaswich,32,POR,RB Leipzig,Germany,5.0,1.82,3,77,no
+204105,K. Lala,31,LAT,Brest,France,1.7,0.676,2,72,si
+204246,M. Bettinelli,31,POR,Chelsea,England,0.85,1.716,3,70,no
+204280,Cristian Herrera,32,EXT,Las Palmas,Spain,0.95,0.416,1,68,no
+204311,K. Zouma,28,DFC,West Ham United,France,17.5,3.588,2,79,si
+204355,P. Dummett,31,DFC,Newcastle United,Wales,2.1,3.12,1,73,no
+204451,K. Günter,28,DFC,Hellas Verona,Germany,2.2,0.936,2,72,no
+204472,B. Sarr,31,LAT,FC Bayern München,Senegal,1.4,1.456,1,71,no
+204497,K. Stöger,29,MED,VfL Bochum 1848,Austria,5.5,1.248,1,75,si
+204525,Iñigo Martínez,32,DFC,FC Barcelona,Spain,20.0,7.54,2,82,no
+204614,Mário Rui,32,LAT,Napoli,Portugal,18.0,3.016,3,81,no
+204638,W. Orban,30,DFC,RB Leipzig,Hungary,30.0,3.484,2,83,si
+204639,S. Savić,32,DFC,Atlético Madrid,Montenegro,20.0,3.224,1,82,si
+204760,C. Taylor,29,DFC,Burnley,England,2.5,1.768,1,73,no
+204838,R. Jiménez,32,DEL,Fulham,Mexico,6.0,3.744,2,76,si
+204883,B. Samba,29,POR,Lens,France,21.5,1.924,5,81,si
+204884,B. Mendy,28,LAT,Lorient,France,2.8,0.936,2,73,no
+204923,M. Sabitzer,29,MED,Borussia Dortmund,Austria,20.5,2.808,4,80,si
+204935,J. Pickford,29,POR,Everton,England,25.0,2.34,4,82,si
+204936,J. Egan,30,DFC,Sheffield United,Republic of Ireland,3.5,1.404,1,74,si
+204963,Carvajal,31,LAT,Real Madrid,Spain,22.0,8.06,2,82,si
+204970,F. Thauvin,30,EXT,Udinese,France,2.9,0.728,2,73,no
+205070,Portu,31,EXT,Girona,Spain,4.7,1.248,4,75,no
+205157,Ruiz de Galarreta,29,MED,Athletic Club,Spain,7.5,1.352,2,76,si
+205175,A. Milik,29,DEL,Juventus,Poland,25.5,6.5,3,81,no
+205186,P. Gazzaniga,31,POR,Girona,Argentina,7.5,1.092,2,78,si
+205192,Denis Suárez,29,MED,Villarreal,Spain,5.5,1.508,3,75,no
+205288,Fernando,33,POR,Almería,Spain,4.6,1.092,2,78,no
+205343,J. Akpa Akpro,30,MED,Monza,Côte d'Ivoire,5.5,2.08,1,75,no
+205346,R. Fredericks,30,LAT,AFC Bournemouth,England,2.6,1.716,1,73,no
+205362,M. Nastasić,30,DFC,Mallorca,Serbia,3.5,1.04,1,74,no
+205431,N. Füllkrug,30,DEL,Borussia Dortmund,Germany,20.5,2.912,3,80,no
+205452,A. Rüdiger,30,DFC,Real Madrid,Germany,44.0,10.4,3,85,si
+205495,A. Lozano,30,DEL,Getafe,Honduras,3.0,1.196,3,73,no
+205498,Jorginho,31,MED,Arsenal,Italy,25.5,6.5,1,83,no
+205551,Álvaro Lemos,30,LAT,Las Palmas,Spain,1.6,0.624,2,71,no
+205566,Alberto Moreno,30,LAT,Villarreal,Spain,6.5,1.404,1,76,si
+205569,J. Ward-Prowse,28,MED,West Ham United,England,14.0,3.536,4,78,si
+205590,Luís Hernández,34,DFC,Cádiz,Spain,1.8,1.3,2,75,si
+205600,S. Umtiti,29,DFC,Lille,France,14.5,1.924,2,79,si
+205632,L. Ocampos,28,EXT,Sevilla,Argentina,21.0,1.976,1,80,si
+205659,A. Cragno,29,POR,Sassuolo,Italy,3.8,1.716,1,75,no
+205686,T. Savanier,31,MED,Montpellier,France,17.5,1.612,3,80,si
+205693,S. Haller,29,DEL,Borussia Dortmund,Côte d'Ivoire,36.5,3.848,3,83,si
+205812,P. Terracciano,33,POR,Fiorentina,Italy,5.5,2.236,2,79,si
+205850,L. Pavoletti,34,DEL,Cagliari,Italy,0.68,0.676,1,69,no
+205887,C. Woodrow,28,DEL,Luton Town,England,1.4,1.196,2,69,no
+205923,B. Davies,30,DFC,Tottenham Hotspur,Wales,8.5,3.38,2,77,no
+205976,Léo Baptistão,30,EXT,Almería,Brazil,5.5,1.248,3,75,no
+205988,L. Shaw,27,LAT,Manchester United,England,35.0,7.02,4,83,no
+205989,C. Chambers,28,DFC,Aston Villa,England,3.6,2.912,2,74,no
+205990,H. Reed,28,MED,Fulham,England,7.0,3.276,1,76,si
+206003,Y. Mvogo,29,POR,Lorient,Switzerland,11.5,1.092,1,78,si
+206058,M. De Sciglio,30,LAT,Juventus,Italy,6.5,3.744,2,76,no
+206075,S. Johnstone,30,POR,Crystal Palace,England,5.0,1.456,3,76,si
+206085,J. Murphy,28,EXT,Newcastle United,England,7.5,4.68,4,76,no
+206086,H. Toffolo,27,LAT,Nottingham Forest,England,1.8,1.664,2,71,no
+206098,Patric,30,DFC,Lazio,Spain,6.0,1.976,4,76,no
+206113,S. Gnabry,27,EXT,FC Bayern München,Germany,45.0,4.68,3,84,no
+206145,B. Uphoff,29,POR,SC Freiburg,Germany,1.1,0.624,4,70,no
+206159,S. Sabelli,30,LAT,Genoa,Italy,1.4,0.624,2,70,si
+206167,S. Prcić,29,MED,Strasbourg,Bosnia and Herzegovina,4.8,1.092,2,75,si
+206198,D. Heintz,29,DFC,FC Köln,Germany,1.6,0.832,1,71,no
+206219,Juan Cruz,30,LAT,Osasuna,Spain,4.8,1.196,3,75,no
+206306,J. Ferri,31,MED,Montpellier,France,7.5,1.196,3,77,si
+206467,A. Plea,30,MED,Borussia Mönchengladbach,France,10.0,1.508,2,77,si
+206493,Y. Abdelhamid,35,DFC,Stade de Reims,Morocco,2.8,0.832,1,77,si
+206511,M. Arnold,29,MED,VfL Wolfsburg,Germany,22.0,2.86,3,81,si
+206516,W. Hughes,28,MED,Crystal Palace,England,4.2,1.768,1,74,no
+206517,J. Grealish,27,EXT,Manchester City,England,57.5,10.4,4,85,si
+206545,Manu Trigueros,31,MED,Villarreal,Spain,8.5,1.612,2,77,no
+206585,Kepa,28,POR,Real Madrid,Spain,22.0,4.68,1,81,si
+206590,Moi Gómez,29,MED,Osasuna,Spain,17.0,1.82,4,79,si
+206591,M. Weiser,29,LAT,Werder Bremen,Germany,9.5,1.3,1,77,si
+206594,S. March,28,EXT,Brighton & Hove Albion,England,17.5,4.524,3,79,si
+206606,P. Hofmann,30,DEL,VfL Bochum 1848,Germany,5.5,1.3,3,75,si
+206652,Sergio Rico,29,POR,Paris Saint Germain,Spain,3.2,2.236,1,74,no
+206654,Pablo Marí,29,DFC,Monza,Spain,6.5,2.184,4,76,si
+207410,M. Kovačić,29,MED,Manchester City,Croatia,29.5,7.8,4,82,si
+207421,L. Trossard,28,DEL,Arsenal,Belgium,26.5,6.76,4,81,no
+207439,L. Paredes,29,MED,Roma,Argentina,10.5,3.016,2,77,si
+207557,R. Olsen,33,POR,Aston Villa,Sweden,1.8,2.444,1,75,no
+207566,William Carvalho,31,MED,Real Betis,Portugal,18.0,1.56,3,81,no
+207599,M. Keane,30,DFC,Everton,England,8.5,1.924,2,77,no
+207616,A. Webster,28,DFC,Brighton & Hove Albion,England,13.5,3.744,3,78,si
+207650,E. Krafth,28,LAT,Newcastle United,Sweden,2.8,3.276,1,73,no
+207732,Roger Martí,32,DEL,Cádiz,Spain,2.5,1.3,3,73,si
+207745,M. Zeffane,31,LAT,Clermont,Algeria,0.88,0.364,1,68,si
+207791,Y. Poulsen,29,DEL,RB Leipzig,Denmark,7.5,2.548,1,76,no
+207804,A. Bell,29,LAT,Luton Town,Jamaica,1.6,1.404,2,71,si
+207862,M. Ginter,29,DFC,SC Freiburg,Germany,35.5,2.444,3,84,si
+207863,Felipe,34,DFC,Nottingham Forest,Brazil,4.6,3.016,1,78,no
+207865,Marquinhos,29,DFC,Paris Saint Germain,Brazil,73.5,7.28,5,87,si
+207887,F. Schnellhardt,29,MED,Darmstadt 98,Germany,1.4,0.624,1,69,no
+207897,A. Jung,31,LAT,Werder Bremen,Germany,1.7,0.832,1,72,si
+207948,B. Traoré,27,EXT,Aston Villa,Burkina Faso,6.0,3.276,1,75,no
+207956,P. Mpanzu,29,MED,Luton Town,Congo DR,1.8,1.508,1,71,no
+207993,S. Kolašinac,30,DFC,Atalanta,Bosnia and Herzegovina,11.5,2.288,4,78,si
+208004,J. Veltman,31,LAT,Brighton & Hove Albion,Netherlands,10.0,3.588,2,78,si
+208093,Gerard Moreno,31,DEL,Villarreal,Spain,30.5,2.808,4,83,si
+208128,H. Çalhanoğlu,29,MED,Inter,Turkey,52.5,6.76,4,85,si
+208135,A. Doucouré,30,MED,Everton,Mali,10.0,2.08,1,77,si
+208137,Lucas Torró,28,MED,Osasuna,Spain,9.5,1.404,4,77,si
+208165,B. Djimsiti,30,DFC,Atalanta,Albania,8.5,2.132,3,77,si
+208268,B. Cristante,28,MED,Roma,Italy,25.0,3.692,4,81,si
+208330,A. Januzaj,28,EXT,Sevilla,Belgium,10.5,1.56,3,77,no
+208333,E. Can,29,MED,Borussia Dortmund,Germany,31.0,3.276,3,83,si
+208335,L. Kübler,30,LAT,SC Freiburg,Germany,4.8,1.196,4,75,si
+208364,Clinton Mata,30,LAT,Olympique Lyonnais,Angola,9.0,1.664,3,77,si
+208421,Saúl,28,MED,Atlético Madrid,Spain,21.0,3.172,3,80,si
+208448,E. Forsberg,31,MED,RB Leipzig,Sweden,17.5,3.016,2,80,no
+208449,C. Hérelle,30,DFC,Metz,France,2.5,0.78,2,73,no
+208450,Andreas Pereira,27,MED,Fulham,Brazil,12.0,3.692,3,77,si
+208461,M. de Roon,32,MED,Atalanta,Netherlands,14.0,2.652,1,80,si
+208470,F. Holland,32,LAT,Darmstadt 98,Germany,2.1,0.936,2,73,si
+208509,T. Foket,28,LAT,Stade de Reims,Belgium,3.8,1.04,2,74,si
+208535,A. Duncan,30,MED,Fiorentina,Ghana,4.0,2.08,1,74,no
+208574,F. Kostić,30,EXT,Juventus,Serbia,35.0,6.76,3,83,si
+208596,A. Belotti,29,DEL,Roma,Italy,14.0,3.484,2,78,si
+208615,C. Jullien,30,DFC,Montpellier,France,4.6,1.04,2,75,si
+208618,Lucas Vázquez,32,LAT,Real Madrid,Spain,18.0,7.28,1,81,no
+208620,Omar Mascarell,30,MED,Mallorca,Spain,5.5,1.248,3,75,si
+208622,Rubén Sobrino,31,EXT,Cádiz,Spain,3.5,1.3,3,74,no
+208777,Óliver Torres,28,MED,Sevilla,Spain,17.5,1.716,1,79,no
+208787,A. Thomasson,29,EXT,Lens,France,14.0,2.184,3,78,si
+208861,J. Gastien,35,MED,Clermont,France,2.1,0.676,2,76,si
+208920,N. Aké,28,DFC,Manchester City,Netherlands,24.5,6.5,4,81,si
+209288,F. Mollet,31,MED,Nantes,France,2.5,0.988,2,73,si
+209331,M. Salah,31,EXT,Liverpool,Egypt,85.5,13.52,2,89,si
+209519,G. Laborde,29,DEL,Nice,France,25.5,3.172,3,81,si
+209547,S. Mitrović,33,DFC,Getafe,Serbia,2.0,1.092,1,74,si
+209658,L. Goretzka,28,MED,FC Bayern München,Germany,54.0,5.2,3,85,no
+209846,C. Günter,30,LAT,SC Freiburg,Germany,15.0,1.612,4,79,no
+209889,R. Guerreiro,29,LAT,FC Bayern München,Portugal,27.0,3.744,3,82,no
+209957,J. Busk,29,POR,FC Union Berlin,Denmark,0.57,0.364,1,66,no
+209987,M. Schuhen,30,POR,Darmstadt 98,Germany,3.7,0.884,2,75,si
+209989,T. Partey,30,MED,Arsenal,Ghana,45.0,7.8,1,85,no
+210008,A. Rabiot,28,MED,Juventus,France,42.0,7.8,1,84,si
+210035,Grimaldo,27,LAT,Bayer 04 Leverkusen,Spain,40.5,3.848,4,84,si
+210047,F. Schär,31,DFC,Newcastle United,Switzerland,21.0,5.98,1,82,si
+210257,Ederson,29,POR,Manchester City,Brazil,70.0,10.92,3,88,si
+210315,Raúl de Tomás,28,DEL,Rayo Vallecano,Spain,18.0,1.508,4,79,no
+210324,J. Hofmann,30,MED,Bayer 04 Leverkusen,Germany,35.0,3.848,4,83,si
+210366,N. Lomb,29,POR,Bayer 04 Leverkusen,Germany,0.57,0.52,1,66,no
+210381,C. Lykogiannis,29,LAT,Bologna,Greece,2.1,1.092,1,72,no
+210384,R. Haps,30,LAT,Genoa,Suriname,2.0,0.208,1,72,no
+210385,Rui Silva,29,POR,Real Betis,Portugal,17.5,1.3,3,81,si
+210406,P. Zieliński,29,MED,Napoli,Poland,35.5,4.056,3,83,si
+210413,A. Romagnoli,28,DFC,Lazio,Italy,31.5,3.536,4,83,si
+210450,A. Touré,29,MED,Le Havre,France,1.0,0.416,2,68,no
+210455,Jonny,29,LAT,Wolverhampton Wanderers,Spain,6.5,2.808,2,76,no
+210463,D. Machís,30,EXT,Cádiz,Venezuela,10.0,0.676,1,77,si
+210514,João Cancelo,29,LAT,FC Barcelona,Portugal,59.5,10.14,1,86,si
+210617,Samu Castillejo,28,EXT,Sassuolo,Spain,5.5,1.768,1,75,no
+210625,K. Mbabu,28,LAT,FC Augsburg,Switzerland,7.0,3.276,1,76,si
+210635,K. Hause,27,DFC,Aston Villa,England,2.5,2.236,2,72,no
+210644,E. Marcondes,28,MED,AFC Bournemouth,Denmark,1.6,1.3,1,70,no
+210676,W. Falcone,28,POR,Lecce,Italy,6.5,0.728,5,76,si
+210697,C. Nørgaard,29,MED,Brentford,Denmark,9.0,2.6,2,77,si
+210736,Emerson,28,LAT,West Ham United,Italy,9.5,3.068,3,77,si
+210864,E. Hysaj,29,LAT,Lazio,Albania,6.5,2.08,2,76,no
+210868,José Mari,35,MED,Cádiz,Spain,0.45,0.52,2,70,no
+210881,J. McGinn,28,MED,Aston Villa,Scotland,17.5,4.524,4,79,si
+210896,M. Sanson,28,MED,Nice,France,7.5,3.588,1,76,si
+210897,C. Mbemba,28,DFC,Olympique de Marseille,Congo DR,20.0,2.34,2,80,si
+210935,D. Berardi,28,EXT,Sassuolo,Italy,54.5,2.08,4,85,si
+210940,S. Perilli,28,POR,Hellas Verona,Italy,0.88,0.364,1,67,no
+210972,Manquillo,29,LAT,Newcastle United,Spain,2.1,2.912,1,72,no
+210985,B. Osborn,28,LAT,Sheffield United,England,1.7,1.092,1,71,no
+211022,Rubén García,29,EXT,Osasuna,Spain,14.0,1.612,1,78,no
+211101,Rubén Blanco,27,POR,Olympique de Marseille,Spain,4.1,1.196,3,74,no
+211110,P. Dybala,29,DEL,Roma,Argentina,68.0,6.76,2,86,si
+211117,D. Alli,27,MED,Everton,England,6.5,1.872,1,75,no
+211147,V. Lazaro,27,LAT,Torino,Austria,2.5,1.352,4,72,no
+211241,Rubén Peña,31,LAT,Osasuna,Spain,4.1,1.196,2,75,si
+211256,N. Tagliafico,30,LAT,Olympique Lyonnais,Argentina,18.0,2.08,2,80,si
+211300,A. Martial,27,DEL,Manchester United,France,24.5,6.5,1,80,si
+211302,G. Lapadula,33,DEL,Cagliari,Peru,3.6,1.3,2,75,no
+211320,D. Rugani,28,DFC,Juventus,Italy,5.5,3.744,1,75,no
+211348,S. Dimitrievski,29,POR,Rayo Vallecano,North Macedonia,12.0,1.04,1,79,si
+211361,D. Cataldi,28,MED,Lazio,Italy,9.5,2.236,4,77,si
+211363,T. Lockyer,28,DFC,Luton Town,Wales,3.6,1.924,2,74,si
+211398,M. Caillard,29,POR,Metz,France,1.0,0.312,1,68,no
+211408,K. Linetty,28,MED,Torino,Poland,4.2,1.872,1,74,no
+211454,M. Elneny,30,MED,Arsenal,Egypt,4.7,3.692,1,75,no
+211515,P. Gollini,28,POR,Napoli,Italy,7.0,1.716,1,76,no
+211575,André Gomes,29,MED,Everton,Portugal,9.0,1.976,1,77,no
+211688,Gayà,28,LAT,Valencia,Spain,27.5,2.392,4,82,si
+211738,M. Flekken,30,POR,Brentford,Netherlands,20.5,2.912,4,82,si
+211784,N. Maupay,26,DEL,Brentford,France,5.0,1.872,1,74,no
+211856,K. Akpoguma,28,DFC,TSG Hoffenheim,Nigeria,4.2,1.404,1,74,no
+211879,J. Haberer,29,MED,FC Union Berlin,Germany,5.5,1.664,4,75,no
+211990,O. Vlachodimos,29,POR,Nottingham Forest,Greece,21.5,3.276,4,81,no
+211999,R. Khedira,29,MED,FC Union Berlin,Germany,6.5,1.612,4,76,si
+212035,J. Bela,30,EXT,Clermont,Angola,1.3,0.52,1,69,no
+212096,V. Grifo,30,EXT,SC Freiburg,Italy,29.5,2.132,4,82,si
+212100,M. Lowe,26,LAT,Sheffield United,England,2.8,1.144,1,72,si
+212127,D. Lazović,32,EXT,Hellas Verona,Serbia,6.0,1.352,1,76,no
+212138,P. Frankowski,28,LAT,Lens,Poland,16.0,2.028,5,79,si
+212151,T. Strakosha,28,POR,Brentford,Albania,3.3,1.768,3,74,no
+212153,R. Gagliardini,29,MED,Monza,Italy,3.6,1.924,1,74,si
+212170,M. Desler,28,LAT,Toulouse,Denmark,2.8,0.936,1,73,si
+212187,P. Max,29,LAT,Eintracht Frankfurt,Germany,12.5,1.924,3,78,si
+212188,T. Werner,27,DEL,RB Leipzig,Germany,35.5,3.796,3,82,si
+212190,N. Süle,27,DFC,Borussia Dortmund,Germany,45.0,3.432,3,84,si
+212194,J. Brandt,27,MED,Borussia Dortmund,Germany,48.5,3.744,3,84,si
+212198,Bruno Fernandes,28,MED,Manchester United,Portugal,92.0,13.52,3,88,si
+212212,D. Kohr,29,MED,FSV Mainz 05,Germany,9.0,1.404,3,77,si
+212242,R. Andrich,28,MED,Bayer 04 Leverkusen,Germany,27.0,3.38,3,82,no
+212244,C. Lenz,28,LAT,RB Leipzig,Germany,2.8,1.768,1,73,no
+212245,Y. Gerhardt,29,MED,VfL Wolfsburg,Germany,10.5,2.34,2,77,no
+212267,Ivan Cavaleiro,29,EXT,Lille,Portugal,2.3,1.196,1,72,no
+212282,I. Sylla,29,LAT,Montpellier,Guinea,2.7,0.936,2,73,si
+212419,T. Mings,30,DFC,Aston Villa,England,14.5,3.952,3,79,no
+212442,José Sá,30,POR,Wolverhampton Wanderers,Portugal,11.5,2.704,3,79,si
+212446,L. Garritano,29,MED,Frosinone,Italy,2.3,0.52,1,72,no
+212501,L. Dendoncker,28,MED,Aston Villa,Belgium,5.5,3.432,2,75,no
+212602,Diego Llorente,29,DFC,Roma,Spain,9.0,2.236,1,77,si
+212613,W. Saïd,28,DEL,Lens,France,4.3,1.716,3,74,no
+212616,R. De Paul,29,MED,Atlético Madrid,Argentina,41.0,4.42,3,84,si
+212622,J. Kimmich,28,MED,FC Bayern München,Germany,88.0,6.76,2,88,si
+212626,D. Selke,28,DEL,FC Köln,Germany,3.1,1.3,1,73,si
+212811,M. Lemina,29,MED,Wolverhampton Wanderers,Gabon,12.0,3.172,2,78,si
+212831,Alisson,30,POR,Liverpool,Brazil,77.5,9.36,4,89,si
+212879,S. Michel,32,DEL,FC Augsburg,Germany,1.9,1.092,2,72,si
+212947,J. Cabot,29,LAT,Lens,France,2.7,1.3,3,73,no
+212977,N. Stark,28,DFC,Werder Bremen,Germany,4.0,1.092,3,74,si
+213135,D. Origi,28,DEL,Nottingham Forest,Belgium,6.0,2.912,1,75,no
+213152,C. Morris,27,DEL,Luton Town,England,2.5,1.768,3,72,si
+213242,A. Tameze,29,MED,Torino,France,4.1,1.872,5,74,no
+213296,N. Bentaleb,28,MED,Lille,Algeria,5.5,1.456,3,75,no
+213331,J. Tah,27,DFC,Bayer 04 Leverkusen,Germany,26.0,2.964,2,81,si
+213345,K. Coman,27,EXT,FC Bayern München,France,57.5,5.2,4,85,si
+213367,L. Abergel,30,MED,Lorient,France,6.5,1.092,3,76,si
+213404,P. Dawidowicz,28,DFC,Hellas Verona,Poland,3.1,1.04,2,73,si
+213413,L. Vigouroux,29,POR,Burnley,Chile,0.55,0.468,3,65,no
+213565,T. Lemar,27,MED,Atlético Madrid,France,35.0,3.536,4,82,no
+213577,Puertas,31,EXT,Granada,Spain,3.5,0.936,1,74,no
+213648,P. Højbjerg,27,MED,Tottenham Hotspur,Denmark,43.0,5.72,2,84,no
+213655,A. Iwobi,27,EXT,Fulham,Nigeria,8.0,3.432,5,76,no
+213661,A. Christensen,27,DFC,FC Barcelona,Denmark,38.5,8.06,3,83,si
+213666,R. Loftus-Cheek,27,MED,Milan,England,12.0,2.912,4,77,si
+213693,J. Rothwell,28,MED,AFC Bournemouth,England,3.0,1.924,3,73,si
+213868,J. Castelletto,28,DFC,Nantes,Cameroon,2.9,0.936,3,73,si
+213884,R. Christie,28,EXT,AFC Bournemouth,Scotland,4.2,2.132,1,74,si
+213928,E. Sobol,28,LAT,Strasbourg,Ukraine,2.8,0.936,3,73,no
+213955,S. Azmoun,28,DEL,Roma,Iran,14.5,2.912,1,78,no
+213956,Adama Traoré,27,EXT,Fulham,Spain,8.0,3.744,2,76,no
+213991,J. Lerma,28,MED,Crystal Palace,Colombia,9.5,1.976,3,77,si
+214026,J. Mojica,30,LAT,Osasuna,Colombia,9.0,1.508,1,77,si
+214092,A. Miranchuk,27,DEL,Atalanta,Russia,12.5,2.548,1,77,no
+214096,T. Kleindienst,27,DEL,Heidenheim,Germany,6.0,1.56,4,75,si
+214097,B. Bourigeaud,29,MED,Rennes,France,25.0,3.172,3,81,si
+214622,J. Toljan,28,LAT,Sassuolo,Germany,2.1,0.624,2,72,si
+214680,G. Gallon,30,POR,Rennes,France,2.3,1.3,3,73,no
+214944,Gumbau,28,MED,Granada,Spain,3.0,0.884,1,73,si
+214979,J. Musso,29,POR,Atalanta,Argentina,13.5,2.132,2,79,si
+214997,Á. Correa,28,DEL,Atlético Madrid,Argentina,31.0,4.004,3,82,no
+215160,F. Angileri,29,LAT,Getafe,Argentina,1.4,0.728,3,70,no
+215330,J. Correa,28,DEL,Olympique de Marseille,Argentina,11.0,3.848,1,77,no
+215333,D. Zapata,32,DEL,Torino,Colombia,21.0,3.38,1,81,si
+215353,L. Alario,30,DEL,Eintracht Frankfurt,Argentina,5.5,1.82,2,75,no
+215363,L. Montipò,27,POR,Hellas Verona,Italy,10.5,1.092,2,77,si
+215376,E. Capradossi,27,DFC,Cagliari,Italy,1.2,0.468,1,68,no
+215410,B. Chardonnet,28,DFC,Brest,France,3.1,0.78,2,73,si
+215441,S. Guirassy,27,DEL,VfB Stuttgart,Guinea,11.5,1.456,3,77,si
+215449,R. Skov,27,LAT,TSG Hoffenheim,Denmark,4.4,1.352,1,74,no
+215556,E. Fernandes,27,DFC,FSV Mainz 05,Switzerland,3.2,1.04,3,73,si
+215569,Unai García,30,DFC,Osasuna,Spain,4.6,1.196,2,75,no
+215590,Ayoze Pérez,29,EXT,Real Betis,Spain,17.0,1.56,4,79,si
+215689,A. Petagna,28,DEL,Cagliari,Italy,11.0,2.756,1,77,si
+215698,M. Maignan,27,POR,Milan,France,73.0,4.68,3,87,si
+215699,Y. Sabaly,30,LAT,Real Betis,Senegal,9.0,1.144,3,77,no
+215798,M. Cornet,26,EXT,West Ham United,Côte d'Ivoire,9.0,2.964,4,76,no
+216065,M. Sportiello,31,POR,Milan,Italy,5.5,2.132,4,77,no
+216145,A. Izzo,31,DFC,Monza,Italy,2.9,1.82,3,74,si
+216150,D. Zappacosta,31,LAT,Atalanta,Italy,12.5,2.496,2,79,si
+216158,S. Widmer,30,LAT,FSV Mainz 05,Switzerland,6.5,1.3,3,76,no
+216194,Dani García,33,MED,Athletic Club,Spain,4.6,1.3,1,76,no
+216199,P. Mainka,28,DFC,Heidenheim,Germany,4.0,1.3,1,74,si
+216201,Iñaki Williams,29,EXT,Athletic Club,Ghana,25.5,1.924,5,81,si
+216258,I. Bebou,29,DEL,TSG Hoffenheim,Togo,10.5,2.028,3,77,si
+216266,K. Tete,27,LAT,Fulham,Netherlands,8.0,3.12,1,76,si
+216267,A. Robertson,29,LAT,Liverpool,Scotland,59.5,8.84,3,86,si
+216275,P. Mwene,29,LAT,FSV Mainz 05,Austria,4.9,1.248,3,75,no
+216282,R. Framberger,27,LAT,FC Augsburg,Germany,1.2,0.52,1,68,no
+216283,Danilo,31,LAT,VfL Bochum 1848,Brazil,5.5,1.144,1,76,si
+216354,A. Kramarić,32,DEL,TSG Hoffenheim,Croatia,21.0,2.6,2,81,si
+216380,D. Sinkgraven,27,LAT,Las Palmas,Netherlands,2.3,0.676,2,72,no
+216393,Y. Tielemans,26,MED,Aston Villa,Belgium,37.5,5.2,4,82,no
+216409,M. Politano,29,EXT,Napoli,Italy,25.5,3.744,2,81,si
+216435,S. Lobotka,28,MED,Napoli,Slovakia,42.0,4.472,4,84,si
+216447,Álvaro García,30,EXT,Rayo Vallecano,Spain,17.0,1.3,3,79,si
+216452,Gonçalo Paciência,28,DEL,VfL Bochum 1848,Portugal,3.1,1.092,1,73,no
+216460,J. Giménez,28,DFC,Atlético Madrid,Uruguay,36.5,3.692,2,83,no
+216475,Morales,35,DEL,Villarreal,Spain,7.5,1.612,1,79,no
+216497,M. Philipp,29,DEL,SC Freiburg,Germany,4.2,2.08,1,74,no
+216549,A. Sørloth,27,DEL,Villarreal,Norway,20.5,2.08,5,79,si
+216594,N. Fekir,29,MED,Real Betis,France,35.5,2.08,3,83,si
+216627,K. Moore,30,DEL,AFC Bournemouth,Wales,3.0,2.028,2,73,no
+216816,G. Simeone,27,DEL,Napoli,Argentina,15.0,2.86,3,78,no
+216820,M. Simon,27,EXT,Nantes,Nigeria,4.5,1.092,1,74,si
+216860,V. Černý,25,EXT,VfL Wolfsburg,Czech Republic,10.0,2.184,4,76,si
+217036,Álex Moreno,30,LAT,Aston Villa,Spain,18.0,4.212,3,80,no
+217196,J. Palomino,33,DFC,Atalanta,Argentina,2.7,1.924,1,75,no
+217648,G. Haraguchi,32,MED,VfB Stuttgart,Japan,1.9,0.936,1,72,no
+217731,Sandro,27,DEL,Las Palmas,Spain,6.0,1.092,3,75,si
+217821,Henrique,29,LAT,Olympique Lyonnais,Brazil,2.7,1.3,1,73,no
+217870,G. Di Lorenzo,29,LAT,Napoli,Italy,47.5,4.472,5,85,si
+217940,D. Djené,31,DFC,Getafe,Togo,7.0,1.352,2,77,si
+218339,M. Dahoud,27,MED,Brighton & Hove Albion,Germany,15.0,3.952,4,78,si
+218534,S. Adamyan,30,DEL,FC Köln,Armenia,1.6,0.832,3,70,no
+218659,M. Targett,27,LAT,Newcastle United,England,8.0,3.848,3,76,no
+218667,Bernardo Silva,28,MED,Manchester City,Portugal,91.5,14.04,3,88,no
+218746,José Pozo,27,MED,Rayo Vallecano,Spain,2.7,0.728,1,72,no
+219127,P. Galdames,26,MED,Genoa,Chile,2.0,0.728,1,70,no
+219145,G. Maripán,29,DFC,Monaco,Chile,9.5,2.34,1,77,si
+219391,G. Escalante,30,MED,Cádiz,Argentina,10.0,1.56,3,77,si
+219496,Simy,31,DEL,Salernitana,Nigeria,0.72,0.52,1,66,no
+219522,J. Ledesma,30,POR,Cádiz,Argentina,20.5,1.664,3,82,si
+219581,S. Gigot,29,DFC,Olympique de Marseille,France,13.0,1.976,2,78,si
+219585,M. Valjent,27,DFC,Mallorca,Slovakia,12.0,1.3,2,77,si
+219681,J. Amavi,29,LAT,Brest,France,2.1,1.248,1,72,no
+219683,C. Tolisso,28,MED,Olympique Lyonnais,France,15.5,2.028,4,79,si
+219693,Diego Carlos,30,DFC,Aston Villa,Brazil,21.0,4.472,3,81,no
+219715,R. Di Gennaro,29,POR,Inter,Italy,1.1,1.352,1,70,no
+219733,L. Ajorque,29,DEL,FSV Mainz 05,France,17.5,1.976,3,79,si
+219736,E. Horvath,28,POR,Nottingham Forest,United States,2.0,1.612,1,72,no
+219789,H. Traoré,31,LAT,Real Sociedad,Mali,15.5,1.872,3,80,si
+219792,B. Santamaria,28,MED,Rennes,France,9.5,2.184,2,77,no
+219809,T. Bakayoko,28,MED,Lorient,France,2.7,0.936,2,73,no
+219812,P. Ciurria,28,EXT,Monza,Italy,17.5,2.964,3,79,si
+219932,A. Sanabria,27,DEL,Torino,Paraguay,16.5,2.548,2,78,no
+219953,Embarba,31,EXT,Almería,Spain,6.0,1.3,3,76,si
+219985,M. Vecino,31,MED,Lazio,Uruguay,8.5,2.34,2,77,no
+220031,O. McBurnie,27,DEL,Sheffield United,Scotland,2.7,1.404,1,72,si
+220048,S. Scuffet,27,POR,Cagliari,Italy,1.7,0.624,3,71,no
+220061,N. Gyömbér,30,DFC,Salernitana,Slovakia,1.9,1.04,2,72,si
+220085,L. Waldschmidt,27,DEL,FC Köln,Germany,4.9,1.976,1,74,si
+220093,H. Hateboer,29,LAT,Atalanta,Netherlands,12.5,2.392,1,78,no
+220132,Zaldúa,31,LAT,Cádiz,Spain,3.1,1.196,2,74,no
+220196,D. Brooks,25,EXT,AFC Bournemouth,Wales,5.0,1.924,3,74,no
+220253,Munir,27,EXT,Las Palmas,Morocco,15.0,1.196,1,78,si
+220348,Iza Carcelén,30,LAT,Cádiz,Spain,3.6,1.196,2,74,si
+220383,Aarón,27,POR,Las Palmas,Spain,4.1,0.676,2,74,no
+220407,M. Dúbravka,34,POR,Newcastle United,Slovakia,2.4,3.588,2,78,no
+220414,Diego Rico,30,LAT,Getafe,Spain,9.0,1.508,1,77,no
+220421,H. Kamara,29,LAT,Udinese,Côte d'Ivoire,3.7,0.78,3,74,si
+220440,C. Lenglet,28,DFC,Aston Villa,France,10.5,5.46,1,77,no
+220475,A. Grassi,28,MED,Empoli,Italy,2.3,0.468,3,72,si
+220477,M. Caldara,29,DFC,Milan,Italy,1.3,1.404,1,70,no
+220491,E. Gyasi,29,EXT,Empoli,Ghana,5.5,0.624,2,75,si
+220502,M. Zaccagni,28,EXT,Lazio,Italy,30.5,3.796,2,82,si
+220509,L. Venuti,28,LAT,Lecce,Italy,2.1,0.624,2,72,no
+220523,Y. Mina,28,DFC,Fiorentina,Colombia,10.5,2.444,1,77,no
+220532,N. Contini,27,POR,Napoli,Ukraine,0.93,0.572,2,67,no
+220534,S. Luperto,26,DFC,Empoli,Italy,4.9,0.52,2,74,si
+220604,Jaume,32,POR,Valencia,Spain,1.2,0.884,2,72,no
+220621,S. Benrahma,27,EXT,West Ham United,Algeria,15.0,3.432,3,78,si
+220659,J. Brownhill,27,MED,Burnley,England,6.5,2.184,1,75,no
+220673,R. Tapia,27,MED,Celta de Vigo,Peru,14.5,1.248,1,78,no
+220697,J. Maddison,26,MED,Tottenham Hotspur,England,49.5,6.24,5,84,si
+220710,H. Wilson,26,EXT,Fulham,Wales,6.5,3.276,3,75,si
+220714,P. Billing,27,MED,AFC Bournemouth,Denmark,12.0,2.444,4,77,si
+220814,L. Hernández,27,DFC,Paris Saint Germain,France,42.5,5.46,5,84,si
+220820,M. Diaw,30,POR,Clermont,Senegal,3.2,0.676,3,74,si
+220821,C. Starfelt,28,DFC,Celta de Vigo,Sweden,4.2,0.988,4,74,si
+220834,Marco Asensio,27,EXT,Paris Saint Germain,Spain,38.5,5.98,3,83,no
+220837,D. Machado,29,LAT,Lens,Colombia,6.5,1.612,3,76,si
+220876,F. Honorat,26,EXT,Borussia Mönchengladbach,France,8.0,1.404,5,76,si
+220883,R. Borré,27,DEL,Werder Bremen,Colombia,8.0,1.924,1,76,no
+220901,David Raya,27,POR,Arsenal,Spain,19.5,2.496,1,80,no
+220905,J. Aholou,29,MED,Strasbourg,Côte d'Ivoire,3.0,1.04,1,73,si
+220912,F. Jagiełło,25,MED,Genoa,Poland,2.0,0.676,2,70,no
+220971,N. Keïta,28,MED,Werder Bremen,Guinea,14.0,1.508,3,78,si
+221014,Carlos Fernández,27,DEL,Real Sociedad,Spain,3.6,1.352,3,73,no
+221087,Pau López,28,POR,Olympique de Marseille,Spain,18.0,1.924,3,80,si
+221168,D. Kownacki,26,DEL,Werder Bremen,Poland,4.0,1.144,5,73,si
+221269,J. Riedewald,26,MED,Crystal Palace,Netherlands,4.4,1.56,1,74,no
+221284,J. Gradit,30,DFC,Lens,France,11.5,1.768,3,78,si
+221331,L. Mazzitelli,27,MED,Frosinone,Italy,3.2,0.572,2,73,si
+221342,Pablo Maffeo,25,LAT,Mallorca,Spain,17.0,1.3,3,78,si
+221354,M. Veljković,27,DFC,Werder Bremen,Serbia,3.1,0.936,2,73,no
+221363,D. van de Beek,26,MED,Manchester United,Netherlands,13.5,4.94,2,77,no
+221456,R. Burke,26,DFC,Luton Town,England,1.8,1.144,3,70,no
+221479,D. Calvert-Lewin,26,DEL,Everton,England,14.0,2.288,2,77,no
+221491,N. Elvedi,26,DFC,Borussia Mönchengladbach,Switzerland,11.5,1.352,1,77,no
+221556,O. Mfulu,29,MED,Las Palmas,Congo DR,2.0,0.728,2,72,no
+221618,L. Mousset,27,DEL,VfL Bochum 1848,France,1.3,0.572,1,68,no
+221639,Mariano,29,DEL,Sevilla,Dominican Republic,3.0,1.196,1,73,no
+221660,V. Lindelöf,28,DFC,Manchester United,Sweden,20.0,5.72,1,80,si
+221671,Lee Jae Sung,30,MED,FSV Mainz 05,Korea Republic,13.5,1.612,3,78,si
+221697,O. Watkins,27,DEL,Aston Villa,England,24.5,4.94,2,80,si
+222028,J. Weigl,27,MED,Borussia Mönchengladbach,Germany,21.5,1.716,5,80,si
+222041,L. Boyé,27,DEL,Granada,Argentina,12.5,1.196,4,77,si
+222077,M. Locatelli,25,MED,Juventus,Italy,38.5,5.46,3,82,si
+222104,T. Adarabioyo,25,DFC,Fulham,England,14.0,3.224,1,77,no
+222148,O. Duda,28,MED,Hellas Verona,Slovakia,4.2,1.248,3,74,si
+222286,G. Lloris,27,DFC,Le Havre,France,2.0,0.572,1,71,si
+222331,L. Klostermann,27,DFC,RB Leipzig,Germany,18.5,2.6,1,79,no
+222357,B. Embolo,26,DEL,Monaco,Switzerland,17.5,2.808,3,78,no
+222388,Paulo Azzi,28,LAT,Cagliari,Brazil,1.4,0.676,2,70,no
+222390,Unai López,27,MED,Rayo Vallecano,Spain,4.3,0.832,1,74,no
+222464,Sivera,26,POR,Deportivo Alavés,Spain,3.1,0.728,1,73,si
+222475,M. Thorsby,27,MED,Genoa,Norway,4.8,1.456,1,74,no
+222492,L. Sané,27,EXT,FC Bayern München,Germany,45.0,4.68,2,84,si
+222493,M. Friedrich,27,DFC,Borussia Mönchengladbach,Germany,6.0,1.196,3,75,no
+222501,T. Castagne,27,LAT,Fulham,Belgium,11.0,3.38,4,77,no
+222509,Dani Ceballos,26,MED,Real Madrid,Spain,20.5,7.28,4,79,no
+222546,L. Zingerle,29,POR,RB Leipzig,Germany,0.95,0.832,2,69,no
+222558,R. Karsdorp,28,EXT,Roma,Netherlands,14.0,3.224,2,78,no
+222572,Iván Villar,25,POR,Celta de Vigo,Spain,3.6,0.676,1,73,si
+222634,I. Success,27,DEL,Udinese,Nigeria,3.6,0.832,2,73,no
+222636,G. Kyei,27,DEL,Clermont,France,2.5,0.78,1,72,si
+222665,M. Ødegaard,24,MED,Arsenal,Norway,109.0,8.84,3,87,si
+222692,B. Schmitz,28,LAT,FC Köln,Germany,3.8,1.196,1,74,si
+222724,B. Manuel,26,EXT,Burnley,Belgium,5.0,2.028,4,74,no
+222844,Walace,28,MED,Udinese,Brazil,5.5,0.832,3,75,si
+222951,M. Rodák,26,POR,Fulham,Slovakia,6.5,2.444,1,75,no
+222982,A. Blin,26,MED,Lecce,France,2.2,0.52,2,71,no
+222994,M. Nakamba,29,MED,Luton Town,Zimbabwe,3.6,1.924,3,74,si
+223033,Jorge Meré,26,DFC,Cádiz,Spain,3.1,0.988,3,72,no
+223058,D. Kuzyaev,30,MED,Le Havre,Russia,5.5,0.988,2,75,si
+223061,F. Cervi,29,EXT,Celta de Vigo,Argentina,10.5,1.3,1,77,no
+223085,L. Berry,30,MED,Luton Town,England,1.2,0.936,2,68,no
+223137,F. Bonazzoli,26,DEL,Hellas Verona,Italy,2.5,1.092,1,71,no
+223139,A. Zedadka,28,LAT,Lille,Algeria,3.8,1.352,2,74,no
+223197,E. Ünal,26,DEL,Getafe,Turkey,38.0,2.288,2,82,si
+223273,M. Pašalić,28,MED,Atalanta,Croatia,21.0,3.016,2,80,no
+223283,F. Diédhiou,30,DEL,Granada,Senegal,1.6,0.624,2,70,no
+223334,Joelinton,26,MED,Newcastle United,Brazil,35.5,6.5,1,82,si
+223524,E. Goldaniga,29,DFC,Cagliari,Italy,1.6,0.78,1,71,no
+223550,J. Omlin,29,POR,Borussia Mönchengladbach,Switzerland,16.0,1.456,4,80,no
+223570,J. Sambia,26,LAT,Salernitana,France,2.0,0.936,3,71,no
+223578,Mata,34,DEL,Getafe,Spain,1.5,1.196,1,73,no
+223597,R. Aguilar,30,LAT,Lens,France,6.5,1.56,3,76,no
+223603,F. Bredlow,28,POR,VfB Stuttgart,Germany,1.3,0.624,1,71,no
+223633,L. Paqarada,28,LAT,FC Köln,Kosovo,2.8,1.092,3,73,si
+223654,San Emeterio,26,MED,Cádiz,Spain,3.0,1.04,3,72,no
+223671,S. Posch,26,LAT,Bologna,Austria,12.5,1.56,3,77,si
+223689,W. Weghorst,30,DEL,TSG Hoffenheim,Netherlands,10.5,2.652,1,77,si
+223697,R. Gosens,28,LAT,FC Union Berlin,Germany,16.0,2.028,5,79,si
+223710,V. Muriqi,29,DEL,Mallorca,Kosovo,21.0,1.976,4,80,si
+223724,S. Lainer,30,LAT,Borussia Mönchengladbach,Austria,4.8,1.196,1,75,no
+223790,S. Becker,28,DEL,FC Union Berlin,Suriname,14.5,2.132,2,78,si
+223866,S. Lovrič,25,MED,Udinese,Slovenia,8.0,0.832,4,75,si
+223874,V. Rongier,28,MED,Olympique de Marseille,France,18.5,2.34,3,80,si
+223885,A. Nübel,26,POR,VfB Stuttgart,Germany,8.0,1.872,1,76,si
+223925,A. Brunst,27,POR,Darmstadt 98,Germany,0.78,0.26,1,66,no
+223926,S. Bastien,26,MED,Burnley,Congo DR,2.0,1.248,2,70,no
+223952,David Soria,30,POR,Getafe,Spain,14.0,1.352,3,80,si
+224003,Sergio Herrera,30,POR,Osasuna,Spain,13.0,1.3,3,79,no
+224013,Sergi Canós,26,EXT,Valencia,Spain,2.6,1.196,4,72,no
+224019,Pedro Chirivella,26,MED,Nantes,Spain,6.5,1.04,3,75,si
+224030,M. Lopez,25,MED,Fiorentina,France,18.5,0.988,1,78,no
+224031,A. Marušić,30,LAT,Lazio,Montenegro,18.0,2.652,2,80,si
+224041,M. Schwäbe,28,POR,FC Köln,Germany,9.5,1.196,4,77,si
+224081,K. Phillips,27,MED,Manchester City,England,20.0,5.46,5,79,no
+224095,N. Mbemba,28,MED,Le Havre,Congo DR,1.0,0.364,1,67,no
+224158,S. Amrabat,26,MED,Manchester United,Morocco,25.0,2.912,1,80,no
+224179,Borja Iglesias,30,DEL,Real Betis,Spain,35.5,2.132,3,83,si
+224196,R. Bensebaini,28,LAT,Borussia Dortmund,Algeria,19.0,2.6,4,80,si
+224213,T. Ebuehi,27,LAT,Empoli,Nigeria,4.4,0.52,2,74,si
+224221,J. Andersen,27,DFC,Crystal Palace,Denmark,15.0,2.028,3,78,si
+224232,N. Barella,26,MED,Inter,Italy,83.5,7.02,3,86,si
+224251,R. Zentner,28,POR,FSV Mainz 05,Germany,6.5,1.092,2,76,si
+224258,K. Ajer,25,DFC,Brentford,Norway,7.5,2.08,3,75,no
+224294,L. Cook,26,MED,AFC Bournemouth,England,5.0,2.028,2,74,no
+224302,M. Wieteska,26,DFC,Cagliari,Poland,2.7,0.832,4,72,si
+224309,Joan Jordán,28,MED,Sevilla,Spain,21.0,1.82,4,80,si
+224334,M. Acuña,31,LAT,Sevilla,Argentina,39.0,2.392,2,85,si
+224371,J. Bowen,26,EXT,West Ham United,England,20.5,3.744,2,79,si
+224378,M. Bani,29,DFC,Genoa,Italy,1.6,0.78,1,71,si
+224415,Luis Rioja,29,EXT,Deportivo Alavés,Spain,5.5,1.196,2,75,si
+224422,J. Boga,26,EXT,Nice,Côte d'Ivoire,6.5,1.872,4,75,si
+224423,M. Wittek,27,LAT,VfL Bochum 1848,Germany,2.9,0.936,3,73,no
+224425,M. Wolf,28,LAT,Borussia Dortmund,Germany,12.5,2.184,1,78,si
+224458,Diogo Jota,26,DEL,Liverpool,Portugal,67.5,9.36,4,85,no
+224490,Z. Çelik,26,LAT,Roma,Turkey,8.5,2.444,3,76,no
+224494,R. Henry,25,LAT,Brentford,England,15.5,2.496,3,78,si
+224656,O. Aina,26,LAT,Nottingham Forest,Nigeria,3.5,2.132,1,73,si
+224808,G. Ferrari,31,DFC,Sassuolo,Italy,1.6,0.624,1,72,no
+224811,I. Ordets,30,DFC,VfL Bochum 1848,Ukraine,3.5,1.04,1,74,si
+224836,V. Milinković-Savić,26,POR,Torino,Serbia,8.0,1.508,3,76,si
+224875,B. Innocent,27,MED,Lorient,Nigeria,2.2,0.728,2,71,no
+224883,S. Mounié,28,DEL,Brest,Benin,2.4,0.832,1,72,no
+224980,M. Busch,28,LAT,Heidenheim,Germany,2.1,1.04,4,72,si
+224987,I. Provedel,29,POR,Lazio,Italy,21.0,2.652,4,82,si
+225014,G. Castrovilli,26,MED,Fiorentina,Italy,18.0,2.704,1,78,no
+225085,J. Bamba,27,EXT,Celta de Vigo,France,11.0,1.248,3,77,si
+225100,J. Gomez,26,DFC,Liverpool,England,23.0,4.94,4,79,no
+225116,A. Meret,26,POR,Napoli,Italy,34.0,2.912,1,83,si
+225126,E. Skhiri,28,MED,Eintracht Frankfurt,Tunisia,25.0,2.392,4,81,si
+225147,C. Roberts,27,LAT,Burnley,Wales,6.0,1.976,2,75,si
+225161,Vallejo,26,DFC,Granada,Spain,5.0,4.576,1,74,no
+225189,S. Bastoni,26,MED,Empoli,Italy,3.0,0.208,1,72,no
+225193,Mikel Merino,27,MED,Real Sociedad,Spain,48.0,2.808,2,84,si
+225200,Kike Barja,26,EXT,Osasuna,Spain,6.5,1.3,3,75,no
+225201,Álex Berenguer,27,EXT,Athletic Club,Spain,22.5,1.716,1,80,no
+225263,D. Ćaleta-Car,26,DFC,Olympique Lyonnais,Croatia,8.5,1.976,1,76,si
+225309,N. Amiri,26,MED,Bayer 04 Leverkusen,Germany,13.0,2.444,1,77,no
+225341,David García,29,DFC,Osasuna,Spain,28.0,2.028,3,82,si
+225375,K. Laimer,26,MED,FC Bayern München,Austria,38.0,3.9,4,83,si
+225410,A. Masina,29,DFC,Udinese,Morocco,2.5,0.728,2,73,si
+225432,D. Sommariva,25,POR,Genoa,Italy,0.4,0.156,5,62,no
+225439,R. Mandragora,26,MED,Fiorentina,Italy,9.5,2.392,3,76,si
+225523,Lekue,30,LAT,Athletic Club,Spain,3.6,1.04,2,74,no
+225539,D. Solanke,25,DEL,AFC Bournemouth,England,7.5,2.288,3,75,si
+225562,Merquelanz,28,EXT,Real Sociedad,Spain,2.4,1.248,2,72,no
+225610,S. Gori,27,POR,Monza,Italy,0.88,0.572,1,67,no
+225650,T. King,28,POR,Wolverhampton Wanderers,Wales,0.42,0.52,1,64,no
+225652,G. Pușcaș,27,DEL,Genoa,Romania,1.4,0.572,3,68,no
+225659,G. Rodríguez,28,MED,Real Betis,Argentina,35.0,1.924,1,83,si
+225663,A. Golovin,27,EXT,Monaco,Russia,18.5,2.86,3,79,si
+225669,K. Ehizibue,28,LAT,Udinese,Nigeria,1.7,0.572,3,71,no
+225673,K. Adams Nuhu,28,DFC,TSG Hoffenheim,Ghana,1.5,0.884,1,70,no
+225692,M. Bader,26,LAT,Darmstadt 98,Germany,4.8,1.04,2,74,si
+225782,A. Maitland-Niles,25,MED,Olympique Lyonnais,England,2.9,1.144,4,72,si
+225793,B. Godfrey,25,DFC,Everton,England,6.0,1.612,2,75,no
+225850,P. Kimpembe,27,DFC,Paris Saint Germain,France,32.5,4.576,1,82,no
+225859,M. Niakhaté,27,DFC,Nottingham Forest,Senegal,11.0,2.86,2,77,no
+225868,David Gil,29,POR,Cádiz,Spain,1.9,0.832,2,72,no
+225908,R. Oxford,24,DFC,FC Augsburg,England,6.0,0.988,2,74,no
+225974,S. McKenna,26,DFC,Nottingham Forest,Scotland,3.5,2.132,1,73,si
+226103,Akieme,25,LAT,Almería,Spain,6.0,0.988,3,74,si
+226157,Javi Muñoz,28,MED,Las Palmas,Spain,1.4,0.52,2,69,no
+226161,Marcos Llorente,28,EXT,Atlético Madrid,Spain,42.5,4.42,4,84,no
+226162,E. Buendía,26,EXT,Aston Villa,Argentina,25.0,4.576,3,80,no
+226166,N. Mukiele,25,LAT,Paris Saint Germain,France,20.0,3.536,4,79,no
+226168,M. Eggestein,26,MED,SC Freiburg,Germany,6.0,1.196,2,75,si
+226221,Aritz Elustondo,29,DFC,Real Sociedad,Spain,19.5,1.924,1,80,no
+226226,G. Lo Celso,27,MED,Tottenham Hotspur,Argentina,29.5,4.94,2,81,no
+226229,T. Kehrer,26,DFC,West Ham United,Germany,8.5,2.704,3,76,no
+226268,F. Dimarco,25,LAT,Inter,Italy,37.0,4.264,3,82,si
+226271,Fabián Ruiz,27,MED,Paris Saint Germain,Spain,27.5,4.628,4,81,no
+226295,B. Boutobba,24,EXT,Clermont,France,2.6,0.572,3,71,no
+226380,Hwang Hee Chan,27,EXT,Wolverhampton Wanderers,Korea Republic,8.0,2.912,3,76,no
+226414,M. Coco,27,EXT,Nantes,France,2.0,0.78,2,71,no
+226456,Pablo Fornals,27,EXT,West Ham United,Spain,11.0,3.172,1,77,no
+226491,K. Tierney,26,LAT,Real Sociedad,Scotland,24.0,5.2,1,80,si
+226568,I. Hagi,24,MED,Deportivo Alavés,Romania,4.6,1.768,1,73,no
+226592,J. Jankto,27,EXT,Cagliari,Czech Republic,3.2,1.04,2,73,si
+226627,T. Minamino,28,EXT,Monaco,Japan,4.2,2.08,3,74,si
+226637,Rubén Duarte,27,LAT,Deportivo Alavés,Spain,6.0,1.04,3,75,si
+226710,G. Scamacca,24,DEL,Atalanta,Italy,21.5,2.392,4,78,si
+226753,A. Onana,27,POR,Manchester United,Cameroon,46.0,6.76,5,85,si
+226754,I. Bennacer,25,MED,Milan,Algeria,53.5,4.368,4,84,no
+226777,C. Larin,28,DEL,Mallorca,Canada,6.0,1.404,5,75,si
+226789,A. Fulgini,26,EXT,Lens,France,8.0,1.872,4,76,si
+226851,B. Pavard,27,DFC,Inter,France,36.5,4.94,5,83,no
+227055,Gelson Martins,28,EXT,Monaco,Portugal,5.5,2.236,1,75,no
+227127,Álex Remiro,28,POR,Real Sociedad,Spain,36.0,2.236,4,84,si
+227174,M. Cash,25,LAT,Aston Villa,Poland,20.0,3.796,4,79,si
+227222,F. Guilbert,28,LAT,Strasbourg,France,7.0,1.144,3,76,si
+227232,F. Sotoca,32,DEL,Lens,France,8.5,1.976,3,77,no
+227234,L. Tousart,26,MED,FC Union Berlin,France,12.5,1.612,5,77,no
+227236,A. Zambo Anguissa,27,MED,Napoli,Cameroon,37.0,3.588,2,83,si
+227290,M. Dmitrović,31,POR,Sevilla,Serbia,11.0,1.3,2,80,si
+227370,M. Zetterer,27,POR,Werder Bremen,Germany,1.2,0.364,1,68,no
+227503,J. Larsen,24,DEL,Burnley,Denmark,4.7,1.3,1,73,no
+227508,Melero,29,MED,Almería,Spain,4.1,1.196,3,74,no
+227511,N. Rapp,26,MED,Werder Bremen,Germany,1.5,0.52,1,69,no
+227535,R. Bentancur,26,MED,Tottenham Hotspur,Uruguay,39.5,5.2,3,82,no
+227558,J. Siebatcheu,27,DEL,Borussia Mönchengladbach,United States,3.6,1.456,1,73,no
+227622,S. Spierings,27,MED,Lens,Netherlands,8.0,1.56,4,76,no
+227647,M. Mittelstädt,26,LAT,VfB Stuttgart,Germany,5.0,1.04,3,74,no
+227678,E. Konsa,25,DFC,Aston Villa,England,20.5,3.796,3,79,si
+227796,C. Pulisic,24,EXT,Milan,United States,24.0,3.276,4,79,si
+227813,O. Zinchenko,26,LAT,Arsenal,Ukraine,24.0,5.2,4,80,si
+227928,Nélson Semedo,29,LAT,Wolverhampton Wanderers,Portugal,12.5,3.172,2,78,si
+227950,Yeray,28,DFC,Athletic Club,Spain,24.5,1.768,3,81,no
+227978,M. Mehlem,25,MED,Darmstadt 98,Germany,4.0,0.988,2,73,si
+228080,F. Passlack,25,EXT,VfL Bochum 1848,Germany,2.1,0.676,2,70,no
+228092,S. Berge,25,MED,Burnley,Norway,8.0,2.08,4,75,si
+228093,M. Thuram,25,DEL,Inter,France,23.5,4.16,5,79,si
+228151,J. Cullen,27,MED,Burnley,Republic of Ireland,8.0,2.08,3,76,si
+228243,N. Loosli,26,DFC,VfL Bochum 1848,Switzerland,1.3,0.416,3,67,no
+228251,L. Pellegrini,27,MED,Roma,Italy,42.0,4.576,3,83,si
+228290,J. Laporte,29,DFC,Lorient,France,7.0,1.144,2,76,si
+228295,R. Holding,27,DFC,Crystal Palace,England,7.5,1.768,3,76,no
+228302,Pedraza,27,LAT,Villarreal,Spain,15.0,1.612,3,78,no
+228336,F. Grillitsch,27,MED,TSG Hoffenheim,Austria,7.5,1.508,3,76,si
+228349,M. Vojvoda,28,EXT,Torino,Kosovo,2.4,1.508,1,72,si
+228413,E. Audero,26,POR,Inter,Italy,17.5,0.26,1,79,no
+228419,M. Andersen,25,DFC,Luton Town,Denmark,2.2,1.248,3,71,si
+228515,K. Lulić,27,MED,Frosinone,Croatia,1.2,0.26,1,67,no
+228518,A. Hanche-Olsen,26,DFC,FSV Mainz 05,Norway,6.5,1.196,3,75,si
+228520,E. Ávila,29,DEL,Osasuna,Argentina,21.0,2.08,3,80,si
+228579,B. Henrichs,26,LAT,RB Leipzig,Germany,16.0,2.392,2,78,si
+228592,A. Confais,26,MED,Le Havre,France,0.85,0.26,1,65,no
+228593,V. Sierro,27,MED,Toulouse,Switzerland,2.1,0.78,3,71,si
+228595,G. Prömel,28,MED,TSG Hoffenheim,Germany,7.5,1.768,3,76,si
+228616,D. Bertaud,25,POR,Montpellier,France,3.6,0.676,2,73,no
+228618,F. Mendy,28,LAT,Real Madrid,France,27.5,8.32,2,82,no
+228635,Borja Mayoral,26,DEL,Getafe,Spain,5.0,1.3,4,74,si
+228698,V. Kovalenko,27,MED,Empoli,Ukraine,1.8,1.196,1,70,no
+228702,F. de Jong,26,MED,FC Barcelona,Netherlands,103.5,12.48,3,87,si
+228708,L. Martínez Quarta,27,DFC,Fiorentina,Argentina,12.0,2.34,2,77,si
+228716,Kevin,30,LAT,Celta de Vigo,Spain,4.8,1.04,2,75,no
+228736,W. Faríñez,25,POR,Lens,Venezuela,1.9,0.676,1,70,no
+228751,M. Listkowski,25,DEL,Lecce,Poland,0.88,0.208,2,64,no
+228761,Ó. Estupiñán,26,DEL,Metz,Colombia,3.1,0.78,1,72,no
+228789,Robert Sánchez,25,POR,Chelsea,Spain,18.0,3.692,7,79,si
+228805,Raíllo,31,DFC,Mallorca,Spain,3.8,1.144,1,75,no
+228813,Aleix García,26,MED,Girona,Spain,27.5,1.716,3,80,si
+228881,D. Calabria,26,LAT,Milan,Italy,31.0,3.536,2,81,si
+228883,B. Gimber,26,MED,Heidenheim,Germany,1.9,0.78,2,70,no
+228941,André Silva,27,DEL,Real Sociedad,Portugal,24.5,3.276,1,80,no
+228946,M. Svanberg,24,MED,VfL Wolfsburg,Sweden,10.5,1.82,4,76,si
+228983,M. Caufriez,26,DFC,Clermont,Belgium,2.6,0.676,3,72,si
+228997,C. Goode,27,DFC,Brentford,England,1.1,0.78,1,67,no
+229010,S. Amallah,26,MED,Valencia,Morocco,7.5,0.624,1,75,no
+229011,K. N'Doram,27,MED,Metz,France,1.6,0.416,1,69,si
+229071,K. Onisiwo,31,DEL,FSV Mainz 05,Austria,6.5,1.508,3,76,si
+229150,P. Hatzidiakos,26,DFC,Cagliari,Greece,4.6,1.04,4,74,no
+229236,M. Udol,27,LAT,Metz,France,3.2,0.78,4,73,si
+229237,M. Akanji,27,DFC,Manchester City,Switzerland,30.5,6.76,4,82,no
+229261,D. Zakaria,26,MED,Monaco,Switzerland,20.5,2.6,5,79,no
+229277,J. Föhrenbach,27,LAT,Heidenheim,Germany,2.0,0.884,4,71,si
+229286,T. Skarke,26,EXT,Darmstadt 98,Germany,2.0,1.04,1,71,no
+229348,A. Robinson,25,LAT,Fulham,United States,8.0,3.016,1,76,si
+229375,E. Adebayo,25,DEL,Luton Town,England,3.5,1.716,3,72,si
+229379,L. de la Torre,25,EXT,Celta de Vigo,United States,4.0,0.936,3,73,si
+229391,Palhinha,27,MED,Fulham,Portugal,37.0,5.2,4,83,si
+229476,W. Anton,26,DFC,VfB Stuttgart,Germany,6.5,1.092,2,75,si
+229517,Toni Villa,28,EXT,Girona,Spain,4.2,1.196,2,74,si
+229542,A. Desmas,29,POR,Le Havre,France,1.8,0.572,2,72,si
+229558,D. Upamecano,24,DFC,FC Bayern München,France,39.5,3.068,3,82,no
+229582,G. Mancini,27,DFC,Roma,Italy,38.5,4.16,4,83,si
+229584,P. Stenzel,27,DFC,VfB Stuttgart,Germany,1.3,0.52,1,69,si
+229624,Sergi Guardiola,32,DEL,Cádiz,Spain,1.9,1.144,2,72,no
+229628,Fali,29,DFC,Cádiz,Spain,4.7,1.352,3,75,si
+229636,G. Pereiro,28,MED,Cagliari,Uruguay,2.4,0.936,2,72,no
+229640,M. Pedersen,26,LAT,FC Augsburg,Denmark,2.5,0.936,4,72,si
+229649,G. Suazo,25,LAT,Toulouse,Chile,2.9,0.78,3,72,si
+229668,Mario Hermoso,28,DFC,Atlético Madrid,Spain,29.0,3.38,1,82,si
+229705,J. Duverne,25,LAT,Nantes,France,2.9,0.78,4,72,no
+229723,M. Jensen,27,MED,Brentford,Denmark,8.0,2.548,3,76,si
+229743,A. Deiola,27,MED,Cagliari,Italy,1.3,0.52,2,68,no
+229752,D. Sow,26,MED,Sevilla,Switzerland,17.5,1.508,5,78,no
+229758,R. Krunić,29,MED,Milan,Bosnia and Herzegovina,13.5,3.224,2,78,si
+229788,Rubén Alcaraz,32,MED,Cádiz,Spain,4.4,1.404,2,75,si
+229793,B. Tetteh,25,DEL,Metz,Ghana,2.4,0.676,3,71,si
+229857,S. Sensi,27,MED,Inter,Italy,15.0,3.64,1,78,no
+229880,A. Wan-Bissaka,25,LAT,Manchester United,England,25.5,5.2,1,80,si
+229891,J. Ryerson,25,LAT,Borussia Dortmund,Norway,12.0,1.872,3,77,no
+229906,L. Bailey,25,EXT,Aston Villa,Jamaica,21.0,4.16,2,79,si
+229942,A. Disasi,25,DFC,Chelsea,France,23.0,4.628,6,79,si
+229971,F. Centonze,27,LAT,Nantes,France,3.2,0.884,4,73,si
+229980,C. Montes,26,DFC,Almería,Mexico,14.0,1.3,5,77,si
+229984,B. Chilwell,26,LAT,Chelsea,England,31.0,5.46,4,81,si
+230005,T. Davies,25,MED,Sheffield United,England,5.5,1.508,3,74,no
+230020,P. Lees-Melou,30,MED,Brest,France,7.0,1.04,2,76,si
+230021,J. Aidoo,27,DFC,Celta de Vigo,Ghana,18.5,1.352,3,79,no
+230043,F. Maouassa,24,EXT,Lens,France,4.2,0.832,1,73,no
+230047,F. Ronstadt,25,LAT,Darmstadt 98,Germany,1.5,0.468,1,68,no
+230065,S. Serdar,26,MED,Hellas Verona,Germany,9.5,0.832,1,76,no
+230084,L. Nmecha,24,DEL,VfL Wolfsburg,Germany,16.0,2.132,2,77,no
+230107,L. Coulibaly,27,MED,Salernitana,Mali,4.9,1.3,3,74,si
+230142,Oyarzabal,26,EXT,Real Sociedad,Spain,43.0,2.548,5,83,si
+230143,K. Dermaku,31,DFC,Lecce,Albania,0.7,0.312,1,67,no
+230147,F. Sacko,28,LAT,Montpellier,Mali,5.0,1.092,3,75,si
+230578,M. Diakhaby,26,DFC,Valencia,Guinea,8.5,1.508,4,76,si
+230621,G. Donnarumma,24,POR,Paris Saint Germain,Italy,85.0,4.68,3,87,si
+230658,Arthur,26,MED,Fiorentina,Brazil,16.5,4.68,1,78,si
+230666,Gabriel Jesus,26,DEL,Arsenal,Brazil,50.5,8.58,4,84,no
+230681,G. Pezzella,25,LAT,Empoli,Italy,3.5,0.468,3,73,no
+230686,J. Makengo,25,MED,Lorient,France,4.2,0.936,4,73,si
+230708,J. Worrall,26,DFC,Nottingham Forest,England,4.6,2.34,1,74,si
+230717,T. Kadewere,27,DEL,Olympique Lyonnais,Zimbabwe,3.3,1.508,1,73,no
+230767,Renato Sanches,25,MED,Roma,Portugal,18.5,3.536,1,78,no
+230786,Pepelu,24,MED,Valencia,Spain,19.5,1.456,5,78,si
+230817,José Machín,26,MED,Monza,Equatorial Guinea,2.7,1.612,3,72,no
+230824,Pedro Pereira,25,LAT,Monza,Portugal,4.2,1.612,2,73,no
+230858,S. Perisan,25,POR,Empoli,Italy,0.53,0.104,2,63,no
+230869,Unai Simón,26,POR,Athletic Club,Spain,36.5,1.612,2,83,si
+230872,M. Svilar,23,POR,Roma,Serbia,2.4,1.04,4,71,no
+230899,A. Lookman,25,DEL,Atalanta,Nigeria,33.0,3.224,3,81,si
+230918,T. Chalobah,23,DFC,Chelsea,England,14.5,3.536,3,77,no
+230965,N. Nández,27,MED,Cagliari,Uruguay,6.5,1.196,1,75,si
+230977,M. Almirón,29,EXT,Newcastle United,Paraguay,25.5,6.76,3,81,si
+230978,T. Awoniyi,25,DEL,Nottingham Forest,Nigeria,14.0,3.276,4,77,si
+231005,C. Ogbene,26,DEL,Luton Town,Republic of Ireland,2.0,1.352,3,70,no
+231050,J. Baez,28,EXT,Frosinone,Uruguay,1.4,0.364,2,69,si
+231073,B. Radunović,27,POR,Cagliari,Serbia,2.3,0.676,2,72,si
+231089,I. Sissoko,25,MED,Strasbourg,France,5.5,1.04,1,74,no
+231102,L. Blas,25,MED,Rennes,France,20.5,2.34,4,78,si
+231105,A. Olliero,27,POR,Stade de Reims,France,1.0,0.312,3,67,no
+231108,S. Hefti,25,LAT,Genoa,Switzerland,4.2,0.884,2,73,no
+231184,Guruzeta,26,DEL,Athletic Club,Spain,12.5,1.508,1,77,si
+231185,G. Osho,24,DFC,Luton Town,England,3.0,0.988,1,70,no
+231207,J. Lucumí,25,DFC,Bologna,Colombia,7.5,1.248,2,74,si
+231227,N. Dorsch,25,MED,FC Augsburg,Germany,10.0,1.196,3,76,si
+231242,A. Ounas,26,EXT,Lille,Algeria,5.0,1.404,1,74,no
+231280,Iván Alejo,28,EXT,Cádiz,Spain,4.2,1.352,2,74,si
+231281,T. Alexander-Arnold,24,LAT,Liverpool,England,81.0,7.28,2,86,si
+231318,R. Perraud,25,LAT,Nice,France,7.0,1.82,1,75,no
+231340,G. Montiel,26,LAT,Nottingham Forest,Argentina,20.0,1.508,1,79,no
+231352,T. Abraham,25,DEL,Roma,England,29.5,3.744,3,80,no
+231366,P. Lienhart,26,DFC,SC Freiburg,Austria,19.0,1.612,3,79,si
+231410,Brahim,23,MED,Real Madrid,Spain,32.0,6.5,4,80,no
+231416,D. Lukébakio,25,EXT,Sevilla,Belgium,17.0,1.404,5,78,no
+231443,O. Dembélé,26,EXT,Paris Saint Germain,France,80.0,7.8,5,86,si
+231445,J. Dasilva,24,MED,Brentford,England,4.6,1.768,1,73,no
+231447,D. Malen,24,EXT,Borussia Dortmund,Netherlands,39.5,2.704,3,82,si
+231448,R. Nelson,23,EXT,Arsenal,England,8.5,3.588,4,74,no
+231478,L. Martínez,25,DEL,Inter,Argentina,107.0,7.8,3,87,si
+231512,L. Kelly,24,DFC,AFC Bournemouth,England,4.2,1.456,1,73,no
+231521,E. Palacios,24,MED,Bayer 04 Leverkusen,Argentina,30.0,2.652,2,80,si
+231530,José Arnáiz,28,EXT,Osasuna,Spain,1.6,0.78,2,70,no
+231591,Javi Galán,28,LAT,Atlético Madrid,Spain,27.5,3.38,3,82,si
+231612,R. Del Castillo,27,EXT,Brest,France,3.2,0.884,1,73,si
+231627,U. Sadiq,26,DEL,Real Sociedad,Nigeria,14.0,1.768,2,77,si
+231628,Rafa Mir,26,DEL,Sevilla,Spain,14.0,1.508,4,77,no
+231633,I. Diop,26,DFC,Fulham,France,16.5,3.588,4,78,si
+231677,M. Rashford,25,EXT,Manchester United,England,71.5,9.62,5,85,si
+231685,R. Pierre-Gabriel,25,LAT,Nantes,France,3.9,0.884,3,73,no
+231691,A. Lafont,24,POR,Nantes,France,17.0,0.832,1,78,si
+231743,K. Davis,25,DEL,Udinese,England,2.6,0.624,4,71,no
+231747,K. Mbappé,24,DEL,Paris Saint Germain,France,181.5,11.96,1,91,si
+231826,Y. Karamoh,24,DEL,Torino,France,4.4,1.612,2,73,si
+231835,T. Henry,28,DEL,Hellas Verona,France,4.3,1.352,3,74,no
+231836,J. Karlsson,24,EXT,Bologna,Sweden,19.0,1.56,5,78,si
+231838,M. Wöber,25,DFC,Borussia Mönchengladbach,Austria,9.5,1.872,1,76,si
+231848,Q. Boisgard,26,EXT,Lorient,France,1.6,0.572,1,69,no
+231866,Rodri,27,MED,Manchester City,Spain,105.5,13.0,4,89,si
+231887,Y. Yazıcı,26,DEL,Lille,Turkey,3.8,1.404,1,73,no
+231936,B. White,25,LAT,Arsenal,England,25.5,4.94,3,80,si
+231943,Richarlison,26,DEL,Tottenham Hotspur,Brazil,28.0,4.94,4,80,si
+231949,S. Ghoddos,29,MED,Brentford,Iran,1.2,1.04,1,68,no
+231969,R. Malinovskyi,30,DEL,Genoa,Ukraine,14.0,2.236,1,78,si
+232008,Toni Lato,25,LAT,Mallorca,Spain,4.2,0.936,4,73,no
+232080,J. Harrison,26,EXT,Everton,England,9.0,2.184,1,76,no
+232097,A. Harit,26,EXT,Olympique de Marseille,Morocco,9.0,1.82,4,76,no
+232119,Ç. Söyüncü,27,DFC,Atlético Madrid,Turkey,10.5,2.236,4,77,no
+232144,F. Uduokhai,25,DFC,FC Augsburg,Germany,7.0,1.144,2,75,si
+232156,M. Honsak,26,EXT,Darmstadt 98,Austria,1.9,0.676,1,70,si
+232223,K. Tsimikas,27,LAT,Liverpool,Greece,11.0,4.16,2,77,no
+232270,T. Fosu-Mensah,25,LAT,Bayer 04 Leverkusen,Netherlands,3.0,1.404,1,72,no
+232293,V. Osimhen,24,DEL,Napoli,Nigeria,126.5,6.24,2,88,si
+232363,M. Škriniar,28,DFC,Paris Saint Germain,Slovakia,36.5,5.72,5,84,si
+232411,C. Nkunku,25,DEL,Chelsea,France,86.5,9.62,6,86,no
+232432,L. Jović,25,DEL,Milan,Serbia,15.0,3.016,1,77,no
+232440,Caio Henrique,25,LAT,Monaco,Brazil,17.0,2.236,4,78,si
+232487,W. Endo,30,MED,Liverpool,Japan,20.0,5.72,4,80,si
+232488,C. Romero,25,DFC,Tottenham Hotspur,Argentina,38.0,4.628,4,82,si
+232498,Isi Palazón,28,EXT,Rayo Vallecano,Spain,30.5,1.664,5,82,si
+232580,Gabriel,25,DFC,Arsenal,Brazil,47.0,6.76,4,84,si
+232610,T. Asano,28,EXT,VfL Bochum 1848,Japan,4.2,1.144,1,74,si
+232639,R. Doan,25,EXT,SC Freiburg,Japan,18.5,1.508,3,78,si
+232656,T. Hernández,25,LAT,Milan,France,73.5,4.68,3,85,si
+232658,D. Doekhi,25,DFC,FC Union Berlin,Netherlands,15.5,1.664,3,78,si
+232665,M. Arambarri,27,MED,Getafe,Uruguay,21.5,1.664,5,80,si
+232711,J. Stage,26,MED,Werder Bremen,Denmark,5.0,1.144,3,74,si
+232730,D. Kamada,26,MED,Lazio,Japan,30.5,3.12,4,81,si
+232756,F. Tomori,25,DFC,Milan,England,52.5,4.368,4,84,si
+232805,Bernardo,28,DFC,VfL Bochum 1848,Brazil,1.9,0.78,2,71,no
+232905,J. Ito,30,EXT,Stade de Reims,Japan,13.5,1.404,3,78,si
+232938,T. Tomiyasu,24,LAT,Arsenal,Japan,20.0,3.796,3,78,no
+232999,T. Adams,24,MED,AFC Bournemouth,United States,16.5,2.08,5,78,no
+233049,J. Sancho,23,EXT,Manchester United,England,43.5,6.76,3,82,no
+233061,M. Pereira Lage,26,EXT,Brest,Portugal,2.8,0.78,2,72,no
+233064,M. Mount,24,MED,Manchester United,England,35.0,5.72,5,81,no
+233084,N. Molina,25,LAT,Atlético Madrid,Argentina,39.5,3.068,4,82,si
+233096,D. Dumfries,27,LAT,Inter,Netherlands,27.0,4.16,2,81,si
+233113,Aleñá,25,MED,Getafe,Spain,6.0,1.144,3,74,si
+233152,K. Itakura,26,DFC,Borussia Mönchengladbach,Japan,12.0,1.352,3,77,si
+233164,A. Murić,24,POR,Burnley,Kosovo,9.5,1.352,3,75,no
+233195,X. Schlager,25,MED,RB Leipzig,Austria,31.0,2.808,3,81,si
+233201,C. Mepham,25,DFC,AFC Bournemouth,Wales,2.2,1.248,2,71,no
+233211,N. Klinger,27,POR,VfL Wolfsburg,Germany,0.38,0.312,2,62,no
+233216,P. Tietz,25,DEL,FC Augsburg,Germany,3.1,1.04,4,72,no
+233265,R. Oudin,26,EXT,Lecce,France,2.8,0.728,3,72,no
+233267,M. Turner,29,POR,Nottingham Forest,United States,8.5,2.444,4,77,si
+233301,R. Kristensen,25,LAT,Roma,Denmark,6.5,1.82,1,75,si
+233306,D. Henderson,26,POR,Crystal Palace,England,17.5,1.82,5,79,no
+233409,R. Gumny,25,LAT,FC Augsburg,Poland,2.2,0.78,2,71,no
+233419,Raphinha,26,EXT,FC Barcelona,Brazil,49.5,10.92,4,84,si
+233442,J. Osei-Tutu,24,EXT,VfL Bochum 1848,England,1.6,0.364,2,67,no
+233486,R. Le Normand,26,DFC,Real Sociedad,Spain,40.0,2.132,3,82,si
+233500,L. Sinisterra,24,EXT,AFC Bournemouth,Colombia,20.0,2.132,1,78,no
+233510,T. Chong,23,EXT,Luton Town,Netherlands,2.8,1.248,4,71,si
+233550,S. Grandsir,26,EXT,Le Havre,France,1.5,0.52,2,69,no
+233556,R. Orsolini,26,EXT,Bologna,Italy,16.5,1.82,4,78,si
+233631,A. Ndiaye,26,EXT,Mallorca,Senegal,3.3,1.04,2,73,no
+233642,A. Laïdouni,26,MED,FC Union Berlin,Tunisia,8.5,1.508,3,76,si
+233728,M. Doucouré,25,DFC,Borussia Mönchengladbach,France,0.53,0.208,1,62,no
+233731,A. Isak,23,DEL,Newcastle United,Sweden,39.5,5.72,5,81,si
+233738,Zubeldia,26,DFC,Real Sociedad,Spain,26.0,1.872,6,80,si
+233795,B. Brereton Díaz,24,EXT,Villarreal,Chile,6.5,1.196,4,74,no
+233809,A. Rossi,26,DEL,Lazio,Italy,0.72,0.572,1,64,no
+233848,J. Hauge,23,EXT,Eintracht Frankfurt,Norway,3.0,0.988,3,71,no
+233866,O. Edouard,25,DEL,Crystal Palace,France,7.5,1.924,2,75,si
+233885,E. Cömert,25,DFC,Nantes,Switzerland,10.0,1.404,1,76,no
+233927,Lucas Paquetá,25,MED,West Ham United,Brazil,34.0,4.056,4,81,si
+233934,A. Ramsdale,25,POR,Arsenal,England,43.0,5.46,3,84,si
+234035,Odriozola,27,LAT,Real Sociedad,Spain,8.0,1.404,6,76,no
+234060,Y. Herrera,25,MED,Girona,Venezuela,10.5,1.248,4,76,si
+234078,O. Mangala,25,MED,Nottingham Forest,Belgium,10.5,2.808,3,76,no
+234102,I. Radu,26,POR,AFC Bournemouth,Romania,2.2,1.664,1,72,no
+234112,Dodô,24,LAT,Fiorentina,Brazil,14.0,2.028,4,77,si
+234147,Dany Mota,25,DEL,Monza,Portugal,5.5,2.08,4,74,si
+234153,Carlos Soler,26,MED,Paris Saint Germain,Spain,20.5,4.056,4,79,no
+234167,S. Van der Heyden,25,DFC,Mallorca,Belgium,2.9,0.832,5,72,si
+234171,R. Sallai,26,EXT,SC Freiburg,Hungary,9.0,1.404,2,76,no
+234205,H. Ito,24,DFC,VfB Stuttgart,Japan,7.5,0.936,4,75,si
+234236,P. Schick,27,DEL,Bayer 04 Leverkusen,Czech Republic,42.5,4.16,4,83,no
+234371,R. Descamps,27,POR,Nantes,France,1.5,0.52,1,70,no
+234378,D. Rice,24,MED,Arsenal,England,63.0,6.76,5,85,si
+234381,J. Müller,29,DFC,Darmstadt 98,Germany,1.3,0.676,1,70,no
+234396,A. Davies,22,LAT,FC Bayern München,Canada,52.0,3.328,2,83,si
+234426,Marcão,27,DFC,Sevilla,Brazil,16.0,1.352,4,78,no
+234514,O. El Hajjam,32,LAT,Le Havre,Morocco,1.6,0.676,1,72,no
+234573,Aurélio Buta,26,EXT,Eintracht Frankfurt,Portugal,6.5,1.664,3,75,si
+234574,Diogo Dalot,24,LAT,Manchester United,Portugal,28.0,4.68,5,80,si
+234575,Diogo Leite,24,DFC,FC Union Berlin,Portugal,9.5,1.3,3,76,si
+234612,J. Ikoné,25,EXT,Fiorentina,France,14.0,2.652,3,77,no
+234678,J. Mæhle,26,LAT,VfL Wolfsburg,Denmark,8.5,1.924,4,76,si
+234686,J. Lotomba,24,LAT,Nice,Switzerland,7.0,1.456,2,75,no
+234711,J. Brekalo,25,DEL,Fiorentina,Croatia,10.5,2.496,3,76,si
+234727,T. Hübers,26,DFC,FC Köln,Germany,12.0,1.352,3,77,si
+234741,G. Hamer,26,MED,Sheffield United,Netherlands,7.0,1.664,4,75,si
+234742,H. Barnes,25,EXT,Newcastle United,England,28.0,5.98,5,80,no
+234777,Z. Steffen,28,POR,Manchester City,United States,4.0,3.588,2,75,no
+234824,Y. Wissa,26,EXT,Brentford,Congo DR,11.5,2.964,3,77,si
+234833,F. Müller,25,POR,SC Freiburg,Germany,2.6,0.676,3,72,no
+234834,K. Andrić,28,DEL,Clermont,Serbia,1.4,0.52,2,69,no
+234835,Domingos Duarte,28,DFC,Getafe,Portugal,10.5,1.404,3,77,si
+234843,M. Leitsch,25,DFC,FSV Mainz 05,Germany,3.1,0.884,3,72,no
+234856,H. Mendes,25,LAT,Almería,Guinea Bissau,2.3,0.728,3,71,no
+234875,L. Höler,28,DEL,SC Freiburg,Germany,4.3,1.404,3,74,si
+234889,F. Jensen,25,MED,FC Augsburg,Finland,2.5,0.832,2,71,no
+234894,E. Bohinen,24,MED,Salernitana,Norway,3.7,0.884,3,71,si
+234906,H. Aouar,25,MED,Roma,Algeria,10.5,2.6,5,76,no
+234933,A. Sedlar,31,DFC,Deportivo Alavés,Serbia,2.1,0.884,1,73,si
+234943,F. Neuhaus,26,MED,Borussia Mönchengladbach,Germany,23.0,1.768,4,79,si
+235008,L. Robertone,26,MED,Almería,Argentina,20.5,1.664,5,79,si
+235018,M. Nicolas,25,POR,Borussia Mönchengladbach,Germany,0.82,0.26,3,65,si
+235022,N. Schmidt,25,MED,Toulouse,Germany,2.6,0.728,4,71,no
+235073,G. Kobel,25,POR,Borussia Dortmund,Switzerland,81.5,3.328,3,87,si
+235134,P. Rosario,26,MED,Nice,Netherlands,6.5,1.716,3,75,no
+235167,V. Janelt,25,MED,Brentford,Germany,9.5,2.184,3,76,si
+235173,I. Sangaré,25,MED,Nottingham Forest,Côte d'Ivoire,31.0,3.64,5,81,no
+235212,A. Hakimi,24,LAT,Paris Saint Germain,Morocco,50.5,4.68,3,84,si
+235243,M. de Ligt,23,DFC,FC Bayern München,Netherlands,83.0,4.368,4,86,si
+235244,R. Nicolaisen,26,DFC,Toulouse,Denmark,8.5,1.092,2,76,si
+235290,K. Bonifazi,27,DFC,Bologna,Italy,2.0,0.936,2,71,no
+235297,M. Bero,27,MED,VfL Bochum 1848,Slovakia,1.7,0.676,3,70,no
+235353,I. Sarr,25,EXT,Olympique de Marseille,Senegal,10.0,1.768,5,76,si
+235374,M. Lazzari,29,LAT,Lazio,Italy,15.5,2.652,4,79,si
+235405,D. O'Shea,24,DFC,Burnley,Republic of Ireland,3.4,1.3,4,72,si
+235407,S. Özcan,25,MED,Borussia Dortmund,Turkey,17.0,2.028,3,78,no
+235410,Y. En-Nesyri,26,DEL,Sevilla,Morocco,36.5,2.184,2,82,si
+235413,R. Majecki,23,POR,Monaco,Poland,2.7,0.78,1,70,no
+235419,N. Dovedan,28,DEL,Heidenheim,Austria,1.6,0.936,1,70,no
+235424,D. Samassékou,27,MED,TSG Hoffenheim,Mali,6.0,1.456,2,75,no
+235432,M. Munetsi,27,MED,Stade de Reims,Zimbabwe,11.5,1.196,4,77,si
+235450,Domingos Quina,23,EXT,Udinese,Portugal,2.3,0.26,2,67,no
+235454,M. Sarr,24,DFC,Chelsea,France,5.5,2.912,2,74,no
+235456,J. Bellegarde,25,MED,Wolverhampton Wanderers,France,8.0,2.652,5,75,no
+235515,Benito,27,LAT,Las Palmas,Spain,1.5,0.52,2,70,no
+235526,D. Geiger,25,MED,TSG Hoffenheim,Germany,7.5,1.404,4,75,no
+235553,Y. Salmier,30,DFC,Le Havre,France,1.9,0.676,2,72,si
+235565,D. Bronn,28,DFC,Salernitana,Tunisia,1.9,0.988,2,71,no
+235633,Y. Diouf,23,POR,Stade de Reims,France,13.5,0.78,4,77,si
+235642,R. Yates,25,MED,Nottingham Forest,England,7.5,2.392,2,75,si
+235662,A. Mumin,25,DFC,Rayo Vallecano,Ghana,2.9,0.52,3,70,no
+235755,A. Trusty,24,DFC,Sheffield United,United States,4.4,1.144,4,73,no
+235781,Santi Comesaña,26,MED,Villarreal,Spain,17.5,1.612,4,78,no
+235790,K. Havertz,24,MED,Arsenal,Germany,46.0,5.72,5,82,si
+235794,E. Eze,25,MED,Crystal Palace,England,26.0,2.34,2,79,si
+235805,F. Chiesa,25,EXT,Juventus,Italy,50.5,7.28,2,84,si
+235813,R. Marin,27,MED,Empoli,Romania,8.5,1.3,1,76,si
+235840,M. Di Gregorio,25,POR,Monza,Italy,19.0,1.976,4,79,si
+235842,A. Pinamonti,24,DEL,Sassuolo,Italy,6.0,0.78,4,74,si
+235844,E. Álvarez,25,MED,West Ham United,Mexico,31.0,3.692,2,81,si
+235855,J. Asoro,24,EXT,Metz,Sweden,2.5,0.468,4,70,no
+235866,C. Kouamé,25,DEL,Fiorentina,Côte d'Ivoire,14.0,2.652,1,77,no
+235875,Pol Lirola,25,LAT,Frosinone,Spain,2.9,1.144,1,72,no
+235883,R. Sessegnon,23,LAT,Tottenham Hotspur,England,8.0,2.548,2,75,no
+235888,I. Cardona,25,DEL,FC Augsburg,France,3.1,1.04,4,72,no
+235944,Brais Méndez,26,MED,Real Sociedad,Spain,30.0,2.184,5,81,si
+235945,Marc Roca,26,MED,Real Betis,Spain,7.0,1.872,1,75,si
+235949,Gabriel Strefezza,26,EXT,Lecce,Brazil,12.5,1.092,2,77,si
+235983,Álex Pozo,24,LAT,Almería,Spain,4.5,0.728,4,72,no
+235997,Fran Beltrán,24,MED,Celta de Vigo,Spain,27.5,1.248,3,80,si
+236015,M. Gibbs-White,23,MED,Nottingham Forest,England,16.5,2.704,4,77,si
+236033,Dani Cárdenas,26,POR,Rayo Vallecano,Spain,4.5,0.676,4,74,no
+236045,Reinildo,29,LAT,Atlético Madrid,Mozambique,22.5,3.12,2,81,no
+236221,D. Brašanac,31,MED,Osasuna,Serbia,3.5,1.196,1,74,no
+236239,A. Whiteman,24,POR,Tottenham Hotspur,England,0.82,0.416,2,63,no
+236276,A. Danjuma,26,DEL,Everton,Netherlands,31.0,2.34,1,81,si
+236295,Aarón,26,LAT,Genoa,Spain,7.0,1.092,3,75,no
+236308,R. Marchizza,25,LAT,Frosinone,Italy,1.6,0.26,3,68,si
+236311,M. Rog,27,MED,Cagliari,Croatia,2.0,0.832,3,71,no
+236368,G. Maggiore,25,MED,Salernitana,Italy,8.0,1.456,3,75,no
+236369,C. Zesiger,25,DFC,VfL Wolfsburg,Switzerland,5.5,1.612,4,74,si
+236393,Marc Cardona,27,DEL,Las Palmas,Spain,2.0,0.728,3,71,no
+236401,N. Mazraoui,25,LAT,FC Bayern München,Morocco,37.0,3.38,3,82,si
+236403,E. Ndicka,23,DFC,Roma,France,19.0,2.444,5,78,no
+236461,J. Mateta,26,DEL,Crystal Palace,France,7.0,2.028,3,75,no
+236477,A. Claude-Maurice,25,MED,Nice,France,7.0,1.82,1,75,no
+236480,Y. Bissouma,26,MED,Tottenham Hotspur,Mali,20.5,3.952,3,79,si
+236496,M. Guendouzi,24,MED,Lazio,France,25.0,1.976,1,79,no
+236499,Douglas Luiz,25,MED,Aston Villa,Brazil,22.0,3.796,3,79,si
+236506,M. Senesi,26,DFC,AFC Bournemouth,Argentina,8.0,2.08,3,76,si
+236518,A. Nordin,25,EXT,Montpellier,France,5.5,1.04,2,74,si
+236524,A. Ahmedhodžić,24,DFC,Sheffield United,Bosnia and Herzegovina,11.5,1.3,3,75,si
+236532,R. Koch,26,DFC,Eintracht Frankfurt,Germany,8.5,1.976,1,76,si
+236535,A. Touba,25,DFC,Lecce,Algeria,2.3,0.728,1,71,no
+236556,M. Hongla,25,MED,Hellas Verona,Cameroon,2.7,0.832,3,71,si
+236568,B. Austin,24,POR,Tottenham Hotspur,England,0.75,0.468,1,64,no
+236583,J. Pavlenka,31,POR,Werder Bremen,Czech Republic,5.5,0.988,2,77,si
+236600,J. Tanganga,24,LAT,FC Augsburg,England,6.0,2.392,1,74,no
+236610,M. Kean,23,DEL,Juventus,Italy,28.5,4.472,2,78,no
+236624,A. Barkok,25,MED,FSV Mainz 05,Morocco,2.8,0.832,2,71,no
+236629,C. Operi,26,LAT,Le Havre,Côte d'Ivoire,2.3,0.572,3,71,si
+236636,A. Caci,26,LAT,FSV Mainz 05,France,8.5,1.3,3,76,si
+236650,J. Brown,25,DEL,Luton Town,Scotland,1.9,1.144,3,69,no
+236663,E. Balcombe,23,POR,Brentford,England,0.47,0.26,2,60,no
+236679,Melendo,25,MED,Granada,Spain,14.0,1.092,2,77,no
+236699,S. Lukić,26,MED,Fulham,Serbia,12.5,3.692,4,77,no
+236703,D. Raum,25,LAT,RB Leipzig,Germany,18.0,2.236,4,78,si
+236706,P. Almqvist,23,DEL,Lecce,Sweden,1.9,0.364,2,68,no
+236723,F. Ballo-Touré,26,LAT,Fulham,Senegal,2.8,1.768,1,72,no
+236758,O. Christensen,24,POR,Fiorentina,Denmark,3.7,1.196,5,73,no
+236760,Kike Pérez,26,MED,Rayo Vallecano,Spain,4.0,0.52,1,73,no
+236772,D. Szoboszlai,22,MED,Liverpool,Hungary,44.5,5.72,5,82,si
+236786,M. Terrier,26,EXT,Rennes,France,30.5,3.016,2,81,no
+236791,A. Barák,28,MED,Fiorentina,Czech Republic,14.0,2.86,4,78,no
+236792,T. Souček,28,MED,West Ham United,Czech Republic,17.0,3.588,5,79,no
+236804,F. Medina,24,DFC,Lens,Argentina,27.0,1.768,3,80,si
+236817,H. Maïga,27,MED,Metz,Côte d'Ivoire,2.2,0.572,1,71,si
+236822,G. Gudmundsson,24,LAT,Lille,Sweden,4.5,0.988,3,73,no
+236831,A. Seydel,27,DEL,Darmstadt 98,Germany,1.4,0.572,1,68,no
+236838,Y. Maleh,24,MED,Empoli,Morocco,3.3,0.572,1,72,no
+236890,D. Genreau,24,MED,Toulouse,Australia,3.2,0.572,2,70,si
+236898,M. Aebischer,26,MED,Bologna,Switzerland,4.0,1.3,3,73,no
+236920,J. Kluivert,24,EXT,AFC Bournemouth,Netherlands,16.0,2.132,5,77,si
+236935,H. Wolf,24,EXT,Borussia Mönchengladbach,Austria,2.8,0.78,1,71,no
+236987,B. Kamara,23,MED,Aston Villa,France,29.0,3.588,4,80,si
+236988,E. Nketiah,24,DEL,Arsenal,England,8.5,3.848,4,75,si
+237003,S. Birindelli,23,LAT,Monza,Italy,6.0,1.56,3,74,no
+237086,Kim Min Jae,26,DFC,FC Bayern München,Korea Republic,46.0,4.264,5,84,si
+237161,S. Longstaff,25,MED,Newcastle United,England,18.5,4.628,2,78,no
+237221,J. Foyth,25,LAT,Villarreal,Argentina,29.0,1.768,3,80,si
+237238,S. McTominay,26,MED,Manchester United,Scotland,20.5,5.2,2,79,no
+237321,M. Berisha,25,DEL,TSG Hoffenheim,Germany,20.0,1.976,4,78,no
+237328,N. Tella,23,EXT,Bayer 04 Leverkusen,England,6.5,1.768,5,74,no
+237329,J. Willock,23,MED,Newcastle United,England,21.0,4.212,4,78,no
+237331,T. De Smet,25,LAT,Stade de Reims,Belgium,2.9,0.78,3,72,no
+237335,G. Kastanos,25,DEL,Salernitana,Cyprus,2.1,0.78,3,69,si
+237383,A. Bastoni,24,DFC,Inter,Italy,73.5,4.94,5,85,si
+237440,H. Delcroix,24,DFC,Burnley,Belgium,3.2,1.3,3,72,si
+237442,Eric Curbelo,29,DFC,Las Palmas,Spain,7.0,0.988,1,76,no
+237477,M. Tavernier,24,EXT,AFC Bournemouth,England,8.0,1.924,4,75,no
+237522,Jorge Cuenca,23,DFC,Villarreal,Spain,4.4,0.988,2,73,si
+237524,S. Kaba,28,DEL,Las Palmas,Guinea,1.6,0.676,4,70,no
+237540,P. Förster,28,MED,VfL Bochum 1848,Germany,3.1,1.092,1,73,si
+237586,A. Dossena,24,DFC,Cagliari,Italy,3.4,0.728,4,72,si
+237595,M. Friedl,25,DFC,Werder Bremen,Austria,5.5,0.988,3,74,si
+237629,A. Maier,24,EXT,FC Augsburg,Germany,8.5,1.144,2,75,no
+237631,L. Mothiba,27,DEL,Strasbourg,South Africa,1.6,0.624,1,69,no
+237635,F. Pick,27,EXT,Heidenheim,Germany,1.5,0.728,1,69,no
+237640,N. Bajrami,24,MED,Sassuolo,Albania,6.0,0.728,3,74,no
+237647,A. Hrustić,26,MED,Hellas Verona,Australia,2.2,0.884,3,71,no
+237658,S. Bueno,24,DFC,Wolverhampton Wanderers,Uruguay,14.5,2.444,5,77,no
+237669,A. Zerbin,24,EXT,Napoli,Italy,3.0,1.404,4,71,no
+237678,I. Konaté,24,DFC,Liverpool,France,37.0,4.68,3,81,si
+237679,R. Kolo Muani,24,DEL,Paris Saint Germain,France,58.5,5.72,5,84,si
+237681,T. Kubo,22,EXT,Real Sociedad,Japan,34.0,1.924,4,80,si
+237692,P. Foden,23,EXT,Manchester City,England,81.5,9.36,4,85,si
+237704,João Virgínia,23,POR,Everton,Portugal,1.6,0.364,2,66,no
+237712,V. Castellanos,24,DEL,Lazio,Argentina,27.0,2.652,5,79,no
+237819,N. Domínguez,25,MED,Nottingham Forest,Argentina,15.0,2.704,5,77,no
+237841,M. Murillo,27,LAT,Olympique de Marseille,Panama,2.3,1.196,3,72,no
+237936,A. Dønnum,25,EXT,Toulouse,Norway,2.5,0.728,2,71,no
+237942,P. Estupiñán,25,LAT,Brighton & Hove Albion,Ecuador,24.5,4.004,4,80,si
+237960,Mama Baldé,27,DEL,Olympique Lyonnais,Guinea Bissau,6.5,0.468,1,75,no
+237985,K. Danso,24,DFC,Lens,Austria,27.0,1.768,4,80,si
+238004,A. Guðmundsson,26,DEL,Genoa,Iceland,5.0,1.248,1,74,si
+238041,T. Malacia,23,LAT,Manchester United,Netherlands,20.0,4.056,3,78,no
+238067,N. Zaniolo,23,EXT,Aston Villa,Italy,30.0,2.236,1,80,no
+238068,M. Richter,25,EXT,FSV Mainz 05,Germany,6.5,1.248,4,75,no
+238074,R. James,23,LAT,Chelsea,England,50.5,6.24,5,84,no
+238095,N. Milenković,25,DFC,Fiorentina,Serbia,20.5,2.6,4,79,si
+238126,Guridi,28,MED,Deportivo Alavés,Spain,4.2,1.144,3,74,si
+238157,M. Roerslev,24,LAT,Brentford,Denmark,2.5,1.248,3,71,no
+238186,M. Bułka,23,POR,Nice,Poland,5.0,0.988,3,73,si
+238216,C. Gallagher,23,MED,Chelsea,England,21.0,4.212,2,78,si
+238227,K. Diatta,24,EXT,Monaco,Senegal,8.5,1.872,2,75,no
+238305,Nacho Vidal,28,LAT,Osasuna,Spain,7.0,1.3,2,76,no
+238370,M. Pongračić,25,DFC,Lecce,Croatia,5.5,0.728,3,74,si
+238379,N. Nartey,23,MED,VfB Stuttgart,Denmark,2.8,0.52,2,69,no
+238391,G. Kalulu,25,LAT,Lorient,Congo DR,3.7,0.884,3,73,si
+238460,R. Brewster,23,DEL,Sheffield United,England,2.7,0.676,2,68,no
+238463,A. Haidara,25,MED,RB Leipzig,Mali,19.5,2.496,2,78,no
+238473,E. Mašović,24,DFC,VfL Bochum 1848,Serbia,3.9,0.832,2,73,si
+238476,D. Zagadou,24,DFC,VfB Stuttgart,France,6.0,0.884,3,74,si
+238516,L. Østigård,23,DFC,Napoli,Norway,6.5,1.456,3,73,no
+238581,R. Vargas,24,EXT,FC Augsburg,Switzerland,6.0,1.092,2,74,si
+238616,Pedro Neto,23,EXT,Wolverhampton Wanderers,Portugal,15.0,2.704,4,77,si
+238656,S. Tigges,24,DEL,FC Köln,Germany,2.0,0.624,3,69,no
+238692,K. Gjasula,33,MED,Darmstadt 98,Albania,0.7,0.52,1,69,no
+238717,E. Pinnock,30,DFC,Brentford,Jamaica,14.5,2.912,4,79,si
+238744,W. McKennie,24,MED,Juventus,United States,10.5,3.536,2,76,no
+238756,J. Larsen,23,DEL,Celta de Vigo,Norway,7.0,0.936,5,73,si
+238794,Vini Jr.,22,EXT,Real Madrid,Brazil,158.5,16.12,2,89,no
+238857,Wilson Manafá,28,LAT,Granada,Portugal,2.8,0.832,2,73,no
+238873,P. Pellegri,22,DEL,Torino,Italy,2.5,0.78,2,68,no
+238900,E. Demirović,25,EXT,FC Augsburg,Bosnia and Herzegovina,7.5,1.248,3,75,si
+238957,F. Dietz,24,DEL,FC Köln,Germany,0.9,0.312,2,64,no
+238980,L. Daschner,24,DEL,VfL Bochum 1848,Germany,2.5,0.676,3,70,no
+239015,E. Dennis,25,DEL,Nottingham Forest,Nigeria,8.0,2.912,3,75,no
+239053,F. Valverde,24,MED,Real Madrid,Uruguay,130.5,14.04,4,88,si
+239073,C. Antwi-Adjei,29,EXT,VfL Bochum 1848,Ghana,3.0,1.092,1,73,si
+239078,S. Schimmer,29,DEL,Heidenheim,Germany,1.2,0.676,3,68,no
+239085,E. Haaland,22,DEL,Manchester City,Norway,185.0,17.68,4,91,si
+239093,J. Clauss,30,LAT,Olympique de Marseille,France,22.0,2.392,2,81,si
+239096,A. Karazor,26,MED,VfB Stuttgart,Germany,3.2,0.936,3,73,si
+239125,E. Botheim,23,DEL,Salernitana,Norway,3.1,0.728,3,69,si
+239136,N. Cozza,24,LAT,VfL Wolfsburg,France,5.5,1.456,4,74,no
+239138,Jeong Woo Yeong,23,MED,VfB Stuttgart,Korea Republic,3.4,0.78,3,72,si
+239203,G. Coudert,24,POR,Brest,France,0.47,0.104,3,60,no
+239207,M. Gómez,26,DEL,Cádiz,Uruguay,12.5,2.704,1,77,no
+239231,Cucurella,24,LAT,Chelsea,Spain,23.5,4.16,5,79,no
+239301,L. Martínez,25,DFC,Manchester United,Argentina,49.5,7.28,4,84,si
+239322,C. Zimmermann,30,DFC,Darmstadt 98,Germany,2.5,0.936,2,73,si
+239335,Óscar,25,MED,Getafe,Spain,8.0,1.196,1,75,no
+239340,J. Chabot,25,DFC,FC Köln,Germany,7.0,1.144,3,75,si
+239356,A. Matusiwa,25,MED,Stade de Reims,Netherlands,9.5,1.04,4,76,si
+239364,P. Köhn,25,POR,Monaco,Switzerland,2.6,1.144,5,72,si
+239367,R. Hack,24,EXT,Borussia Mönchengladbach,Germany,3.2,0.884,4,72,no
+239368,M. Bakker,23,LAT,Atalanta,Netherlands,6.0,1.508,3,74,no
+239397,B. Manu,26,DEL,Darmstadt 98,Ghana,2.5,0.884,1,71,no
+239432,A. Grbić,26,DEL,Lorient,Austria,1.7,0.624,2,69,no
+239433,N. Maksimović,28,MED,Getafe,Serbia,14.0,1.612,1,78,si
+239441,Jordi Mboula,24,EXT,Hellas Verona,Spain,3.7,0.832,4,72,no
+239496,Y. Fekir,26,EXT,Real Betis,France,0.85,0.312,3,65,no
+239510,M. Köbbing,26,POR,FC Köln,Germany,0.15,0.156,2,56,no
+239529,F. Onyeka,25,MED,Brentford,Nigeria,3.8,1.768,4,73,no
+239575,G. Nyamsi,26,DFC,Strasbourg,France,4.9,0.988,2,74,si
+239580,Bremer,26,DFC,Juventus,Brazil,49.0,7.02,4,84,si
+239613,M. Pessina,26,MED,Monza,Italy,18.5,2.6,3,78,si
+239614,Areso,23,LAT,Osasuna,Spain,2.7,0.52,3,69,no
+239635,K. Fila,25,LAT,Strasbourg,Poland,1.3,0.364,2,67,no
+239679,P. Mazzocchi,27,EXT,Salernitana,Italy,3.2,1.3,3,73,si
+239701,R. Schmid,23,MED,Werder Bremen,Austria,4.8,0.884,2,73,no
+239712,M. Okugawa,27,EXT,FC Augsburg,Japan,4.5,1.248,3,74,no
+239740,A. Jallow,24,EXT,Metz,Gambia,2.4,0.468,2,70,si
+239763,E. Zhegrova,24,EXT,Lille,Kosovo,8.5,1.3,3,75,si
+239770,N. Casale,25,DFC,Lazio,Italy,20.5,2.392,4,79,si
+239778,J. Moder,24,MED,Brighton & Hove Albion,Poland,6.5,2.652,2,74,no
+239795,C. Ekuban,29,DEL,Genoa,Ghana,1.4,0.676,1,69,no
+239807,D. Frattesi,23,MED,Inter,Italy,33.0,1.04,1,80,no
+239817,B. Soumaré,24,MED,Sevilla,France,7.0,1.612,1,75,no
+239818,Rúben Dias,26,DFC,Manchester City,Portugal,106.5,13.0,4,89,si
+239837,A. Mac Allister,24,MED,Liverpool,Argentina,39.5,5.72,5,82,si
+239890,O. Kabak,23,DFC,TSG Hoffenheim,Turkey,8.0,1.248,3,75,si
+239894,R. Kouamé,26,MED,Cádiz,Mali,5.0,1.3,3,74,no
+239901,S. Kalajdžić,25,DEL,Wolverhampton Wanderers,Austria,13.5,3.276,4,77,no
+239919,K. Kouao,25,LAT,Metz,Côte d'Ivoire,2.6,0.572,3,71,no
+239956,M. Boadu,22,DEL,Monaco,Netherlands,4.9,1.768,3,73,no
+239964,E. Shomurodov,28,DEL,Cagliari,Uzbekistan,2.4,2.184,1,72,no
+240008,A. Papadopoulos,23,DFC,Borussia Dortmund,Germany,1.4,0.52,1,67,no
+240060,M. Aarons,23,LAT,AFC Bournemouth,England,4.3,1.456,4,73,si
+240091,G. Vicario,26,POR,Tottenham Hotspur,Italy,30.5,3.952,5,82,si
+240100,T. Augello,28,LAT,Cagliari,Italy,2.8,0.988,2,73,si
+240130,Éder Militão,25,DFC,Real Madrid,Brazil,80.0,10.92,2,86,no
+240175,Bruno Jordão,24,MED,Wolverhampton Wanderers,Portugal,0.93,0.572,1,64,no
+240193,E. Rexhbeçaj,25,MED,FC Augsburg,Kosovo,5.5,1.196,3,74,no
+240223,M. Ristić,27,LAT,Celta de Vigo,Serbia,3.2,0.884,3,73,no
+240243,Matheus Cunha,24,DEL,Wolverhampton Wanderers,Brazil,21.5,3.172,4,78,si
+240271,D. Limnios,25,EXT,FC Köln,Greece,1.8,0.624,1,69,no
+240273,E. Smith Rowe,22,EXT,Arsenal,England,22.5,4.628,3,78,no
+240277,M. Gabbia,23,DFC,Villarreal,Italy,5.5,1.716,1,73,no
+240332,Brenner,23,DEL,Udinese,Brazil,6.5,0.78,5,74,no
+240351,S. Moutoussamy,26,MED,Nantes,Congo DR,3.6,0.988,1,73,no
+240359,O. Alderete,26,DFC,Getafe,Paraguay,8.0,1.248,5,76,no
+240371,A. Jakubech,26,POR,Lille,Slovakia,1.3,0.468,2,68,no
+240451,J. Beste,24,EXT,Heidenheim,Germany,6.0,1.144,2,74,si
+240452,M. Nzola,26,DEL,Fiorentina,Angola,17.0,2.964,3,78,si
+240458,Ander Guevara,25,MED,Deportivo Alavés,Spain,5.5,1.04,4,74,si
+240507,A. Gomes,22,MED,Lille,England,15.0,1.352,2,76,si
+240638,T. Reijnders,24,MED,Milan,Netherlands,20.0,2.704,5,78,si
+240654,Carles Pérez,25,EXT,Celta de Vigo,Spain,10.0,1.144,4,76,si
+240657,F. Ravaglia,23,POR,Bologna,Italy,1.4,0.26,3,65,no
+240669,L. Maloney,23,MED,Heidenheim,Germany,2.3,0.78,2,71,si
+240679,T. Koopmeiners,25,MED,Atalanta,Netherlands,27.5,2.756,2,80,si
+240690,N. González,25,EXT,Fiorentina,Argentina,34.0,3.536,3,81,si
+240697,S. Baptiste,25,MED,Brentford,Grenada,2.1,1.352,1,70,no
+240702,R. Yaremchuk,27,DEL,Valencia,Ukraine,2.7,0.936,1,72,no
+240709,R. Baku,25,LAT,VfL Wolfsburg,Germany,22.5,2.288,2,79,no
+240716,M. Olivera,25,LAT,Napoli,Uruguay,17.0,2.288,4,78,si
+240740,C. Hudson-Odoi,22,EXT,Nottingham Forest,England,8.5,2.652,3,75,no
+240753,A. Gouiri,23,DEL,Rennes,France,27.0,2.548,4,79,si
+240754,Y. Atal,27,LAT,Nice,Algeria,3.2,1.456,1,73,si
+240773,R. Norrington-Davies,24,LAT,Sheffield United,Wales,2.0,0.676,1,69,no
+240777,L. Ranieri,24,DFC,Fiorentina,Italy,3.2,1.352,3,72,no
+240785,M. Cerofolini,24,POR,Frosinone,Italy,0.82,0.104,3,63,no
+240787,H. Traorè,23,EXT,AFC Bournemouth,Côte d'Ivoire,11.0,1.976,5,76,no
+240833,Y. Moukoko,18,DEL,Borussia Dortmund,Germany,22.5,0.936,3,77,no
+240863,C. Coventry,23,MED,West Ham United,Republic of Ireland,2.1,0.78,1,67,no
+240900,Unai Núñez,26,DFC,Celta de Vigo,Spain,13.0,1.3,1,77,si
+240913,C. Kelleher,24,POR,Liverpool,Republic of Ireland,5.0,2.08,3,73,no
+240915,Miranda,23,LAT,Real Betis,Spain,15.5,0.988,1,77,si
+240916,D. Ljubičić,25,EXT,FC Köln,Austria,10.0,1.352,2,76,si
+240938,Junior Messias,32,EXT,Genoa,Brazil,11.0,3.068,1,78,no
+240942,Fabio González,26,MED,Las Palmas,Spain,1.6,0.468,2,69,no
+240947,T. Mitchell,23,LAT,Crystal Palace,England,10.5,1.508,2,76,si
+240953,N. Tenaglia,27,LAT,Deportivo Alavés,Argentina,6.0,1.04,4,75,no
+240970,M. Payero,24,MED,Udinese,Argentina,4.6,0.624,3,73,no
+241002,E. Sabbi,25,EXT,Le Havre,United States,1.3,0.364,4,67,no
+241007,E. Ebosse,24,DFC,Udinese,Cameroon,3.9,0.468,4,71,no
+241013,Adri López,24,POR,Granada,Spain,0.93,0.104,1,63,no
+241042,O. Skipp,22,MED,Tottenham Hotspur,England,15.0,2.912,4,77,no
+241049,Gorosabel,26,LAT,Deportivo Alavés,Spain,8.0,1.092,1,76,si
+241050,A. Meyer,32,POR,Borussia Dortmund,Germany,2.1,1.3,1,74,no
+241070,N. Maraš,27,DFC,Deportivo Alavés,Serbia,1.8,0.624,4,70,no
+241076,S. Benda,24,POR,Fulham,Germany,1.3,0.728,3,67,no
+241084,L. Díaz,26,EXT,Liverpool,Colombia,49.5,8.58,4,84,si
+241095,N. Vlašić,25,DEL,Torino,Croatia,18.0,2.444,4,78,si
+241096,S. Tonali,23,MED,Newcastle United,Italy,84.0,7.28,5,86,si
+241130,I. Ganago,24,DEL,Nantes,Cameroon,4.0,0.936,3,73,no
+241157,T. Sainte-Luce,24,LAT,Montpellier,France,2.1,0.468,2,69,no
+241159,M. Guéhi,22,DFC,Crystal Palace,England,26.5,1.768,3,78,si
+241173,L. Foster,22,DEL,Burnley,South Africa,3.2,1.04,4,69,si
+241179,Cristian Rivero,25,POR,Valencia,Spain,1.7,0.52,1,69,no
+241236,A. Semenyo,23,DEL,AFC Bournemouth,Ghana,3.6,1.196,4,70,si
+241238,J. Deminguet,25,MED,Strasbourg,France,2.7,0.728,4,71,no
+241390,E. Elmas,23,MED,Napoli,North Macedonia,33.5,2.704,2,80,no
+241436,C. Bassey,23,DFC,Fulham,Nigeria,8.5,2.392,4,74,no
+241461,Ferran Torres,23,EXT,FC Barcelona,Spain,48.0,7.8,4,82,no
+241464,Pau Torres,26,DFC,Aston Villa,Spain,42.0,5.2,5,83,si
+241470,Álex Centelles,23,LAT,Almería,Spain,6.0,0.832,3,73,no
+241486,J. Koundé,24,DFC,FC Barcelona,France,69.5,8.32,4,85,si
+241489,Nolaskoain,24,MED,Athletic Club,Spain,2.6,0.468,1,69,no
+241494,M. Jenz,24,DFC,VfL Wolfsburg,Germany,6.0,1.456,4,74,no
+241496,T. Weah,23,EXT,Juventus,United States,8.5,3.12,5,74,si
+241508,M. Damsgaard,22,MED,Brentford,Denmark,15.0,2.184,4,76,no
+241522,J. Wind,24,DEL,VfL Wolfsburg,Denmark,11.0,1.976,3,76,si
+241551,Y. Armougom,25,LAT,Clermont,France,1.4,0.312,2,67,no
+241585,Igor,25,DFC,Brighton & Hove Albion,Brazil,10.0,3.016,5,76,no
+241590,P. Pfeiffer,23,DFC,FC Augsburg,Germany,6.0,0.988,4,74,no
+241629,Rogério,25,LAT,VfL Wolfsburg,Brazil,3.7,1.456,4,73,si
+241637,A. Tchouaméni,23,MED,Real Madrid,France,58.5,8.32,5,84,si
+241689,R. Massimo,22,EXT,VfB Stuttgart,Germany,2.5,0.468,1,68,no
+241707,P. Gueye,24,MED,Olympique de Marseille,Senegal,15.0,1.716,1,77,no
+241721,Rafael Leão,24,EXT,Milan,Portugal,102.5,5.72,5,86,si
+241727,P. Rajković,27,POR,Mallorca,Serbia,14.0,1.092,3,78,si
+241736,Y. Bisseck,22,DFC,Inter,Germany,9.0,2.184,5,74,no
+241810,Chumi,24,DFC,Almería,Spain,3.9,0.676,2,71,no
+241811,Sergio Gómez,22,LAT,Manchester City,Spain,9.0,3.328,3,74,no
+241821,M. Bayo,25,DEL,Le Havre,Guinea,6.0,1.456,1,74,no
+241825,T. Francois,22,MED,Fulham,Australia,0.9,0.52,1,62,no
+241842,B. Johnson,23,LAT,West Ham United,England,6.0,2.08,1,74,no
+241850,M. Retegui,24,DEL,Genoa,Italy,21.5,1.3,5,77,si
+241852,M. Diaby,23,EXT,Aston Villa,France,60.5,5.46,5,84,si
+241854,P. Schuurs,23,DFC,Torino,Netherlands,25.0,2.028,3,79,si
+241856,Manu Morlanes,24,MED,Mallorca,Spain,4.4,0.832,5,73,no
+241867,Aitor Ruibal,27,LAT,Real Betis,Spain,7.0,1.092,2,76,no
+241923,Vagner,27,DEL,Metz,Cape Verde Islands,1.1,0.364,1,67,no
+241925,C. Führich,25,MED,VfB Stuttgart,Germany,4.2,0.988,2,73,si
+241928,A. Sambi Lokonga,23,MED,Luton Town,Belgium,6.0,2.912,1,74,no
+241930,F. Gattoni,24,DFC,Sevilla,Argentina,6.0,0.884,4,74,no
+241937,A. Harroui,25,MED,Frosinone,Morocco,2.8,0.468,3,72,si
+241941,S. Nsoki,24,DFC,TSG Hoffenheim,France,3.4,0.936,4,72,no
+241973,Chris Ramos,26,DEL,Cádiz,Spain,5.0,1.404,5,74,si
+242000,K. Mavropanos,25,DFC,West Ham United,Greece,17.5,2.964,5,78,no
+242054,Igor Silva,26,LAT,Lorient,Brazil,1.7,0.624,3,70,no
+242181,Neto Borges,26,LAT,Clermont,Brazil,4.5,0.832,1,74,si
+242187,C. Baumgartner,23,MED,RB Leipzig,Austria,26.5,2.496,5,79,no
+242201,Luis Milla,28,MED,Getafe,Spain,14.0,1.612,4,78,no
+242265,M. Obafemi,22,DEL,Burnley,Republic of Ireland,2.9,1.04,3,69,no
+242280,L. Ferguson,23,MED,Bologna,Scotland,9.0,1.3,4,75,si
+242369,Arnau Puigmal,22,MED,Almería,Spain,3.1,0.52,3,69,no
+242386,C. Klarer,23,DFC,Darmstadt 98,Austria,3.4,0.728,4,72,si
+242392,G. Magnani,27,DFC,Hellas Verona,Italy,3.5,1.04,2,73,si
+242418,T. Lamptey,22,LAT,Brighton & Hove Albion,Ghana,8.0,2.548,2,75,no
+242429,L. Cacace,22,LAT,Empoli,New Zealand,4.0,0.312,2,71,si
+242434,C. Jones,22,MED,Liverpool,England,17.0,3.952,4,77,no
+242444,João Félix,23,DEL,FC Barcelona,Portugal,41.0,3.12,1,81,no
+242453,S. van den Berg,21,DFC,FSV Mainz 05,Netherlands,4.9,1.976,1,72,si
+242458,A. Dovbyk,26,DEL,Girona,Ukraine,2.1,0.78,5,70,no
+242489,Pejiño,26,EXT,Las Palmas,Spain,3.3,0.832,3,73,si
+242516,C. Gakpo,24,DEL,Liverpool,Netherlands,55.5,6.76,5,83,si
+242530,N. Okafor,23,DEL,Milan,Switzerland,15.0,2.6,5,76,no
+242532,M. Gómez,24,DFC,Atlético Madrid,Argentina,0.5,0.312,1,60,no
+242534,C. Cásseres Jr,23,MED,Toulouse,Venezuela,2.7,0.624,4,71,si
+242577,R. Faivre,24,EXT,Lorient,France,14.5,2.132,1,77,si
+242578,B. Badiashile,22,DFC,Chelsea,France,26.5,3.796,7,78,no
+242602,J. Vagnoman,22,LAT,VfB Stuttgart,Germany,4.6,0.832,3,73,no
+242619,C. Doucouré,23,MED,Crystal Palace,Mali,19.5,1.768,3,78,si
+242633,M. Frendrup,22,MED,Genoa,Denmark,5.0,0.728,3,72,si
+242641,R. Aït-Nouri,22,LAT,Wolverhampton Wanderers,France,11.0,2.184,3,75,si
+242655,J. Ponceau,22,MED,Lorient,France,4.8,0.78,2,72,no
+242660,J. Beyer,23,DFC,Burnley,Germany,10.5,1.716,4,75,si
+242663,S. Bornauw,24,DFC,VfL Wolfsburg,Belgium,10.0,1.612,3,76,no
+242664,A. Saelemaekers,24,EXT,Bologna,Belgium,20.0,2.704,1,78,no
+242725,K. Thorstvedt,24,MED,Sassuolo,Norway,4.3,0.624,4,73,si
+242752,N. Ferguson,22,LAT,Crystal Palace,England,1.3,0.468,1,66,no
+242818,F. Dahmen,25,POR,FC Augsburg,Germany,3.8,0.78,3,73,si
+242835,L. Balerdi,24,DFC,Olympique de Marseille,Argentina,10.0,1.404,3,76,no
+242893,I. Koné,24,DEL,Almería,Mali,3.2,0.676,5,70,no
+242914,K. Nakamura,22,EXT,Stade de Reims,Japan,12.5,0.988,5,75,no
+242948,M. Kovář,23,POR,Bayer 04 Leverkusen,Czech Republic,9.5,1.3,4,75,no
+242958,P. Jaeckel,24,DFC,FC Union Berlin,Germany,5.5,1.144,3,74,no
+242964,A. Gordon,22,EXT,Newcastle United,England,12.5,3.848,5,75,si
+242965,F. Hornby,23,DEL,Darmstadt 98,Scotland,2.8,0.572,4,69,no
+242974,K. Sessa,22,EXT,Heidenheim,Germany,2.4,0.728,1,70,no
+242997,L. Maina,24,EXT,FC Köln,Germany,6.5,1.092,2,74,si
+243014,B. Mbeumo,23,EXT,Brentford,Cameroon,19.0,2.756,3,78,si
+243032,Hugo Duro,23,DEL,Valencia,Spain,6.5,1.404,3,74,si
+243034,Alfon,24,EXT,Celta de Vigo,Spain,1.1,0.26,2,65,no
+243057,N. Williams,22,LAT,Nottingham Forest,Wales,8.0,2.028,3,74,no
+243133,J. Scally,20,LAT,Borussia Mönchengladbach,United States,6.0,0.832,4,74,si
+243134,L. Ramazani,22,EXT,Almería,Belgium,7.0,0.936,2,73,si
+243169,Y. Begraoui,21,DEL,Toulouse,France,2.7,0.416,2,68,no
+243200,S. Mulattieri,22,DEL,Sassuolo,Italy,3.2,0.416,5,69,no
+243201,Álex Domínguez,24,POR,Toulouse,Spain,2.4,0.468,3,71,no
+243237,L. Pellegrini,24,LAT,Lazio,Italy,5.5,2.808,2,74,no
+243241,A. Buongiorno,24,DFC,Torino,Italy,22.0,1.716,5,77,si
+243282,D. McNeil,23,EXT,Everton,England,11.5,1.716,4,76,si
+243284,F. Winther,22,DFC,FC Augsburg,Denmark,1.2,0.26,2,64,no
+243311,Josep Martínez,25,POR,Genoa,Spain,2.6,0.624,2,72,si
+243350,F. Agu,23,LAT,Werder Bremen,Germany,3.0,0.572,2,70,no
+243431,Miguel Rubio,25,DFC,Granada,Spain,3.4,0.572,2,71,si
+243449,L. Perrin,24,DFC,Strasbourg,France,3.9,0.78,2,73,si
+243478,E. Loiodice,22,MED,Las Palmas,France,12.5,0.884,2,75,si
+243481,M. Pedersen,23,LAT,Sassuolo,Norway,6.0,0.624,1,74,no
+243491,César Gelabert,22,MED,Toulouse,Spain,3.6,0.572,4,70,no
+243497,S. Walukiewicz,23,DFC,Empoli,Poland,3.3,0.26,3,70,no
+243558,Óscar Valentín,28,MED,Rayo Vallecano,Spain,6.5,0.988,4,76,si
+243559,De Frutos,26,EXT,Rayo Vallecano,Spain,12.5,1.144,5,77,no
+243576,Pedro Porro,23,LAT,Tottenham Hotspur,Spain,32.5,3.848,5,81,si
+243580,L. Openda,23,DEL,RB Leipzig,Belgium,44.0,3.38,5,82,si
+243587,Fran Vieites,24,POR,Real Betis,Spain,1.6,0.208,1,66,no
+243588,T. McGill,23,POR,Brighton & Hove Albion,Canada,0.4,0.312,2,58,no
+243593,A. Laurienté,24,EXT,Sassuolo,France,30.0,1.144,4,80,si
+243604,Juan Cruz,23,EXT,Real Betis,Spain,3.5,0.572,2,70,no
+243606,K. Lewis-Potter,22,EXT,Brentford,England,5.5,1.716,5,72,no
+243608,R. Giles,23,LAT,Luton Town,England,6.0,1.612,4,74,no
+243627,Y. Adli,22,MED,Milan,France,7.0,1.924,3,73,no
+243630,J. David,23,DEL,Lille,Canada,35.5,2.132,2,81,si
+243631,M. Camara,25,MED,Brest,France,3.2,0.676,3,72,no
+243642,W. Tchimbembé,25,MED,Metz,Congo,1.0,0.26,1,65,no
+243647,A. Bayındır,25,POR,Manchester United,Turkey,7.5,3.12,4,76,no
+243656,N. Radonjić,27,DEL,Torino,Serbia,6.5,2.132,2,75,no
+243657,J. Garner,22,MED,Everton,England,5.0,1.092,3,72,no
+243715,W. Saliba,22,DFC,Arsenal,France,53.0,5.46,1,83,si
+243767,G. Kilkenny,23,MED,AFC Bournemouth,Republic of Ireland,1.3,0.468,2,65,no
+243780,Lee Kang In,22,EXT,Paris Saint Germain,Korea Republic,28.5,3.536,5,78,no
+243787,Y. Ramadani,27,MED,Lecce,Albania,1.5,0.416,3,69,si
+243812,Rodrygo,22,EXT,Real Madrid,Brazil,86.5,10.92,5,85,si
+243848,B. Lyons-Foster,22,DFC,Tottenham Hotspur,England,0.47,0.416,1,58,no
+243854,M. Simakan,23,DFC,RB Leipzig,France,32.5,2.236,4,79,si
+243923,L. Costa,22,DFC,Toulouse,Cape Verde Islands,4.3,0.624,3,71,si
+243925,M. Behrens,26,POR,Darmstadt 98,Germany,0.72,0.26,1,65,no
+243952,A. Lunin,24,POR,Real Madrid,Ukraine,7.0,3.068,1,74,no
+243960,M. Broschinski,22,DEL,VfL Bochum 1848,Germany,2.3,0.416,3,67,no
+243970,M. Kwarteng,25,EXT,VfL Bochum 1848,Germany,1.7,0.572,4,69,no
+243976,Catena,28,DFC,Osasuna,Spain,16.5,1.664,5,79,si
+244020,André Ferreira,27,POR,Granada,Portugal,1.7,0.416,1,70,no
+244067,M. Lacroix,23,DFC,VfL Wolfsburg,France,15.5,1.612,2,76,si
+244068,K. Schlotterbeck,26,DFC,VfL Bochum 1848,Germany,2.7,0.936,1,72,no
+244112,D. Kyereh,27,MED,SC Freiburg,Ghana,6.5,1.352,3,75,no
+244176,D. Undav,26,DEL,VfB Stuttgart,Germany,6.5,3.588,1,75,no
+244191,J. Anang,23,POR,West Ham United,England,0.75,0.416,1,64,no
+244192,T. Isherwood,25,DFC,Darmstadt 98,Sweden,1.8,0.52,1,69,no
+244193,Jovane Cabral,25,EXT,Salernitana,Cape Verde Islands,7.5,0.624,1,75,no
+244206,N. Pérez,23,DFC,Udinese,Argentina,11.0,0.728,4,76,si
+244233,L. Pfeiffer,26,DEL,Darmstadt 98,Germany,1.4,0.572,1,68,si
+244238,J. Bijol,24,DFC,Udinese,Slovenia,10.5,0.676,4,75,si
+244253,U. Račić,25,MED,Sassuolo,Serbia,8.0,0.832,3,75,no
+244257,J. Burkardt,22,DEL,FSV Mainz 05,Germany,9.5,1.196,1,74,no
+244260,Dani Olmo,25,MED,RB Leipzig,Spain,50.5,3.692,4,83,si
+244261,L. Majer,25,MED,VfL Wolfsburg,Croatia,24.5,2.496,5,79,si
+244263,A. Rrahmani,29,DFC,Napoli,Kosovo,21.5,3.172,4,81,si
+244270,N. Moro,25,MED,Bologna,Croatia,7.5,1.248,4,74,si
+244309,T. Teuma,29,MED,Stade de Reims,Malta,17.0,1.612,4,79,si
+244316,Luís Maximiano,24,POR,Almería,Portugal,12.0,1.404,1,77,si
+244349,J. Vásquez,24,DFC,Genoa,Mexico,3.3,0.572,3,70,si
+244363,Fuzato,25,POR,Getafe,Brazil,1.9,0.52,2,70,no
+244369,V. Tsygankov,25,EXT,Girona,Ukraine,40.5,1.924,4,82,si
+244380,V. Mykolenko,24,LAT,Everton,Ukraine,7.5,1.456,3,75,no
+244390,M. Bülter,30,EXT,TSG Hoffenheim,Germany,5.5,1.612,3,75,si
+244393,Gonzalo Villar,25,MED,Granada,Spain,2.7,0.624,4,71,no
+244456,M. Erlić,25,DFC,Sassuolo,Croatia,5.0,0.728,3,74,si
+244470,V. Coufal,30,LAT,West Ham United,Czech Republic,12.0,3.12,1,78,si
+244472,J. Cajuste,23,MED,Napoli,Sweden,4.4,1.456,3,73,no
+244480,H. Magnetti,25,MED,Brest,France,3.6,0.728,3,73,si
+244523,Javi Hernández,25,LAT,Cádiz,Spain,2.2,0.312,1,70,si
+244591,J. Bogle,22,LAT,Sheffield United,England,4.6,1.144,1,73,no
+244601,S. van Hooijdonk,23,DEL,Bologna,Netherlands,4.7,1.092,2,72,no
+244603,B. Omeragić,21,DFC,Montpellier,Switzerland,2.8,0.312,5,68,no
+244621,Vinícius,28,DEL,Fulham,Brazil,6.0,3.692,2,75,no
+244661,Vitinho,23,LAT,Burnley,Brazil,3.6,1.144,3,71,no
+244675,Sancet,23,MED,Athletic Club,Spain,40.5,1.612,9,81,no
+244692,J. Christensen,22,MED,FC Köln,Denmark,3.1,0.572,3,69,no
+244694,C. Sabaly,24,EXT,Metz,Senegal,2.2,0.416,3,69,si
+244706,K. Behrens,32,DEL,FC Union Berlin,Germany,3.4,1.612,1,74,si
+244717,A. Gallo,23,LAT,Lecce,Italy,4.0,0.468,3,71,si
+244749,N. Aguerd,27,DFC,West Ham United,Morocco,18.5,3.432,4,79,si
+244874,F. Ranocchia,22,MED,Empoli,Italy,3.1,1.664,1,69,no
+244892,S. Diop,23,EXT,Nice,France,16.0,1.82,4,77,no
+244915,M. Salisu,24,DFC,Monaco,Ghana,10.0,1.768,5,76,si
+244919,Martín,23,DFC,Rayo Vallecano,Spain,2.5,0.312,1,68,no
+244940,E. Karic,26,LAT,Darmstadt 98,Austria,1.3,0.468,1,68,no
+244948,C. Benavídez,25,MED,Deportivo Alavés,Uruguay,1.9,0.572,1,70,no
+244970,Y. Magnin,26,MED,Clermont,France,3.2,0.78,2,73,no
+245037,Eric García,22,DFC,Girona,Spain,10.5,3.952,1,75,no
+245084,M. Busi,23,LAT,Stade de Reims,Belgium,2.2,0.52,3,70,no
+245097,F. Becker,23,MED,TSG Hoffenheim,Germany,3.2,0.78,3,70,no
+245155,M. Kudus,22,EXT,West Ham United,Ghana,35.5,3.588,5,79,no
+245158,L. Suárez,25,DEL,Almería,Colombia,8.5,1.3,6,75,si
+245253,L. Barreiro Martins,23,MED,FSV Mainz 05,Luxembourg,12.0,1.196,1,76,si
+245264,M. Kaufmann,22,DEL,FC Union Berlin,Denmark,3.0,0.988,3,71,no
+245275,T. Bašić,26,MED,Lazio,Croatia,5.0,1.924,3,74,no
+245279,Reguilón,26,LAT,Manchester United,Spain,17.0,3.588,1,78,no
+245336,M. Kilman,26,DFC,Wolverhampton Wanderers,England,9.0,2.652,5,76,si
+245347,M. Bauer,23,DFC,FC Augsburg,Germany,5.5,0.884,4,73,si
+245364,N. Alioui,24,EXT,Le Havre,France,2.1,0.468,1,69,si
+245367,X. Simons,20,MED,RB Leipzig,Netherlands,38.5,3.016,1,79,si
+245388,J. Todibo,23,DFC,Nice,France,24.0,1.924,4,79,si
+245410,M. Talbi,25,DFC,Lorient,Tunisia,5.5,0.936,2,74,si
+245426,M. Kumbulla,23,DFC,Roma,Albania,7.0,2.028,2,75,no
+245537,E. Ceïde,21,EXT,Sassuolo,Norway,2.3,0.26,3,67,no
+245541,G. Reyna,20,EXT,Borussia Dortmund,United States,28.0,1.716,2,78,no
+245543,C. Kühlwetter,27,DEL,Heidenheim,Germany,1.2,0.572,1,67,no
+245566,A. Vogliacco,24,DFC,Genoa,Italy,3.0,0.572,3,70,no
+245598,I. Baba,27,MED,Almería,Ghana,8.5,1.3,1,76,si
+245599,Darío Ramos,23,POR,Osasuna,Spain,0.47,0.104,1,60,no
+245628,A. Abqar,24,DFC,Deportivo Alavés,Morocco,3.3,0.52,2,70,si
+245630,Y. Fofana,24,MED,Monaco,France,27.5,2.392,1,80,si
+245639,André Anderson,23,DEL,Lazio,Italy,0.9,0.468,2,64,no
+245741,J. Lindstrøm,23,MED,Napoli,Denmark,16.5,2.184,5,77,no
+245863,V. Gendrey,23,LAT,Lecce,France,5.0,0.52,1,72,si
+245940,Silas,24,EXT,VfB Stuttgart,Congo DR,6.5,0.988,3,74,si
+245992,B. Gilmour,22,MED,Brighton & Hove Albion,Scotland,5.0,1.924,3,72,no
+246104,R. Gravenberch,21,MED,Liverpool,Netherlands,39.5,3.952,5,79,no
+246113,Adrià Pedrosa,25,LAT,Sevilla,Spain,10.0,1.144,5,76,no
+246139,Iñaki Peña,24,POR,FC Barcelona,Spain,5.0,2.6,3,73,no
+246147,M. Greenwood,21,EXT,Getafe,England,12.5,3.172,1,75,no
+246172,S. Chukwueze,24,EXT,Milan,Nigeria,39.0,3.692,5,81,no
+246174,H. Elliott,20,MED,Liverpool,England,23.0,3.38,4,77,no
+246191,J. Álvarez,23,DEL,Manchester City,Argentina,33.5,5.98,5,80,si
+246242,B. Dia,26,DEL,Salernitana,Senegal,40.5,2.652,3,82,no
+246258,L. Beltrán,22,DEL,Fiorentina,Argentina,15.5,2.288,5,76,no
+246340,M. Mudryk,22,EXT,Chelsea,Ukraine,12.5,3.848,8,75,no
+246350,E. Le Fée,23,MED,Rennes,France,21.0,1.976,5,77,si
+246351,Valery,23,EXT,Girona,Spain,6.0,0.936,3,73,no
+246352,Hugo Guillamón,23,MED,Valencia,Spain,12.0,1.196,3,75,no
+246420,J. Doku,21,EXT,Manchester City,Belgium,23.5,3.796,5,77,no
+246430,D. Vlahović,23,DEL,Juventus,Serbia,55.5,6.5,3,83,si
+246431,R. Sottil,24,EXT,Fiorentina,Italy,11.5,2.288,3,76,no
+246457,C. Ngonge,23,DEL,Hellas Verona,Belgium,7.0,1.04,3,73,si
+246459,M. Daramy,21,EXT,Stade de Reims,Denmark,5.5,0.728,5,72,no
+246565,B. Diakité,22,LAT,Lille,France,11.0,1.196,3,75,si
+246594,H. Massengo,21,MED,Burnley,France,4.0,0.936,4,71,no
+246606,Fran García,23,LAT,Real Madrid,Spain,27.0,5.2,4,78,si
+246618,A. Hložek,20,DEL,Bayer 04 Leverkusen,Czech Republic,23.5,2.028,4,77,no
+246646,M. Caqueret,23,MED,Olympique Lyonnais,France,21.0,1.716,3,78,si
+246656,E. Holm,23,LAT,Atalanta,Sweden,5.0,0.156,1,72,no
+246657,Álvaro Valles,25,POR,Las Palmas,Spain,9.0,0.728,1,76,si
+246666,N. Katterbach,22,LAT,FC Köln,Germany,3.0,0.52,1,69,no
+246669,B. Saka,21,EXT,Arsenal,England,99.0,7.8,4,86,si
+246672,Barrenetxea,21,EXT,Real Sociedad,Spain,12.5,1.196,4,75,no
+246679,G. Biancone,23,DFC,Nottingham Forest,France,3.3,1.248,2,70,no
+246683,L. Agoumé,21,MED,Inter,France,4.0,1.3,2,71,no
+246740,G. Dietsch,22,POR,Metz,France,1.8,0.208,2,67,no
+246748,Aihen Muñoz,25,LAT,Real Sociedad,Spain,5.0,1.196,1,74,no
+246764,M. Camara,23,MED,Monaco,Mali,20.5,2.028,4,78,si
+246785,Bryan Gil,22,EXT,Tottenham Hotspur,Spain,17.0,3.536,3,77,no
+246790,A. Bamba,29,EXT,Nantes,France,1.8,0.832,1,71,no
+246791,M. Solomon,23,EXT,Tottenham Hotspur,Israel,16.0,3.536,5,77,no
+246836,A. Pieper,25,DFC,Werder Bremen,Germany,5.5,0.988,3,74,si
+246844,Carlos Neva,27,LAT,Granada,Spain,4.4,0.832,2,74,si
+246863,F. Nmecha,22,MED,Borussia Dortmund,Germany,21.5,1.872,5,77,no
+246871,E. Barrenechea,22,MED,Frosinone,Argentina,1.4,0.728,1,64,no
+246875,O. Kossounou,22,DFC,Bayer 04 Leverkusen,Côte d'Ivoire,14.0,1.768,3,76,si
+246877,G. Gaetano,23,MED,Napoli,Italy,4.2,1.3,2,71,no
+246919,T. Čvančara,22,DEL,Borussia Mönchengladbach,Czech Republic,8.5,1.248,5,75,si
+246923,J. Ramsey,22,EXT,Aston Villa,England,21.5,3.432,4,78,no
+246928,Iván Martín,24,MED,Girona,Spain,6.5,0.988,3,74,no
+246946,I. Coulibaly,22,MED,Sheffield United,Mali,2.1,0.52,1,67,no
+246947,P. Akouokou,25,MED,Olympique Lyonnais,Côte d'Ivoire,3.3,1.04,4,72,no
+246950,R. Astley,21,DFC,Everton,Wales,0.82,0.26,2,62,no
+247019,B. Kouyaté,26,DFC,Montpellier,Mali,3.5,0.884,3,73,si
+247026,A. Schäfer,24,MED,FC Union Berlin,Hungary,4.7,1.04,3,72,no
+247028,A. Král,25,MED,FC Union Berlin,Czech Republic,10.0,1.456,1,76,no
+247090,E. Fernández,22,MED,Chelsea,Argentina,58.0,6.24,8,83,si
+247131,A. Espino,31,LAT,Rayo Vallecano,Uruguay,10.0,1.092,3,78,si
+247172,J. Durán,19,DEL,Aston Villa,Colombia,1.9,0.572,5,65,no
+247182,Tuta,23,DFC,Eintracht Frankfurt,Brazil,9.5,1.404,3,76,si
+247204,Emerson Royal,24,LAT,Tottenham Hotspur,Brazil,17.0,3.068,3,78,no
+247229,R. Bellanova,23,LAT,Torino,Italy,4.3,1.3,4,73,si
+247237,M. Römling,22,LAT,VfL Bochum 1848,Germany,0.85,0.156,1,62,no
+247246,K. Thuram,22,MED,Nice,France,27.0,2.184,2,79,si
+247263,E. Tapsoba,24,DFC,Bayer 04 Leverkusen,Burkina Faso,33.0,2.548,3,81,si
+247360,L. Stergiou,21,DFC,VfB Stuttgart,Switzerland,3.7,0.26,1,70,no
+247361,B. Aaronson,22,MED,FC Union Berlin,United States,9.5,1.664,1,74,si
+247394,D. Kulusevski,23,EXT,Tottenham Hotspur,Sweden,37.0,4.68,5,81,si
+247412,A. Pelmard,23,DFC,Clermont,France,4.9,0.572,4,72,si
+247458,Álex Sola,24,LAT,Deportivo Alavés,Spain,2.7,0.572,1,69,no
+247463,F. Balogun,21,DEL,Monaco,United States,36.0,2.392,5,79,no
+247495,Moncayola,25,MED,Osasuna,Spain,20.5,1.508,8,78,si
+247500,Edgar,26,DFC,Almería,Spain,20.5,1.508,5,79,si
+247507,P. Glatzel,22,DEL,Liverpool,Germany,0.33,0.624,1,58,no
+247599,L. Leroy,23,MED,Montpellier,France,2.5,0.364,2,68,no
+247635,K. Kvaratskhelia,22,EXT,Napoli,Georgia,109.0,4.94,4,86,si
+247649,J. Branthwaite,21,DFC,Everton,England,5.5,0.936,2,72,si
+247678,J. Araujo,21,LAT,Las Palmas,Mexico,3.4,1.924,1,70,si
+247679,V. Boniface,22,DEL,Bayer 04 Leverkusen,Nigeria,8.5,1.924,5,74,si
+247729,André Almeida,23,MED,Valencia,Portugal,28.0,1.612,5,78,si
+247764,K. John,22,LAT,Everton,England,0.7,0.312,1,63,no
+247771,O. Deman,23,EXT,Werder Bremen,Belgium,2.5,0.624,3,70,no
+247802,G. González,28,LAT,Mallorca,Uruguay,1.7,0.78,1,71,si
+247819,N. Schlotterbeck,23,DFC,Borussia Dortmund,Germany,49.5,2.652,4,83,no
+247827,M. Olise,21,EXT,Crystal Palace,France,22.5,1.82,4,78,no
+247832,Thierry Correia,24,LAT,Valencia,Portugal,15.5,1.352,3,77,si
+247851,Bruno Guimarães,25,MED,Newcastle United,Brazil,55.5,7.54,3,84,si
+248148,Zubimendi,24,MED,Real Sociedad,Spain,29.0,1.612,4,80,si
+248165,A. Rațiu,25,LAT,Rayo Vallecano,Romania,1.9,0.416,5,69,no
+248171,D. Bettella,23,DFC,Monza,Italy,1.5,0.468,4,65,no
+248243,E. Camavinga,20,MED,Real Madrid,France,56.5,5.72,4,82,si
+248385,R. Piccoli,22,DEL,Lecce,Italy,3.2,0.988,1,69,no
+248465,I. Maatsen,21,LAT,Chelsea,Netherlands,9.0,2.444,1,74,no
+248484,N. Collins,22,DFC,Brentford,Republic of Ireland,14.0,1.976,6,76,no
+248550,Vivian,23,DFC,Athletic Club,Spain,24.0,1.3,3,79,si
+248564,Z. Aboukhlal,23,EXT,Toulouse,Morocco,9.0,0.988,3,75,si
+248573,J. Dina Ebimbe,22,EXT,Eintracht Frankfurt,France,8.5,1.456,4,75,si
+248695,W. Fofana,22,DFC,Chelsea,France,33.0,4.16,5,79,no
+248729,G. Isaksen,22,EXT,Lazio,Denmark,9.5,1.82,2,74,no
+248732,K. Hein,21,POR,Arsenal,Estonia,1.1,0.468,3,64,no
+248805,Sergio Camello,22,DEL,Rayo Vallecano,Spain,12.5,0.936,4,75,no
+248808,A. Hickey,21,LAT,Brentford,Scotland,11.5,1.664,3,76,si
+248820,Mateu Morey,23,LAT,Borussia Dortmund,Spain,3.6,0.988,1,71,no
+248878,L. Kilian,23,DFC,FC Köln,Germany,3.0,0.78,2,72,no
+250723,K. Koné,22,MED,Borussia Mönchengladbach,France,23.5,1.3,2,77,no
+250724,N. Ngoumou,23,EXT,Borussia Mönchengladbach,France,4.2,0.78,4,71,si
+250725,M. Diarra,22,LAT,Toulouse,Mali,4.0,0.624,1,71,no
+250789,D. Bakwa,20,EXT,Strasbourg,France,3.4,0.468,4,69,no
+250830,I. Samuels,20,LAT,Brighton & Hove Albion,England,0.33,0.312,1,55,no
+250854,R. Carstensen,22,LAT,FC Köln,Denmark,3.1,0.364,1,70,no
+250858,P. Ciss,29,MED,Rayo Vallecano,Senegal,3.6,0.884,2,74,si
+250881,Sergio Ruiz,28,MED,Granada,Spain,1.5,0.572,3,70,si
+250931,P. Osterhage,23,MED,VfL Bochum 1848,Germany,3.4,0.728,3,72,no
+250954,C. Richards,23,DFC,Crystal Palace,United States,6.0,1.352,4,74,no
+250955,J. Stanišić,23,LAT,Bayer 04 Leverkusen,Croatia,8.5,1.872,1,75,no
+250959,A. Stiller,22,MED,VfB Stuttgart,Germany,4.9,0.884,4,73,si
+250961,J. Zirkzee,22,DEL,Bologna,Netherlands,7.0,1.248,3,73,si
+251011,Kirian,27,MED,Las Palmas,Spain,2.1,0.676,3,71,si
+251107,A. Lebeau,23,MED,Brest,France,1.4,0.208,1,65,no
+251182,Iago,26,LAT,FC Augsburg,Brazil,7.0,1.196,1,75,no
+251191,J. Allevinah,28,EXT,Clermont,Gabon,1.6,0.572,1,70,no
+251229,K. Yeboah,23,DEL,Montpellier,Italy,3.2,0.676,1,70,no
+251285,N. Thiede,24,POR,VfL Bochum 1848,Germany,1.6,0.208,4,66,no
+251287,F. Nürnberger,23,MED,Darmstadt 98,Germany,2.1,0.52,3,69,si
+251289,T. Keller,23,DFC,Heidenheim,Germany,1.1,0.364,2,66,no
+251293,L. Dehl,21,MED,FC Union Berlin,Germany,0.5,0.208,4,60,no
+251313,S. Lahssaini,24,MED,Metz,Belgium,1.0,0.208,1,65,no
+251337,Alex Suárez,30,LAT,Las Palmas,Spain,1.6,0.624,1,71,si
+251341,M. Aké,22,EXT,Udinese,France,2.8,0.364,2,69,no
+251380,L. Brassier,23,DFC,Brest,France,4.4,0.572,2,72,si
+251392,T. Krauß,22,MED,FSV Mainz 05,Germany,9.0,0.988,4,74,no
+251412,S. Weissman,27,DEL,Granada,Israel,6.0,1.092,3,75,no
+251421,B. Johnson,22,EXT,Tottenham Hotspur,Wales,15.0,3.276,6,76,no
+251423,G. Shelvey,22,POR,Nottingham Forest,England,0.3,0.312,1,56,no
+251445,Samuel Lino,23,EXT,Atlético Madrid,Brazil,21.0,2.132,4,77,no
+251470,C. De Ketelaere,22,MED,Atalanta,Belgium,15.0,2.34,1,76,no
+251517,J. Gvardiol,21,DFC,Manchester City,Croatia,44.5,4.94,5,82,no
+251530,Nuno Tavares,23,LAT,Nottingham Forest,Portugal,10.5,3.328,1,76,no
+251545,D. Churlinov,22,EXT,Burnley,North Macedonia,2.8,0.936,3,69,no
+251566,Gabriel Martinelli,22,EXT,Arsenal,Brazil,61.5,7.54,4,84,si
+251570,R. Cherki,19,MED,Olympique Lyonnais,France,12.0,0.936,2,75,si
+251573,Renan Lodi,25,LAT,Olympique de Marseille,Brazil,21.5,1.976,5,79,si
+251675,Douglas Augusto,26,MED,Nantes,Brazil,4.0,0.988,4,73,no
+251752,L. Chevalier,21,POR,Lille,France,18.5,0.884,4,78,si
+251756,R. Nteka,25,DEL,Rayo Vallecano,France,2.8,0.676,3,71,no
+251790,H. Rafia,24,MED,Lecce,Tunisia,1.7,0.26,3,66,si
+251805,J. Timber,22,DFC,Arsenal,Netherlands,33.0,4.16,5,79,no
+251809,S. Botman,23,DFC,Newcastle United,Netherlands,47.0,5.46,4,83,si
+251852,K. Adeyemi,21,EXT,Borussia Dortmund,Germany,43.0,1.976,4,80,si
+251854,Pedri,20,MED,FC Barcelona,Spain,105.0,8.58,3,86,no
+251870,J. Cabal,22,DFC,Hellas Verona,Colombia,1.8,0.312,4,66,no
+251884,B. Fiabema,20,DEL,Real Sociedad,Norway,0.55,0.208,1,59,no
+251892,Beto,25,DEL,Everton,Portugal,33.0,2.912,4,81,si
+251915,A. Lô,23,DFC,Metz,Senegal,0.5,0.104,2,60,no
+251926,R. Ndiaye,21,MED,Le Havre,France,3.0,0.312,3,69,si
+251988,A. Colpani,24,MED,Monza,Italy,8.5,1.768,5,74,si
+252000,D. Bradarić,23,LAT,Salernitana,Croatia,2.8,0.78,3,71,si
+252017,F. Daniliuc,22,DFC,Salernitana,Austria,4.4,1.04,3,73,no
+252021,T. Dallinga,22,DEL,Toulouse,Netherlands,12.5,1.092,3,75,si
+252027,A. Vranckx,20,MED,VfL Wolfsburg,Belgium,6.5,1.248,2,73,no
+252037,Fábio Silva,20,DEL,Wolverhampton Wanderers,Portugal,6.5,1.976,2,73,si
+252042,João Pedro,21,DEL,Brighton & Hove Albion,Brazil,7.0,2.288,5,73,si
+252046,D. Youfeigane,23,POR,Lorient,Central African Republic,0.93,0.156,1,63,no
+252059,S. Abdul Samed,23,MED,Lens,Ghana,18.5,1.508,5,78,si
+252060,T. Pobega,23,MED,Milan,Italy,12.0,2.34,4,76,no
+252145,Nuno Mendes,21,LAT,Paris Saint Germain,Portugal,43.5,3.276,3,82,no
+252154,M. Carnesecchi,23,POR,Atalanta,Italy,33.5,1.664,3,79,no
+252259,E. Millot,20,MED,VfB Stuttgart,France,4.1,0.624,2,71,no
+252293,I. Jakobs,23,LAT,Monaco,Senegal,4.5,1.456,3,73,no
+252302,Y. Larouci,22,LAT,Sheffield United,France,3.0,0.156,1,69,no
+252316,H. Ekdal,24,DFC,Burnley,Sweden,4.4,1.456,4,73,no
+252324,Riquelme,23,EXT,Atlético Madrid,Spain,23.5,2.132,5,77,no
+252327,Manu Sánchez,22,LAT,Celta de Vigo,Spain,9.0,0.832,5,74,si
+252339,Tiago Djaló,23,DFC,Lille,Portugal,11.0,1.248,1,76,no
+252371,J. Bellingham,20,MED,Real Madrid,England,100.5,9.1,6,86,si
+252440,N. Zortea,24,LAT,Atalanta,Italy,1.4,0.572,2,67,no
+252448,J. Leweling,22,DEL,VfB Stuttgart,Germany,5.5,1.144,1,72,no
+252483,A. Doughty,23,LAT,Luton Town,England,3.5,1.3,2,72,si
+252495,J. Kamiński,21,EXT,VfL Wolfsburg,Poland,12.5,1.664,4,75,no
+252512,A. Rouault,22,DFC,VfB Stuttgart,France,9.0,0.832,1,74,no
+252541,J. Chotard,21,MED,Montpellier,France,6.0,0.728,1,74,si
+252577,João Ferreira,22,LAT,Udinese,Portugal,2.6,0.572,1,68,no
+252692,S. Nicholson,26,DEL,Clermont,Jamaica,3.1,0.78,3,72,no
+252802,W. Singo,22,LAT,Monaco,Côte d'Ivoire,16.0,1.768,5,76,no
+252909,Antonio Sánchez,26,EXT,Mallorca,Spain,2.8,0.936,1,72,no
+252961,T. Nianzou,21,DFC,Sevilla,France,6.5,0.676,4,73,no
+252964,G. Zappa,23,LAT,Cagliari,Italy,2.4,0.572,2,70,si
+252975,B. Traoré,21,MED,Wolverhampton Wanderers,Mali,2.6,0.78,4,68,no
+253002,G. Raspadori,23,DEL,Napoli,Italy,35.5,2.808,5,79,no
+253004,Ansu Fati,20,EXT,Brighton & Hove Albion,Spain,31.0,4.94,1,78,no
+253036,N. Mbuku,21,DEL,FC Augsburg,France,4.2,0.728,4,71,no
+253052,I. Kaboré,22,LAT,Luton Town,Burkina Faso,6.5,3.068,1,73,si
+253072,D. Núñez,24,DEL,Liverpool,Uruguay,48.5,6.24,5,82,no
+253073,J. Okumu,26,DFC,Stade de Reims,Kenya,3.5,0.884,5,73,no
+253108,M. Cham,22,MED,Clermont,Austria,4.2,0.572,3,71,si
+253121,I. Soumaré,22,EXT,Le Havre,Senegal,2.5,0.416,3,68,si
+253124,Matheus Nunes,24,MED,Manchester City,Portugal,26.5,5.2,5,79,no
+253130,Robert Navarro,21,EXT,Cádiz,Spain,5.5,0.832,1,72,no
+253133,A. Beck,26,MED,Heidenheim,Germany,1.6,0.624,2,68,si
+253149,J. Frimpong,22,LAT,Bayer 04 Leverkusen,Netherlands,52.0,3.016,2,83,si
+253150,M. Trésor,24,EXT,Burnley,Belgium,20.0,0.884,1,78,no
+253157,H. Boudaoui,23,MED,Nice,Algeria,10.0,1.716,4,76,no
+253162,H. Nicolussi Caviglia,23,MED,Juventus,Italy,1.6,0.884,3,65,no
+253163,R. Araujo,24,DFC,FC Barcelona,Uruguay,93.0,9.1,3,86,no
+253170,A. Szalai,25,DFC,TSG Hoffenheim,Hungary,9.5,1.456,4,76,no
+253177,Y. Musah,20,MED,Milan,United States,9.0,1.768,5,74,no
+253181,A. Tosin,25,DEL,Lorient,Benin,3.9,1.04,4,73,no
+253213,G. Kyriakopoulos,27,LAT,Monza,Greece,3.2,0.676,1,73,si
+253216,Adrián,22,POR,Deportivo Alavés,Argentina,0.93,0.156,1,63,no
+253283,F. Pellistri,21,EXT,Manchester United,Uruguay,4.2,2.34,2,71,no
+253290,M. Viña,25,LAT,Sassuolo,Uruguay,3.5,1.924,1,73,si
+253293,B. Ocampo,24,EXT,Cádiz,Uruguay,3.7,0.936,3,72,no
+253306,M. Ugarte,22,MED,Paris Saint Germain,Uruguay,36.5,3.588,5,81,si
+253396,G. Simeone,20,DEL,Deportivo Alavés,Argentina,5.5,1.352,1,72,no
+253416,Raúl García,22,DEL,Osasuna,Spain,9.5,1.144,5,74,no
+253428,V. Jaroš,21,POR,Liverpool,Czech Republic,0.65,0.364,1,61,no
+253444,A. Kalimuendo,21,DEL,Rennes,France,11.5,1.768,4,76,si
+253452,M. Azeez,20,MED,Arsenal,England,1.0,0.572,1,62,no
+253465,T. Mengi,21,DFC,Luton Town,England,2.1,0.52,4,67,no
+253473,S. Ricci,21,MED,Torino,Italy,16.0,1.352,3,76,si
+253475,M. Papela,22,MED,FSV Mainz 05,Germany,1.9,0.364,1,66,no
+253490,D. Yongwa,22,LAT,Lorient,Cameroon,3.4,0.52,3,70,no
+253510,J. O'Brien,22,DFC,Olympique Lyonnais,Republic of Ireland,1.6,0.416,4,66,no
+253688,M. Popa,22,POR,Torino,Romania,2.3,0.52,3,68,no
+253715,D. Sarmiento,20,EXT,Manchester City,Argentina,2.5,1.352,3,67,no
+254022,N. Woltemade,21,DEL,Werder Bremen,Germany,2.3,0.364,1,67,no
+254088,A. Diallo,20,EXT,Manchester United,Côte d'Ivoire,9.5,3.276,2,74,no
+254117,M. Beier,20,DEL,TSG Hoffenheim,Germany,3.5,0.78,1,70,no
+254120,T. Doyle,21,MED,Wolverhampton Wanderers,England,3.1,1.664,1,69,no
+254243,E. Anderson,20,MED,Newcastle United,Scotland,5.0,2.236,3,72,no
+254247,M. Mohamed,25,DEL,Nantes,Egypt,5.5,1.144,4,74,si
+254273,A. Beka Beka,22,MED,Nice,France,3.4,0.832,4,70,no
+254470,L. Thomas,22,LAT,Sheffield United,England,4.1,1.404,1,73,no
+254480,L. Egloff,20,MED,VfB Stuttgart,Germany,1.6,0.26,1,65,no
+254487,Matheus Henrique,25,MED,Sassuolo,Brazil,7.5,0.832,3,75,si
+254502,S. Turati,21,POR,Frosinone,Italy,4.6,0.312,1,72,si
+254544,Reinier,21,EXT,Frosinone,Brazil,3.6,2.6,1,70,no
+254548,M. Bard,22,LAT,Nice,France,6.0,1.352,3,74,si
+254566,P. Wimmer,22,EXT,VfL Wolfsburg,Austria,22.5,2.288,4,78,si
+254660,J. Thielmann,21,EXT,FC Köln,Germany,5.5,0.728,1,72,no
+254796,N. Madueke,21,EXT,Chelsea,England,23.5,3.744,7,77,no
+254819,K. Urbański,18,MED,Bologna,Poland,0.62,0.104,2,60,no
+254928,B. Franjić,23,MED,Darmstadt 98,Croatia,2.4,1.04,1,71,si
+254982,M. Adopo,22,MED,Atalanta,France,0.72,0.312,4,61,no
+255000,T. Moffi,24,DEL,Nice,Nigeria,15.5,2.028,4,77,si
+255001,N. Rovella,21,MED,Lazio,Italy,23.5,3.224,2,77,no
+255106,L. Badé,23,DFC,Sevilla,France,19.5,1.092,4,77,no
+255125,A. Ounahi,23,MED,Olympique de Marseille,Morocco,12.0,1.56,4,76,si
+255140,Pablo Gozálbez,22,MED,Valencia,Spain,2.3,0.468,1,67,no
+255150,N. Nkounkou,22,LAT,Eintracht Frankfurt,France,4.0,0.884,5,71,no
+255151,S. Ngapandouetnbu,20,POR,Olympique de Marseille,Cameroon,1.9,0.312,1,67,no
+255200,T. Nevers,21,DEL,West Ham United,England,0.45,0.416,1,58,no
+255210,A. Slimane,22,MED,Sheffield United,Tunisia,2.3,0.52,3,67,no
+255223,A. Adli,23,DEL,Bayer 04 Leverkusen,France,21.5,2.34,3,77,no
+255233,T. Suslov,21,DEL,Hellas Verona,Slovakia,2.7,0.468,3,68,no
+255253,Vitinha,23,MED,Paris Saint Germain,Portugal,30.0,3.744,4,80,si
+255272,K. Paredes,20,EXT,VfL Wolfsburg,United States,3.4,0.832,3,69,no
+255303,E. Caprile,21,POR,Empoli,Italy,5.0,0.78,1,72,no
+255434,J. Enciso,19,EXT,Brighton & Hove Albion,Paraguay,3.8,1.092,3,70,no
+255453,J. Cruz,23,DEL,Hellas Verona,Argentina,1.4,0.364,4,66,no
+255475,Antony,23,EXT,Manchester United,Brazil,40.5,6.24,4,81,si
+255529,E. Touré,21,DEL,Atalanta,Mali,4.2,1.144,4,71,no
+255533,Y. Ndayishimiye,24,DFC,Nice,Burundi,7.5,1.456,4,75,si
+255561,J. Doig,21,LAT,Hellas Verona,Scotland,11.0,0.832,3,75,si
+255562,F. Stojilković,23,DEL,Darmstadt 98,Switzerland,2.7,0.468,4,68,no
+255565,K. Mitoma,26,EXT,Brighton & Hove Albion,Japan,25.0,4.576,2,80,si
+255566,Samú Costa,22,MED,Mallorca,Portugal,9.0,0.884,5,74,no
+255570,U. Llanez Jr.,22,EXT,VfL Wolfsburg,United States,1.3,0.468,1,64,no
+255611,D. Maldini,21,MED,Empoli,Italy,2.5,0.676,1,67,no
+255654,P. Kalulu,23,DFC,Milan,France,26.0,2.444,4,78,no
+255687,D. Zima,22,DFC,Torino,Czech Republic,5.5,1.3,2,73,no
+255781,Ricard,23,LAT,Granada,Spain,3.6,0.52,2,71,si
+255854,Pacheco,22,DFC,Real Sociedad,Spain,4.3,0.78,4,71,no
+255860,Julio Martínez,22,DEL,Granada,Spain,1.3,0.26,1,64,no
+256058,Pablo Pérez,21,LAT,Atlético Madrid,Spain,1.0,0.312,2,63,no
+256059,Alkain,26,EXT,Deportivo Alavés,Spain,1.9,0.676,2,70,si
+256079,M. Caicedo,21,MED,Chelsea,Ecuador,29.5,3.692,8,80,si
+256097,Javi López,21,LAT,Deportivo Alavés,Spain,2.6,0.312,2,68,no
+256115,L. Samardžić,21,MED,Udinese,Serbia,6.0,0.572,3,73,si
+256118,Y. Keitel,23,MED,SC Freiburg,Germany,2.6,0.676,1,71,no
+256196,W. Pacho,21,DFC,Eintracht Frankfurt,Ecuador,9.0,1.04,5,74,si
+256197,P. Hincapié,21,DFC,Bayer 04 Leverkusen,Ecuador,33.0,1.872,4,79,no
+256261,M. Thiaw,21,DFC,Milan,Germany,22.0,1.872,4,77,no
+256268,A. Broja,21,DEL,Chelsea,Albania,12.5,3.328,5,75,no
+256281,K. Fischer,22,LAT,VfL Wolfsburg,Germany,2.7,1.04,4,71,no
+256292,J. Schöppner,24,MED,Heidenheim,Germany,2.1,0.676,2,70,no
+256453,A. Sarr,22,DEL,VfL Wolfsburg,Sweden,3.6,0.884,1,70,no
+256476,M. Cho,19,DEL,Real Sociedad,France,5.0,0.728,4,72,no
+256500,N. Collins,19,DFC,Eintracht Frankfurt,Germany,1.2,0.156,5,63,no
+256516,Nico Williams,20,EXT,Athletic Club,Spain,27.5,1.196,1,79,si
+256544,M. Bogarde,21,DFC,TSG Hoffenheim,Netherlands,1.5,0.26,1,65,no
+256556,B. Chrisene,19,LAT,Aston Villa,England,1.1,0.364,2,63,no
+256604,D. Luna,20,MED,Mallorca,Colombia,2.1,0.312,4,66,no
+256630,F. Wirtz,20,MED,Bayer 04 Leverkusen,Germany,83.5,3.38,4,85,si
+256658,J. Ngankam,22,DEL,Eintracht Frankfurt,Germany,3.8,1.092,5,71,no
+256674,J. Justvan,25,MED,TSG Hoffenheim,Germany,3.1,1.144,4,72,no
+256675,O. Marmoush,24,DEL,Eintracht Frankfurt,Egypt,8.5,1.612,4,75,si
+256725,Fábio Carvalho,20,MED,RB Leipzig,Portugal,9.5,2.756,1,74,no
+256769,A. Truffert,21,LAT,Rennes,France,14.5,1.404,3,76,si
+256781,L. Netz,20,LAT,Borussia Mönchengladbach,Germany,5.5,0.728,3,73,si
+256790,J. Musiala,20,MED,FC Bayern München,Germany,134.5,4.108,3,86,si
+256830,J. Mina,21,MED,Werder Bremen,Ecuador,1.2,0.208,1,64,no
+256854,W. Omari,23,DFC,Rennes,France,10.0,1.664,3,76,si
+256856,Fali Candé,25,DFC,Metz,Guinea Bissau,2.5,0.572,3,71,si
+256899,L. Colombo,21,DEL,Monza,Italy,5.5,1.612,1,72,no
+256903,Gonçalo Ramos,22,DEL,Paris Saint Germain,Portugal,43.0,0.884,1,80,no
+256942,E. Martel,21,MED,FC Köln,Germany,9.0,0.832,3,74,si
+256945,Mortimer,22,EXT,Granada,Spain,1.8,0.26,1,65,no
+256958,Fábio Vieira,23,MED,Arsenal,Portugal,16.5,3.952,4,77,no
+257000,A. Carboni,22,DFC,Monza,Italy,3.3,0.988,4,70,no
+257020,M. Guilavogui,25,DEL,Lens,Guinea,3.5,1.248,4,72,no
+257057,A. Onana,21,MED,Everton,Belgium,14.5,1.3,4,76,si
+257073,Tiago Tomás,21,DEL,VfL Wolfsburg,Portugal,9.5,1.508,4,74,no
+257078,S. Doucouré,21,DEL,Lorient,France,1.8,0.26,3,65,no
+257084,L. Ugochukwu,19,MED,Chelsea,France,6.5,1.924,7,73,no
+257090,I. Doukouré,19,DFC,Strasbourg,France,3.5,0.312,3,70,si
+257111,J. Le Douaron,25,DEL,Brest,France,4.1,0.884,3,73,si
+257136,O. Traoré,25,LAT,Heidenheim,Germany,1.1,0.364,3,66,no
+257191,A. Stach,24,MED,TSG Hoffenheim,Germany,9.0,1.404,4,75,no
+257204,S. Diomandé,22,DFC,Olympique Lyonnais,Côte d'Ivoire,5.5,1.196,2,74,no
+257207,M. Šviderský,20,MED,Almería,Slovakia,1.6,0.208,4,65,no
+257214,Marco Camus,21,EXT,Valencia,Spain,0.9,0.208,1,62,no
+257235,T. Boulhendi,22,POR,Nice,Algeria,0.93,0.26,2,63,no
+257239,J. Brooking,20,DFC,Chelsea,England,0.55,0.416,1,60,no
+257264,O. Vilhelmsson,19,DEL,Darmstadt 98,Sweden,2.0,0.26,3,66,no
+257273,J. Olschowsky,21,POR,Borussia Mönchengladbach,Germany,2.3,0.26,4,68,no
+257278,A. Theate,23,DFC,Rennes,Belgium,13.5,1.768,3,77,si
+257279,Álex Baena,21,MED,Villarreal,Spain,15.0,1.144,5,76,si
+257283,A. Müller,22,MED,Darmstadt 98,Germany,1.9,0.468,3,69,no
+257288,M. Okoye,23,POR,Udinese,Nigeria,2.0,0.312,4,70,no
+257289,H. Ekitike,21,DEL,Paris Saint Germain,France,9.0,2.548,4,75,no
+257299,I. Kaczmarski,19,MED,Empoli,Poland,0.35,0.047,2,56,no
+257319,A. Virginius,20,EXT,Lille,France,2.9,0.468,4,68,no
+257333,Manu Garrido,22,DEL,Celta de Vigo,Spain,0.9,0.208,3,62,no
+257353,W. Bondo,19,MED,Monza,France,1.2,0.26,2,63,no
+257368,L. Pirola,21,DFC,Salernitana,Italy,4.3,0.676,4,71,si
+257470,A. Elanga,21,EXT,Nottingham Forest,Sweden,7.0,1.976,5,73,si
+257534,C. Palmer,21,EXT,Chelsea,England,2.5,1.196,7,67,no
+257540,A. Knauff,21,EXT,Eintracht Frankfurt,Germany,9.0,1.248,4,75,no
+257580,F. Brancolini,21,POR,Lecce,Italy,0.28,0.052,4,55,no
+257638,L. Philipp,22,POR,TSG Hoffenheim,Germany,1.4,0.26,1,65,no
+257711,R. Calafiori,21,LAT,Bologna,Italy,4.0,0.676,4,71,no
+257719,Jaume Cuéllar,21,EXT,FC Barcelona,Bolivia,1.8,0.988,1,65,no
+257771,J. Juranović,27,LAT,FC Union Berlin,Croatia,10.0,1.612,4,77,si
+257785,M. Brescianini,23,MED,Frosinone,Italy,1.8,0.156,4,66,no
+257786,C. Dalle Mura,21,DFC,Fiorentina,Italy,0.93,0.312,2,62,no
+257793,R. Richards,19,EXT,Aston Villa,England,0.4,0.312,3,56,no
+257876,N. Seiwald,22,MED,RB Leipzig,Austria,17.0,1.976,5,76,no
+257877,J. Adamu,22,DEL,SC Freiburg,Austria,3.6,0.728,4,70,no
+257889,K. Jakić,26,MED,Eintracht Frankfurt,Croatia,6.0,1.56,3,75,no
+257896,N. Patterson,21,LAT,Everton,Scotland,5.0,0.936,4,72,si
+257919,R. Reitz,21,MED,Borussia Mönchengladbach,Germany,1.6,0.26,1,65,no
+257946,A. Seidu,23,DFC,Clermont,Ghana,4.9,0.572,4,72,si
+257970,W. Kamanzi,22,LAT,Toulouse,Norway,2.6,0.364,3,68,no
+257975,B. Brahimi,23,EXT,Brest,Algeria,4.7,1.248,1,72,no
+257980,D. Ndoye,22,EXT,Bologna,Switzerland,4.2,0.884,3,71,no
+258027,M. Marić,28,DEL,Monza,Croatia,1.4,1.196,2,69,no
+258085,Dudu,24,POR,Werder Bremen,Germany,0.4,0.104,1,61,no
+258104,G. Infantino,20,EXT,Fiorentina,Argentina,2.5,0.676,5,67,no
+258171,H. Mejbri,20,MED,Manchester United,Tunisia,2.9,1.3,3,68,no
+258230,J. Hadjam,20,LAT,Nantes,Algeria,3.2,0.364,4,69,si
+258316,E. Dinkçi,21,EXT,Heidenheim,Germany,2.3,0.312,1,67,si
+258330,M. Cissé,20,EXT,VfB Stuttgart,Guinea,0.6,0.156,1,60,no
+258359,Martín Calderón,24,MED,Cádiz,Spain,2.1,0.416,1,67,no
+258371,Pep Chavarría,25,LAT,Rayo Vallecano,Spain,2.6,0.572,4,71,no
+258390,I. Grbić,27,POR,Atlético Madrid,Croatia,6.0,1.612,1,75,no
+258396,C. Özkacar,22,DFC,Valencia,Turkey,4.9,0.936,5,72,si
+258407,B. Soppy,21,LAT,Torino,France,4.0,0.884,1,71,no
+258432,C. Matsima,21,DFC,Monaco,France,3.3,0.832,2,70,si
+258433,E. Matazo,21,MED,Monaco,Belgium,6.0,1.196,3,73,no
+258437,E. Emegha,20,DEL,Strasbourg,Netherlands,2.7,0.416,5,68,si
+258444,E. Guessand,22,DEL,Nice,France,3.6,1.04,3,70,no
+258467,L. Romero,18,EXT,Milan,Argentina,3.2,0.572,4,69,no
+258485,F. Jörgensen,21,POR,Villarreal,Denmark,4.1,0.52,2,72,si
+258490,C. Riad,20,DFC,Real Betis,Morocco,1.9,0.988,1,66,no
+258498,B. Verbruggen,20,POR,Brighton & Hove Albion,Netherlands,10.5,1.56,5,75,no
+258507,Obrador,19,LAT,Real Madrid,Spain,1.6,0.676,1,65,no
+258526,S. Elisor,23,DEL,Metz,France,1.4,0.312,3,66,no
+258575,E. Agbadou,26,DFC,Stade de Reims,Côte d'Ivoire,7.0,1.04,4,75,si
+258607,Toti Gomes,24,DFC,Wolverhampton Wanderers,Portugal,8.0,2.028,4,74,no
+258615,Zarraga,24,MED,Udinese,Spain,4.6,0.624,4,73,no
+258619,J. Lepenant,20,MED,Olympique Lyonnais,France,4.3,0.884,4,73,no
+258648,Carlos Augusto,24,EXT,Inter,Brazil,26.5,2.496,1,79,no
+258683,I. Ilić,22,MED,Torino,Serbia,15.0,1.768,4,76,si
+258689,Diego Bri,20,EXT,Atlético Madrid,Spain,0.8,0.312,3,61,no
+258715,B. Hollerbach,22,DEL,FC Union Berlin,Germany,2.9,0.728,4,69,no
+258724,E. Brierley,19,MED,Brentford,England,0.78,0.26,3,61,no
+258730,Miguel Rodríguez,20,EXT,Celta de Vigo,Spain,2.1,0.26,5,66,no
+258747,Guillem Molina,23,DFC,Osasuna,Spain,1.2,0.26,1,64,no
+258748,C. Chukwuemeka,21,EXT,Aston Villa,England,0.38,0.468,1,57,no
+258781,I. Zabarnyi,20,DFC,AFC Bournemouth,Ukraine,6.0,1.196,5,73,si
+258782,A. Ismajli,26,DFC,Empoli,Albania,2.7,0.416,2,72,si
+258788,G. Caso,24,EXT,Frosinone,Italy,2.8,0.468,2,71,si
+258792,G. Wickens,21,POR,Fulham,England,0.45,0.26,1,58,no
+258812,T. Siersleben,23,DFC,Heidenheim,Germany,2.2,0.676,3,70,si
+258846,A. Álvarez Martínez,22,DEL,Sassuolo,Uruguay,5.5,0.624,4,72,no
+258908,J. van Hecke,23,DFC,Brighton & Hove Albion,Netherlands,3.5,1.716,3,71,no
+258912,Ruly García,23,POR,Celta de Vigo,Spain,0.28,0.104,1,56,no
+258922,Marvin,23,EXT,Las Palmas,Spain,3.1,2.288,1,69,no
+258923,Arribas,21,MED,Almería,Spain,4.2,0.624,6,71,si
+258930,C. Archer,21,DEL,Sheffield United,England,4.9,1.196,4,73,si
+258937,Aimar Oroz,21,MED,Osasuna,Spain,7.0,0.832,3,73,si
+258946,M. Lovato,23,DFC,Salernitana,Italy,3.9,0.78,4,71,si
+258966,A. Cambiaso,23,LAT,Juventus,Italy,9.0,2.808,4,74,no
+258972,I. Touré,20,DFC,Lorient,France,3.6,0.468,5,70,no
+258976,F. Parisi,22,LAT,Fiorentina,Italy,22.5,2.028,5,77,no
+259011,Zito Luvumbo,21,DEL,Cagliari,Angola,3.0,0.416,4,68,si
+259065,Arnau Tenas,22,POR,Paris Saint Germain,Spain,3.4,1.092,3,70,no
+259068,I. Kébé,22,MED,Girona,Mali,3.1,0.52,1,69,no
+259070,Pau Víctor,21,DEL,FC Barcelona,Spain,0.9,0.208,1,62,no
+259075,Yan Couto,21,EXT,Girona,Brazil,5.5,2.548,1,72,no
+259096,T. Akinola,22,MED,Arsenal,England,0.93,0.624,1,62,no
+259119,S. Sow,20,DFC,Strasbourg,Guinea,2.9,0.364,5,69,no
+259139,David Costa,22,EXT,Lens,Portugal,7.0,1.456,1,74,no
+259173,Víctor Chust,23,DFC,Cádiz,Spain,11.5,1.092,3,75,no
+259190,D. Lopy,21,MED,Almería,Senegal,4.5,0.676,6,73,no
+259191,M. Al Tamari,26,EXT,Montpellier,Jordan,2.2,0.78,3,71,no
+259197,N. Jackson,22,DEL,Chelsea,Senegal,29.0,4.628,4,78,si
+259205,N. Ahamada,21,MED,Crystal Palace,France,3.6,0.78,3,70,no
+259215,F. Mendy,22,DFC,Lorient,Senegal,2.5,0.364,5,68,si
+259233,I. Moriba,20,MED,RB Leipzig,Guinea,4.6,1.196,3,72,no
+259306,F. Rieder,21,MED,Rennes,Switzerland,9.5,1.404,4,74,no
+259307,M. Gusto,20,LAT,Chelsea,France,15.5,2.756,7,76,si
+259317,Cañizares,21,POR,Real Madrid,Spain,0.85,0.52,1,62,no
+259356,C. Chukwuemeka,19,MED,Chelsea,England,1.8,0.624,5,65,no
+259360,Ayesa,22,POR,Real Sociedad,Spain,0.93,0.208,1,63,no
+259377,Yeremy Pino,20,EXT,Villarreal,Spain,38.5,1.404,4,79,si
+259399,R. Højlund,20,DEL,Manchester United,Denmark,18.0,3.744,5,76,no
+259405,Zarzana,21,EXT,Sevilla,Spain,1.2,0.208,1,63,no
+259419,T. Nakai,19,MED,Real Madrid,Japan,0.85,0.572,2,61,no
+259430,Marcelo Pitaluga,20,POR,Liverpool,Brazil,0.38,0.312,2,57,no
+259521,Terrats,22,MED,Villarreal,Spain,8.5,1.196,3,74,no
+259524,Aitor Paredes,23,DFC,Athletic Club,Spain,3.3,0.572,2,70,si
+259530,Alfonso Pastor,22,POR,Sevilla,Spain,0.78,0.156,3,62,no
+259559,T. Breithaupt,21,MED,FC Augsburg,Germany,3.4,0.52,5,70,no
+259569,M. John,21,LAT,TSG Hoffenheim,Germany,4.0,0.676,2,71,no
+259583,D. Udogie,20,LAT,Tottenham Hotspur,Italy,22.0,2.392,4,77,si
+259584,M. Ruggeri,20,LAT,Atalanta,Italy,2.9,0.676,3,69,si
+259608,E. Ferguson,18,DEL,Brighton & Hove Albion,Republic of Ireland,10.0,1.352,5,74,no
+259634,J. Zemura,23,LAT,Udinese,Zimbabwe,3.0,0.416,4,70,no
+259668,A. Pierre,22,POR,Strasbourg,Haiti,0.45,0.104,1,58,no
+259675,B. Kutlu,25,MED,Genoa,Turkey,1.8,0.884,1,69,no
+259679,J. Braaf,20,DEL,Hellas Verona,Netherlands,1.7,0.312,3,65,no
+259681,Rodri,23,EXT,Real Betis,Spain,23.5,1.092,3,77,no
+259694,Mingueza,24,LAT,Celta de Vigo,Spain,6.0,0.832,3,74,si
+259714,M. Röhl,20,MED,SC Freiburg,Germany,1.7,0.26,4,65,no
+259762,V. Kristiansen,20,LAT,Bologna,Denmark,4.9,1.04,1,72,si
+259848,J. Aramburu,20,LAT,Real Sociedad,Venezuela,1.6,0.26,3,65,no
+259868,P. Sarr,20,MED,Tottenham Hotspur,Senegal,5.0,1.82,3,72,si
+259973,P. Boer,21,POR,Roma,Italy,0.53,0.208,1,60,no
+260082,Jesús Vázquez,20,LAT,Valencia,Spain,3.9,0.676,2,71,no
+260105,R. Drăgușin,21,DFC,Genoa,Romania,3.7,0.468,4,70,si
+260159,L. Mouyokolo,22,DFC,Lorient,France,1.0,0.208,3,63,no
+260178,Juan Iglesias,24,LAT,Getafe,Spain,3.3,0.78,3,72,no
+260192,A. Hackford,19,DEL,Sheffield United,England,0.6,0.208,1,60,no
+260195,John Patrick,19,MED,Getafe,Spain,0.62,0.104,1,60,no
+260290,M. Pieringer,23,DEL,Heidenheim,Germany,3.0,0.936,4,71,si
+260340,Svensson,21,DEL,Osasuna,Spain,1.9,0.156,1,66,no
+260406,K. Gordon,18,EXT,Liverpool,England,1.0,0.364,1,62,no
+260407,E. Wahi,20,DEL,Lens,France,31.0,1.612,5,78,si
+260523,P. Aaronson,19,MED,Eintracht Frankfurt,United States,2.4,0.364,4,67,no
+260546,Urko González,22,DFC,Real Sociedad,Spain,1.8,0.364,5,66,no
+260558,R. Khadra,21,EXT,Stade de Reims,Germany,3.2,0.52,4,70,si
+260574,L. Assignon,23,LAT,Rennes,France,3.0,0.78,4,69,si
+260592,B. Šeško,20,DEL,RB Leipzig,Slovenia,12.5,1.768,5,75,no
+260644,Kaio Jorge,21,DEL,Frosinone,Brazil,4.2,2.132,1,71,no
+260651,B. Traore,20,DEL,Sheffield United,Côte d'Ivoire,2.5,0.52,4,67,no
+260658,C. Wooh,21,DFC,Rennes,Cameroon,4.9,0.988,3,72,no
+260670,Raúl Blanco,21,MED,Celta de Vigo,Spain,0.45,0.156,4,58,no
+260697,I. Hien,24,DFC,Hellas Verona,Sweden,11.5,1.04,3,75,si
+260779,S. Adingra,21,EXT,Brighton & Hove Albion,Côte d'Ivoire,7.0,2.08,3,73,no
+260815,Arnau Martínez,20,LAT,Girona,Spain,39.5,1.144,2,80,si
+260823,N. Fagioli,22,MED,Juventus,Italy,23.5,3.796,3,77,si
+260843,A. Zaroury,22,EXT,Burnley,Morocco,9.5,1.768,5,74,no
+260863,W. Suzuki,20,DEL,Girona,Japan,0.6,0.156,1,60,no
+260908,M. Kerkez,19,LAT,AFC Bournemouth,Hungary,11.5,1.04,4,75,si
+260910,S. Shoretire,19,MED,Manchester United,England,1.0,0.468,1,62,no
+260926,K. Schade,21,EXT,Brentford,Germany,5.5,1.508,5,72,si
+260930,K. Sildillia,21,LAT,SC Freiburg,France,5.0,0.676,1,72,si
+260942,D. Fofana,20,DEL,FC Union Berlin,Côte d'Ivoire,2.9,1.404,1,68,no
+260943,J. Casimir,21,EXT,Le Havre,France,2.1,0.312,2,67,no
+261032,J. Hodge,20,MED,Wolverhampton Wanderers,Republic of Ireland,0.78,0.364,4,61,no
+261084,B. Dieng,23,DEL,Lorient,Senegal,4.9,0.936,2,73,si
+261098,O. Zandén,21,LAT,Toulouse,Sweden,1.3,0.208,3,64,no
+261171,I. Miramón,20,MED,Lille,Argentina,3.3,0.572,5,70,no
+261188,I. Ndiaye,23,DEL,Olympique de Marseille,Senegal,8.5,1.56,5,74,si
+261204,M. Uzuni,28,DEL,Granada,Albania,14.5,1.352,2,78,si
+261224,Hugo Bueno,20,LAT,Wolverhampton Wanderers,Spain,4.9,1.352,3,72,no
+261243,A. Di Pardo,23,LAT,Cagliari,Italy,1.7,0.416,3,68,no
+261249,É. Michut,20,MED,Paris Saint Germain,France,2.8,0.832,2,68,no
+261251,Santisteban,22,DEL,Sevilla,Spain,0.75,0.208,1,61,no
+261281,C. Okoli,21,DFC,Frosinone,Italy,4.9,1.04,1,72,no
+261299,A. Scott,19,MED,AFC Bournemouth,England,5.5,0.936,5,72,no
+261360,N. Mbamba,18,MED,Bayer 04 Leverkusen,Belgium,1.5,0.156,5,64,no
+261444,A. Baldé,20,EXT,Nice,Senegal,2.6,0.624,5,68,no
+261478,T. Douvikas,23,DEL,Celta de Vigo,Greece,8.5,0.988,5,74,no
+261573,T. Kristensen,21,DFC,Udinese,Denmark,2.8,0.26,5,68,no
+261616,Q. Merlin,21,LAT,Nantes,France,6.5,0.624,3,73,si
+261621,L. Mbete,19,DFC,Manchester City,England,0.97,0.416,4,62,no
+261647,A. Omobamidele,21,DFC,Nottingham Forest,Republic of Ireland,3.3,1.04,5,70,no
+261659,S. Lynen,24,MED,Werder Bremen,Belgium,4.0,0.832,4,73,si
+261771,M. Sahi,21,DEL,Strasbourg,Mali,3.2,0.468,3,69,no
+261815,M. Bangré,22,EXT,Toulouse,Burkina Faso,2.5,0.364,2,67,no
+261865,Miguel Gutiérrez,21,LAT,Girona,Spain,9.0,0.78,4,74,si
+261892,D. Franchi,20,POR,Burnley,Italy,0.7,0.208,2,61,no
+261987,Antonio Blanco,22,MED,Deportivo Alavés,Spain,6.5,0.78,4,73,si
+261988,S. Grehan,19,DFC,Crystal Palace,Republic of Ireland,0.1,0.104,4,50,no
+262042,M. Estève,21,DFC,Montpellier,France,9.0,0.728,2,74,no
+262061,Kaiky,19,DFC,Almería,Brazil,3.2,0.364,5,70,no
+262069,Y. Pandor,22,POR,Lens,Comoros,0.78,0.208,3,62,no
+262083,A. Martegani,23,MED,Salernitana,Argentina,4.2,0.468,1,71,no
+262088,H. Haraldsson,20,DEL,Lille,Iceland,3.9,0.728,5,70,si
+262105,J. Duranville,17,EXT,Borussia Dortmund,Belgium,2.7,0.052,4,66,no
+262113,N. Zalewski,21,EXT,Roma,Poland,15.0,1.976,2,76,no
+262118,T. Livramento,20,LAT,Newcastle United,England,9.0,2.444,5,74,no
+262137,H. Keïta,21,MED,Clermont,Mali,2.7,0.312,4,68,no
+262138,C. Lukeba,20,DFC,RB Leipzig,France,21.5,1.612,5,77,no
+262140,Carlos Domínguez,22,DFC,Celta de Vigo,Spain,3.3,0.52,3,70,no
+262171,E. Bove,21,MED,Roma,Italy,9.5,1.768,2,74,no
+262227,D. Jebbison,19,DEL,Sheffield United,England,2.0,0.364,1,66,no
+262236,A. Richardson,21,MED,Stade de Reims,Morocco,3.1,0.416,4,69,no
+262237,A. Sangante,21,DFC,Le Havre,Senegal,3.9,0.416,3,71,si
+262239,M. Bodmer,19,MED,Le Havre,France,0.5,0.052,3,59,no
+262242,S. Raebiger,18,MED,Eintracht Frankfurt,Germany,1.1,0.104,1,62,no
+262298,M. Lotka,22,POR,Borussia Dortmund,Poland,2.3,0.468,1,68,no
+262322,N. Noll,20,POR,TSG Hoffenheim,Germany,0.35,0.104,2,57,no
+262333,Y. Kallon,22,DEL,Hellas Verona,Sierra Leone,3.2,0.624,4,69,no
+262344,J. Le Cardinal,25,LAT,Brest,France,1.9,0.832,1,70,no
+262394,S. Beukema,24,DFC,Bologna,Netherlands,8.0,1.092,4,74,si
+262402,Sergi Cardona,23,LAT,Las Palmas,Spain,6.0,0.728,1,74,si
+262407,Andrés Caro,19,DFC,Real Betis,Spain,0.88,0.104,2,62,no
+262500,Olasagasti,22,MED,Real Sociedad,Spain,2.3,0.468,2,67,no
+262510,Turrientes,21,MED,Real Sociedad,Spain,3.0,0.468,4,68,no
+262513,Karrikaburu,20,DEL,Deportivo Alavés,Spain,2.9,0.52,1,68,no
+262579,D. Čolina,22,LAT,FC Augsburg,Croatia,3.0,0.52,4,69,no
+262621,G. Mamardashvili,22,POR,Valencia,Georgia,27.5,1.352,4,80,si
+262637,N. Young-Coombes,20,DEL,Brentford,England,0.8,0.364,1,61,no
+262642,Z. Amdouni,22,DEL,Burnley,Switzerland,9.5,1.924,5,74,si
+262659,N. Atubolu,21,POR,SC Freiburg,Germany,3.1,0.364,4,70,si
+262665,K. Schmidt,21,DFC,SC Freiburg,Germany,2.1,0.312,4,67,no
+262668,J. Makengo,21,LAT,SC Freiburg,France,2.2,0.312,2,67,no
+262672,N. Weißhaupt,21,EXT,SC Freiburg,Germany,3.1,0.468,4,69,no
+262745,N. El Aynaoui,21,MED,Lens,France,1.9,0.364,4,66,no
+262789,H. Barbet,22,POR,Nantes,France,0.47,0.104,2,60,no
+262816,J. N'Guessan,20,MED,Metz,Côte d'Ivoire,1.6,0.208,4,65,si
+262859,L. Colwill,20,DFC,Chelsea,England,8.5,2.444,6,74,si
+262922,P. Tschernuth,21,POR,Heidenheim,Austria,0.45,0.104,2,59,no
+262929,Vinicius Souza,24,MED,Sheffield United,Brazil,10.5,1.3,4,75,si
+262937,J. Tchatchoua,22,LAT,Hellas Verona,Belgium,2.6,0.26,1,68,no
+262981,L. Fiorini,21,MED,Manchester City,Scotland,1.6,0.884,3,65,no
+263006,Imanol,22,LAT,Athletic Club,Spain,3.4,0.572,2,70,no
+263016,Y. Guermouche,22,DEL,Montpellier,Algeria,0.75,0.208,1,61,no
+263022,M. Rosenfelder,20,DFC,SC Freiburg,Germany,1.8,0.26,2,66,no
+263063,J. Trafford,20,POR,Burnley,England,4.0,0.728,5,71,si
+263105,M. Bastian,22,LAT,Strasbourg,France,1.0,0.208,2,63,no
+263110,I. Baldé,20,EXT,Lens,France,1.1,0.312,1,63,no
+263112,M. Senaya,22,LAT,Strasbourg,France,1.5,0.26,4,65,no
+263116,L. Rieß,21,POR,FSV Mainz 05,Germany,0.93,0.156,2,63,no
+263135,L. Münst,21,MED,VfB Stuttgart,Germany,0.6,0.156,2,60,no
+263139,D. Greif,26,POR,Mallorca,Slovakia,2.2,0.624,3,71,no
+263150,J. Meyer,21,MED,VfB Stuttgart,Germany,0.47,0.104,2,59,no
+263168,T. Onyango,20,MED,Everton,England,0.6,0.26,2,60,no
+263193,E. Bitshiabu,18,DFC,RB Leipzig,France,2.6,0.26,5,68,no
+263227,W. Swedberg,19,MED,Celta de Vigo,Sweden,3.0,0.312,4,69,no
+263272,P. Schulze,20,POR,VfL Wolfsburg,Germany,0.47,0.156,3,59,no
+263279,O. Pohlmann,22,MED,Borussia Dortmund,Germany,1.9,0.52,2,66,no
+263295,M. Fall,21,DFC,FC Barcelona,Senegal,3.3,0.156,1,70,no
+263317,M. Łęgowski,20,MED,Salernitana,Poland,1.9,0.312,3,66,no
+263343,N. Skyttä,21,MED,Toulouse,Finland,1.4,0.208,2,64,no
+263349,K. Serber,24,MED,Toulouse,France,0.72,0.208,1,63,no
+263396,Copete,23,DFC,Mallorca,Spain,11.5,0.988,3,75,no
+263411,J. Mullins,18,MED,Brighton & Hove Albion,Republic of Ireland,0.53,0.208,2,58,no
+263442,Y. M'Bemba,22,DFC,Nantes,France,0.82,0.156,1,62,no
+263448,G. Manvelyan,21,MED,Nantes,France,0.9,0.156,1,62,no
+263468,Y. Kechta,21,MED,Le Havre,Morocco,2.7,0.312,3,68,no
+263469,M. Kaba,21,MED,Lecce,France,2.6,0.26,4,68,no
+263514,A. Kamara,18,MED,Borussia Dortmund,Guinea,1.0,0.104,1,62,no
+263555,N. Michelis,22,DFC,Osasuna,Greece,1.1,0.104,1,63,no
+263571,F. Ebosele,20,EXT,Udinese,Republic of Ireland,2.6,0.26,4,68,si
+263573,A. Al Dakhil,21,DFC,Burnley,Belgium,4.9,1.092,3,72,no
+263575,C. Riedel,19,DFC,Darmstadt 98,Germany,2.3,0.208,3,67,no
+263578,Balde,19,LAT,FC Barcelona,Spain,53.0,3.64,1,81,si
+263582,M. Peart-Harris,20,MED,Brentford,England,1.0,0.364,2,63,no
+263602,B. Nadir,19,MED,Olympique de Marseille,France,0.95,0.208,1,62,no
+263603,O. Targhalline,21,MED,Le Havre,Morocco,2.7,0.312,2,68,si
+263617,Beñat Prados,22,DFC,Athletic Club,Spain,2.1,0.364,2,67,no
+263620,R. Lavia,19,MED,Chelsea,Belgium,7.0,1.664,7,73,no
+263655,R. Nyakossi,19,DFC,Olympique de Marseille,Switzerland,0.65,0.156,3,61,no
+263714,E. McJannet,19,MED,Lecce,Republic of Ireland,0.45,0.104,2,57,no
+263765,T. Bischof,18,MED,TSG Hoffenheim,Germany,2.4,0.156,2,66,no
+263781,Vanderson,22,LAT,Monaco,Brazil,20.5,1.924,4,77,si
+263785,Ruan,24,DFC,Sassuolo,Brazil,2.4,0.468,3,71,si
+263815,Abner,23,LAT,Real Betis,Brazil,5.0,0.676,6,72,no
+263829,Vitinha,23,DEL,Olympique de Marseille,Portugal,11.5,1.768,4,76,no
+263880,Agirrezabala,22,POR,Athletic Club,Spain,6.0,0.676,2,73,no
+263908,B. Locko,21,LAT,Brest,France,4.5,0.468,4,72,si
+263920,M. Ndiaye,21,POR,Clermont,Senegal,1.1,0.104,4,64,no
+263922,M. Koné,21,POR,Le Havre,Côte d'Ivoire,0.65,0.104,2,61,no
+263929,M. Cancellieri,20,EXT,Empoli,Italy,5.0,1.144,1,72,si
+263955,B. Knight,21,EXT,Manchester City,England,0.6,0.624,2,60,no
+264010,J. Mvuka,20,EXT,Lorient,Norway,3.1,0.416,4,69,no
+264027,S. Delaye,21,EXT,Montpellier,France,1.8,0.26,2,65,no
+264035,J. Rak-Sakyi,20,EXT,Crystal Palace,England,4.1,1.04,4,71,no
+264039,L. Dobbin,20,EXT,Everton,England,1.1,0.312,2,63,no
+264044,M. Viti,21,DFC,Sassuolo,Italy,4.9,0.936,1,72,no
+264076,D. Vraciu,21,MED,Almería,Romania,0.6,0.156,1,60,no
+264079,K. Diawara,23,EXT,Le Havre,France,0.97,0.208,3,63,no
+264095,Hugo Sotelo,19,MED,Celta de Vigo,Spain,0.78,0.104,1,61,no
+264097,Alex Rodríguez,21,LAT,Getafe,Spain,0.47,0.156,1,58,no
+264103,Torrente,21,DFC,Granada,Spain,2.9,0.312,1,69,no
+264110,Javi Llabrés,21,EXT,Mallorca,Spain,1.9,0.312,3,66,no
+264113,J. Wells-Morrison,19,MED,Crystal Palace,England,0.42,0.156,1,57,no
+264115,D. Williams,19,LAT,Chelsea,England,0.75,0.364,2,61,no
+264116,Iturbe,19,POR,Atlético Madrid,Spain,1.8,0.208,4,66,no
+264160,Pablo Ibáñez,24,MED,Osasuna,Spain,2.0,0.416,1,67,no
+264161,Pablo Valencia,22,POR,Osasuna,Spain,0.93,0.156,2,63,no
+264166,Manu Morillo,19,DEL,Real Betis,Spain,1.0,0.156,1,62,no
+264167,Marc Vidal,23,POR,FC Barcelona,Spain,0.47,0.044,1,60,no
+264172,Carmona,21,LAT,Getafe,Spain,3.3,0.416,1,69,no
+264174,Juanlu Sánchez,19,LAT,Sevilla,Spain,1.0,0.104,3,63,no
+264192,N. Moriah-Welsh,21,MED,AFC Bournemouth,Guyana,0.72,0.312,1,61,no
+264193,B. Greenwood,20,LAT,AFC Bournemouth,Republic of Ireland,0.53,0.26,1,59,no
+264196,F. Seriki,21,LAT,Sheffield United,England,0.53,0.208,1,60,no
+264223,N. König,20,DFC,TSG Hoffenheim,Germany,0.5,0.156,2,59,no
+264238,Diego López,21,EXT,Valencia,Spain,4.2,0.78,3,71,si
+264240,Gavi,18,MED,FC Barcelona,Spain,68.5,3.12,3,83,si
+264270,Jorge Moreno,21,DFC,Osasuna,Spain,1.5,0.26,2,65,no
+264293,H. Diarra,19,MED,Strasbourg,France,2.9,0.26,4,68,no
+264298,C. Bradley,19,LAT,Liverpool,Northern Ireland,3.2,0.936,1,69,no
+264309,A. Güler,18,MED,Real Madrid,Turkey,22.0,2.132,6,77,no
+264325,M. Satriano,22,DEL,Brest,Uruguay,5.5,2.184,1,72,si
+264326,Toni Fuidias,22,POR,Girona,Spain,1.1,0.208,2,64,no
+264335,D. Samek,19,MED,Lecce,Czech Republic,0.68,0.052,4,61,no
+264337,Rodrigo Muniz,22,DEL,Fulham,Brazil,3.2,1.56,3,69,no
+264349,J. McAtee,20,MED,Sheffield United,England,3.5,1.924,1,70,no
+264388,Moleiro,19,EXT,Las Palmas,Spain,12.0,0.572,3,75,no
+264392,K. Zedadka,23,LAT,Napoli,France,0.47,0.312,1,61,no
+264401,B. Meïté,22,DFC,Olympique de Marseille,Côte d'Ivoire,2.9,0.468,1,69,no
+264408,A. Guessand,18,DFC,Udinese,France,0.55,0.036,4,59,no
+264409,F. Alidou,21,EXT,FC Köln,Germany,3.1,0.624,1,69,no
+264422,M. Abline,20,DEL,Nantes,France,3.4,0.832,1,69,no
+264432,A. Ezzalzouli,21,EXT,Real Betis,Morocco,7.0,0.728,3,73,no
+264449,É. Kinkoué,21,DFC,Le Havre,France,1.5,0.156,2,65,no
+264453,M. van de Ven,22,DFC,Tottenham Hotspur,Netherlands,26.5,3.068,6,78,si
+264467,M. Çuni,21,DEL,Frosinone,Albania,1.9,0.156,3,66,no
+264489,Trilli,20,LAT,FC Barcelona,Spain,2.1,1.144,2,67,no
+264490,Noel,20,DEL,Real Madrid,Spain,1.3,0.936,3,63,no
+264512,A. Camblan,19,EXT,Brest,France,0.95,0.104,2,62,no
+264529,F. Schock,22,POR,VfB Stuttgart,Germany,0.65,0.104,1,61,no
+264580,D. Chesters,21,EXT,West Ham United,England,0.55,0.364,1,59,no
+264652,B. Barcola,20,EXT,Paris Saint Germain,France,16.5,2.652,5,76,no
+264664,L. Skraback,20,EXT,Borussia Mönchengladbach,Germany,0.5,0.156,1,61,no
+264665,Jon Magunazelaia,21,DEL,Real Sociedad,Spain,1.1,0.26,3,63,no
+264681,J. Wilson-Esbrand,20,LAT,Stade de Reims,England,1.6,0.78,1,65,si
+264698,Luiz Henrique,22,EXT,Real Betis,Brazil,23.5,1.092,5,77,si
+264699,K. Asllani,21,MED,Inter,Albania,9.5,2.08,4,74,no
+264701,A. Zakharyan,20,EXT,Real Sociedad,Russia,12.5,1.196,6,75,no
+264731,A. Phillips,18,DFC,Tottenham Hotspur,England,0.75,0.156,5,60,no
+264735,Ricard Artero,20,MED,Girona,Spain,1.2,0.208,3,63,no
+264763,F. Chiarodia,18,DFC,Borussia Mönchengladbach,Italy,1.2,0.052,4,62,no
+264845,Julen Jon,19,DEL,Roma,Spain,1.0,0.676,1,62,no
+264846,Cristhian Mosquera,19,DFC,Valencia,Spain,2.7,0.312,2,68,no
+264856,A. Tikvic,19,DFC,Udinese,Germany,0.33,0.052,5,56,no
+264862,M. Akliouche,21,MED,Monaco,France,2.7,0.676,3,68,no
+264880,L. Tchaouna,19,EXT,Salernitana,France,1.8,0.26,3,66,no
+265188,G. Scalvini,19,DFC,Atalanta,Italy,11.5,0.988,4,75,si
+265194,Iker Bravo,18,DEL,Real Madrid,Spain,2.6,0.364,1,67,no
+265405,Owono,22,POR,Deportivo Alavés,Equatorial Guinea,1.1,0.156,1,64,no
+265420,Matheus França,19,MED,Crystal Palace,Brazil,3.1,0.468,5,68,no
+265465,M. Maglica,24,DFC,Darmstadt 98,Croatia,2.3,0.572,1,70,si
+265520,Unai Marrero,21,POR,Real Sociedad,Spain,1.5,0.208,4,65,no
+265526,G. Restes,18,POR,Toulouse,France,3.6,0.052,3,70,si
+265544,T. Le Bris,20,EXT,Lorient,France,3.1,0.416,4,69,si
+265552,D. Ouattara,21,EXT,AFC Bournemouth,Burkina Faso,5.5,1.196,5,72,no
+265578,Ilias,19,EXT,Villarreal,Spain,4.0,0.624,3,71,no
+265595,S. Vignato,19,DEL,Monza,Italy,1.9,0.364,2,65,no
+265650,Saúl Coco,24,DFC,Las Palmas,Equatorial Guinea,11.5,0.78,2,75,no
+265693,J. Kiwior,23,DFC,Arsenal,Poland,8.5,2.912,5,74,no
+265695,M. Soulé,20,EXT,Frosinone,Argentina,4.5,2.132,1,71,no
+265726,César Tárrega,21,DFC,Valencia,Spain,1.4,0.26,5,64,no
+265729,Monjonell,21,DFC,Girona,Spain,1.0,0.156,2,63,no
+265761,C. Volpato,19,MED,Sassuolo,Italy,2.6,0.156,2,67,no
+265762,F. Missori,19,LAT,Sassuolo,Italy,1.0,0.052,2,62,no
+265772,Ibra Cámara,20,DFC,Real Sociedad,Spain,0.97,0.156,3,62,no
+265774,K. De Winter,21,DFC,Genoa,Belgium,2.0,0.78,1,66,no
+265799,M. Olesen,22,MED,FC Köln,Luxembourg,1.9,0.364,1,66,no
+266031,Rubén Iranzo,20,DFC,Valencia,Spain,1.3,0.26,2,64,no
+266032,J. Bynoe-Gittens,18,EXT,Borussia Dortmund,England,4.4,0.468,2,71,no
+266039,Pubill,20,LAT,Almería,Spain,3.9,0.572,6,71,si
+266041,L. Koleosho,18,EXT,Burnley,Italy,2.6,0.26,4,67,si
+266099,P. Pagis,20,DEL,Lorient,France,1.3,0.208,3,63,no
+266127,L. Hall,18,LAT,Newcastle United,England,2.1,0.312,1,66,no
+266131,Marc Alegre,21,LAT,Girona,Spain,0.53,0.156,1,59,no
+266132,René Pérez,22,MED,Almería,Spain,0.85,0.208,1,62,no
+266136,Peter,20,EXT,Real Madrid,Spain,2.1,1.352,2,66,no
+266141,Mario Fuente,19,DEL,Celta de Vigo,Spain,0.85,0.104,5,61,no
+266160,Mika Mármol,22,DFC,Las Palmas,Spain,4.9,0.572,3,72,si
+266183,J. Njinmah,22,DEL,Werder Bremen,Germany,2.3,0.416,3,67,no
+266236,A. Ibrahimović,17,MED,Frosinone,Germany,0.78,0.052,1,60,no
+266256,A. Adams,23,DEL,Montpellier,Nigeria,2.4,0.468,3,68,si
+266270,A. Ramsey,20,EXT,Burnley,England,3.8,0.936,5,70,no
+266299,F. Magri,23,DEL,Toulouse,France,2.5,0.624,3,70,si
+266304,G. Cittadini,21,DFC,Monza,Italy,1.7,0.364,1,65,no
+266331,Hugo Álvarez,19,MED,Celta de Vigo,Spain,0.53,0.104,2,58,no
+266333,L. Gemello,22,POR,Torino,Italy,1.1,0.312,1,64,no
+266367,J. Flemmings,27,EXT,Toulouse,Jamaica,0.42,0.208,1,62,no
+266436,Javi Guerra,20,MED,Valencia,Spain,3.8,0.676,4,70,no
+266596,J. Fazzini,20,MED,Empoli,Italy,2.2,0.156,4,66,no
+266609,T. Iroegbunam,20,MED,Aston Villa,England,2.3,0.78,4,67,no
+266636,A. Obert,20,DFC,Cagliari,Slovakia,2.9,0.416,4,69,no
+266641,F. Feller,19,POR,Heidenheim,Germany,0.47,0.052,2,59,no
+266673,Ó. Cortés,19,EXT,Lens,Colombia,2.9,0.468,5,68,no
+266797,G. Álvarez,23,LAT,Getafe,Uruguay,5.0,0.78,3,72,si
+266815,B. Doak,17,EXT,Liverpool,Scotland,1.2,0.156,3,62,no
+266820,N. Petrović,23,MED,Granada,Serbia,3.3,0.468,2,70,no
+266834,David Amigo,20,EXT,Cádiz,Spain,1.0,0.208,2,62,no
+266866,Éderson,23,MED,Atalanta,Brazil,16.0,2.028,3,77,si
+266872,F. Gatti,25,DFC,Juventus,Italy,9.5,3.536,4,76,si
+266877,D. Seck,22,DEL,Torino,Senegal,1.3,0.468,2,64,no
+267460,J. Nickisch,19,POR,FC Köln,Germany,0.5,0.052,2,60,no
+267465,A. Salama,22,DEL,Stade de Reims,France,2.7,0.468,4,68,no
+267476,T. Adaramola,19,LAT,Crystal Palace,Republic of Ireland,0.47,0.156,1,58,no
+267611,M. Ebiowei,19,EXT,Crystal Palace,England,2.0,0.364,4,66,no
+267702,K. Doumbia,20,MED,Brest,Mali,5.0,0.624,1,72,no
+267782,B. Conté,19,EXT,TSG Hoffenheim,Germany,0.57,0.156,5,59,no
+267785,R. Voisine,21,DFC,Nantes,France,0.7,0.156,2,61,no
+267844,Kim Ji Soo,18,DFC,Brentford,Korea Republic,0.88,0.104,4,62,no
+267849,T. O'Reilly,19,MED,Aston Villa,Republic of Ireland,0.62,0.312,2,59,no
+267871,N. Fraser,18,DEL,Wolverhampton Wanderers,Republic of Ireland,0.62,0.208,2,59,no
+267894,J. Solís,18,MED,Girona,Colombia,2.8,0.208,5,68,no
+267905,B. Yıldırım,20,DEL,Rennes,Turkey,1.6,0.468,5,65,no
+267958,Tomás Mendes,18,MED,Deportivo Alavés,Spain,0.57,0.052,1,60,no
+267976,Pablo Torre,20,MED,Girona,Spain,3.8,2.132,1,70,no
+267991,M. Perrone,20,MED,Las Palmas,Argentina,4.5,2.236,1,71,no
+268131,C. Egan-Riley,20,LAT,Burnley,England,2.3,0.52,2,67,no
+268132,E. Shabani,20,MED,FSV Mainz 05,Germany,0.6,0.156,2,59,no
+268259,N. Weiper,18,DEL,FSV Mainz 05,Germany,2.4,0.156,2,66,no
+268260,P. Schulz,18,MED,FSV Mainz 05,Germany,0.62,0.052,2,58,no
+268312,S. Kumbedi,18,LAT,Olympique Lyonnais,France,4.2,0.312,4,71,no
+268421,M. Tel,18,DEL,FC Bayern München,France,4.4,0.728,4,71,no
+268438,Alejandro Garnacho,19,EXT,Manchester United,Argentina,13.5,2.808,5,75,no
+268443,D. Gore,18,MED,Manchester United,England,1.0,0.26,1,61,no
+268445,R. Bennett,19,DFC,Manchester United,England,0.8,0.364,2,61,no
+268462,D. Boloca,24,MED,Sassuolo,Romania,3.3,0.572,5,72,si
+268466,S. Kalaj,23,DFC,Frosinone,Albania,0.68,0.104,3,61,no
+268474,L. Lucca,22,DEL,Udinese,Italy,5.5,0.26,1,72,si
+268511,W. Cheddira,25,DEL,Frosinone,Morocco,3.5,1.716,1,72,si
+268534,A. Diouf,20,MED,Lens,France,9.0,1.092,5,74,si
+268550,J. Feeney,18,DFC,Aston Villa,England,0.5,0.156,5,57,no
+268573,F. Baschirotto,26,DFC,Lecce,Italy,6.0,0.78,2,75,si
+268583,F. Marschall,20,POR,Aston Villa,England,0.3,0.26,3,57,no
+268605,C. Donnell,19,MED,Fulham,Australia,0.33,0.312,3,55,no
+268615,D. Bautista,18,DFC,Eintracht Frankfurt,Ecuador,0.35,0.052,5,57,no
+268622,J. Belocian,18,LAT,Rennes,France,2.7,0.208,2,68,no
+268656,A. Zanoli,22,LAT,Napoli,Italy,4.0,1.144,3,71,no
+268679,B. Amione,21,DFC,Hellas Verona,Argentina,3.3,0.52,2,70,no
+268683,M. Folorunsho,25,MED,Hellas Verona,Italy,2.7,1.404,1,71,si
+268703,N. Cambiaghi,22,DEL,Empoli,Italy,9.5,1.82,1,74,no
+268763,E. Nuamah,19,EXT,Olympique Lyonnais,Ghana,5.5,0.52,1,72,si
+268802,F. Miretti,19,MED,Juventus,Italy,13.5,2.184,4,75,no
+268804,Mario Gila,22,DFC,Lazio,Spain,1.2,0.416,4,64,no
+268805,D. Jean-Jacques,23,MED,Metz,Haiti,2.5,0.312,4,68,no
+268889,Álvaro Fernández,20,LAT,Granada,Spain,3.7,1.612,1,70,no
+268896,H. Larsson,19,MED,Eintracht Frankfurt,Sweden,2.6,0.364,5,67,no
+268905,M. Craig,20,MED,Tottenham Hotspur,Scotland,0.62,0.364,3,60,no
+268927,I. Cissoko,20,EXT,Toulouse,Netherlands,3.4,0.416,5,69,no
+269003,A. Sylla,20,DFC,Strasbourg,Côte d'Ivoire,3.6,0.468,5,70,si
+269084,U. Tohumcu,18,MED,TSG Hoffenheim,Germany,1.6,0.156,3,64,no
+269087,L. Yoro,17,DFC,Lille,France,3.6,0.044,2,71,no
+269136,K. Mainoo,18,MED,Manchester United,England,1.2,0.208,5,62,no
+269176,A. Veliz,19,DEL,Tottenham Hotspur,Argentina,12.0,2.132,6,75,no
+269181,D. Coppola,19,DFC,Hellas Verona,Italy,3.8,0.416,4,71,no
+269183,W. Amey,17,DFC,Bologna,Italy,0.97,0.026,2,61,no
+269184,J. Mwanga,20,DFC,Strasbourg,France,3.3,0.468,4,70,no
+269276,G. Oristanio,20,MED,Cagliari,Italy,2.9,0.936,1,68,no
+269312,T. Baldanzi,20,MED,Empoli,Italy,23.0,0.52,4,77,si
+269402,H. Smolčić,22,DFC,Eintracht Frankfurt,Croatia,3.9,0.884,4,71,no
+269493,Alexsandro Ribeiro,23,DFC,Lille,Brazil,4.4,0.988,3,73,no
+269495,F. Buonanotte,18,EXT,Brighton & Hove Albion,Argentina,3.2,0.572,3,69,no
+269626,Đ. Petrović,23,POR,Chelsea,Serbia,7.0,2.288,7,74,no
+269633,Dani González,21,DEL,Celta de Vigo,Spain,0.6,0.052,1,60,no
+269745,O. El Azzouzi,22,MED,Bologna,Netherlands,1.4,0.312,4,65,no
+269852,M. El Arouch,19,MED,Olympique Lyonnais,France,2.4,0.312,2,67,no
+269922,D. Huseinbašić,21,MED,FC Köln,Germany,3.1,0.468,2,69,no
+269951,T. Kastanaras,20,DEL,VfB Stuttgart,Germany,1.2,0.208,2,63,no
+269952,Y. Borges Sanches,19,EXT,Borussia Mönchengladbach,Luxembourg,1.5,0.156,2,64,no
+269956,K. Van Den Kerkhof,27,LAT,Metz,Algeria,1.3,0.364,3,68,no
+269975,E. Qenaj,20,DEL,Heidenheim,Kosovo,0.5,0.208,1,59,no
+269976,C. Negele,18,MED,Heidenheim,Germany,0.57,0.104,2,59,no
+269993,M. Loune,19,MED,Eintracht Frankfurt,Morocco,0.57,0.156,2,59,no
+269994,M. Wenig,19,MED,Eintracht Frankfurt,Germany,1.0,0.208,2,62,no
+270013,A. Zehnter,18,LAT,FC Augsburg,Germany,0.75,0.052,1,60,no
+270016,G. Strauch,22,MED,FC Köln,Germany,0.53,0.156,1,60,no
+270033,T. Oermann,19,DFC,VfL Bochum 1848,Germany,1.6,0.156,3,65,no
+270039,Diego Moreira,18,EXT,Olympique Lyonnais,Portugal,2.4,0.52,1,67,no
+270064,I. Monterisi,21,LAT,Frosinone,Italy,0.7,0.052,4,61,si
+270352,M. Achi,21,MED,Nantes,France,0.6,0.156,2,60,no
+270354,J. Affamah,21,DEL,Nantes,France,0.8,0.156,2,61,no
+270365,T. Himeur,22,POR,Toulouse,France,0.93,0.156,1,63,no
+270390,Marquinhos,20,EXT,Nantes,Brazil,4.1,2.236,1,71,no
+270409,Sávio,19,EXT,Girona,Brazil,4.4,0.156,1,71,no
+270465,B. Bouanani,18,EXT,Nice,Algeria,2.9,0.416,4,69,no
+270485,F. Carboni,20,LAT,Monza,Argentina,1.3,0.468,1,64,no
+270502,A. Oyono,22,LAT,Frosinone,Gabon,1.0,0.104,4,63,si
+270507,L. Belardinelli,22,MED,Empoli,Italy,2.2,0.156,5,67,no
+270518,E. Tchato,20,LAT,Montpellier,Cameroon,1.6,0.208,2,65,no
+270519,W. Osula,19,DEL,Sheffield United,Denmark,0.6,0.208,1,60,no
+270532,D. Pejčinović,18,DEL,VfL Wolfsburg,Germany,0.82,0.156,4,61,no
+270559,Tiago Santos,20,LAT,Lille,Portugal,3.9,0.676,5,71,si
+270579,W. Odobert,18,EXT,Burnley,France,2.8,0.416,5,68,no
+270597,A. Makoumbou,24,MED,Cagliari,Congo,3.4,0.728,3,72,si
+270608,Y. Yarmoliuk,19,MED,Brentford,Ukraine,1.7,0.364,5,65,no
+270617,A. Murphy,19,DFC,Newcastle United,Republic of Ireland,1.2,0.416,1,63,no
+270636,E. Camara,20,MED,Udinese,France,1.1,0.104,4,63,no
+270670,F. Chaïbi,20,EXT,Eintracht Frankfurt,Algeria,12.5,1.248,5,75,no
+270673,W. Zaïre-Emery,17,MED,Paris Saint Germain,France,13.0,0.416,2,75,si
+270679,O. O'Neill,20,MED,Fulham,Republic of Ireland,0.42,0.416,2,57,no
+270682,K. Šekularac,19,MED,Fulham,Switzerland,0.62,0.312,1,60,no
+270683,I. Odutayo,20,DFC,Fulham,England,0.38,0.364,1,57,no
+270698,Yellu Santiago,19,MED,Valencia,Spain,0.55,0.104,3,60,no
+270705,J. Ferizaj,18,MED,Frosinone,Republic of Ireland,0.53,0.039,5,57,no
+270745,M. Tolba,18,LAT,VfL Bochum 1848,Germany,0.88,0.052,2,62,no
+270828,I. Salah,21,DEL,Rennes,Morocco,1.3,0.416,4,64,no
+270834,A. Rebbach,24,EXT,Deportivo Alavés,Algeria,1.9,0.52,1,69,no
+270866,Y. Chermiti,19,DEL,Everton,Portugal,5.0,0.936,4,72,no
+270884,J. Desogus,20,DEL,Cagliari,Italy,0.97,0.208,4,62,no
+270894,L. Diack,22,MED,Nantes,Senegal,2.6,0.26,1,68,no
+270901,L. Ulrich,18,MED,VfB Stuttgart,Germany,1.0,0.052,3,61,no
+270936,C. McAvoy,21,DFC,Fulham,Scotland,0.47,0.364,1,59,no
+270937,L. Harris,18,MED,Fulham,Wales,1.0,0.208,2,61,no
+270940,F. Torsiello,18,DEL,Darmstadt 98,Italy,0.53,0.104,3,58,no
+270965,T. Schlieck,17,POR,RB Leipzig,Germany,0.4,0.026,2,57,no
+270976,J. Corfitzen,18,EXT,Lecce,Denmark,0.78,0.052,2,60,no
+271014,J. N'Duquidi,18,MED,Metz,France,0.8,0.044,1,61,no
+271019,G. Fabbian,20,MED,Bologna,Italy,3.3,0.572,5,69,no
+271027,A. Dari,24,DFC,Brest,Morocco,2.6,0.364,3,69,no
+271034,Álex Padilla,19,POR,Athletic Club,Spain,0.9,0.052,1,62,no
+271035,Luis Bilbao,20,EXT,Athletic Club,Spain,1.7,0.26,1,65,no
+271037,Adu Ares,21,EXT,Athletic Club,Spain,2.1,0.312,1,66,no
+271064,J. Amissah,21,POR,Sheffield United,Germany,0.25,0.104,1,55,no
+271114,D. Seimen,17,POR,VfB Stuttgart,Germany,0.93,0.026,4,61,no
+271119,L. Ullrich,19,LAT,Borussia Mönchengladbach,Germany,1.1,0.104,4,62,no
+271146,A. Sorrentino,21,POR,Monza,Italy,1.0,0.208,4,63,no
+271173,M. Olakigbe,19,EXT,Brentford,England,0.62,0.26,3,60,no
+271191,J. Whitworth,19,POR,Crystal Palace,England,0.38,0.104,4,57,no
+271192,V. Akinwale,18,DEL,Crystal Palace,England,0.38,0.156,1,56,no
+271193,Antonio Gomis,20,POR,Atlético Madrid,Spain,1.8,0.312,2,66,no
+271196,Joan González,21,MED,Lecce,Spain,3.4,0.312,4,69,si
+271197,L. Banda,22,EXT,Lecce,Zambia,4.2,0.572,3,71,no
+271198,M. Berisha,19,MED,Lecce,Kosovo,0.57,0.104,1,59,no
+271222,M. Mbaye,25,DFC,Cádiz,Senegal,2.2,0.728,1,70,no
+271227,D. Mubama,18,DEL,West Ham United,England,0.53,0.208,1,57,no
+271247,S. Alvero,21,MED,Olympique Lyonnais,France,3.2,0.52,5,69,no
+271250,Y. Gomis,17,DFC,Le Havre,France,0.53,0.026,2,59,no
+271252,S. Ebonog,18,MED,Le Havre,France,0.75,0.052,2,61,no
+271256,S. Ngoura,18,DEL,Le Havre,France,0.78,0.052,3,61,no
+271257,É. Logbo,19,DEL,Le Havre,France,0.88,0.104,2,62,no
+271306,K. Fayad,19,MED,Montpellier,France,1.0,0.104,4,62,no
+271373,Fran Pérez,20,EXT,Valencia,Spain,3.1,0.572,3,69,si
+271375,F. Lange,19,DFC,VfL Wolfsburg,Germany,0.5,0.156,2,59,no
+271384,D. Beljo,21,DEL,FC Augsburg,Croatia,5.5,0.832,4,72,si
+271394,J. Escartin,20,DFC,Brest,France,0.97,0.104,2,62,no
+271414,K. Etta Eyong,19,MED,Cádiz,Cameroon,0.72,0.104,2,61,no
+271420,N. Bagnolini,19,POR,Bologna,Italy,0.3,0.052,3,55,no
+271421,D. Doué,18,MED,Rennes,France,4.4,0.468,3,71,no
+271438,Marco Moreno,22,DFC,Atlético Madrid,Spain,0.93,0.312,2,62,no
+271458,Y. Okou,20,DFC,Monaco,France,1.2,0.312,2,63,no
+271459,Víctor Aznar,20,POR,Cádiz,Brazil,0.85,0.104,4,62,no
+271481,S. Wade,20,LAT,Torino,England,0.75,0.26,1,61,no
+271507,D. Sylla,20,LAT,Lorient,Guinea,1.3,0.208,5,64,no
+271518,Joseda Álvarez,22,LAT,Deportivo Alavés,Spain,1.8,0.26,1,66,no
+271574,R. Lewis,18,LAT,Manchester City,England,7.0,1.04,5,73,no
+271575,S. Pafundi,17,MED,Udinese,Italy,2.5,0.039,3,67,no
+271577,I. Sulemana,20,MED,Cagliari,Ghana,3.6,0.468,4,70,si
+271578,M. Chiesa,22,POR,Hellas Verona,Italy,1.4,0.208,3,65,no
+271579,F. Terracciano,20,EXT,Hellas Verona,Italy,3.5,0.572,3,70,si
+271583,G. Garofani,20,POR,Juventus,Italy,0.75,0.312,2,61,no
+271659,A. Kemlein,18,MED,FC Union Berlin,Germany,0.6,0.052,5,60,no
+271661,Y. Lienard,20,POR,Monaco,France,0.57,0.156,4,60,no
+271673,Lázaro,21,EXT,Almería,Brazil,12.5,0.936,5,75,no
+271682,Latasa,22,DEL,Getafe,Spain,3.6,2.964,1,70,no
+271683,M. Milovanović,19,DEL,Almería,Serbia,2.6,0.364,5,68,no
+271687,Kikín,20,LAT,Cádiz,Spain,0.93,0.156,1,62,no
+271694,R. Smajić,19,DFC,FC Köln,Bosnia and Herzegovina,0.97,0.104,2,62,no
+271743,A. Cozier-Duberry,18,EXT,Arsenal,England,0.57,0.312,1,59,no
+271755,Kike Salas,21,DFC,Sevilla,Spain,1.7,0.208,3,65,no
+271808,L. Sousa,18,LAT,Arsenal,England,0.5,0.156,1,58,no
+271816,A. Brooks,19,EXT,Sheffield United,England,0.24,0.156,1,53,no
+271822,J. Miley,19,MED,Newcastle United,England,0.38,0.364,2,56,no
+271916,Bryan,21,EXT,Granada,Spain,2.5,0.26,4,67,si
+271921,G. Guarino,19,DFC,Empoli,Italy,0.5,0.047,5,58,no
+271939,S. Parkes,19,LAT,Fulham,England,0.5,0.26,1,58,no
+271956,Moha Moukhliss,23,MED,FC Barcelona,Spain,0.5,0.052,1,59,no
+271957,H. Idasiak,21,POR,Napoli,Poland,0.25,0.156,1,55,no
+271974,B. Clark,18,MED,Liverpool,England,0.62,0.26,3,59,no
+271975,Stefan Bajcetic,18,MED,Liverpool,Spain,5.0,0.78,4,72,no
+271976,L. Chambers,19,LAT,Liverpool,England,1.0,0.364,2,62,no
+271979,Nacho Ferri,18,DEL,Eintracht Frankfurt,Spain,0.82,0.104,3,61,no
+271983,K. Keben,19,LAT,Toulouse,Cameroon,1.9,0.156,2,66,no
+272379,S. Iling-Junior,19,EXT,Juventus,England,4.4,1.456,2,71,no
+272392,M. Fiorenza,20,POR,Torino,Italy,0.1,0.104,3,48,no
+272427,Alberto Flores,19,POR,Sevilla,Spain,0.75,0.052,1,61,no
+272433,Herrando,22,DFC,Osasuna,Spain,1.4,0.26,4,64,no
+272445,Álvaro,18,DEL,Real Madrid,Uruguay,1.2,0.52,4,63,no
+272449,Pablo Barrios,20,MED,Atlético Madrid,Spain,9.0,1.508,5,74,no
+272450,G. Faticanti,18,MED,Lecce,Italy,0.95,0.042,4,62,no
+272453,Pablo Durán,22,DEL,Celta de Vigo,Spain,0.5,0.156,4,59,no
+272455,Pablo Marín,19,MED,Real Sociedad,Spain,1.1,0.156,1,63,no
+272486,Diego Méndez,19,DFC,Rayo Vallecano,Spain,0.55,0.052,1,60,no
+272487,Dani Pérez,17,MED,Real Betis,Spain,1.0,0.026,2,62,no
+272497,J. Quarshie,18,DFC,TSG Hoffenheim,Germany,0.6,0.052,2,60,no
+272500,C. Baleba,19,MED,Brighton & Hove Albion,Cameroon,3.3,0.936,5,69,no
+272503,Sergio Mestre,18,POR,Atlético Madrid,Spain,0.55,0.031,1,60,no
+272515,A. Mendy,19,LAT,Nice,France,2.5,0.364,2,68,no
+272568,I. Diakité,19,LAT,Stade de Reims,Guinea,1.1,0.104,2,63,no
+272600,Marc Casadó,19,MED,FC Barcelona,Spain,1.3,0.572,1,64,no
+272602,V. Carboni,18,MED,Monza,Argentina,0.78,0.156,1,60,no
+272612,B. Gruda,19,DEL,FSV Mainz 05,Germany,1.0,0.156,3,62,no
+272718,Joel Roca,18,EXT,Girona,Spain,1.1,0.104,3,62,no
+272725,M. Prati,19,MED,Cagliari,Italy,3.6,0.364,5,70,no
+272776,L. Kuavita,19,MED,Genoa,Belgium,0.53,0.052,1,59,no
+272781,E. Ben Seghir,18,DEL,Monaco,France,5.5,0.728,2,72,no
+272783,A. Atta,20,MED,Metz,France,0.8,0.104,3,61,no
+272785,C. Mawissa Elebi,18,DFC,Toulouse,France,1.4,0.052,3,64,no
+272787,S. Simoni,18,POR,Eintracht Frankfurt,Albania,0.5,0.026,4,59,no
+272829,Ângelo,18,EXT,Strasbourg,Brazil,3.5,0.884,1,69,no
+272874,A. Engels,19,MED,FC Augsburg,Belgium,5.0,0.572,4,72,si
+272882,S. Walde,18,LAT,Borussia Mönchengladbach,Germany,0.72,0.052,3,61,no
+272924,M. Monamay,17,DFC,Bayer 04 Leverkusen,Belgium,0.72,0.026,2,60,no
+272936,Luizão,21,DFC,West Ham United,Brazil,2.9,0.936,3,69,no
+273018,Andrey Santos,19,MED,Nottingham Forest,Brazil,3.8,1.3,1,70,no
+273106,Danilo,22,MED,Nottingham Forest,Brazil,11.0,2.288,6,76,si
+273118,S. Pino,20,DFC,Deportivo Alavés,Chile,0.75,0.156,3,61,no
+273123,N. Zézé,18,DFC,Nantes,France,1.4,0.052,3,64,no
+273125,T. Borne,20,POR,Clermont,France,0.3,0.052,1,57,no
+273463,João Gomes,22,MED,Wolverhampton Wanderers,Brazil,16.0,2.288,5,76,si
+273534,A. Nuss,19,LAT,Strasbourg,France,0.5,0.104,5,58,no
+273536,T. Saettel,18,EXT,Strasbourg,France,0.53,0.052,2,57,no
+273587,D. Sadi,19,EXT,AFC Bournemouth,England,0.35,0.208,2,57,no
+273651,J. Quansah,20,DFC,Liverpool,England,0.9,0.52,1,62,no
+273693,D. Ozoh,18,MED,Crystal Palace,England,0.42,0.104,1,56,no
+273748,J. Panichelli,20,DEL,Deportivo Alavés,Argentina,1.1,0.208,3,62,no
+273772,A. Aourir,18,MED,Bayer 04 Leverkusen,Morocco,0.82,0.156,2,61,no
+273827,G. Puerta,19,MED,Bayer 04 Leverkusen,Colombia,1.1,0.26,5,63,no
+273918,Vivaldo,18,DEL,Udinese,Portugal,0.82,0.052,2,61,no
+273925,T. Foran,19,DFC,Arsenal,England,0.5,0.312,1,60,no
+273928,A. N'Guessan,19,DFC,Torino,France,0.55,0.156,3,60,no
+273931,E. Bakatukanda,19,DFC,FC Köln,Germany,0.6,0.104,3,60,no
+273932,G. Gineitis,19,MED,Torino,Lithuania,0.85,0.208,3,61,no
+273934,Gonzalez,20,EXT,Lazio,Paraguay,2.6,0.728,4,68,no
+273975,I. Housni,18,DEL,Paris Saint Germain,France,2.4,0.468,3,67,no
+273990,Jeffinho,23,EXT,Olympique Lyonnais,Brazil,8.5,1.456,4,74,no
+274066,J. Tauriainen,19,MED,Chelsea,Finland,0.45,0.364,3,57,no
+274068,A. Maurer,18,EXT,Clermont,Morocco,1.4,0.104,2,64,no
+274082,A. Matturro,18,DFC,Genoa,Uruguay,1.7,0.104,3,65,no
+274102,O. Scarles,17,MED,West Ham United,England,0.6,0.026,4,58,no
+274197,F. Gelli,26,MED,Frosinone,Italy,0.6,0.156,1,63,si
+274208,I. Kostis,20,DFC,Atlético Madrid,Cyprus,2.3,0.52,4,67,no
+274226,M. Kömür,17,MED,FC Augsburg,Germany,0.68,0.029,4,60,no
+274246,L. Miley,17,MED,Newcastle United,England,1.5,0.104,1,63,no
+274355,Iker Muñoz,20,MED,Osasuna,Spain,0.78,0.156,2,61,no
+274357,Alarcón,19,DEL,FC Barcelona,Spain,2.4,1.144,2,67,no
+274377,E. González,18,EXT,Wolverhampton Wanderers,Paraguay,1.1,0.208,6,62,no
+274387,R. Walters,18,LAT,Arsenal,England,0.8,0.208,1,61,no
+274442,A. Joujou,20,EXT,Le Havre,France,1.6,0.208,3,65,no
+274463,C. Konaté,19,DFC,Clermont,Mali,1.1,0.104,3,63,no
+274486,Marvel,20,DFC,Real Madrid,Spain,1.2,0.78,2,63,no
+274550,A. Amraoui,19,LAT,Nice,Morocco,2.5,0.364,1,68,no
+274555,Mario Martín,19,MED,Real Madrid,Spain,1.0,0.572,3,62,no
+274617,M. Pannewig,18,MED,VfL Bochum 1848,Germany,0.62,0.052,2,60,no
+274702,L. Lipani,18,MED,Sassuolo,Italy,0.42,0.036,1,56,no
+274731,Y. Stein,18,POR,FC Union Berlin,Germany,0.33,0.026,5,57,no
+274836,S. Appuah,19,EXT,Nantes,France,0.85,0.104,3,61,no
+274924,L. Opitz,18,EXT,Werder Bremen,Germany,0.53,0.052,3,58,no
+274944,D. Downs,18,DEL,FC Köln,United States,1.1,0.104,3,62,no
+274947,M. Pellegrino,20,DFC,Milan,Argentina,2.9,0.832,5,69,no
+274977,Marciano,19,DEL,Almería,Guinea Bissau,0.62,0.156,1,59,no
+275019,E. Diop,18,EXT,Monaco,France,1.8,0.208,5,65,no
+275028,Arthur,20,LAT,Bayer 04 Leverkusen,Brazil,3.2,0.676,5,69,no
+275102,S. Magassa,19,DFC,Monaco,France,1.6,0.26,1,65,no
+275126,Aleix Garrido,19,MED,FC Barcelona,Spain,0.82,0.78,2,65,no
+275136,S. Koeberle,18,MED,Stade de Reims,France,0.82,0.052,5,61,no
+275137,V. Atangana Edoa,17,MED,Stade de Reims,France,1.3,0.026,5,64,no
+275138,L. Camara,19,MED,Metz,Senegal,2.0,0.156,3,66,no
+275163,R. Belahyane,19,MED,Nice,France,1.1,0.208,1,63,no
+275208,G. Doué,20,DFC,Rennes,Côte d'Ivoire,1.6,0.364,2,65,no
+275211,D. Gebuhr,20,DFC,Eintracht Frankfurt,Germany,0.5,0.208,2,58,no
+275228,M. Braun,18,LAT,VfL Wolfsburg,Germany,0.5,0.104,3,58,no
+275229,M. Herrmann,18,MED,VfL Wolfsburg,Germany,0.33,0.104,2,55,no
+275254,S. Nhaga,17,LAT,Paris Saint Germain,Portugal,1.7,0.034,2,65,no
+275270,A. Kari,18,MED,Lorient,France,1.4,0.26,1,64,no
+275288,M. Mbaye,19,EXT,Metz,Senegal,0.78,0.104,3,61,no
+275291,N. Pisilli,18,MED,Roma,Italy,0.62,0.156,3,60,no
+275298,A. Pavlovic,19,MED,FC Bayern München,Germany,0.55,0.208,1,59,no
+275299,S. Jarju,18,LAT,Heidenheim,Gambia,0.5,0.052,2,59,no
+275324,A. Diao Diaoune,17,EXT,Real Betis,Spain,1.6,0.034,1,64,no
+275327,L. Štubljar,18,POR,Empoli,Slovenia,0.33,0.026,5,56,no
+275333,Alberto Marí,21,DEL,Valencia,Spain,2.7,0.52,3,68,no
+275346,B. Traoré,20,DEL,Toulouse,France,1.1,0.208,3,63,no
+275372,P. Diallo,19,DEL,Metz,Senegal,0.65,0.104,3,60,no
+275426,I. Digberekou,18,DFC,Borussia Mönchengladbach,Belgium,0.55,0.052,3,59,no
+275503,Unai Buján,22,EXT,Osasuna,Spain,0.5,0.208,1,59,no
+275506,Antonio Jesús,22,MED,Almería,Spain,0.5,0.156,1,59,no
+275507,M. Sarr,17,DFC,Olympique Lyonnais,France,2.0,0.026,4,66,no
+275520,Manu Bueno,18,MED,Sevilla,Spain,1.7,0.104,2,65,no
+275622,Hormigo,20,LAT,Sevilla,Spain,0.68,0.156,2,61,no
+275876,B. Parkinson,18,EXT,Newcastle United,England,0.45,0.312,1,57,no
+275907,L. Janeš,19,MED,Heidenheim,Germany,0.45,0.104,2,59,no
+275943,E. Kohler,18,MED,Werder Bremen,United States,0.5,0.052,3,58,no
+275960,D. Ihendu,17,DFC,Werder Bremen,Germany,0.78,0.026,3,61,no
+276004,T. Buchmann,18,DFC,FC Bayern München,Germany,0.75,0.104,3,60,no
+276064,J. Buyabu,19,LAT,Sheffield United,England,0.6,0.156,1,60,no
+276087,D. Stamatakis,20,POR,Osasuna,Greece,0.42,0.104,2,58,no
+276235,F. Mughe,19,EXT,Olympique de Marseille,Cameroon,2.0,0.312,4,66,no
+276256,M. Diakhon,17,EXT,Stade de Reims,France,0.62,0.026,3,60,no
+276257,F. Fall,19,DFC,Stade de Reims,Senegal,0.55,0.104,4,59,no
+276304,J. Milošević,17,DEL,VfB Stuttgart,Serbia,1.0,0.049,4,62,no
+276322,L. Olmeta,17,POR,Lille,France,0.5,0.026,3,58,no
+276323,A. Malouda,17,MED,Lille,France,1.0,0.036,3,62,no
+276324,T. Dago,18,DEL,Lille,France,0.93,0.104,3,62,no
+276358,G. Ranos,19,DEL,Borussia Mönchengladbach,Armenia,1.3,0.208,4,63,no
+276422,G. Kvernadze,20,EXT,Frosinone,Georgia,1.4,0.156,1,64,no
+276460,S. Moore,17,EXT,West Ham United,Republic of Ireland,1.0,0.052,3,61,no
+276471,Altimira,21,MED,Real Betis,Spain,2.7,0.364,4,68,no
+276518,M. Łubik,19,POR,FC Augsburg,Poland,0.45,0.052,3,60,no
+276633,N. Mendy,18,LAT,Real Betis,France,0.5,0.026,1,59,no
+276682,C. Ndour,18,MED,Paris Saint Germain,Italy,3.0,0.468,5,68,no
+276704,B. Dizdarević,21,POR,Montpellier,Bosnia and Herzegovina,0.65,0.104,5,61,no
+276718,K. Rodney,18,MED,Crystal Palace,England,0.35,0.104,1,56,no
+276747,A. Laâziri,19,LAT,Olympique Lyonnais,Morocco,1.3,0.208,4,64,no
+276754,G. Corona,19,DEL,Empoli,Italy,0.85,0.034,1,61,no
+276786,N. Bonte,19,EXT,Lens,France,0.95,0.208,1,62,no
+276787,A. Sishuba,18,MED,Lens,Belgium,1.5,0.156,3,64,no
+276865,C. Doumbia,18,LAT,Le Havre,France,0.88,0.047,3,62,no
+276869,Mario Da Costa,22,MED,Atlético Madrid,Spain,0.5,0.052,1,60,no
+276899,Z. Smajlović,19,DFC,Lecce,Sweden,0.19,0.052,3,52,no
+276949,Dotor,22,MED,Celta de Vigo,Spain,5.0,0.728,5,72,no
+276951,R. Pagano,18,MED,Roma,Italy,1.0,0.156,3,62,no
+276956,Arribas,20,DFC,Rayo Vallecano,Spain,0.45,0.104,1,58,no
+276987,Benedí,20,POR,Rayo Vallecano,Spain,0.42,0.052,1,59,no
+276988,A. Bellaarouch,21,POR,Strasbourg,Morocco,0.35,0.104,2,57,no
+277013,C. Traorè,18,EXT,Milan,Côte d'Ivoire,1.0,0.208,5,62,no
+277015,M. Wendt,18,POR,Darmstadt 98,Germany,0.45,0.026,1,58,no
+277029,Miguel Román,20,MED,Celta de Vigo,Spain,0.65,0.156,3,60,no
+277031,A. Khusanov,19,DFC,Lens,Uzbekistan,1.9,0.26,4,66,no
+277068,Lucas Pires,22,LAT,Cádiz,Brazil,4.0,0.728,1,71,no
+277118,M. Faye,18,DFC,FC Barcelona,Senegal,1.3,0.312,4,64,no
+277178,O. Diakité,19,DEL,Stade de Reims,Côte d'Ivoire,2.4,0.26,5,67,si
+277179,Fermín López,20,MED,FC Barcelona,Spain,1.5,0.884,4,64,no
+277227,A. Lebarbier,18,MED,Real Sociedad,France,0.55,0.052,1,59,no
+277244,Rafa Marín,21,DFC,Deportivo Alavés,Spain,2.8,1.456,1,68,no
+277283,J. Hinshelwood,18,MED,Brighton & Hove Albion,England,0.6,0.156,3,60,no
+277295,O. Bobb,19,EXT,Manchester City,Norway,1.5,0.728,3,64,no
+277427,N. O'Reilly,18,MED,Manchester City,England,0.82,0.312,1,61,no
+277432,P. Dorgu,18,LAT,Lecce,Denmark,1.8,0.052,4,64,no
+277434,M. Hunt,21,EXT,Everton,England,0.42,0.26,1,58,no
+277515,S. Shpendi,20,DEL,Empoli,Albania,0.97,0.104,2,62,no
+277537,Natan,22,DFC,Napoli,Brazil,4.9,1.3,5,72,no
+277578,A. Bojang,19,DEL,Stade de Reims,Gambia,1.0,0.156,5,62,no
+277581,Omorodion,19,DEL,Deportivo Alavés,Spain,2.9,0.572,1,68,no
+277601,E. Soglo,17,LAT,Olympique de Marseille,England,1.3,0.026,4,64,no
+277636,R. Burnete,19,DEL,Lecce,Romania,1.0,0.104,2,62,no
+277642,Astralaga,19,POR,FC Barcelona,Spain,0.5,0.26,2,60,no
+277644,T. Negrel,20,POR,Lille,France,0.47,0.104,1,59,no
+277649,Hugo González,20,EXT,Valencia,Spain,0.95,0.26,1,62,no
+277650,Martín Tejón,19,MED,Valencia,Spain,0.78,0.156,3,61,no
+277668,F. Krätzig,20,LAT,FC Bayern München,Germany,0.62,0.26,2,60,no
+277669,T. Hülsmann,19,POR,FC Bayern München,Germany,0.38,0.104,3,57,no
+277691,Quintanilla,19,MED,Mallorca,Spain,1.4,0.156,5,64,no
+277704,T. Corazza,19,LAT,Bologna,Italy,1.3,0.156,3,64,no
+277708,Unai Gómez,20,MED,Athletic Club,Spain,3.1,0.468,1,69,no
+277734,A. Borbei,20,POR,Lecce,Romania,0.53,0.052,2,60,no
+277795,Deivid Washington,18,DEL,Chelsea,Brazil,2.6,0.624,7,67,no
+277820,N. Lahmadi,18,MED,Toulouse,France,2.3,0.104,3,65,no
+277822,T. Stewart,23,DEL,Salernitana,Jamaica,2.3,0.52,3,67,no
+277823,D. Peretz,22,POR,FC Bayern München,Israel,4.6,1.092,5,72,no
+277825,Jorge Benito,17,POR,Getafe,Spain,0.35,0.026,1,57,no
+277826,Ale Gorrin,20,POR,Las Palmas,Spain,0.28,0.052,1,56,no
+277827,Kike Bartual,21,POR,Villarreal,Spain,0.65,0.104,1,61,no
+277832,C. Ikwuemesi,21,DEL,Salernitana,Nigeria,3.2,0.624,2,69,no
+277839,N. Krstović,23,DEL,Lecce,Montenegro,9.5,0.78,4,74,si
+277846,Nico Paz,18,MED,Real Madrid,Spain,1.0,0.364,4,62,no
+277862,F. Alessio,18,DEL,Roma,Italy,0.82,0.208,2,61,no
+277869,M. Kayode,18,LAT,Fiorentina,Italy,1.4,0.156,2,64,no
+277878,Santi García,21,MED,Getafe,Spain,0.5,0.156,1,59,no
+277887,M. Finkgräfe,19,LAT,FC Köln,Germany,0.9,0.104,2,62,no
+277904,E. Beach,19,POR,Chelsea,Wales,0.22,0.208,2,54,no
+277908,D. Kochen,17,POR,FC Barcelona,United States,0.4,0.026,2,57,no
+277909,E. Kroupi,17,MED,Lorient,France,1.5,0.036,2,64,no
+277918,B. Johnson,17,EXT,Lecce,England,1.0,0.104,1,62,no
+277929,Kauã Santos,20,POR,Eintracht Frankfurt,Brazil,0.7,0.156,5,61,no
+277930,M. Jaouab,21,DFC,Rennes,Morocco,1.4,0.312,4,64,no
+277935,F. Sylla,17,MED,Lens,France,1.0,0.039,3,62,no
+277954,K. Yıldız,18,DEL,Juventus,Turkey,1.5,0.416,2,64,no
+277958,D. Mamutovic,22,EXT,FSV Mainz 05,Germany,0.72,0.208,1,61,no
+277999,Adson,22,EXT,Nantes,Brazil,2.5,0.416,5,68,no
+278013,S. Sazonov,21,DFC,Torino,Georgia,12.0,1.3,4,75,no
+278016,Murillo,20,DFC,Nottingham Forest,Brazil,2.7,0.78,5,68,no
+278017,O. Kellyman,17,MED,Aston Villa,Northern Ireland,0.55,0.052,2,58,no
+278032,C. Mandas,21,POR,Lazio,Greece,0.22,0.156,5,55,no
+278045,Fraga,20,POR,Real Sociedad,Spain,0.53,0.104,1,60,no
+278051,Miki Bosch,22,DFC,Granada,Spain,1.0,0.156,1,63,no
+278065,S. Sane,19,DFC,Metz,Senegal,0.72,0.104,5,61,no
+278093,M. Bentoumi,18,MED,Le Havre,France,0.53,0.052,3,58,no
+278094,J. Bengui,17,POR,Olympique Lyonnais,France,0.5,0.026,2,59,no
+278095,J. Van Neck,19,POR,Olympique de Marseille,Belgium,0.47,0.104,4,58,no
+278096,L. Amatucci,19,MED,Fiorentina,Italy,0.62,0.208,2,60,no
+278097,G. Earthy,18,MED,West Ham United,England,0.33,0.156,1,56,no
+278098,K. Casey,18,DFC,West Ham United,England,0.33,0.104,4,55,no
+278102,G. Kodua,18,EXT,West Ham United,England,0.53,0.156,2,58,no
+278118,S. Berkani,19,MED,Clermont,Algeria,0.3,0.052,5,57,no
+278119,I. Sané,18,DEL,Metz,Senegal,0.82,0.052,5,61,no
+278126,Selvi,18,MED,Girona,Spain,0.72,0.052,1,61,no

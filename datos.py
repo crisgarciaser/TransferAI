@@ -1,7 +1,10 @@
 import csv
 from pathlib import Path
 
-CARPETA = Path(__file__).parent / "datos"
+CARPETA = Path(__file__).parent / "datos_reales"
+EDAD_VETERANO = 30       # el mejor jugador actual se considera veterano desde esta edad
+EDAD_JOVEN = 24          # un candidato es "joven" hasta esta edad
+TOLERANCIA_RATING = 6    # un joven puede tener hasta estos puntos menos que el veterano
 
 def _numero(texto):
     valor = float(texto)
@@ -42,7 +45,7 @@ def obtener_resumen_club(club):
         "n_jugadores": len(plantilla),
     }
 
-def buscar_jugadores(posicion, edad_max=None, valor_max=None, excluir_club=None):
+def buscar_jugadores(posicion, edad_max=None, valor_max=None, excluir_club=None, max_resultados=10):
     resultado = [j for j in cargar_jugadores() if j["posicion"] == posicion]
     if edad_max is not None:
         resultado = [j for j in resultado if j["edad"] <= edad_max]
@@ -50,7 +53,8 @@ def buscar_jugadores(posicion, edad_max=None, valor_max=None, excluir_club=None)
         resultado = [j for j in resultado if j["valor_mercado"] <= valor_max]
     if excluir_club is not None:
         resultado = [j for j in resultado if j["club"] != excluir_club]
-    return sorted(resultado, key=lambda j: j["rating"], reverse=True)
+    resultado = sorted(resultado, key=lambda j: j["rating"], reverse=True)
+    return resultado[:max_resultados]
 
 def evaluar_encaje(id_jugador, club):
     try:
@@ -66,10 +70,21 @@ def evaluar_encaje(id_jugador, club):
     if club not in clubes:
         return {"error": f"No existe el club {club}"}
 
-    ratings_actuales = [
-        j["rating"] for j in obtener_plantilla(club) if j["posicion"] == jugador["posicion"]
-    ]
-    mejor_actual = max(ratings_actuales, default=0)
+    propios = [j for j in obtener_plantilla(club) if j["posicion"] == jugador["posicion"]]
+    mejor = max(propios, key=lambda j: j["rating"], default=None)
+    mejor_rating = mejor["rating"] if mejor else 0
+    edad_mejor = mejor["edad"] if mejor else None
+    mejora = jugador["rating"] - mejor_rating
+
+    if mejora > 0:
+        tipo = "mejora_inmediata"
+    elif (mejor is not None
+          and edad_mejor >= EDAD_VETERANO
+          and jugador["edad"] <= EDAD_JOVEN
+          and mejora >= -TOLERANCIA_RATING):
+        tipo = "sucesor_joven"
+    else:
+        tipo = "no_aporta"
 
     return {
         "id": jugador["id"],
@@ -82,8 +97,10 @@ def evaluar_encaje(id_jugador, club):
         "anios_contrato": jugador["anios_contrato"],
         "nivel_club_actual": clubes[jugador["club"]]["nivel"],
         "nivel_tu_club": clubes[club]["nivel"],
-        "mejor_rating_actual_en_tu_club": mejor_actual,
-        "mejora_sobre_el_mejor_actual": jugador["rating"] - mejor_actual,
+        "mejor_rating_actual_en_tu_club": mejor_rating,
+        "edad_del_mejor_actual": edad_mejor,
+        "mejora_sobre_el_mejor_actual": mejora,
+        "tipo_de_fichaje": tipo,
     }
 
 def analizar_viabilidad(jugador, resumen):
