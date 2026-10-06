@@ -36,6 +36,7 @@ class Estado(TypedDict, total=False):
     intentos_scouting: int
     decision_objetivo: str
     jugador_objetivo: dict
+    vio_plantilla: bool
 
 
 # ---------------------------------------------- PASOS 1-2: CARGA Y PERFIL
@@ -45,6 +46,43 @@ def cargar_club(estado: Estado) -> dict:
         "resumen": obtener_resumen_club(club),
         "plantilla": obtener_plantilla(club),
     }
+
+
+ORDEN_POSICIONES = ["POR", "DFC", "LAT", "MED", "EXT", "DEL"]
+
+
+def mostrar_plantilla(estado: Estado) -> None:
+    r = estado["resumen"]
+    print(f"\n=== PLANTILLA DE {estado['club'].upper()} ===")
+    print(f"Presupuesto de fichajes: {r['presupuesto_fichajes']} | Tope salarial: {r['tope_salarial']} | "
+          f"Masa salarial: {r['masa_salarial_actual']} | Margen: {r['margen_salarial']} (millones de euros)")
+    for pos in ORDEN_POSICIONES:
+        grupo = sorted((j for j in estado["plantilla"] if j["posicion"] == pos),
+                       key=lambda j: j["rating"], reverse=True)
+        if not grupo:
+            continue
+        print(f"\n{pos} ({len(grupo)})")
+        for j in grupo:
+            titular = "titular" if j["titular"] == "si" else "suplente"
+            print(f"  {j['nombre']:<22} {j['edad']:>2} años  rating {j['rating']:>2}  "
+                  f"pot {j.get('potencial', '-'):>2}  {titular:<8}  contrato {j['anios_contrato']} a  "
+                  f"salario {j['salario_anual']:>6}  valor {j['valor_mercado']:>6}")
+
+
+def menu_plantilla(estado: Estado) -> dict:
+    # Pausa humana inicial: el usuario decide si quiere ver la plantilla antes del diagnóstico
+    respuesta = interrupt({
+        "menu": "plantilla",
+        "club": estado["club"],
+        "n_jugadores": len(estado["plantilla"]),
+    })
+    opcion = str(respuesta).strip().lower()
+    if opcion in ("1", "ver", "plantilla"):
+        mostrar_plantilla(estado)
+        return {"vio_plantilla": True}
+    if opcion not in ("2", "ir", "recomendaciones"):
+        print("Opción no reconocida; se continúa directamente con las recomendaciones.")
+    return {"vio_plantilla": False}
 
 
 def perfilar_plantilla(estado: Estado) -> dict:
@@ -328,6 +366,7 @@ def decidir_ruta(estado: Estado) -> str:
 # ------------------------------------------------------------- EL MAPA
 constructor = StateGraph(Estado)
 constructor.add_node("cargar_club", cargar_club)
+constructor.add_node("menu_plantilla", menu_plantilla)
 constructor.add_node("perfilar_plantilla", perfilar_plantilla)
 constructor.add_node("diagnosticar", diagnosticar)
 constructor.add_node("confirmar_prioridades", confirmar_prioridades)
@@ -336,7 +375,8 @@ constructor.add_node("analizar_finanzas", analizar_finanzas)
 constructor.add_node("elegir_objetivo", elegir_objetivo)
 
 constructor.add_edge(START, "cargar_club")
-constructor.add_edge("cargar_club", "perfilar_plantilla")
+constructor.add_edge("cargar_club", "menu_plantilla")
+constructor.add_edge("menu_plantilla", "perfilar_plantilla")
 constructor.add_edge("perfilar_plantilla", "diagnosticar")
 constructor.add_edge("diagnosticar", "confirmar_prioridades")
 constructor.add_edge("confirmar_prioridades", "hacer_scouting")
@@ -381,7 +421,13 @@ if __name__ == "__main__":
     while "__interrupt__" in resultado:
         pausa = resultado["__interrupt__"][0].value
 
-        if "propuestas" in pausa:
+        if "menu" in pausa:
+            print(f"\n=== {pausa['club']} cargado ({pausa['n_jugadores']} jugadores) ===")
+            print("1. Ver la plantilla y luego continuar con las recomendaciones")
+            print("2. Ir directo a las recomendaciones")
+            decision = input("¿Qué quieres hacer? (1 o 2): ")
+
+        elif "propuestas" in pausa:
             print("\n=== PROPUESTA DEL MANAGER AGENT ===")
             for p in pausa["propuestas"]:
                 print(f"- {p['posicion']} (urgencia {p['urgencia']}): {p['motivo']}")
