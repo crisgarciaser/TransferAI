@@ -36,7 +36,7 @@ def extraer_json(texto):
     return json.loads(texto[inicio : fin + 1])
 
 
-def ejecutar_con_herramientas(sistema, usuario, herramientas, funciones, max_pasos=8):
+def ejecutar_con_herramientas(sistema, usuario, herramientas, funciones, max_pasos=12):
     """Ciclo Pensar-Actuar-Observar. Devuelve el texto final del modelo (o None)."""
     mensajes = [
         {"role": "system", "content": sistema},

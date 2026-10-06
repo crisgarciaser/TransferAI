@@ -5,6 +5,9 @@ CARPETA = Path(__file__).parent / "datos_reales"
 EDAD_VETERANO = 30       # el mejor jugador actual se considera veterano desde esta edad
 EDAD_JOVEN = 24          # un candidato es "joven" hasta esta edad
 TOLERANCIA_RATING = 6    # un joven puede tener hasta estos puntos menos que el veterano
+EDAD_PROMESA = 21        # un candidato es "promesa" hasta esta edad
+MARGEN_POTENCIAL = 3     # su potencial debe superar al mejor actual por al menos estos puntos
+TOLERANCIA_PROMESA = 10  # una promesa puede tener hasta estos puntos menos de rating que el mejor actual
 
 def _numero(texto):
     valor = float(texto)
@@ -51,15 +54,30 @@ def obtener_resumen_club(club):
         "n_jugadores": len(plantilla),
     }
 
-def buscar_jugadores(posicion, edad_max=None, valor_max=None, excluir_club=None, max_resultados=10):
+def buscar_jugadores(posicion, edad_max=None, valor_max=None, excluir_club=None, max_resultados=10,
+                     edad_min=None, rating_min=None, rating_max=None, potencial_min=None,
+                     ordenar_por="rating"):
     resultado = [j for j in cargar_jugadores() if j["posicion"] == posicion]
     if edad_max is not None:
         resultado = [j for j in resultado if j["edad"] <= edad_max]
+    if edad_min is not None:
+        resultado = [j for j in resultado if j["edad"] >= edad_min]
     if valor_max is not None:
         resultado = [j for j in resultado if j["valor_mercado"] <= valor_max]
     if excluir_club is not None:
         resultado = [j for j in resultado if j["club"] != excluir_club]
-    resultado = sorted(resultado, key=lambda j: j["rating"], reverse=True)
+    if rating_min is not None:
+        resultado = [j for j in resultado if j["rating"] >= rating_min]
+    if rating_max is not None:
+        resultado = [j for j in resultado if j["rating"] <= rating_max]
+    if potencial_min is not None:
+        resultado = [j for j in resultado if j["potencial"] >= potencial_min]
+    if ordenar_por == "potencial":
+        clave = lambda j: (j["potencial"], j["rating"])
+    else:
+        # Solo rating: en empates se conserva el orden original (compatibilidad hacia atrás)
+        clave = lambda j: j["rating"]
+    resultado = sorted(resultado, key=clave, reverse=True)
     return resultado[:max_resultados]
 
 def evaluar_encaje(id_jugador, club):
@@ -89,6 +107,10 @@ def evaluar_encaje(id_jugador, club):
           and jugador["edad"] <= EDAD_JOVEN
           and mejora >= -TOLERANCIA_RATING):
         tipo = "sucesor_joven"
+    elif (jugador["edad"] <= EDAD_PROMESA
+          and jugador["potencial"] >= mejor_rating + MARGEN_POTENCIAL
+          and mejora >= -TOLERANCIA_PROMESA):
+        tipo = "promesa"
     else:
         tipo = "no_aporta"
 
@@ -98,6 +120,7 @@ def evaluar_encaje(id_jugador, club):
         "posicion": jugador["posicion"],
         "edad": jugador["edad"],
         "rating": jugador["rating"],
+        "potencial": jugador["potencial"],
         "club_actual": jugador["club"],
         "es_titular_en_su_club": jugador["titular"] == "si",
         "anios_contrato": jugador["anios_contrato"],

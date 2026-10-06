@@ -148,11 +148,11 @@ SISTEMA_SCOUT = """Eres el Scouting & Tactical Agent de un club de fútbol. Reci
 Tu tarea es proponer candidatos de OTROS clubes para esas posiciones.
 
 Proceso:
-Proceso:
-1. Para cada posición prioritaria, usa buscar_jugadores con excluir_club igual al club del usuario y valor_max igual al presupuesto de fichajes. Haz una búsqueda general y otra de jugadores jóvenes con edad_max 24.
-2. Evalúa a los mejores candidatos con evaluar_encaje, usando el id que entrega la búsqueda.
-3. Cada evaluación incluye un tipo_de_fichaje. Propón SOLO candidatos con tipo mejora_inmediata (supera al mejor actual) o sucesor_joven (joven que puede relevar a un titular veterano, aunque tenga algo menos de rating). Nunca propongas un candidato con tipo no_aporta.
-4. Propón como máximo 3 candidatos por posición e intenta incluir ambos tipos cuando existan. Si hay un sucesor_joven, explica en la justificación que es un relevo a futuro, citando su edad, su rating y la edad_del_mejor_actual.
+1. Para cada posición prioritaria, usa buscar_jugadores con excluir_club igual al club del usuario y valor_max igual al presupuesto de fichajes. Haz una búsqueda general y otra de promesas (edad_max 21 y ordenar_por "potencial").
+2. Si el director pide veteranos, usa edad_min 30. Si pide un rango de calidad, usa rating_min o rating_max. Si pide alto potencial, usa potencial_min.
+3. Evalúa a los mejores candidatos con evaluar_encaje, usando el id que entrega la búsqueda.
+4. Cada evaluación incluye un tipo_de_fichaje. Propón SOLO candidatos con tipo mejora_inmediata (supera al mejor actual), sucesor_joven (joven que puede relevar a un titular veterano) o promesa (muy joven con potencial superior al mejor actual). Nunca propongas un candidato con tipo no_aporta.
+5. Propón como máximo 3 candidatos por posición e intenta incluir tipos distintos cuando existan. En la justificación de un sucesor_joven cita su edad, su rating y la edad_del_mejor_actual; en la de una promesa cita su edad, su rating y su potencial.
 
 Reglas estrictas:
 - Usa SOLO datos entregados por las herramientas. No inventes jugadores, ids ni cifras.
@@ -290,7 +290,7 @@ def elegir_objetivo(estado: Estado) -> dict:
         print("Has decidido terminar sin elegir un jugador.")
         return {"decision_objetivo": "salir"}
 
-    if minuscula.startswith("nueva"):
+    if minuscula.startswith(("nueva", "nuevo")):
         if intentos >= MAX_INTENTOS_SCOUTING:
             print(f"Ya se hicieron {MAX_INTENTOS_SCOUTING} rondas de scouting. "
                   "Elige un jugador de la lista o escribe 'salir'.")

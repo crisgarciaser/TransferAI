@@ -5,7 +5,7 @@ HERRAMIENTAS_SCOUTING = [
         "type": "function",
         "function": {
             "name": "buscar_jugadores",
-            "description": "Busca jugadores por posición con filtros opcionales, ordenados por rating descendente. Cada resultado incluye su id.",
+            "description": "Busca jugadores por posición con filtros opcionales, ordenados por rating (o por potencial) descendente. Cada resultado incluye su id, rating y potencial.",
             "parameters": {
                 "type": "object",
                 "properties": {
@@ -13,6 +13,11 @@ HERRAMIENTAS_SCOUTING = [
                     "edad_max": {"type": "integer", "description": "Edad máxima"},
                     "valor_max": {"type": "number", "description": "Valor de mercado máximo, en millones de euros"},
                     "excluir_club": {"type": "string", "description": "Club a excluir de la búsqueda"},
+                    "edad_min": {"type": "integer", "description": "Edad mínima; útil para pedir veteranos (por ejemplo 30)"},
+                    "rating_min": {"type": "integer", "description": "Rating mínimo (calidad actual)"},
+                    "rating_max": {"type": "integer", "description": "Rating máximo (calidad actual)"},
+                    "potencial_min": {"type": "integer", "description": "Potencial mínimo (calidad que puede alcanzar)"},
+                    "ordenar_por": {"type": "string", "enum": ["rating", "potencial"], "description": "Criterio de orden descendente. Usa \"potencial\" para buscar promesas; por defecto \"rating\""},
                 },
                 "required": ["posicion"],
             },
@@ -22,7 +27,7 @@ HERRAMIENTAS_SCOUTING = [
         "type": "function",
         "function": {
             "name": "evaluar_encaje",
-            "description": "Evalúa qué tanto aporta un jugador a la plantilla del club: compara su rating con el mejor actual en esa posición y entrega edad, contrato y nivel de clubes. Incluye tipo_de_fichaje (mejora_inmediata, sucesor_joven o no_aporta).",
+            "description": "Evalúa qué tanto aporta un jugador a la plantilla del club: compara su rating con el mejor actual en esa posición y entrega edad, contrato y nivel de clubes. Incluye el potencial del jugador y tipo_de_fichaje, que puede ser mejora_inmediata, sucesor_joven, promesa o no_aporta.",
             "parameters": {
                 "type": "object",
                 "properties": {
