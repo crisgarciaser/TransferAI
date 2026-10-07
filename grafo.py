@@ -464,4 +464,3 @@ if __name__ == "__main__":
         print("No se eligió ningún jugador objetivo.")
 
     print()
-    print(app.get_graph().draw_mermaid())
