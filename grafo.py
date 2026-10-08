@@ -39,7 +39,7 @@ class Estado(TypedDict, total=False):
     vio_plantilla: bool
 
 
-# ---------------------------------------------- PASOS 1-2: CARGA Y PERFIL
+# ---------------------------------------------- CARGA Y PERFIL
 def cargar_club(estado: Estado) -> dict:
     club = estado["club"]
     return {
@@ -160,7 +160,7 @@ def diagnosticar(estado: Estado) -> dict:
     return {"diagnostico": diagnostico}
 
 
-# ------------------------------------------------ PASO 3: PAUSA HUMANA 1
+# ------------------------------------------------ PAUSA HUMANA CONFIRMAR POSICION
 def confirmar_prioridades(estado: Estado) -> dict:
     propuestas = estado["diagnostico"]["posiciones_prioritarias"]
 
@@ -314,7 +314,7 @@ def analizar_finanzas(estado: Estado) -> dict:
     return {"lista_final": viables}
 
 
-# ------------------------------------------------ PASO 4: PAUSA HUMANA 2
+# ------------------------------------------------ PAUSA HUMANA 
 def elegir_objetivo(estado: Estado) -> dict:
     candidatos = estado.get("lista_final", [])
     intentos = estado.get("intentos_scouting", 1)
@@ -459,7 +459,7 @@ if __name__ == "__main__":
     if objetivo:
         print(f"Jugador objetivo: {objetivo['nombre']} ({objetivo['posicion']}, {objetivo['edad']} años, "
               f"{objetivo['club']}), rating {objetivo['rating']}")
-        print(f"Listo para iniciar la negociación (siguiente hito).")
+        print(f"Listo para iniciar la negociación.")
     else:
         print("No se eligió ningún jugador objetivo.")
 

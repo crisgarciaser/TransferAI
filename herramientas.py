@@ -5,7 +5,7 @@ HERRAMIENTAS_SCOUTING = [
         "type": "function",
         "function": {
             "name": "buscar_jugadores",
-            "description": "Busca jugadores por posición con filtros opcionales, ordenados por rating (o por potencial) descendente. Cada resultado incluye su id, rating y potencial.",
+            "description": "Busca jugadores por posición con filtros opcionales, ordenados por rating descendente. Cada resultado incluye su id.",
             "parameters": {
                 "type": "object",
                 "properties": {
@@ -27,7 +27,7 @@ HERRAMIENTAS_SCOUTING = [
         "type": "function",
         "function": {
             "name": "evaluar_encaje",
-            "description": "Evalúa qué tanto aporta un jugador a la plantilla del club: compara su rating con el mejor actual en esa posición y entrega edad, contrato y nivel de clubes. Incluye el potencial del jugador y tipo_de_fichaje, que puede ser mejora_inmediata, sucesor_joven, promesa o no_aporta.",
+            "description": "Evalúa qué tanto aporta un jugador a la plantilla del club: compara su rating con el mejor actual en esa posición y entrega edad, contrato y nivel de clubes. Incluye tipo_de_fichaje (mejora_inmediata, sucesor_joven o no_aporta).",
             "parameters": {
                 "type": "object",
                 "properties": {
