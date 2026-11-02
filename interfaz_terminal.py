@@ -71,7 +71,8 @@ def mostrar_evento(evento):
     elif tipo == "correccion_arbitro":
         print(f"  [árbitro] {mensaje}")
     elif tipo == "consejo":
-        print(f"\nAsesor (Manager + Financial): {mensaje}")
+        quien = {"manager": "Manager Agent", "financiero": "Financial Agent"}.get(datos.get("agente"), "Asesor")
+        print(f"\n{quien}: {mensaje}")
     elif tipo == "desempeno":
         mostrar_desempeno(datos)
     elif tipo == "info":

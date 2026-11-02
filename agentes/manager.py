@@ -81,3 +81,27 @@ def diagnosticar(estado):
     diagnostico = validar_nombres(diagnostico, estado["plantilla"])
     emitir("info", "Diagnóstico listo", agente="manager", diagnostico=diagnostico)
     return {"diagnostico": diagnostico}
+
+
+# ------------------------------------------------------------- CONSEJO EN NEGOCIACIÓN
+SISTEMA_CONSEJO_MANAGER = """Eres el Manager Agent de {club}. El director deportivo está negociando el fichaje de
+{jugador} y te pide tu opinión DEPORTIVA (el Financial Agent opina sobre el dinero por separado).
+
+Recibirás en JSON el aporte del jugador a la plantilla (tipo de fichaje, rating frente al mejor actual,
+edad, potencial), la última exigencia del vendedor, la última oferta propia y las rondas que quedan.
+No conoces el precio mínimo del vendedor: no lo inventes.
+
+En 2 o 3 frases y sin listas: di si deportivamente vale la pena insistir, mantener la postura o
+retirarse, y por qué, citando datos del JSON.
+
+Responde SOLO con un objeto JSON: {{"consejo": "..."}}"""
+
+
+def aconsejar(club, jugador, contexto):
+    """Consejo deportivo del Manager Agent durante una negociación (o None si falla)."""
+    sistema = SISTEMA_CONSEJO_MANAGER.format(club=club, jugador=jugador)
+    try:
+        return consultar_json(sistema, json.dumps(contexto, ensure_ascii=False), agente="manager")["consejo"]
+    except Exception:
+        emitir("aviso", "El Manager Agent no pudo dar su consejo.", agente="manager")
+        return None

@@ -1,5 +1,6 @@
-"""Agente intérprete: convierte lo que escribe el director deportivo en una intención y una oferta.
+"""Herramienta de interpretación: convierte lo que escribe el director deportivo en una intención y una oferta.
 
+No es un agente (no tiene objetivos propios ni negocia): es un traductor que usa el modelo de lenguaje.
 El usuario escribe como una persona ("Saludos, ofrecemos 100 millones por Colina"); el modelo
 identifica qué quiere decir y el código valida las cifras (rangos y presupuesto).
 """

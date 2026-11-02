@@ -5,6 +5,8 @@ Flujo:
     -> (objetivo sin oferta)  escribir_primer_contacto -> interpretar_primer_contacto
          -> [confirmar_interpretacion] -> enviar_primer_contacto -> centro de mando
          (la respuesta del club llega días después a la bandeja, ver pasar_dias)
+Agentes que participan: Selling Club Agent (decide y redacta), Manager y Financial (consejo).
+La herramienta de interpretación (negociacion/interprete.py) traduce los mensajes del usuario.
     -> (negociación abierta)  entrar_negociacion -> turno_comprador -> interpretar_turno
          -> dar_consejo | [confirmar_interpretacion] | responder_vendedor ... -> cerrar_negociacion_club
 Una vez dentro de una negociación abierta no se vuelve al menú hasta el acuerdo o la ruptura.
@@ -14,7 +16,8 @@ por eso las llamadas al modelo están siempre en nodos distintos de las pausas.
 """
 from langgraph.types import interrupt
 
-from agentes import asesor, club_vendedor, interprete
+from agentes import club_vendedor, financiero, manager
+from negociacion import interprete
 from config import DIAS_POR_NEGOCIACION, DIAS_VENTANA, MAX_RONDAS_CLUB
 from datos import cargar_clubes, obtener_plantilla
 from negociacion.reglas import (
@@ -306,19 +309,25 @@ def interpretar_turno(estado):
 
 
 def dar_consejo(estado):
+    """Entre rondas aconsejan el Manager Agent (lo deportivo) y el Financial Agent (lo económico).
+    Ninguno conoce el precio mínimo del vendedor."""
     reg = _activa(estado)
-    contexto = {
-        "valor_mercado_estimado": reg["jugador"]["valor_mercado"],
-        "jugador": {k: reg["jugador"][k] for k in ("edad", "rating", "potencial", "anios_contrato", "posicion")},
-        "presupuesto_disponible": estado["resumen"]["presupuesto_fichajes"],
+    j = reg["jugador"]
+    deportivo = {
+        "tipo_de_fichaje": j.get("tipo_de_fichaje", ""), "justificacion_del_scout": j.get("justificacion", ""),
+        "jugador": {k: j[k] for k in ("edad", "rating", "potencial", "anios_contrato", "posicion")},
         "ultima_exigencia_vendedor": describir_oferta(reg["ultima_peticion"]),
         "ultima_oferta_propia": describir_oferta(reg["ultima_oferta"]) if reg["ultima_oferta"] else "ninguna",
         "rondas_restantes": MAX_RONDAS_CLUB - reg["ronda"],
-        "historial": [f"{h['de']}: {h['texto']}" for h in reg["historial"][-6:]],
     }
-    consejo = asesor.aconsejar(estado["club"], reg["jugador"]["nombre"], contexto)
-    if consejo:
-        emitir("consejo", consejo, agente="asesor")
+    consejo_manager = manager.aconsejar(estado["club"], j["nombre"], deportivo)
+    if consejo_manager:
+        emitir("consejo", consejo_manager, agente="manager")
+    consejo_financiero = financiero.aconsejar(
+        reg["ultima_peticion"]["fijo"], estado["resumen"]["presupuesto_fichajes"],
+        {"valor_mercado_estimado": j["valor_mercado"],
+         "ultima_oferta_propia": describir_oferta(reg["ultima_oferta"]) if reg["ultima_oferta"] else "ninguna"})
+    emitir("consejo", consejo_financiero, agente="financiero")
     return {"siguiente": "turno_comprador"}
 
 
