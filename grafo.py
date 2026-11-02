@@ -93,11 +93,15 @@ def confirmar_prioridades(estado: Estado) -> dict:
             elegidas.append(codigo)
 
     if not elegidas:
-        elegidas = [p["posicion"] for p in propuestas]
-        emitir("aviso", "No se reconoció ninguna posición válida; se mantienen las propuestas del Manager.")
+        emitir("aviso", f"No se reconoció ninguna posición en '{respuesta}'. Escribe códigos como MED o DFC,MED.")
+        return {"prioridades_confirmadas": []}   # vacío: el grafo vuelve a preguntar
 
     emitir("info", f"Prioridades confirmadas: {', '.join(elegidas)}", prioridades=elegidas)
     return {"prioridades_confirmadas": elegidas}
+
+
+def ruta_prioridades(estado: Estado) -> str:
+    return "hacer_scouting" if estado.get("prioridades_confirmadas") else "confirmar_prioridades"
 
 
 def elegir_objetivo(estado: Estado) -> dict:
@@ -114,12 +118,20 @@ def elegir_objetivo(estado: Estado) -> dict:
         emitir("info", "Búsqueda terminada sin elegir un jugador.")
         return {"decision_objetivo": "salir"}
 
-    if minuscula.startswith(("nueva", "nuevo")):
+    try:
+        id_elegido = int(texto)
+    except ValueError:
+        id_elegido = None
+
+    # Cualquier texto que no sea un id ni "salir" se toma como indicación para otra ronda
+    # ("nueva", "nueva: más jóvenes" o directamente "más jóvenes")
+    if id_elegido is None and texto:
         if intentos >= MAX_RONDAS_SCOUTING:
             emitir("aviso", f"Ya se hicieron {MAX_RONDAS_SCOUTING} rondas de scouting. "
                             "Elige un jugador de la lista o escribe 'salir'.")
             return {"decision_objetivo": "invalido"}
-        feedback = texto[5:].lstrip(" :,-").strip()
+        feedback = texto[5:] if minuscula.startswith(("nueva", "nuevo")) else texto
+        feedback = feedback.lstrip(" :,-").strip()
         ya_vistos = [c["id"] for c in estado.get("lista_corta", [])]
         return {
             "decision_objetivo": "reintentar",
@@ -127,14 +139,10 @@ def elegir_objetivo(estado: Estado) -> dict:
             "descartados_ids": estado.get("descartados_ids", []) + ya_vistos,
         }
 
-    try:
-        id_elegido = int(texto)
-    except ValueError:
-        id_elegido = None
     elegido = next((c for c in candidatos if c["id"] == id_elegido), None)
 
     if elegido is None:
-        emitir("aviso", "Opción no reconocida. Escribe solo el número de id de un candidato, 'nueva' o 'salir'.")
+        emitir("aviso", f"El id {id_elegido} no está en la lista de candidatos de esta ronda.")
         return {"decision_objetivo": "invalido"}
 
     objetivos = estado.get("objetivos", [])
@@ -285,7 +293,8 @@ def construir_grafo():
     g.add_edge("resumen_ventana", END)
 
     g.add_edge("iniciar_busqueda", "confirmar_prioridades")
-    g.add_edge("confirmar_prioridades", "hacer_scouting")
+    g.add_conditional_edges("confirmar_prioridades", ruta_prioridades,
+                            {"hacer_scouting": "hacer_scouting", "confirmar_prioridades": "confirmar_prioridades"})
     g.add_edge("hacer_scouting", "analizar_finanzas")
     g.add_edge("analizar_finanzas", "elegir_objetivo")
     g.add_conditional_edges("elegir_objetivo", decidir_ruta, {

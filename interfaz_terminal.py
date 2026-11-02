@@ -125,8 +125,8 @@ def preguntar(pausa):
             print(f"   Scout: {c['justificacion']}")
             if c.get("comentario"):
                 print(f"   Financial: {c['comentario']}")
-        return input("\nEscribe el id del jugador para agregarlo a tus objetivos, 'nueva' (o 'nueva: más jóvenes') "
-                     "para otra ronda de scouting, o 'salir' para volver al centro de mando: ")
+        return input("\nEscribe el id del jugador para agregarlo a tus objetivos, una indicación para otra ronda "
+                     "(ej: 'más jóvenes', o solo 'nueva'), o 'salir' para volver al centro de mando: ")
 
     if tipo == "centro_de_mando":
         print(f"\n=== CENTRO DE MANDO | {pausa['club']} | día {pausa['dia']} (quedan {pausa['dias_restantes']}) ===")

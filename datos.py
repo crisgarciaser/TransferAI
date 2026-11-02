@@ -70,7 +70,8 @@ def obtener_resumen_club(club):
 def buscar_jugadores(posicion, edad_max=None, valor_max=None, excluir_club=None, max_resultados=MAX_RESULTADOS_BUSQUEDA,
                      edad_min=None, rating_min=None, rating_max=None, potencial_min=None,
                      ordenar_por="rating"):
-    resultado = [j for j in cargar_jugadores() if j["posicion"] == posicion]
+    # Los jugadores cedidos no se pueden comprar a su club actual: no aparecen en el scouting
+    resultado = [j for j in cargar_jugadores() if j["posicion"] == posicion and not j.get("cedido_por")]
     if edad_max is not None:
         resultado = [j for j in resultado if j["edad"] <= edad_max]
     if edad_min is not None:

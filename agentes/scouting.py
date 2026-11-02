@@ -44,6 +44,10 @@ def validar_candidatos(candidatos, club, prioridades, excluidos=()):
         if jugador["id"] in excluidos:
             emitir("aviso", f"Candidato ya propuesto en una ronda anterior: {jugador['nombre']}", agente="scouting")
             continue
+        if jugador.get("cedido_por"):
+            emitir("aviso", f"Candidato cedido por {jugador['cedido_por']}, no se puede comprar: {jugador['nombre']}",
+                   agente="scouting")
+            continue
         if jugador["club"] == club or jugador["posicion"] not in prioridades:
             emitir("aviso", f"Candidato no válido descartado: {jugador['nombre']}", agente="scouting")
             continue

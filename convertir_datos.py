@@ -396,6 +396,7 @@ def main():
             "posiciones_alternativas": ",".join(p.strip() for p in (f["player_positions"] or "").split(",")[1:]),
             "posicion_en_once": en_once if en_once not in ("SUB", "RES") else "",
             "capitan": "si" if int(pid) == equipos[team_id]["capitan_id"] else "no",
+            "cedido_por": f["club_loaned_from"] or "",   # club dueño del jugador si está a préstamo
             "ritmo_trabajo": f["work_rate"],
             **atributos_ea(f),
         })
@@ -497,7 +498,7 @@ def main():
                   "salario_anual", "anios_contrato", "rating", "titular", "potencial",
                   "reputacion_internacional", "clausula_rescision", "pie",
                   "valor_ea", "valor_tm", "valor_max_tm", "fuente_valor", "agencia", "altura",
-                  "posicion_ea", "posiciones_alternativas", "posicion_en_once", "capitan", "ritmo_trabajo",
+                  "posicion_ea", "posiciones_alternativas", "posicion_en_once", "capitan", "cedido_por", "ritmo_trabajo",
                   "at_ritmo", "at_tiro", "at_pase", "at_regate", "at_defensa", "at_fisico",
                   "at_cabezazo", "at_vision", "at_resistencia", "at_porteria"]
     with open(DESTINO / "jugadores.csv", "w", encoding="utf-8", newline="") as f:
@@ -520,6 +521,7 @@ def informe(clubes, jugadores, descartes):
 
     print("\n--- Cruce con Transfermarkt ---")
     print(f"Jugadores con valor de Transfermarkt: {con_tm} de {n} ({100 * con_tm / n:.0f} %); el resto usa el valor de EA")
+    print(f"Jugadores cedidos (no se pueden comprar a su club actual): {sum(1 for j in jugadores if j['cedido_por'])}")
     print(f"Jugadores con agencia conocida: {sum(1 for j in jugadores if j['agencia'])} de {n}")
     agencias = Counter(j["agencia"] for j in jugadores if j["agencia"])
     print("Agencias con más jugadores:", ", ".join(f"{a} ({k})" for a, k in agencias.most_common(6)))
