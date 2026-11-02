@@ -69,6 +69,11 @@ UMBRAL_OFERTA_INICIAL = 0.60        # la oferta inicial abre la negociación des
 UMBRAL_OFERTA_RIDICULA = 0.40       # bajo este nivel el vendedor rompe de inmediato
 UMBRAL_RUPTURA_LLM = 0.60           # el Selling Club Agent solo puede romper si la oferta está bajo este nivel
 
+# --- Estilo de los mensajes del Selling Club Agent
+# Probabilidad de que un mensaje incluya un argumento "humano" (por ejemplo, su peso en el vestuario).
+# Es un recurso ocasional; para eliminarlo basta con poner 0.
+PROB_ARGUMENTO_HUMANO = 0.15
+
 # --- Tiempos y rondas
 MAX_RONDAS_CLUB = 5
 DIAS_RESPUESTA_MIN = 1              # la respuesta a la oferta inicial nunca llega el mismo día

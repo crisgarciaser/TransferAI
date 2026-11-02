@@ -92,7 +92,8 @@ edad, potencial), la última exigencia del vendedor, la última oferta propia y 
 No conoces el precio mínimo del vendedor: no lo inventes.
 
 En 2 o 3 frases y sin listas: di si deportivamente vale la pena insistir, mantener la postura o
-retirarse, y por qué, citando datos del JSON.
+retirarse, y por qué. Habla como un entrenador, no como una planilla: prefiere expresiones ("tiene un
+futuro enorme", "nos daría profundidad en el medio") antes que ratings; usa como mucho un número.
 
 Responde SOLO con un objeto JSON: {{"consejo": "..."}}"""
 
