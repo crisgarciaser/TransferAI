@@ -18,7 +18,7 @@ from langgraph.types import interrupt
 
 from agentes import club_vendedor, financiero, manager
 from negociacion import interprete
-from config import DIAS_POR_NEGOCIACION, DIAS_VENTANA, MAX_RONDAS_CLUB
+from config import DIAS_PLAZO_JUGADOR, DIAS_POR_NEGOCIACION, DIAS_VENTANA, MAX_RONDAS_CLUB
 from datos import cargar_clubes, obtener_plantilla
 from negociacion.reglas import (
     arbitrar, decision_respaldo, describir_oferta, desempeno, es_ridicula, evaluar_oferta_inicial,
@@ -29,7 +29,8 @@ from ventana import avanzar, programar
 
 ESTADOS_LEGIBLES = {
     "sin_oferta": "sin oferta", "esperando": "esperando respuesta", "abierta": "negociación abierta",
-    "acuerdo_club": "acuerdo con el club (falta el jugador)", "fracasada": "negociación rota",
+    "acuerdo_club": "acuerdo con el club: falta negociar con el jugador", "fracasada": "negociación rota",
+    "cerrada": "fichaje cerrado",
     "bloqueado": "bloqueado (rechazó dos ofertas)",
 }
 
@@ -79,6 +80,17 @@ def pasar_dias(estado, dias):
             clave = str(evento["datos"]["jugador_id"])
             if clave in negociaciones:
                 negociaciones[clave] = aplicar_respuesta(negociaciones[clave], evento)
+    # Plazo para empezar a negociar con el jugador después del acuerdo con su club
+    for clave, reg in negociaciones.items():
+        if reg["fase"] == "acuerdo_club" and dia > reg.get("dia_acuerdo", dia) + DIAS_PLAZO_JUGADOR:
+            nombre = reg["jugador"]["nombre"]
+            negociaciones[clave] = {**reg, "fase": "fracasada"}
+            texto = (f"Pasaron más de {DIAS_PLAZO_JUGADOR} días sin noticias de su club. {nombre} decidió "
+                     "seguir otro camino y rechaza definitivamente la operación.")
+            bandeja = bandeja + [{"id": 10_000 + len(bandeja), "dia": dia, "tipo": "plazo_vencido",
+                                  "asunto": f"El agente de {nombre} cierra la puerta", "datos": {"mensaje": texto},
+                                  "leido": False}]
+            emitir("mensaje", f"El agente de {nombre} cierra la puerta (venció el plazo)", dia=dia)
     if cerrada:
         emitir("aviso", f"Se cumplieron los {DIAS_VENTANA} días: el mercado de fichajes se cierra.")
     return {"dia": dia, "calendario": calendario, "bandeja": bandeja, "negociaciones": negociaciones}, cerrada
@@ -92,7 +104,7 @@ def aplicar_respuesta(registro, evento):
     if d["resultado"] == "abre":
         r["fase"], r["ultima_peticion"] = "abierta", d["peticion"]
     elif d["resultado"] in ("acepta", "acepta_clausula"):
-        r["fase"], r["acuerdo"] = "acuerdo_club", d["oferta"]
+        r["fase"], r["acuerdo"], r["dia_acuerdo"] = "acuerdo_club", d["oferta"], evento["dia"]
         r["desempeno"] = desempeno(r["perfil"], precio_acordado=d["oferta"])
     elif d["resultado"] == "rechaza" and r["intentos"] >= 2:
         r["fase"] = "bloqueado"
@@ -111,8 +123,11 @@ def menu_fichajes(estado):
         reg = estado.get("negociaciones", {}).get(str(o["id"]))
         fase = reg["fase"] if reg else "sin_oferta"
         intentos = reg["intentos"] if reg else 0
+        texto = ESTADOS_LEGIBLES[fase] + (f" ({intentos}/2 ofertas)" if intentos and fase in ("sin_oferta", "esperando") else "")
+        if fase == "acuerdo_club":
+            texto += f" (plazo hasta el día {reg.get('dia_acuerdo', estado['dia']) + DIAS_PLAZO_JUGADOR})"
         filas.append({"id": o["id"], "nombre": o["nombre"], "club": o["club"], "posicion": o["posicion"],
-                      "fase": fase, "estado": ESTADOS_LEGIBLES[fase] + (f" ({intentos}/2 ofertas)" if intentos else "")})
+                      "fase": fase, "estado": texto})
     respuesta = interrupt({"tipo": "menu_fichajes", "objetivos": filas, "dia": estado["dia"]})
 
     texto = str(respuesta).strip().lower()
@@ -134,6 +149,8 @@ def menu_fichajes(estado):
                 "negociaciones": _guardar(estado, registro)}
     if elegido["fase"] == "abierta":
         return {"siguiente": "entrar_negociacion", "negociacion_activa": str(elegido["id"])}
+    if elegido["fase"] == "acuerdo_club":
+        return {"siguiente": "entrar_negociacion_jugador", "negociacion_activa": str(elegido["id"])}
     emitir("aviso", f"{elegido['nombre']}: {elegido['estado']}. No hay nada que hacer por ahora.")
     return {"siguiente": "centro_de_mando"}
 
@@ -190,11 +207,18 @@ def interpretar_primer_contacto(estado):
 def confirmar_interpretacion(estado):
     """Pausa (solo si el mensaje era ambiguo): el usuario confirma lo que entendió el intérprete."""
     inter = estado["interpretacion"]
+    if estado["etapa"] == "jugador":
+        from negociacion.reglas_jugador import describir_oferta_jugador
+        texto_oferta = describir_oferta_jugador(inter["oferta"])
+    else:
+        texto_oferta = describir_oferta(inter["oferta"])
     respuesta = interrupt({"tipo": "confirmar_interpretacion", "resumen": inter["resumen"],
-                           "duda": inter["duda"], "oferta": describir_oferta(inter["oferta"])})
+                           "duda": inter["duda"], "oferta": texto_oferta})
     ok = str(respuesta).strip().lower() in ("s", "si", "sí", "y")
     if estado["etapa"] == "primer_contacto":
         return {"siguiente": "enviar_primer_contacto" if ok else "escribir_primer_contacto"}
+    if estado["etapa"] == "jugador":
+        return {"siguiente": "responder_agente_jugador" if ok else "turno_jugador"}
     return {"siguiente": "responder_vendedor" if ok else "turno_comprador"}
 
 
@@ -435,6 +459,7 @@ def cerrar_negociacion_club(estado):
     resultado = estado.get("resultado_negociacion")
     if resultado == "acuerdo":
         reg["fase"] = "acuerdo_club"
+        reg["dia_acuerdo"] = estado["dia"]
         reg["desempeno"] = desempeno(reg["perfil"], precio_acordado=reg["acuerdo"])
     else:
         reg["fase"] = "fracasada"

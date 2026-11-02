@@ -82,3 +82,26 @@ def aconsejar(exigencia_fijo, presupuesto, contexto_extra=None):
         return (f"La exigencia de {exigencia_fijo} M€ cabe en el presupuesto si se paga en {n} cuota(s)." if n
                 else f"La exigencia de {exigencia_fijo} M€ no cabe en el presupuesto de {presupuesto} M€ ni en "
                      f"{MAX_CUOTAS} cuotas.")
+
+
+SISTEMA_CONSEJO_SALARIO = """Eres el Financial Agent de un club de fútbol. El director deportivo negocia el contrato de un
+jugador y te pide tu opinión ECONÓMICA. Recibirás en JSON cifras ya calculadas por el sistema: margen salarial
+disponible, la exigencia actual del jugador y su costo anual, el presupuesto que queda para la prima y el
+intervalo estimado del salario actual del jugador.
+
+En 2 o 3 frases y sin listas: di si la exigencia cabe en la masa salarial y qué conviene ofrecer (más años
+con menos salario, bonos por objetivos o una prima en vez de salario fijo), citando al menos una cifra.
+Usa SOLO las cifras entregadas. No conoces la exigencia mínima del jugador.
+
+Responde SOLO con un objeto JSON: {"consejo": "..."}"""
+
+
+def aconsejar_salario(cifras):
+    """Consejo económico durante la negociación con el jugador (cifras calculadas por el código)."""
+    try:
+        return consultar_json(SISTEMA_CONSEJO_SALARIO, json.dumps(cifras, ensure_ascii=False),
+                              agente="financiero")["consejo"]
+    except Exception:
+        cabe = cifras["costo_anual_exigencia"] <= cifras["margen_salarial"]
+        return (f"La exigencia cuesta {cifras['costo_anual_exigencia']} M€ por temporada y el margen salarial es "
+                f"{cifras['margen_salarial']} M€: " + ("cabe." if cabe else "no cabe; conviene usar bonos o una prima."))

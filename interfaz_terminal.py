@@ -62,8 +62,10 @@ def mostrar_evento(evento):
     elif tipo == "negociacion":
         print(f"\n=== {mensaje.upper()} ===")
         if datos.get("ultimo_mensaje"):
-            print(f"Último mensaje del club: \"{datos['ultimo_mensaje']}\"")
+            print(f"Último mensaje: \"{datos['ultimo_mensaje']}\"")
         print(f"Su exigencia actual: {datos['exigencia']}")
+        if datos.get("salario_estimado"):
+            print(f"Salario actual estimado del jugador: {datos['salario_estimado']} M€ por temporada")
     elif tipo == "mensaje_club":
         print(f"\n{datos['club']}: \"{mensaje}\"")
         if datos.get("contraoferta"):
@@ -75,6 +77,12 @@ def mostrar_evento(evento):
         print(f"\n{quien}: {mensaje}")
     elif tipo == "desempeno":
         mostrar_desempeno(datos)
+    elif tipo == "desempeno_jugador":
+        mostrar_desempeno_jugador(datos)
+    elif tipo == "fichaje":
+        print(f"\n*** {mensaje} ***")
+        print(f"Traspaso: {datos['traspaso']} | Contrato: {datos['contrato']}")
+        print(f"Pago en esta ventana: {datos['pago_esta_ventana']} M€")
     elif tipo == "info":
         print(mensaje)
     # los eventos "llm" y "respuesta_usuario" quedan solo en el log
@@ -89,6 +97,16 @@ def mostrar_bandeja(mensajes):
         print(f"{marca}[día {m['dia']:>2}] {m['asunto']}")
         if m["datos"].get("mensaje"):
             print(f"         \"{m['datos']['mensaje']}\"")
+
+
+def mostrar_desempeno_jugador(d):
+    print(f"\n--- DESEMPEÑO CON EL JUGADOR: {d['jugador']} ---")
+    print(f"Ganaba {d['salario_actual']} M€; para firmar pedía {d['salario_pedido']} M€ por temporada "
+          f"y habría aceptado desde {d['salario_minimo']} M€ (en valor anual).")
+    if d["resultado"] == "acuerdo":
+        print(f"Acordaste un valor anual de {d['valor_anual_pagado']} M€: capturaste el {d['captura_pct']} % del margen.")
+    else:
+        print(f"Tu última oferta valía {d['ultima_oferta_valor']} M€ por temporada.")
 
 
 def mostrar_desempeno(d):
@@ -120,8 +138,11 @@ def mostrar_estado(datos):
 def mostrar_resumen(titulo, datos):
     print(f"\n=== {titulo.upper()} ===")
     print(f"Club: {datos['club']}")
-    print("Fichajes:", ", ".join(f["nombre"] for f in datos["fichajes"]) or "ninguno")
+    print("Fichajes:", ", ".join(f"{f['nombre']} ({f['traspaso']}; {f['contrato']})" for f in datos["fichajes"]) or "ninguno")
     print("Ventas:", ", ".join(v["nombre"] for v in datos["ventas"]) or "ninguna")
+    if datos.get("compromisos"):
+        print("Cuotas pendientes para próximas temporadas:",
+              ", ".join(f"{c['jugador']} {c['monto']} M€ (temporada +{c['temporada']})" for c in datos["compromisos"]))
     print(f"Presupuesto final: {datos['presupuesto_final']} M€ | Margen salarial final: {datos['margen_salarial_final']} M€")
     if datos["objetivos_sin_cerrar"]:
         print("Objetivos que no se concretaron:", ", ".join(o["nombre"] for o in datos["objetivos_sin_cerrar"]))
@@ -154,9 +175,10 @@ def preguntar(pausa):
             tipo_fichaje = c.get("tipo_de_fichaje", "").replace("_", " ")
             print(f"[id {c['id']}] {c['nombre']} ({c['posicion']}, {c['edad']} años, {c['club']}) "
                   f"rating {c['rating']} - {tipo_fichaje} - {a['veredicto'].upper()}")
-            print(f"   Traspaso estimado {a['traspaso_estimado']} | salario {a['salario_anual']} | "
-                  f"presupuesto restante {a['presupuesto_restante']} | "
-                  f"margen salarial restante {a['margen_salarial_restante']}")
+            print(f"   Traspaso estimado {a['traspaso_estimado']} | salario estimado "
+                  f"{a['salario_estimado_min']}-{a['salario_estimado_max']} | presupuesto restante "
+                  f"{a['presupuesto_restante']} | margen salarial restante (peor caso) "
+                  f"{a['margen_salarial_restante_peor_caso']}")
             print(f"   Scout: {c['justificacion']}")
             if c.get("comentario"):
                 print(f"   Financial: {c['comentario']}")
@@ -210,6 +232,14 @@ def preguntar(pausa):
         aviso = (f" Quedan {pausa['eventos_pendientes']} respuestas pendientes que se perderán."
                  if pausa["eventos_pendientes"] else "")
         return input(f"\n¿Seguro que quieres cerrar el mercado en el día {pausa['dia']}?{aviso} (s/n): ")
+
+    if tipo == "negociacion_jugador":
+        print(f"\n[Ronda {pausa['ronda']} de {pausa['max_rondas']}] Exigencia de {pausa['jugador']}: {pausa['exigencia']}")
+        print(f"Tu margen salarial: {pausa['margen_salarial']} M€ | presupuesto: {pausa['presupuesto']} M€ | "
+              f"salario actual estimado: {pausa['salario_estimado']} M€")
+        print("Ofrece salario, años (o años + 1 opcional), bonos y prima; acepta sus condiciones o retírate. "
+              "Consejo: 'consejo m' o 'consejo f'.")
+        return input("Tu respuesta: ")
 
     raise ValueError(f"Tipo de pausa desconocido: {tipo}")
 

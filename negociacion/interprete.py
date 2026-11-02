@@ -63,3 +63,47 @@ def interpretar(mensaje, etapa, ultima_exigencia=None):
         oferta = normalizar_oferta({"clausula": True})
     return {"intencion": intencion, "oferta": oferta, "ambigua": bool(r.get("ambigua")),
             "duda": str(r.get("duda") or ""), "resumen": str(r.get("resumen") or "")}
+
+
+# ======================================================================
+# NEGOCIACIÓN CON EL JUGADOR
+# ======================================================================
+SISTEMA_INTERPRETE_JUGADOR = f"""Eres el asistente del director deportivo de un club de fútbol. Tu tarea es interpretar el
+mensaje que el director quiere enviar al agente de un jugador para negociar su contrato y convertirlo en datos.
+
+Recibirás en JSON el mensaje y la última exigencia del jugador.
+
+Clasifica la intención en una de estas:
+- "oferta": propone condiciones de contrato.
+- "aceptar_condiciones": acepta la última exigencia del jugador tal como está.
+- "retirarse": abandona la negociación.
+- "otro": no se entiende o no tiene relación.
+
+Reglas para las cifras (millones de euros):
+- "salario": sueldo FIJO por temporada. Si el mensaje da un total por todo el contrato, divídelo por los años.
+- "bonos": montos anuales por objetivos, solo con estos tipos: goles, asistencias, partidos,
+  porterias_a_cero, titulos, clasificacion_europea. Ejemplo: "500 mil por goles" -> {{"goles": 0.5}}.
+- "anios": años fijos de contrato (1 a 6). "anio_opcional": true si ofrece "+1" o un año opcional a decisión del club.
+- "prima": pago único al firmar ("prima de fichaje", "bono por firma").
+- Campos no mencionados van en 0 o vacíos. No inventes cifras.
+- Marca "ambigua": true SOLO si una cifra admite dos lecturas razonables, y explica la duda en "duda".
+
+Responde SOLO con un objeto JSON con esta forma exacta:
+{{"intencion": "oferta", "oferta": {{"salario": 0, "bonos": {{}}, "anios": 0, "anio_opcional": false, "prima": 0}},
+"ambigua": false, "duda": "", "resumen": "frase breve con lo entendido"}}"""
+
+
+def interpretar_jugador(mensaje, ultima_exigencia):
+    from negociacion.reglas_jugador import normalizar_oferta_jugador
+    datos = {"mensaje": mensaje, "ultima_exigencia_del_jugador": ultima_exigencia}
+    try:
+        r = consultar_json(SISTEMA_INTERPRETE_JUGADOR, json.dumps(datos, ensure_ascii=False), agente="interprete")
+    except Exception:
+        emitir("aviso", "No se pudo interpretar el mensaje; intenta escribirlo de otra forma.", agente="interprete")
+        return {"intencion": "otro", "oferta": normalizar_oferta_jugador({}), "ambigua": False, "duda": "", "resumen": ""}
+    intencion = r.get("intencion") if r.get("intencion") in ("oferta", "aceptar_condiciones", "retirarse", "otro") else "otro"
+    oferta = normalizar_oferta_jugador(r.get("oferta"))
+    if intencion == "oferta" and (oferta["salario"] <= 0 or oferta["anios"] <= 0):
+        intencion = "otro"
+    return {"intencion": intencion, "oferta": oferta, "ambigua": bool(r.get("ambigua")),
+            "duda": str(r.get("duda") or ""), "resumen": str(r.get("resumen") or "")}

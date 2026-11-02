@@ -1,4 +1,19 @@
-from datos import buscar_jugadores, evaluar_encaje
+from datos import buscar_jugadores, evaluar_encaje, intervalo_salario
+
+# El salario real de un jugador es privado (solo lo conocen él y su club).
+# El Scouting Agent recibe solo el intervalo estimado.
+CAMPOS_PRIVADOS = ("salario_anual",)
+
+
+def buscar_jugadores_publico(**filtros):
+    """buscar_jugadores sin datos privados: reemplaza el salario real por el intervalo estimado."""
+    resultado = []
+    for j in buscar_jugadores(**filtros):
+        minimo, maximo = intervalo_salario(j)
+        publico = {k: v for k, v in j.items() if k not in CAMPOS_PRIVADOS}
+        publico["salario_estimado"] = f"{minimo}-{maximo}"
+        resultado.append(publico)
+    return resultado
 
 HERRAMIENTAS_SCOUTING = [
     {
@@ -41,6 +56,6 @@ HERRAMIENTAS_SCOUTING = [
 ]
 
 FUNCIONES_SCOUTING = {
-    "buscar_jugadores": buscar_jugadores,
+    "buscar_jugadores": buscar_jugadores_publico,
     "evaluar_encaje": evaluar_encaje,
 }

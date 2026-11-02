@@ -13,8 +13,9 @@ MAX_PASOS_HERRAMIENTAS = 12    # máximo de ciclos pensar-actuar-observar del Sc
 # Agentes que usan el modo de razonamiento del modelo (escribe un borrador interno antes de responder).
 # Es lento y consume más tokens; solo se deja donde ayuda a decidir. El resto responde directo.
 # Etiquetas posibles: "scouting", "manager" (diagnóstico), "manager_consejo", "financiero",
-# "club_vendedor" (decisión de cada ronda), "club_vendedor_redaccion" (solo redacta) e "interprete".
-AGENTES_CON_RAZONAMIENTO = {"scouting", "manager", "manager_consejo", "club_vendedor"}
+# "club_vendedor" (decisión de cada ronda), "club_vendedor_redaccion" (solo redacta), "interprete",
+# "agente_jugador" (decisión de cada ronda) y "agente_jugador_redaccion".
+AGENTES_CON_RAZONAMIENTO = {"scouting", "manager", "manager_consejo", "club_vendedor", "agente_jugador"}
 
 # ======================================================================
 # VENTANA DE FICHAJES
@@ -84,3 +85,54 @@ MAX_RONDAS_CLUB = 5
 DIAS_RESPUESTA_MIN = 1              # la respuesta a la oferta inicial nunca llega el mismo día
 DIAS_POR_NEGOCIACION = 1            # cada negociación (club o jugador) consume este número de días
 CONCESION_RESPALDO = 2.0            # forma de la regla de respaldo: >1 concede poco al inicio y más al final
+
+# ======================================================================
+# NEGOCIACIÓN CON EL JUGADOR (Paso 15)
+# ======================================================================
+# --- Salario: es privado; el comprador ve un intervalo que contiene el salario real
+INTERVALO_SALARIO = (0.75, 1.25)          # extremos posibles del intervalo para la mayoría
+INTERVALO_SALARIO_ESTRELLA = (0.90, 1.10) # las estrellas tienen sueldos más conocidos
+REPUTACION_ESTRELLA = 4                   # es estrella con reputación internacional >= esto ...
+RATING_ESTRELLA = 85                      # ... o con rating >= esto
+
+# --- Exigencia salarial mínima = salario actual x factores (información privada del jugador)
+PESO_CAMBIO_DE_CLUB = 1.00                # prima por cambiar de club (1 = no afecta)
+PESO_BAJAR_NIVEL = 0.10                   # +10 % por cada nivel que baja el club comprador
+PESO_PIERDE_EUROPA = 1.15                 # juega competición europea y el comprador no
+PESO_GANA_EUROPA = 0.95                   # el comprador juega competición europea y su club no
+PESO_ROTACION = 0.90                      # tendría rol de rotación en el club comprador
+PESO_ESTRELLA = 1.25
+PESO_AGENCIA_GRANDE = 1.05
+N_AGENCIAS_GRANDES = 10                   # las agencias con más jugadores en la base
+FACTOR_PEDIDO_JUGADOR = 1.20              # exigencia inicial = mínimo x este factor
+
+# --- Años de contrato preferidos (rango sin penalización) y castigo por salirse
+NIVEL_CLUB_GRANDE = 7                     # un club comprador con nivel >= esto es "grande"
+ANIOS_JOVEN_CLUB_GRANDE = (4, 5)          # menores de EDAD_JOVEN que van a un club grande
+ANIOS_JOVEN_CLUB_PEQUENO = (2, 3)         # menores de EDAD_JOVEN que van a un club no grande
+ANIOS_ADULTO = (3, 4)                     # entre EDAD_JOVEN y EDAD_VETERANO
+ANIOS_VETERANO = (3, 4)                   # desde EDAD_VETERANO: buscan seguridad
+PENALIZACION_POR_ANIO = 0.05              # +5 % de salario exigido por cada año fuera del rango
+MAX_ANIOS_CONTRATO = 6
+VALOR_ANIO_OPCIONAL = 0.5                 # un año opcional (decide el club) vale medio año para el jugador
+
+# --- Bonos (montos anuales): probabilidad de cumplirlos según la posición
+TIPOS_BONO = ["goles", "asistencias", "partidos", "porterias_a_cero", "titulos", "clasificacion_europea"]
+PROB_BONO = {
+    #                 POR   DFC   LAT   MED   EXT   DEL
+    "goles":        [0.00, 0.10, 0.10, 0.30, 0.45, 0.60],
+    "asistencias":  [0.00, 0.10, 0.35, 0.45, 0.50, 0.40],
+    "partidos":     [0.60, 0.60, 0.60, 0.60, 0.60, 0.60],
+    "porterias_a_cero": [0.40, 0.35, 0.30, 0.05, 0.00, 0.00],
+    "titulos":      [0.20, 0.20, 0.20, 0.20, 0.20, 0.20],
+    "clasificacion_europea": [0.35, 0.35, 0.35, 0.35, 0.35, 0.35],
+}
+ORDEN_POSICIONES_BONO = ["POR", "DFC", "LAT", "MED", "EXT", "DEL"]
+
+# --- Rondas, paciencia y plazos
+MAX_RONDAS_JUGADOR = 4
+UMBRAL_RUPTURA_JUGADOR = 0.60             # rompe si la oferta vale menos que esto x su mínimo
+UMBRAL_RUPTURA_ESTRELLA = 0.75
+CONCESION_JUGADOR = 1.5                   # forma de la regla de respaldo (más alto = cede más lento)
+CONCESION_ESTRELLA = 3.0
+DIAS_PLAZO_JUGADOR = 5                    # días para empezar a negociar con el jugador tras el acuerdo con el club
