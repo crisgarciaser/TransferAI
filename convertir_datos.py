@@ -66,6 +66,10 @@ COMPETICION_2023_24 = {
     "conference": ["Aston Villa", "Fiorentina", "Eintracht Frankfurt", "Lille"],
 }
 
+#======================================================================
+# CONVERSION DE DATOS (NO se pueden modificar)
+# ======================================================================
+
 # --- Equivalencia de clubes EA -> Transfermarkt (club_id). None = el club no tiene datos en Transfermarkt.
 EA_A_TRANSFERMARKT = {
     "AFC Bournemouth": 989, "Almería": 3302, "Arsenal": 11, "Aston Villa": 405, "Atalanta": 800,
