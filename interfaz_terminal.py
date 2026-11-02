@@ -57,6 +57,23 @@ def mostrar_evento(evento):
         mostrar_estado(datos)
     elif tipo == "resumen_ventana":
         mostrar_resumen(mensaje, datos)
+    elif tipo == "interpretacion":
+        print(f"  (entendido: {mensaje})")
+    elif tipo == "negociacion":
+        print(f"\n=== {mensaje.upper()} ===")
+        if datos.get("ultimo_mensaje"):
+            print(f"Último mensaje del club: \"{datos['ultimo_mensaje']}\"")
+        print(f"Su exigencia actual: {datos['exigencia']}")
+    elif tipo == "mensaje_club":
+        print(f"\n{datos['club']}: \"{mensaje}\"")
+        if datos.get("contraoferta"):
+            print(f"  -> Nueva exigencia: {datos['contraoferta']}")
+    elif tipo == "correccion_arbitro":
+        print(f"  [árbitro] {mensaje}")
+    elif tipo == "consejo":
+        print(f"\nAsesor (Manager + Financial): {mensaje}")
+    elif tipo == "desempeno":
+        mostrar_desempeno(datos)
     elif tipo == "info":
         print(mensaje)
     # los eventos "llm" y "respuesta_usuario" quedan solo en el log
@@ -69,6 +86,21 @@ def mostrar_bandeja(mensajes):
     for m in reversed(mensajes):
         marca = "NUEVO " if not m["leido"] else "      "
         print(f"{marca}[día {m['dia']:>2}] {m['asunto']}")
+        if m["datos"].get("mensaje"):
+            print(f"         \"{m['datos']['mensaje']}\"")
+
+
+def mostrar_desempeno(d):
+    print(f"\n--- DESEMPEÑO: {d['jugador']} ---")
+    if d["resultado"] == "acuerdo":
+        print(f"Acuerdo: {d['acuerdo']} (valor de hoy para el vendedor: {d['valor_pagado']} M€)")
+        print(f"El club pedía {d['precio_pedido']} M€ y habría aceptado desde {d['precio_minimo']} M€.")
+        print(f"Capturaste el {d['captura_pct']} % del margen negociable "
+              f"(pagaste {d['sobrepago']} M€ sobre su mínimo).")
+    else:
+        print(f"No hubo acuerdo. El club habría aceptado desde {d['precio_minimo']} M€ "
+              f"(pedía {d['precio_pedido']} M€).")
+        print(f"Tu última oferta valía {d['ultima_oferta_valor']} M€: faltaron {d['faltaron']} M€.")
 
 
 def mostrar_estado(datos):
@@ -78,6 +110,8 @@ def mostrar_estado(datos):
     print("Objetivos:", ", ".join(f"{o['nombre']} ({o['club']})" for o in p["objetivos"]) or "ninguno")
     print("Fichajes cerrados:", ", ".join(f["nombre"] for f in datos["fichajes"]) or "ninguno")
     print("Ventas cerradas:", ", ".join(v["nombre"] for v in datos["ventas"]) or "ninguna")
+    for n in datos.get("negociaciones", []):
+        print(f"  Negociación por {n['jugador']} ({n['club']}): {n['estado']}")
     for e in datos["calendario"]:
         print(f"  Pendiente para el día {e['dia']}: {e['asunto']}")
 
@@ -137,7 +171,38 @@ def preguntar(pausa):
         print("3. Avanzar días  (escribe '3' para un día o '3 5' para cinco)")
         print("4. Ver estado del club")
         print("5. Cerrar el mercado")
+        abiertas = pausa.get("negociaciones_abiertas", 0)
+        print(f"6. Fichajes: ofertar o negociar por tus objetivos"
+              + (f" ({abiertas} negociación(es) lista(s) para empezar)" if abiertas else ""))
         return input("¿Qué quieres hacer?: ")
+
+    if tipo == "menu_fichajes":
+        print(f"\n=== FICHAJES (día {pausa['dia']}) ===")
+        if not pausa["objetivos"]:
+            print("No tienes objetivos. Busca refuerzos (opción 1) y agrega jugadores a tu lista.")
+        for i, o in enumerate(pausa["objetivos"], start=1):
+            print(f"{i}. {o['nombre']} ({o['posicion']}, {o['club']}) - {o['estado']}")
+        return input("Elige el número del objetivo, o 'volver': ")
+
+    if tipo == "primer_contacto":
+        print(f"\n=== PRIMER CONTACTO CON {pausa['club_vendedor'].upper()} POR {pausa['jugador'].upper()} "
+              f"(intento {pausa['intento']} de 2) ===")
+        clausula = f"{pausa['clausula']} M€" if pausa["clausula"] else "no tiene"
+        print(f"Valor de mercado estimado: {pausa['valor_mercado']} M€ | cláusula: {clausula} | "
+              f"tu presupuesto: {pausa['presupuesto']} M€")
+        print("Escribe tu mensaje como lo harías a un club real: puedes mostrar interés sin cifras,")
+        print("hacer una oferta (fijos, variables, % de reventa, recompra, cuotas) o pagar la cláusula.")
+        return input("Tu mensaje (o 'volver'): ")
+
+    if tipo == "confirmar_interpretacion":
+        print(f"\nEl mensaje admite más de una lectura: {pausa['duda']}")
+        print(f"Entendí: {pausa['oferta']}")
+        return input("¿Es correcto? (s/n): ")
+
+    if tipo == "negociacion_club":
+        print(f"\n[Ronda {pausa['ronda']} de {pausa['max_rondas']}] Exigencia de {pausa['club_vendedor']}: "
+              f"{pausa['exigencia']} | tu presupuesto: {pausa['presupuesto']} M€")
+        return input("Tu respuesta (oferta, aceptar sus condiciones, 'consejo' o retirarte): ")
 
     if tipo == "confirmar_cierre":
         aviso = (f" Quedan {pausa['eventos_pendientes']} respuestas pendientes que se perderán."

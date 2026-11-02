@@ -49,3 +49,4 @@ def test_leer_comando():
     assert leer_comando("") == ("invalido", None)
     assert leer_comando("9") == ("invalido", None)
     assert leer_comando("  CERRAR ") == ("cerrar", None)
+    assert leer_comando("6") == ("fichajes", None)

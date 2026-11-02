@@ -21,7 +21,8 @@ from agentes.scouting import hacer_scouting
 from config import DIAS_VENTANA, MAX_RONDAS_SCOUTING, POSICIONES_VALIDAS
 from datos import obtener_plantilla, obtener_resumen_club
 from registro import emitir
-from ventana import avanzar, leer_comando, marcar_leidos, no_leidos
+from negociacion import nodos_club as nc
+from ventana import leer_comando, marcar_leidos, no_leidos
 
 
 # ---------------------------------------------------------------- ESTADO
@@ -49,6 +50,14 @@ class Estado(TypedDict, total=False):
     ventas: list              # operaciones de venta cerradas
     comando: str              # última opción elegida en el centro de mando
     dias_a_avanzar: int
+    # --- negociaciones (Paso 14)
+    negociaciones: dict       # id del jugador -> registro de su negociación (ver negociacion/nodos_club.py)
+    negociacion_activa: str   # id del jugador que se está negociando
+    texto_usuario: str        # último mensaje escrito por el usuario en una negociación
+    interpretacion: dict      # lo que entendió el agente intérprete
+    etapa: str                # "primer_contacto" o "ronda"
+    resultado_negociacion: str
+    siguiente: str            # nodo siguiente que decidió el último nodo de negociación
 
 
 # ---------------------------------------------------------------- NODOS DE CÓDIGO
@@ -59,6 +68,7 @@ def cargar_club(estado: Estado) -> dict:
         "resumen": obtener_resumen_club(club),
         "plantilla": obtener_plantilla(club),
         "dia": 1, "calendario": [], "bandeja": [], "objetivos": [], "fichajes": [], "ventas": [],
+        "negociaciones": {},
     }
 
 
@@ -176,6 +186,7 @@ def panel(estado: Estado) -> dict:
         "mensajes_nuevos": len(no_leidos(estado.get("bandeja", []))),
         "eventos_pendientes": len(estado.get("calendario", [])),
         "objetivos": [{"id": o["id"], "nombre": o["nombre"], "club": o["club"]} for o in estado.get("objetivos", [])],
+        "negociaciones_abiertas": sum(1 for n in estado.get("negociaciones", {}).values() if n["fase"] == "abierta"),
     }
 
 
@@ -184,13 +195,14 @@ def centro_de_mando(estado: Estado) -> dict:
     respuesta = interrupt({"tipo": "centro_de_mando", **panel(estado)})
     comando, dias = leer_comando(respuesta)
     if comando == "invalido":
-        emitir("aviso", "Opción no reconocida. Escribe un número del 1 al 5 (por ejemplo '3 5' para avanzar 5 días).")
+        emitir("aviso", "Opción no reconocida. Escribe un número del 1 al 6 (por ejemplo '3 5' para avanzar 5 días).")
     return {"comando": comando, "dias_a_avanzar": dias or 1}
 
 
 def ruta_centro(estado: Estado) -> str:
     return {"buscar": "iniciar_busqueda", "bandeja": "ver_bandeja", "avanzar": "avanzar_dias",
-            "estado": "ver_estado", "cerrar": "confirmar_cierre"}.get(estado.get("comando"), "centro_de_mando")
+            "estado": "ver_estado", "cerrar": "confirmar_cierre",
+            "fichajes": "menu_fichajes"}.get(estado.get("comando"), "centro_de_mando")
 
 
 def iniciar_busqueda(estado: Estado) -> dict:
@@ -206,16 +218,10 @@ def ver_bandeja(estado: Estado) -> dict:
 
 
 def avanzar_dias(estado: Estado) -> dict:
-    """Avanza el tiempo: los eventos del calendario que vencen llegan a la bandeja."""
-    dia, calendario, bandeja, llegados, cerrada = avanzar(
-        estado["dia"], estado.get("dias_a_avanzar", 1), estado.get("calendario", []), estado.get("bandeja", []))
-    emitir("dia", f"Día {dia} de {DIAS_VENTANA}", dia=dia)
-    for evento in llegados:
-        emitir("mensaje", evento["asunto"], dia=evento["dia"], tipo_mensaje=evento["tipo"])
-    if cerrada:
-        emitir("aviso", f"Se cumplieron los {DIAS_VENTANA} días: el mercado de fichajes se cierra.")
-    return {"dia": dia, "calendario": calendario, "bandeja": bandeja,
-            "comando": "cierre_automatico" if cerrada else "avanzar"}
+    """Avanza el tiempo: los eventos del calendario que vencen llegan a la bandeja
+    y las respuestas de los clubes actualizan las negociaciones."""
+    cambios, cerrada = nc.pasar_dias(estado, estado.get("dias_a_avanzar", 1))
+    return {**cambios, "comando": "cierre_automatico" if cerrada else "avanzar"}
 
 
 def ruta_tras_avanzar(estado: Estado) -> str:
@@ -225,7 +231,9 @@ def ruta_tras_avanzar(estado: Estado) -> str:
 def ver_estado(estado: Estado) -> dict:
     emitir("estado_club", f"Estado de {estado['club']} (día {estado['dia']})",
            panel=panel(estado), fichajes=estado.get("fichajes", []), ventas=estado.get("ventas", []),
-           calendario=estado.get("calendario", []))
+           calendario=estado.get("calendario", []),
+           negociaciones=[{"jugador": n["jugador"]["nombre"], "club": n["club_vendedor"],
+                           "estado": nc.ESTADOS_LEGIBLES[n["fase"]]} for n in estado.get("negociaciones", {}).values()])
     return {}
 
 
@@ -283,7 +291,8 @@ def construir_grafo():
     g.add_conditional_edges("centro_de_mando", ruta_centro, {
         "iniciar_busqueda": "iniciar_busqueda", "ver_bandeja": "ver_bandeja",
         "avanzar_dias": "avanzar_dias", "ver_estado": "ver_estado",
-        "confirmar_cierre": "confirmar_cierre", "centro_de_mando": "centro_de_mando"})
+        "confirmar_cierre": "confirmar_cierre", "centro_de_mando": "centro_de_mando",
+        "menu_fichajes": "menu_fichajes"})
     g.add_edge("ver_bandeja", "centro_de_mando")
     g.add_edge("ver_estado", "centro_de_mando")
     g.add_conditional_edges("avanzar_dias", ruta_tras_avanzar,
@@ -299,6 +308,32 @@ def construir_grafo():
     g.add_edge("analizar_finanzas", "elegir_objetivo")
     g.add_conditional_edges("elegir_objetivo", decidir_ruta, {
         "centro": "centro_de_mando", "scouting": "hacer_scouting", "repetir": "elegir_objetivo"})
+
+    # Negociación con el club vendedor (Paso 14): cada nodo decide el siguiente en estado["siguiente"]
+    nodos_negociacion = {
+        "menu_fichajes": nc.menu_fichajes,
+        "escribir_primer_contacto": nc.escribir_primer_contacto,
+        "interpretar_primer_contacto": nc.interpretar_primer_contacto,
+        "confirmar_interpretacion": nc.confirmar_interpretacion,
+        "enviar_primer_contacto": nc.enviar_primer_contacto,
+        "entrar_negociacion": nc.entrar_negociacion,
+        "turno_comprador": nc.turno_comprador,
+        "interpretar_turno": nc.interpretar_turno,
+        "dar_consejo": nc.dar_consejo,
+        "responder_vendedor": nc.responder_vendedor,
+        "cerrar_negociacion_club": nc.cerrar_negociacion_club,
+    }
+    for nombre, funcion in nodos_negociacion.items():
+        g.add_node(nombre, funcion)
+    destinos = {n: n for n in nodos_negociacion} | {"centro_de_mando": "centro_de_mando",
+                                                     "resumen_ventana": "resumen_ventana"}
+    seguir = lambda estado: estado["siguiente"]
+    for nombre in ("menu_fichajes", "escribir_primer_contacto", "interpretar_primer_contacto",
+                   "confirmar_interpretacion", "enviar_primer_contacto", "interpretar_turno",
+                   "dar_consejo", "responder_vendedor", "cerrar_negociacion_club"):
+        g.add_conditional_edges(nombre, seguir, destinos)
+    g.add_edge("entrar_negociacion", "turno_comprador")
+    g.add_edge("turno_comprador", "interpretar_turno")
     return g.compile(checkpointer=InMemorySaver())
 
 

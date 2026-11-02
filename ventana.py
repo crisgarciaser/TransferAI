@@ -49,15 +49,15 @@ def leer_comando(texto):
     """Interpreta lo que escribe el usuario en el centro de mando.
 
     '1' -> ("buscar", None) | '2' -> ("bandeja", None) | '3' o '3 5' -> ("avanzar", 5)
-    '4' -> ("estado", None) | '5' -> ("cerrar", None) | otro -> ("invalido", None)
-    También acepta las palabras: buscar, bandeja, avanzar 5, estado, cerrar.
+    '4' -> ("estado", None) | '5' -> ("cerrar", None) | '6' -> ("fichajes", None) | otro -> ("invalido", None)
+    También acepta las palabras: buscar, bandeja, avanzar 5, estado, cerrar, fichajes.
     """
     partes = str(texto).strip().lower().split()
     if not partes:
         return "invalido", None
     comandos = {"1": "buscar", "buscar": "buscar", "2": "bandeja", "bandeja": "bandeja",
                 "3": "avanzar", "avanzar": "avanzar", "4": "estado", "estado": "estado",
-                "5": "cerrar", "cerrar": "cerrar"}
+                "5": "cerrar", "cerrar": "cerrar", "6": "fichajes", "fichajes": "fichajes"}
     comando = comandos.get(partes[0], "invalido")
     if comando == "avanzar":
         try:
