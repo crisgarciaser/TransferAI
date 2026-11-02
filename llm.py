@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 from openai import OpenAI
 
-from config import MAX_PASOS_HERRAMIENTAS, TEMPERATURA
+from config import AGENTES_CON_RAZONAMIENTO, MAX_PASOS_HERRAMIENTAS, TEMPERATURA
 from registro import emitir
 
 load_dotenv()
@@ -14,6 +14,24 @@ client = OpenAI(
     base_url=os.getenv("QWEN_BASE_URL"),
 )
 MODELO = os.getenv("QWEN_MODEL")
+_control_razonamiento = True   # pasa a False si el proveedor no acepta el parámetro enable_thinking
+
+
+def _crear(agente, **kwargs):
+    """Llama al modelo activando o desactivando su razonamiento según AGENTES_CON_RAZONAMIENTO.
+    Si el proveedor rechaza el parámetro, se reintenta sin él y no se vuelve a enviar."""
+    global _control_razonamiento
+    if _control_razonamiento:
+        try:
+            return client.chat.completions.create(
+                model=MODELO, temperature=TEMPERATURA,
+                extra_body={"enable_thinking": agente in AGENTES_CON_RAZONAMIENTO}, **kwargs)
+        except Exception as error:
+            if "enable_thinking" not in str(error) and "thinking" not in str(error).lower():
+                raise
+            _control_razonamiento = False
+            emitir("aviso", "El proveedor no permite controlar el razonamiento del modelo; se usa su configuración por defecto.")
+    return client.chat.completions.create(model=MODELO, temperature=TEMPERATURA, **kwargs)
 
 
 def _registrar_llamada(agente, respuesta):
@@ -32,14 +50,10 @@ def extraer_json(texto):
 
 def consultar_json(sistema, usuario, agente="modelo"):
     """Envía una consulta al modelo y devuelve su respuesta como diccionario."""
-    respuesta = client.chat.completions.create(
-        model=MODELO,
-        messages=[
-            {"role": "system", "content": sistema},
-            {"role": "user", "content": usuario},
-        ],
-        temperature=TEMPERATURA,
-    )
+    respuesta = _crear(agente, messages=[
+        {"role": "system", "content": sistema},
+        {"role": "user", "content": usuario},
+    ])
     _registrar_llamada(agente, respuesta)
     texto = respuesta.choices[0].message.content
     try:
@@ -56,12 +70,7 @@ def ejecutar_con_herramientas(sistema, usuario, herramientas, funciones, agente=
         {"role": "user", "content": usuario},
     ]
     for _ in range(MAX_PASOS_HERRAMIENTAS):
-        respuesta = client.chat.completions.create(
-            model=MODELO,
-            messages=mensajes,
-            tools=herramientas,
-            temperature=TEMPERATURA,
-        )
+        respuesta = _crear(agente, messages=mensajes, tools=herramientas)
         _registrar_llamada(agente, respuesta)
         mensaje = respuesta.choices[0].message
 

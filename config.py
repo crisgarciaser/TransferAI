@@ -10,6 +10,11 @@ modificarlas sin tocar la lógica. Los parámetros de construcción de la base d
 # ======================================================================
 TEMPERATURA = 0.2              # baja: respuestas estables en tareas de análisis
 MAX_PASOS_HERRAMIENTAS = 12    # máximo de ciclos pensar-actuar-observar del Scouting Agent
+# Agentes que usan el modo de razonamiento del modelo (escribe un borrador interno antes de responder).
+# Es lento y consume más tokens; solo se deja donde ayuda a decidir. El resto responde directo.
+# Etiquetas posibles: "scouting", "manager" (diagnóstico), "manager_consejo", "financiero",
+# "club_vendedor" (decisión de cada ronda), "club_vendedor_redaccion" (solo redacta) e "interprete".
+AGENTES_CON_RAZONAMIENTO = {"scouting", "manager", "manager_consejo", "club_vendedor"}
 
 # ======================================================================
 # VENTANA DE FICHAJES

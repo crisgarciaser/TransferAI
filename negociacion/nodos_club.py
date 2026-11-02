@@ -282,14 +282,36 @@ def turno_comprador(estado):
     return {"texto_usuario": str(respuesta).strip()}
 
 
+def _pedido_de_consejo(texto):
+    """Detecta 'consejo m' / 'consejo f' sin gastar una llamada al modelo.
+    Devuelve "manager", "financiero", "sin_especificar" o None (no es un pedido de consejo)."""
+    partes = texto.strip().lower().split()
+    if not partes or partes[0] != "consejo":
+        return None
+    if len(partes) == 1:
+        return "sin_especificar"
+    if partes[1] in ("m", "manager"):
+        return "manager"
+    if partes[1] in ("f", "financiero", "financial"):
+        return "financiero"
+    return "sin_especificar"
+
+
 def interpretar_turno(estado):
     reg = _activa(estado)
     if not estado["texto_usuario"]:
         return {"siguiente": "turno_comprador"}
+    consejo = _pedido_de_consejo(estado["texto_usuario"])
+    if consejo in ("manager", "financiero"):
+        return {"siguiente": "dar_consejo", "tipo_consejo": consejo}
+    if consejo == "sin_especificar":
+        emitir("aviso", "Escribe 'consejo m' para el Manager Agent o 'consejo f' para el Financial Agent.")
+        return {"siguiente": "turno_comprador"}
     inter = interprete.interpretar(estado["texto_usuario"], "ronda", describir_oferta(reg["ultima_peticion"]))
     i = inter["intencion"]
     if i == "consejo":
-        return {"siguiente": "dar_consejo", "interpretacion": inter}
+        emitir("aviso", "Si quieres consejo, escribe 'consejo m' (Manager Agent) o 'consejo f' (Financial Agent).")
+        return {"siguiente": "turno_comprador"}
     if i == "retirarse":
         return {"siguiente": "cerrar_negociacion_club", "interpretacion": inter, "resultado_negociacion": "retiro"}
     if i == "aceptar_condiciones":
@@ -309,25 +331,27 @@ def interpretar_turno(estado):
 
 
 def dar_consejo(estado):
-    """Entre rondas aconsejan el Manager Agent (lo deportivo) y el Financial Agent (lo económico).
+    """Consejo entre rondas: 'consejo m' (Manager Agent, lo deportivo) o 'consejo f' (Financial Agent,
+    lo económico). Se piden por separado para no gastar dos llamadas cada vez.
     Ninguno conoce el precio mínimo del vendedor."""
     reg = _activa(estado)
     j = reg["jugador"]
-    deportivo = {
-        "tipo_de_fichaje": j.get("tipo_de_fichaje", ""), "justificacion_del_scout": j.get("justificacion", ""),
-        "jugador": {k: j[k] for k in ("edad", "rating", "potencial", "anios_contrato", "posicion")},
-        "ultima_exigencia_vendedor": describir_oferta(reg["ultima_peticion"]),
-        "ultima_oferta_propia": describir_oferta(reg["ultima_oferta"]) if reg["ultima_oferta"] else "ninguna",
-        "rondas_restantes": MAX_RONDAS_CLUB - reg["ronda"],
-    }
-    consejo_manager = manager.aconsejar(estado["club"], j["nombre"], deportivo)
-    if consejo_manager:
-        emitir("consejo", consejo_manager, agente="manager")
-    consejo_financiero = financiero.aconsejar(
-        reg["ultima_peticion"]["fijo"], estado["resumen"]["presupuesto_fichajes"],
-        {"valor_mercado_estimado": j["valor_mercado"],
-         "ultima_oferta_propia": describir_oferta(reg["ultima_oferta"]) if reg["ultima_oferta"] else "ninguna"})
-    emitir("consejo", consejo_financiero, agente="financiero")
+    ultima_oferta = describir_oferta(reg["ultima_oferta"]) if reg["ultima_oferta"] else "ninguna"
+    if estado.get("tipo_consejo") == "manager":
+        deportivo = {
+            "tipo_de_fichaje": j.get("tipo_de_fichaje", ""), "justificacion_del_scout": j.get("justificacion", ""),
+            "jugador": {k: j[k] for k in ("edad", "rating", "potencial", "anios_contrato", "posicion")},
+            "ultima_exigencia_vendedor": describir_oferta(reg["ultima_peticion"]),
+            "ultima_oferta_propia": ultima_oferta, "rondas_restantes": MAX_RONDAS_CLUB - reg["ronda"],
+        }
+        consejo = manager.aconsejar(estado["club"], j["nombre"], deportivo)
+        if consejo:
+            emitir("consejo", consejo, agente="manager")
+    else:
+        consejo = financiero.aconsejar(
+            reg["ultima_peticion"]["fijo"], estado["resumen"]["presupuesto_fichajes"],
+            {"valor_mercado_estimado": j["valor_mercado"], "ultima_oferta_propia": ultima_oferta})
+        emitir("consejo", consejo, agente="financiero")
     return {"siguiente": "turno_comprador"}
 
 

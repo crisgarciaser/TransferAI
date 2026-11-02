@@ -102,7 +102,7 @@ def aconsejar(club, jugador, contexto):
     """Consejo deportivo del Manager Agent durante una negociación (o None si falla)."""
     sistema = SISTEMA_CONSEJO_MANAGER.format(club=club, jugador=jugador)
     try:
-        return consultar_json(sistema, json.dumps(contexto, ensure_ascii=False), agente="manager")["consejo"]
+        return consultar_json(sistema, json.dumps(contexto, ensure_ascii=False), agente="manager_consejo")["consejo"]
     except Exception:
         emitir("aviso", "El Manager Agent no pudo dar su consejo.", agente="manager")
         return None

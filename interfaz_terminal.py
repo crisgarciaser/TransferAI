@@ -203,7 +203,8 @@ def preguntar(pausa):
     if tipo == "negociacion_club":
         print(f"\n[Ronda {pausa['ronda']} de {pausa['max_rondas']}] Exigencia de {pausa['club_vendedor']}: "
               f"{pausa['exigencia']} | tu presupuesto: {pausa['presupuesto']} M€")
-        return input("Tu respuesta (oferta, aceptar sus condiciones, 'consejo' o retirarte): ")
+        print("Puedes ofertar, aceptar sus condiciones o retirarte. Consejo: 'consejo m' (Manager) o 'consejo f' (Financial).")
+        return input("Tu respuesta: ")
 
     if tipo == "confirmar_cierre":
         aviso = (f" Quedan {pausa['eventos_pendientes']} respuestas pendientes que se perderán."

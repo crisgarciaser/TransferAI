@@ -57,6 +57,7 @@ class Estado(TypedDict, total=False):
     interpretacion: dict      # lo que entendió el agente intérprete
     etapa: str                # "primer_contacto" o "ronda"
     resultado_negociacion: str
+    tipo_consejo: str         # "manager" o "financiero"
     siguiente: str            # nodo siguiente que decidió el último nodo de negociación
 
 

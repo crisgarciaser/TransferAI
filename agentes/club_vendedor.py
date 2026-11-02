@@ -74,6 +74,6 @@ def redactar(club, jugador, decision, cifras):
     sistema = SISTEMA_REDACCION.format(club=club, jugador=jugador)
     datos = {"decision": decision, "cifras": cifras}
     try:
-        return consultar_json(sistema, json.dumps(datos, ensure_ascii=False), agente="club_vendedor")["mensaje"]
+        return consultar_json(sistema, json.dumps(datos, ensure_ascii=False), agente="club_vendedor_redaccion")["mensaje"]
     except Exception:
         return None
