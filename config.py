@@ -12,6 +12,11 @@ TEMPERATURA = 0.2              # baja: respuestas estables en tareas de análisi
 MAX_PASOS_HERRAMIENTAS = 12    # máximo de ciclos pensar-actuar-observar del Scouting Agent
 
 # ======================================================================
+# VENTANA DE FICHAJES
+# ======================================================================
+DIAS_VENTANA = 30              # duración de la ventana; al pasar este día el mercado se cierra solo
+
+# ======================================================================
 # SCOUTING
 # ======================================================================
 MAX_RONDAS_SCOUTING = 3        # rondas de scouting por búsqueda

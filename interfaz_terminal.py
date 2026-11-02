@@ -47,7 +47,49 @@ def mostrar_evento(evento):
         print(f"{tipo.upper()}: {mensaje}")
     elif tipo == "descarte":
         print(mensaje)
-    # "info" y "llm" quedan solo en el log para no saturar la pantalla
+    elif tipo == "dia":
+        print(f"\n>>> {mensaje}")
+    elif tipo == "mensaje":
+        print(f"  [nuevo mensaje] {mensaje}")
+    elif tipo == "bandeja":
+        mostrar_bandeja(datos["mensajes"])
+    elif tipo == "estado_club":
+        mostrar_estado(datos)
+    elif tipo == "resumen_ventana":
+        mostrar_resumen(mensaje, datos)
+    elif tipo == "info":
+        print(mensaje)
+    # los eventos "llm" y "respuesta_usuario" quedan solo en el log
+
+
+def mostrar_bandeja(mensajes):
+    print("\n=== BANDEJA DE ENTRADA ===")
+    if not mensajes:
+        print("No hay mensajes.")
+    for m in reversed(mensajes):
+        marca = "NUEVO " if not m["leido"] else "      "
+        print(f"{marca}[día {m['dia']:>2}] {m['asunto']}")
+
+
+def mostrar_estado(datos):
+    p = datos["panel"]
+    print(f"\n=== ESTADO DE {p['club'].upper()} (día {p['dia']}, quedan {p['dias_restantes']}) ===")
+    print(f"Presupuesto de fichajes: {p['presupuesto_fichajes']} M€ | Margen salarial: {p['margen_salarial']} M€")
+    print("Objetivos:", ", ".join(f"{o['nombre']} ({o['club']})" for o in p["objetivos"]) or "ninguno")
+    print("Fichajes cerrados:", ", ".join(f["nombre"] for f in datos["fichajes"]) or "ninguno")
+    print("Ventas cerradas:", ", ".join(v["nombre"] for v in datos["ventas"]) or "ninguna")
+    for e in datos["calendario"]:
+        print(f"  Pendiente para el día {e['dia']}: {e['asunto']}")
+
+
+def mostrar_resumen(titulo, datos):
+    print(f"\n=== {titulo.upper()} ===")
+    print(f"Club: {datos['club']}")
+    print("Fichajes:", ", ".join(f["nombre"] for f in datos["fichajes"]) or "ninguno")
+    print("Ventas:", ", ".join(v["nombre"] for v in datos["ventas"]) or "ninguna")
+    print(f"Presupuesto final: {datos['presupuesto_final']} M€ | Margen salarial final: {datos['margen_salarial_final']} M€")
+    if datos["objetivos_sin_cerrar"]:
+        print("Objetivos que no se concretaron:", ", ".join(o["nombre"] for o in datos["objetivos_sin_cerrar"]))
 
 
 # ---------------------------------------------------------------- PAUSAS HUMANAS
@@ -83,8 +125,24 @@ def preguntar(pausa):
             print(f"   Scout: {c['justificacion']}")
             if c.get("comentario"):
                 print(f"   Financial: {c['comentario']}")
-        return input("\nEscribe el id del jugador a fichar, 'nueva' (o 'nueva: más jóvenes') "
-                     "para otra ronda de scouting, o 'salir': ")
+        return input("\nEscribe el id del jugador para agregarlo a tus objetivos, 'nueva' (o 'nueva: más jóvenes') "
+                     "para otra ronda de scouting, o 'salir' para volver al centro de mando: ")
+
+    if tipo == "centro_de_mando":
+        print(f"\n=== CENTRO DE MANDO | {pausa['club']} | día {pausa['dia']} (quedan {pausa['dias_restantes']}) ===")
+        print(f"Presupuesto {pausa['presupuesto_fichajes']} M€ | margen salarial {pausa['margen_salarial']} M€ | "
+              f"mensajes nuevos: {pausa['mensajes_nuevos']} | objetivos: {len(pausa['objetivos'])}")
+        print("1. Buscar refuerzos (scouting)")
+        print(f"2. Revisar bandeja ({pausa['mensajes_nuevos']} nuevos)")
+        print("3. Avanzar días  (escribe '3' para un día o '3 5' para cinco)")
+        print("4. Ver estado del club")
+        print("5. Cerrar el mercado")
+        return input("¿Qué quieres hacer?: ")
+
+    if tipo == "confirmar_cierre":
+        aviso = (f" Quedan {pausa['eventos_pendientes']} respuestas pendientes que se perderán."
+                 if pausa["eventos_pendientes"] else "")
+        return input(f"\n¿Seguro que quieres cerrar el mercado en el día {pausa['dia']}?{aviso} (s/n): ")
 
     raise ValueError(f"Tipo de pausa desconocido: {tipo}")
 
@@ -118,7 +176,7 @@ def main():
     suscribir(mostrar_evento)
     print(f"TransferAI | registro de la sesión: {archivo_log.name}")
 
-    config = {"configurable": {"thread_id": archivo_log.stem}}
+    config = {"configurable": {"thread_id": archivo_log.stem}, "recursion_limit": 200}
     club = elegir_club()
     resultado = app.invoke({"club": club}, config)
 
@@ -129,17 +187,7 @@ def main():
         emitir("respuesta_usuario", respuesta, pausa=pausa["tipo"])
         resultado = app.invoke(Command(resume=respuesta), config)
 
-    print("\nPrioridades confirmadas:", resultado.get("prioridades_confirmadas"))
-    print("\n=== RESULTADO ===")
-    objetivo = resultado.get("jugador_objetivo")
-    if objetivo:
-        print(f"Jugador objetivo: {objetivo['nombre']} ({objetivo['posicion']}, {objetivo['edad']} años, "
-              f"{objetivo['club']}), rating {objetivo['rating']}")
-        print("Listo para iniciar la negociación.")
-    else:
-        print("No se eligió ningún jugador objetivo.")
-    print()
-
+    print(f"\nSesión terminada. Registro completo en logs/{archivo_log.name}\n")
 
 if __name__ == "__main__":
     main()
