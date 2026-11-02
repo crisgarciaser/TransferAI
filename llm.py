@@ -4,6 +4,9 @@ import os
 from dotenv import load_dotenv
 from openai import OpenAI
 
+from config import MAX_PASOS_HERRAMIENTAS, TEMPERATURA
+from registro import emitir
+
 load_dotenv()
 
 client = OpenAI(
@@ -13,42 +16,53 @@ client = OpenAI(
 MODELO = os.getenv("QWEN_MODEL")
 
 
-def consultar_json(sistema, usuario):
-    """Envía una consulta a Qwen y devuelve su respuesta como diccionario."""
+def _registrar_llamada(agente, respuesta):
+    """Guarda en el log qué agente llamó al modelo y cuántos tokens usó."""
+    uso = getattr(respuesta, "usage", None)
+    emitir("llm", agente=agente, modelo=MODELO,
+           tokens_entrada=getattr(uso, "prompt_tokens", None),
+           tokens_salida=getattr(uso, "completion_tokens", None))
+
+
+def extraer_json(texto):
+    """Recorta el texto desde la primera '{' hasta la última '}' y lo convierte en diccionario."""
+    inicio, fin = texto.find("{"), texto.rfind("}")
+    return json.loads(texto[inicio : fin + 1])
+
+
+def consultar_json(sistema, usuario, agente="modelo"):
+    """Envía una consulta al modelo y devuelve su respuesta como diccionario."""
     respuesta = client.chat.completions.create(
         model=MODELO,
         messages=[
             {"role": "system", "content": sistema},
             {"role": "user", "content": usuario},
         ],
-        temperature=0.2,
+        temperature=TEMPERATURA,
     )
+    _registrar_llamada(agente, respuesta)
     texto = respuesta.choices[0].message.content
-    inicio, fin = texto.find("{"), texto.rfind("}")
     try:
-        return json.loads(texto[inicio : fin + 1])
+        return extraer_json(texto)
     except json.JSONDecodeError:
-        print("La respuesta del modelo no fue un JSON válido:\n", texto)
+        emitir("error", f"La respuesta del {agente} no fue un JSON válido.", respuesta=texto)
         raise
 
-def extraer_json(texto):
-    inicio, fin = texto.find("{"), texto.rfind("}")
-    return json.loads(texto[inicio : fin + 1])
 
-
-def ejecutar_con_herramientas(sistema, usuario, herramientas, funciones, max_pasos=12):
+def ejecutar_con_herramientas(sistema, usuario, herramientas, funciones, agente="modelo"):
     """Ciclo Pensar-Actuar-Observar. Devuelve el texto final del modelo (o None)."""
     mensajes = [
         {"role": "system", "content": sistema},
         {"role": "user", "content": usuario},
     ]
-    for _ in range(max_pasos):
+    for _ in range(MAX_PASOS_HERRAMIENTAS):
         respuesta = client.chat.completions.create(
             model=MODELO,
             messages=mensajes,
             tools=herramientas,
-            temperature=0.2,
+            temperature=TEMPERATURA,
         )
+        _registrar_llamada(agente, respuesta)
         mensaje = respuesta.choices[0].message
 
         if not mensaje.tool_calls:
@@ -59,11 +73,12 @@ def ejecutar_con_herramientas(sistema, usuario, herramientas, funciones, max_pas
             nombre = llamada.function.name
             try:
                 argumentos = json.loads(llamada.function.arguments)
-                print(f"  ACTUAR: {nombre}({argumentos})")
+                emitir("herramienta", f"{nombre}({argumentos})", agente=agente,
+                       herramienta=nombre, argumentos=argumentos)
                 resultado = funciones[nombre](**argumentos)
             except Exception as error:
                 resultado = {"error": str(error)}
-                print(f"  ERROR en {nombre}: {error}")
+                emitir("error", f"Error en {nombre}: {error}", agente=agente)
             mensajes.append(
                 {
                     "role": "tool",

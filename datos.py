@@ -1,13 +1,20 @@
 import csv
 from pathlib import Path
 
+from config import (
+    EDAD_JOVEN,
+    EDAD_PROMESA,
+    EDAD_VETERANO,
+    MARGEN_POTENCIAL,
+    MAX_RESULTADOS_BUSQUEDA,
+    TOLERANCIA_PROMESA,
+    TOLERANCIA_RATING,
+    UMBRAL_AJUSTADO_MARGEN,
+    UMBRAL_AJUSTADO_PRESUPUESTO,
+)
+
 CARPETA = Path(__file__).parent / "datos_reales"
-EDAD_VETERANO = 30       # el mejor jugador actual se considera veterano desde esta edad
-EDAD_JOVEN = 24          # un candidato es "joven" hasta esta edad
-TOLERANCIA_RATING = 6    # un joven puede tener hasta estos puntos menos que el veterano
-EDAD_PROMESA = 21        # un candidato es "promesa" hasta esta edad
-MARGEN_POTENCIAL = 3     # su potencial debe superar al mejor actual por al menos estos puntos
-TOLERANCIA_PROMESA = 10  # una promesa puede tener hasta estos puntos menos de rating que el mejor actual
+
 
 def _numero(texto):
     if texto in ("", None):
@@ -60,7 +67,7 @@ def obtener_resumen_club(club):
         "n_jugadores": len(plantilla),
     }
 
-def buscar_jugadores(posicion, edad_max=None, valor_max=None, excluir_club=None, max_resultados=10,
+def buscar_jugadores(posicion, edad_max=None, valor_max=None, excluir_club=None, max_resultados=MAX_RESULTADOS_BUSQUEDA,
                      edad_min=None, rating_min=None, rating_max=None, potencial_min=None,
                      ordenar_por="rating"):
     resultado = [j for j in cargar_jugadores() if j["posicion"] == posicion]
@@ -157,10 +164,10 @@ def analizar_viabilidad(jugador, resumen):
         veredicto = "inviable"
     else:
         veredicto = "viable"
-        if uso_presupuesto > 70:
+        if uso_presupuesto > UMBRAL_AJUSTADO_PRESUPUESTO:
             alertas.append(f"consume {uso_presupuesto}% del presupuesto de fichajes")
             veredicto = "ajustado"
-        if uso_margen > 50:
+        if uso_margen > UMBRAL_AJUSTADO_MARGEN:
             alertas.append(f"consume {uso_margen}% del margen salarial")
             veredicto = "ajustado"
 
