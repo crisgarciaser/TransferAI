@@ -1,0 +1,1458 @@
+game_id,competition_id,season,round,date,home_club_id,away_club_id,home_club_goals,away_club_goals,home_club_name,away_club_name
+3837992,GB1,2022,7. Matchday,2023-04-04,399,703,2,1,Leeds United,Nottingham Forest
+3838031,GB1,2022,11. Matchday,2022-10-16,399,11,0,1,Leeds United,Arsenal FC
+3838238,GB1,2022,16. Matchday,2022-11-13,931,985,1,2,Fulham FC,Manchester United
+3838263,GB1,2022,18. Matchday,2022-12-31,1237,11,2,4,Brighton & Hove Albion,Arsenal FC
+3838279,GB1,2022,19. Matchday,2023-01-03,1003,931,0,1,Leicester City,Fulham FC
+3838745,GB1,2022,25. Matchday,2023-02-25,399,180,1,0,Leeds United,Southampton FC
+3838766,GB1,2022,23. Matchday,2023-02-11,11,1148,1,1,Arsenal FC,Brentford FC
+3839116,L1,2022,6. Matchday,2022-09-11,60,18,0,0,SC Freiburg,Borussia Mönchengladbach
+3839156,L1,2022,8. Matchday,2022-10-02,44,533,1,1,Hertha BSC,TSG 1899 Hoffenheim
+3839202,L1,2022,11. Matchday,2022-10-22,167,23826,3,3,FC Augsburg,RB Leipzig
+3839237,L1,2022,13. Matchday,2022-11-05,167,24,1,2,FC Augsburg,Eintracht Frankfurt
+3839253,L1,2022,14. Matchday,2022-11-09,24,533,4,2,Eintracht Frankfurt,TSG 1899 Hoffenheim
+3839265,L1,2022,15. Matchday,2022-11-12,33,27,0,2,FC Schalke 04,Bayern Munich
+3839283,L1,2022,16. Matchday,2023-01-21,80,44,3,1,VfL Bochum,Hertha BSC
+3839330,L1,2022,19. Matchday,2023-02-04,16,60,5,1,Borussia Dortmund,SC Freiburg
+3839731,FR1,2022,1. Matchday,2022-08-07,969,1095,3,2,Montpellier HSC,ESTAC Troyes
+3839734,FR1,2022,1. Matchday,2022-08-07,826,3911,3,2,RC Lens,Stade Brestois 29
+3839780,FR1,2022,2. Matchday,2022-08-13,583,969,5,2,Paris Saint-Germain,Montpellier HSC
+3840058,FR1,2022,10. Matchday,2022-10-08,1421,583,0,0,Stade Reims,Paris Saint-Germain
+3840083,FR1,2022,13. Matchday,2022-10-30,1041,1082,1,0,Olympique Lyon,LOSC Lille
+3840096,FR1,2022,14. Matchday,2022-11-06,1421,995,1,0,Stade Reims,FC Nantes
+3840099,FR1,2022,15. Matchday,2022-11-13,162,244,2,3,AS Monaco,Olympique Marseille
+3840105,FR1,2022,15. Matchday,2022-11-12,826,3524,2,1,RC Lens,Clermont Foot 63
+3840126,FR1,2022,17. Matchday,2023-01-02,667,1095,2,3,RC Strasbourg Alsace,ESTAC Troyes
+3840141,FR1,2022,19. Matchday,2023-01-15,1082,1095,5,1,LOSC Lille,ESTAC Troyes
+3840142,FR1,2022,19. Matchday,2023-01-15,969,995,0,3,Montpellier HSC,FC Nantes
+3840179,FR1,2022,23. Matchday,2023-02-11,162,583,3,1,AS Monaco,Paris Saint-Germain
+3840182,FR1,2022,23. Matchday,2023-02-12,995,1158,1,0,FC Nantes,FC Lorient
+3840184,FR1,2022,23. Matchday,2023-02-12,969,3911,3,0,Montpellier HSC,Stade Brestois 29
+3840202,FR1,2022,25. Matchday,2023-02-26,3524,667,1,1,Clermont Foot 63,RC Strasbourg Alsace
+3840211,FR1,2022,26. Matchday,2023-03-05,1041,1158,0,0,Olympique Lyon,FC Lorient
+3840250,FR1,2022,29. Matchday,2023-04-02,995,1421,0,3,FC Nantes,Stade Reims
+3840270,FR1,2022,31. Matchday,2023-04-16,244,1095,3,1,Olympique Marseille,ESTAC Troyes
+3844095,ES1,2022,1. Matchday,2022-08-15,3709,13,0,3,Getafe CF,Atlético de Madrid
+3844736,IT1,2022,1. Matchday,2022-08-14,430,2239,3,2,ACF Fiorentina,US Cremonese
+3844755,IT1,2022,2. Matchday,2022-08-20,410,380,0,0,Udinese Calcio,US Salernitana 1919
+3844758,IT1,2022,3. Matchday,2022-08-28,276,800,0,1,Hellas Verona,Atalanta BC
+3844797,IT1,2022,7. Matchday,2022-09-18,2239,398,0,4,US Cremonese,SS Lazio
+3844808,IT1,2022,8. Matchday,2022-10-03,276,410,1,2,Hellas Verona,Udinese Calcio
+3844825,IT1,2022,9. Matchday,2022-10-09,410,800,2,2,Udinese Calcio,Atalanta BC
+3844828,IT1,2022,10. Matchday,2022-10-16,276,5,1,2,Hellas Verona,AC Milan
+3844840,IT1,2022,11. Matchday,2022-10-21,506,749,4,0,Juventus FC,FC Empoli
+3844919,IT1,2022,19. Matchday,2023-01-23,46,749,0,1,Inter Milan,FC Empoli
+3844934,IT1,2022,20. Matchday,2023-01-29,6195,12,2,1,SSC Napoli,AS Roma
+3844971,IT1,2022,24. Matchday,2023-02-27,398,1038,1,0,SS Lazio,UC Sampdoria
+3844974,IT1,2022,24. Matchday,2023-02-26,380,2919,3,0,US Salernitana 1919,AC Monza
+3844975,IT1,2022,24. Matchday,2023-02-26,410,3522,2,2,Udinese Calcio,Spezia Calcio
+3844976,IT1,2022,25. Matchday,2023-03-04,800,410,0,0,Atalanta BC,Udinese Calcio
+3844989,IT1,2022,26. Matchday,2023-03-12,276,2919,1,1,Hellas Verona,AC Monza
+3844992,IT1,2022,26. Matchday,2023-03-13,5,380,1,1,AC Milan,US Salernitana 1919
+3885848,ES1,2022,3. Matchday,2022-08-28,131,366,4,0,FC Barcelona,Real Valladolid CF
+3886290,ES1,2022,7. Matchday,2022-10-02,940,150,1,0,Celta de Vigo,Real Betis Balompié
+3886338,ES1,2022,10. Matchday,2022-10-20,331,714,1,0,CA Osasuna,RCD Espanyol Barcelona
+3886464,ES1,2022,15. Matchday,2022-12-31,131,714,1,1,FC Barcelona,RCD Espanyol Barcelona
+3886505,ES1,2022,18. Matchday,2023-01-21,714,150,1,0,RCD Espanyol Barcelona,Real Betis Balompié
+3886519,ES1,2022,19. Matchday,2023-01-30,1050,367,0,1,Villarreal CF,Rayo Vallecano
+3886580,ES1,2022,25. Matchday,2023-03-12,621,131,0,1,Athletic Bilbao,FC Barcelona
+3838213,GB1,2022,14. Matchday,2022-10-29,762,405,4,0,Newcastle United,Aston Villa
+3838236,GB1,2022,16. Matchday,2022-11-12,989,29,3,0,AFC Bournemouth,Everton FC
+3838783,GB1,2022,21. Matchday,2023-01-21,379,29,2,0,West Ham United,Everton FC
+3838784,GB1,2022,21. Matchday,2023-01-21,180,405,0,1,Southampton FC,Aston Villa
+3838799,GB1,2022,20. Matchday,2023-01-14,985,281,2,1,Manchester United,Manchester City
+3840204,FR1,2022,25. Matchday,2023-02-26,995,273,0,1,FC Nantes,Stade Rennais FC
+3844804,IT1,2022,7. Matchday,2022-09-17,416,6574,0,1,Torino FC,US Sassuolo
+3886326,ES1,2022,9. Matchday,2022-10-15,12321,2687,1,1,Girona FC,Cádiz CF
+3886629,ES1,2022,29. Matchday,2023-04-16,13,3302,2,1,Atlético de Madrid,UD Almería
+3838277,GB1,2022,19. Matchday,2023-01-03,29,1237,1,4,Everton FC,Brighton & Hove Albion
+3839158,L1,2022,8. Matchday,2022-10-01,86,18,5,1,SV Werder Bremen,Borussia Mönchengladbach
+3839221,L1,2022,12. Matchday,2022-10-28,86,44,1,0,SV Werder Bremen,Hertha BSC
+3840057,FR1,2022,10. Matchday,2022-10-09,273,995,3,0,Stade Rennais FC,FC Nantes
+3840066,FR1,2022,11. Matchday,2022-10-16,273,1041,3,2,Stade Rennais FC,Olympique Lyon
+3840166,FR1,2022,21. Matchday,2023-02-01,273,667,3,0,Stade Rennais FC,RC Strasbourg Alsace
+3840255,FR1,2022,29. Matchday,2023-04-01,273,826,0,1,Stade Rennais FC,RC Lens
+3844913,IT1,2022,18. Matchday,2023-01-15,6574,398,0,2,US Sassuolo,SS Lazio
+3886335,ES1,2022,10. Matchday,2022-10-19,2687,150,0,0,Cádiz CF,Real Betis Balompié
+3886447,ES1,2022,14. Matchday,2022-11-08,1531,12321,1,2,Elche CF,Girona FC
+3886503,ES1,2022,18. Matchday,2023-01-22,1531,331,1,1,Elche CF,CA Osasuna
+3886512,ES1,2022,19. Matchday,2023-01-27,3302,714,3,1,UD Almería,RCD Espanyol Barcelona
+3837817,GB1,2022,1. Matchday,2022-08-06,762,703,2,0,Newcastle United,Nottingham Forest
+3837825,GB1,2022,2. Matchday,2022-08-13,180,399,2,2,Southampton FC,Leeds United
+3837838,GB1,2022,3. Matchday,2022-08-21,399,631,3,0,Leeds United,Chelsea FC
+3837847,GB1,2022,4. Matchday,2022-08-27,1237,399,1,0,Brighton & Hove Albion,Leeds United
+3837849,GB1,2022,4. Matchday,2022-08-27,31,989,9,0,Liverpool FC,AFC Bournemouth
+3837990,GB1,2022,7. Matchday,2023-01-18,873,985,1,1,Crystal Palace,Manchester United
+3838010,GB1,2022,9. Matchday,2022-10-01,873,631,1,2,Crystal Palace,Chelsea FC
+3838011,GB1,2022,9. Matchday,2022-10-01,931,762,1,4,Fulham FC,Newcastle United
+3838280,GB1,2022,19. Matchday,2023-01-03,985,989,3,0,Manchester United,AFC Bournemouth
+3838680,GB1,2022,31. Matchday,2023-04-16,703,985,0,2,Nottingham Forest,Manchester United
+3838684,GB1,2022,31. Matchday,2023-04-15,631,1237,1,2,Chelsea FC,Brighton & Hove Albion
+3838729,GB1,2022,27. Matchday,2023-03-12,985,180,0,0,Manchester United,Southampton FC
+3838730,GB1,2022,27. Matchday,2023-03-11,1003,631,1,3,Leicester City,Chelsea FC
+3838770,GB1,2022,23. Matchday,2023-02-12,399,985,0,2,Leeds United,Manchester United
+3839027,L1,2022,1. Matchday,2022-08-06,89,44,3,1,1.FC Union Berlin,Hertha BSC
+3839057,L1,2022,2. Matchday,2022-08-13,533,80,3,2,TSG 1899 Hoffenheim,VfL Bochum
+3839112,L1,2022,5. Matchday,2022-09-04,167,44,0,2,FC Augsburg,Hertha BSC
+3839114,L1,2022,6. Matchday,2022-09-10,27,79,2,2,Bayern Munich,VfB Stuttgart
+3839135,L1,2022,7. Matchday,2022-09-16,39,44,1,1,1.FSV Mainz 05,Hertha BSC
+3839137,L1,2022,7. Matchday,2022-09-17,18,23826,3,0,Borussia Mönchengladbach,RB Leipzig
+3839200,L1,2022,11. Matchday,2022-10-22,18,24,1,3,Borussia Mönchengladbach,Eintracht Frankfurt
+3839263,L1,2022,15. Matchday,2022-11-12,167,80,0,1,FC Augsburg,VfL Bochum
+3839355,L1,2022,20. Matchday,2023-02-10,33,82,0,0,FC Schalke 04,VfL Wolfsburg
+3839416,L1,2022,24. Matchday,2023-03-12,82,89,1,1,VfL Wolfsburg,1.FC Union Berlin
+3839417,L1,2022,24. Matchday,2023-03-11,44,39,1,1,Hertha BSC,1.FSV Mainz 05
+3839437,L1,2022,25. Matchday,2023-03-18,79,82,0,1,VfB Stuttgart,VfL Wolfsburg
+3839483,L1,2022,28. Matchday,2023-04-15,27,533,1,1,Bayern Munich,TSG 1899 Hoffenheim
+3839489,L1,2022,28. Matchday,2023-04-15,79,16,3,3,VfB Stuttgart,Borussia Dortmund
+3839728,FR1,2022,1. Matchday,2022-08-07,1420,995,0,0,Angers SCO,FC Nantes
+3839840,FR1,2022,4. Matchday,2022-08-26,1147,1082,1,3,AC Ajaccio,LOSC Lille
+3840030,FR1,2022,8. Matchday,2022-09-17,1082,415,2,1,LOSC Lille,FC Toulouse
+3840032,FR1,2022,8. Matchday,2022-09-18,417,1420,0,1,OGC Nice,Angers SCO
+3840042,FR1,2022,9. Matchday,2022-09-30,1420,244,0,3,Angers SCO,Olympique Marseille
+3840059,FR1,2022,11. Matchday,2022-10-16,290,417,1,1,AJ Auxerre,OGC Nice
+3840079,FR1,2022,13. Matchday,2022-10-30,290,1147,1,0,AJ Auxerre,AC Ajaccio
+3840081,FR1,2022,13. Matchday,2022-10-30,1158,417,1,2,FC Lorient,OGC Nice
+3840085,FR1,2022,13. Matchday,2022-10-28,826,415,3,0,RC Lens,FC Toulouse
+3840095,FR1,2022,14. Matchday,2022-11-06,244,1041,1,0,Olympique Marseille,Olympique Lyon
+3840101,FR1,2022,15. Matchday,2022-11-13,1082,1420,1,0,LOSC Lille,Angers SCO
+3840103,FR1,2022,15. Matchday,2022-11-11,1041,417,1,1,Olympique Lyon,OGC Nice
+3840155,FR1,2022,20. Matchday,2023-01-29,583,1421,1,1,Paris Saint-Germain,Stade Reims
+3840164,FR1,2022,21. Matchday,2023-02-01,1041,3911,0,0,Olympique Lyon,Stade Brestois 29
+3840172,FR1,2022,22. Matchday,2023-02-05,1158,1420,0,0,FC Lorient,Angers SCO
+3840191,FR1,2022,24. Matchday,2023-02-18,417,1421,0,0,OGC Nice,Stade Reims
+3840194,FR1,2022,24. Matchday,2023-02-18,667,1420,2,1,RC Strasbourg Alsace,Angers SCO
+3840218,FR1,2022,26. Matchday,2023-03-05,1095,162,2,2,ESTAC Troyes,AS Monaco
+3840249,FR1,2022,29. Matchday,2023-04-02,3524,1147,2,1,Clermont Foot 63,AC Ajaccio
+3844093,ES1,2022,1. Matchday,2022-08-12,331,368,2,1,CA Osasuna,Sevilla FC
+3844097,ES1,2022,1. Matchday,2022-08-14,1049,12321,1,0,Valencia CF,Girona FC
+3844740,IT1,2022,1. Matchday,2022-08-13,1005,46,1,2,US Lecce,Inter Milan
+3844756,IT1,2022,3. Matchday,2022-08-27,2239,416,1,2,US Cremonese,Torino FC
+3844773,IT1,2022,4. Matchday,2022-08-31,1038,398,1,1,UC Sampdoria,SS Lazio
+3844777,IT1,2022,5. Matchday,2022-09-03,430,506,1,1,ACF Fiorentina,Juventus FC
+3844778,IT1,2022,5. Matchday,2022-09-04,276,1038,2,1,Hellas Verona,UC Sampdoria
+3844794,IT1,2022,6. Matchday,2022-09-10,1038,5,1,2,UC Sampdoria,AC Milan
+3844814,IT1,2022,8. Matchday,2022-10-02,1038,2919,0,3,UC Sampdoria,AC Monza
+3844838,IT1,2022,11. Matchday,2022-10-24,2239,1038,0,1,US Cremonese,UC Sampdoria
+3844847,IT1,2022,12. Matchday,2022-10-30,749,800,0,2,FC Empoli,Atalanta BC
+3844851,IT1,2022,12. Matchday,2022-10-29,1005,506,0,1,US Lecce,Juventus FC
+3844886,IT1,2022,16. Matchday,2023-01-04,2239,506,0,1,US Cremonese,Juventus FC
+3844889,IT1,2022,16. Matchday,2023-01-04,1005,398,2,1,US Lecce,SS Lazio
+3844904,IT1,2022,17. Matchday,2023-01-08,1038,6195,0,2,UC Sampdoria,SSC Napoli
+3844921,IT1,2022,19. Matchday,2023-01-24,398,5,4,0,SS Lazio,AC Milan
+3844948,IT1,2022,22. Matchday,2023-02-13,276,380,1,0,Hellas Verona,US Salernitana 1919
+3844950,IT1,2022,22. Matchday,2023-02-11,398,800,0,2,SS Lazio,Atalanta BC
+3844951,IT1,2022,22. Matchday,2023-02-11,1005,12,1,1,US Lecce,AS Roma
+3845010,IT1,2022,28. Matchday,2023-04-01,506,276,1,0,Juventus FC,Hellas Verona
+3845031,IT1,2022,30. Matchday,2023-04-15,6195,276,0,0,SSC Napoli,Hellas Verona
+3858328,ES1,2022,6. Matchday,2022-09-18,331,3709,0,2,CA Osasuna,Getafe CF
+3885856,ES1,2022,4. Matchday,2022-09-03,681,13,1,1,Real Sociedad,Atlético de Madrid
+3886287,ES1,2022,7. Matchday,2022-10-02,12321,681,3,5,Girona FC,Real Sociedad
+3886298,ES1,2022,5. Matchday,2022-09-11,418,237,4,1,Real Madrid,RCD Mallorca
+3886361,ES1,2022,11. Matchday,2022-10-22,418,368,3,1,Real Madrid,Sevilla FC
+3886364,ES1,2022,11. Matchday,2022-10-23,150,13,1,2,Real Betis Balompié,Atlético de Madrid
+3886366,ES1,2022,11. Matchday,2022-10-22,1049,237,1,2,Valencia CF,RCD Mallorca
+3886550,ES1,2022,22. Matchday,2023-02-18,150,366,2,1,Real Betis Balompié,Real Valladolid CF
+3886557,ES1,2022,22. Matchday,2023-02-18,681,940,1,1,Real Sociedad,Celta de Vigo
+3886599,ES1,2022,26. Matchday,2023-03-18,367,12321,2,2,Rayo Vallecano,Girona FC
+3886606,ES1,2022,27. Matchday,2023-04-01,12321,714,2,1,Girona FC,RCD Espanyol Barcelona
+3886615,ES1,2022,28. Matchday,2023-04-09,367,13,1,2,Rayo Vallecano,Atlético de Madrid
+3886619,ES1,2022,28. Matchday,2023-04-08,681,3709,2,0,Real Sociedad,Getafe CF
+3838210,GB1,2022,14. Matchday,2022-10-29,1003,281,0,1,Leicester City,Manchester City
+3838254,GB1,2022,17. Matchday,2022-12-26,1148,148,2,2,Brentford FC,Tottenham Hotspur
+3838258,GB1,2022,17. Matchday,2022-12-28,399,281,1,3,Leeds United,Manchester City
+3839162,L1,2022,9. Matchday,2022-10-07,533,86,1,2,TSG 1899 Hoffenheim,SV Werder Bremen
+3839434,L1,2022,25. Matchday,2023-03-17,18,86,2,2,Borussia Mönchengladbach,SV Werder Bremen
+3840016,FR1,2022,6. Matchday,2022-09-04,1095,273,1,1,ESTAC Troyes,Stade Rennais FC
+3844955,IT1,2022,22. Matchday,2023-02-12,410,6574,2,2,Udinese Calcio,US Sassuolo
+3844972,IT1,2022,24. Matchday,2023-02-25,1005,6574,0,1,US Lecce,US Sassuolo
+3886577,ES1,2022,24. Matchday,2023-03-03,681,2687,0,0,Real Sociedad,Cádiz CF
+3838195,GB1,2022,13. Matchday,2022-10-23,148,762,1,2,Tottenham Hotspur,Newcastle United
+3838800,GB1,2022,20. Matchday,2023-01-14,29,180,1,2,Everton FC,Southampton FC
+3839099,L1,2022,4. Matchday,2022-08-28,3,79,0,0,1.FC Köln,VfB Stuttgart
+3839122,L1,2022,6. Matchday,2022-09-09,86,167,0,1,SV Werder Bremen,FC Augsburg
+3885846,ES1,2022,3. Matchday,2022-08-27,3302,368,2,1,UD Almería,Sevilla FC
+3886333,ES1,2022,10. Matchday,2022-10-20,3302,12321,3,2,UD Almería,Girona FC
+3838193,GB1,2022,13. Matchday,2022-10-22,703,31,1,0,Nottingham Forest,Liverpool FC
+3838262,GB1,2022,18. Matchday,2022-12-31,989,873,0,2,AFC Bournemouth,Crystal Palace
+3838682,GB1,2022,31. Matchday,2023-04-17,399,31,1,6,Leeds United,Liverpool FC
+3838706,GB1,2022,29. Matchday,2023-04-01,873,1003,2,1,Crystal Palace,Leicester City
+3838794,GB1,2022,20. Matchday,2023-01-15,631,873,1,0,Chelsea FC,Crystal Palace
+3839031,L1,2022,1. Matchday,2022-08-06,80,39,1,2,VfL Bochum,1.FSV Mainz 05
+3839086,L1,2022,3. Matchday,2022-08-20,167,39,1,2,FC Augsburg,1.FSV Mainz 05
+3839100,L1,2022,4. Matchday,2022-08-27,39,15,0,3,1.FSV Mainz 05,Bayer 04 Leverkusen
+3839121,L1,2022,6. Matchday,2022-09-10,33,80,3,1,FC Schalke 04,VfL Bochum
+3839151,L1,2022,8. Matchday,2022-10-01,23826,80,4,0,RB Leipzig,VfL Bochum
+3839164,L1,2022,9. Matchday,2022-10-08,80,24,3,0,VfL Bochum,Eintracht Frankfurt
+3839195,L1,2022,11. Matchday,2022-10-22,16,79,5,0,Borussia Dortmund,VfB Stuttgart
+3839232,L1,2022,13. Matchday,2022-11-06,15,89,5,0,Bayer 04 Leverkusen,1.FC Union Berlin
+3839280,L1,2022,16. Matchday,2023-01-22,18,15,2,3,Borussia Mönchengladbach,Bayer 04 Leverkusen
+3839317,L1,2022,18. Matchday,2023-01-28,533,18,1,4,TSG 1899 Hoffenheim,Borussia Mönchengladbach
+3839373,L1,2022,21. Matchday,2023-02-17,167,533,1,0,FC Augsburg,TSG 1899 Hoffenheim
+3839448,L1,2022,26. Matchday,2023-04-01,23826,39,0,3,RB Leipzig,1.FSV Mainz 05
+3839490,L1,2022,28. Matchday,2023-04-14,33,44,5,2,FC Schalke 04,Hertha BSC
+3839825,FR1,2022,3. Matchday,2022-08-21,415,1158,2,2,FC Toulouse,FC Lorient
+3839847,FR1,2022,4. Matchday,2022-08-28,3911,969,0,7,Stade Brestois 29,Montpellier HSC
+3839868,FR1,2022,5. Matchday,2022-08-31,244,3524,1,0,Olympique Marseille,Clermont Foot 63
+3840020,FR1,2022,7. Matchday,2022-09-11,1158,995,3,2,FC Lorient,FC Nantes
+3840024,FR1,2022,7. Matchday,2022-09-11,667,3524,0,0,RC Strasbourg Alsace,Clermont Foot 63
+3840027,FR1,2022,8. Matchday,2022-09-16,290,1158,1,3,AJ Auxerre,FC Lorient
+3840041,FR1,2022,9. Matchday,2022-10-02,162,995,4,1,AS Monaco,FC Nantes
+3840054,FR1,2022,10. Matchday,2022-10-07,1041,415,1,1,Olympique Lyon,FC Toulouse
+3840056,FR1,2022,10. Matchday,2022-10-09,3911,1158,1,2,Stade Brestois 29,FC Lorient
+3840061,FR1,2022,11. Matchday,2022-10-15,1158,1421,0,0,FC Lorient,Stade Reims
+3840064,FR1,2022,11. Matchday,2022-10-15,826,969,1,0,RC Lens,Montpellier HSC
+3840080,FR1,2022,13. Matchday,2022-10-30,162,1420,2,0,AS Monaco,Angers SCO
+3840082,FR1,2022,13. Matchday,2022-10-30,995,3524,1,1,FC Nantes,Clermont Foot 63
+3840102,FR1,2022,15. Matchday,2022-11-13,969,1421,1,1,Montpellier HSC,Stade Reims
+3840123,FR1,2022,17. Matchday,2023-01-02,969,244,1,2,Montpellier HSC,Olympique Marseille
+3840149,FR1,2022,20. Matchday,2023-01-29,1147,1041,0,2,AC Ajaccio,Olympique Lyon
+3840150,FR1,2022,20. Matchday,2023-01-29,290,969,0,2,AJ Auxerre,Montpellier HSC
+3840174,FR1,2022,22. Matchday,2023-02-04,583,415,2,1,Paris Saint-Germain,FC Toulouse
+3840181,FR1,2022,23. Matchday,2023-02-11,3524,244,0,2,Clermont Foot 63,Olympique Marseille
+3840213,FR1,2022,26. Matchday,2023-03-04,826,1082,1,1,RC Lens,LOSC Lille
+3840236,FR1,2022,28. Matchday,2023-03-19,1421,244,1,2,Stade Reims,Olympique Marseille
+3840259,FR1,2022,30. Matchday,2023-04-09,995,162,2,2,FC Nantes,AS Monaco
+3844752,IT1,2022,2. Matchday,2022-08-22,1038,506,0,0,UC Sampdoria,Juventus FC
+3844754,IT1,2022,2. Matchday,2022-08-20,416,398,0,0,Torino FC,SS Lazio
+3844757,IT1,2022,3. Matchday,2022-08-28,430,6195,0,0,ACF Fiorentina,SSC Napoli
+3844763,IT1,2022,3. Matchday,2022-08-26,2919,410,1,2,AC Monza,Udinese Calcio
+3844792,IT1,2022,6. Matchday,2022-09-11,1005,2919,1,1,US Lecce,AC Monza
+3844801,IT1,2022,7. Matchday,2022-09-18,12,800,0,1,AS Roma,Atalanta BC
+3844811,IT1,2022,8. Matchday,2022-10-02,398,3522,4,0,SS Lazio,Spezia Calcio
+3844845,IT1,2022,11. Matchday,2022-10-23,410,416,1,2,Udinese Calcio,Torino FC
+3844872,IT1,2022,14. Matchday,2022-11-08,6195,749,2,0,SSC Napoli,FC Empoli
+3844887,IT1,2022,16. Matchday,2023-01-04,430,2919,1,1,ACF Fiorentina,AC Monza
+3844910,IT1,2022,18. Matchday,2023-01-14,1005,5,2,2,US Lecce,AC Milan
+3844912,IT1,2022,18. Matchday,2023-01-15,12,430,2,0,AS Roma,ACF Fiorentina
+3844970,IT1,2022,24. Matchday,2023-02-28,506,416,4,2,Juventus FC,Torino FC
+3844973,IT1,2022,24. Matchday,2023-02-26,5,800,2,0,AC Milan,Atalanta BC
+3844999,IT1,2022,27. Matchday,2023-03-19,398,12,1,0,SS Lazio,AS Roma
+3845020,IT1,2022,29. Matchday,2023-04-07,1005,6195,1,2,US Lecce,SSC Napoli
+3845027,IT1,2022,30. Matchday,2023-04-14,2239,749,1,0,US Cremonese,FC Empoli
+3885847,ES1,2022,3. Matchday,2022-08-28,3709,1050,0,0,Getafe CF,Villarreal CF
+3886288,ES1,2022,7. Matchday,2022-10-01,368,13,0,2,Sevilla FC,Atlético de Madrid
+3886321,ES1,2022,9. Matchday,2022-10-15,237,368,0,1,RCD Mallorca,Sevilla FC
+3886362,ES1,2022,11. Matchday,2022-10-23,12321,331,1,1,Girona FC,CA Osasuna
+3886451,ES1,2022,14. Matchday,2022-11-08,331,131,1,2,CA Osasuna,FC Barcelona
+3886509,ES1,2022,18. Matchday,2023-01-22,1050,12321,1,0,Villarreal CF,Girona FC
+3886527,ES1,2022,20. Matchday,2023-02-05,681,366,0,1,Real Sociedad,Real Valladolid CF
+3886586,ES1,2022,25. Matchday,2023-03-12,1050,150,1,1,Villarreal CF,Real Betis Balompié
+3837820,GB1,2022,1. Matchday,2022-08-06,989,405,2,0,AFC Bournemouth,Aston Villa
+3837823,GB1,2022,1. Matchday,2022-08-07,379,281,0,2,West Ham United,Manchester City
+3838276,GB1,2022,19. Matchday,2023-01-04,873,148,0,4,Crystal Palace,Tottenham Hotspur
+3839079,L1,2022,3. Matchday,2022-08-20,16,86,2,3,Borussia Dortmund,SV Werder Bremen
+3839776,FR1,2022,2. Matchday,2022-08-13,162,273,1,1,AS Monaco,Stade Rennais FC
+3844933,IT1,2022,20. Matchday,2023-01-29,5,6574,2,5,AC Milan,US Sassuolo
+3886328,ES1,2022,9. Matchday,2022-10-16,150,3302,3,1,Real Betis Balompié,UD Almería
+3886589,ES1,2022,25. Matchday,2023-03-12,368,3302,2,1,Sevilla FC,UD Almería
+3886626,ES1,2022,29. Matchday,2023-04-16,12321,1531,2,0,Girona FC,Elche CF
+3838243,GB1,2022,16. Matchday,2022-11-12,148,399,4,3,Tottenham Hotspur,Leeds United
+3838273,GB1,2022,19. Matchday,2023-01-04,405,543,1,1,Aston Villa,Wolverhampton Wanderers
+3838727,GB1,2022,27. Matchday,2023-03-11,148,703,3,1,Tottenham Hotspur,Nottingham Forest
+3838749,GB1,2022,25. Matchday,2023-02-26,148,631,2,0,Tottenham Hotspur,Chelsea FC
+3839153,L1,2022,8. Matchday,2022-10-01,3,16,3,2,1.FC Köln,Borussia Dortmund
+3839451,L1,2022,26. Matchday,2023-04-02,3,18,0,0,1.FC Köln,Borussia Mönchengladbach
+3839455,L1,2022,26. Matchday,2023-04-02,86,533,1,2,SV Werder Bremen,TSG 1899 Hoffenheim
+3839824,FR1,2022,3. Matchday,2022-08-21,273,1147,2,1,Stade Rennais FC,AC Ajaccio
+3844092,ES1,2022,1. Matchday,2022-08-14,2687,681,0,1,Cádiz CF,Real Sociedad
+3844753,IT1,2022,2. Matchday,2022-08-20,6574,1005,1,0,US Sassuolo,US Lecce
+3844795,IT1,2022,6. Matchday,2022-09-11,6574,410,1,3,US Sassuolo,Udinese Calcio
+3886623,ES1,2022,29. Matchday,2023-04-15,2687,418,0,2,Cádiz CF,Real Madrid
+3837833,GB1,2022,2. Matchday,2022-08-13,11,1003,4,2,Arsenal FC,Leicester City
+3838027,GB1,2022,10. Matchday,2022-10-09,379,931,3,1,West Ham United,Fulham FC
+3838052,GB1,2022,12. Matchday,2022-10-19,1148,631,0,0,Brentford FC,Chelsea FC
+3838194,GB1,2022,13. Matchday,2022-10-23,180,11,1,1,Southampton FC,Arsenal FC
+3838239,GB1,2022,16. Matchday,2022-11-12,31,180,3,1,Liverpool FC,Southampton FC
+3838698,GB1,2022,30. Matchday,2023-04-08,931,379,0,1,Fulham FC,West Ham United
+3838725,GB1,2022,27. Matchday,2023-03-11,399,1237,2,2,Leeds United,Brighton & Hove Albion
+3838753,GB1,2022,24. Matchday,2023-02-18,1237,931,0,1,Brighton & Hove Albion,Fulham FC
+3838774,GB1,2022,22. Matchday,2023-02-03,631,931,0,0,Chelsea FC,Fulham FC
+3838776,GB1,2022,22. Matchday,2023-02-04,985,873,2,1,Manchester United,Crystal Palace
+3839101,L1,2022,4. Matchday,2022-08-27,533,167,1,0,TSG 1899 Hoffenheim,FC Augsburg
+3839179,L1,2022,10. Matchday,2022-10-16,89,16,2,0,1.FC Union Berlin,Borussia Dortmund
+3839219,L1,2022,12. Matchday,2022-10-29,79,167,2,1,VfB Stuttgart,FC Augsburg
+3839236,L1,2022,13. Matchday,2022-11-04,18,79,3,1,Borussia Mönchengladbach,VfB Stuttgart
+3839258,L1,2022,15. Matchday,2022-11-12,15,79,2,0,Bayer 04 Leverkusen,VfB Stuttgart
+3839315,L1,2022,18. Matchday,2023-01-28,60,167,3,1,SC Freiburg,FC Augsburg
+3839352,L1,2022,20. Matchday,2023-02-11,39,167,3,1,1.FSV Mainz 05,FC Augsburg
+3839390,L1,2022,22. Matchday,2023-02-25,44,167,2,0,Hertha BSC,FC Augsburg
+3839415,L1,2022,24. Matchday,2023-03-11,24,79,1,1,Eintracht Frankfurt,VfB Stuttgart
+3839432,L1,2022,25. Matchday,2023-03-19,39,60,1,1,1.FSV Mainz 05,SC Freiburg
+3839433,L1,2022,25. Matchday,2023-03-18,533,44,3,1,TSG 1899 Hoffenheim,Hertha BSC
+3839473,L1,2022,27. Matchday,2023-04-08,44,23826,0,1,Hertha BSC,RB Leipzig
+3840011,FR1,2022,6. Matchday,2022-09-04,969,1082,1,3,Montpellier HSC,LOSC Lille
+3840013,FR1,2022,6. Matchday,2022-09-03,1041,1420,5,0,Olympique Lyon,Angers SCO
+3840022,FR1,2022,7. Matchday,2022-09-10,583,3911,1,0,Paris Saint-Germain,Stade Brestois 29
+3840062,FR1,2022,11. Matchday,2022-10-16,995,3911,4,1,FC Nantes,Stade Brestois 29
+3840100,FR1,2022,15. Matchday,2022-11-13,995,1147,2,2,FC Nantes,AC Ajaccio
+3840137,FR1,2022,18. Matchday,2023-01-11,3911,1082,0,0,Stade Brestois 29,LOSC Lille
+3840139,FR1,2022,19. Matchday,2023-01-15,162,1147,7,1,AS Monaco,AC Ajaccio
+3840178,FR1,2022,22. Matchday,2023-02-04,1095,1041,1,3,ESTAC Troyes,Olympique Lyon
+3840189,FR1,2022,24. Matchday,2023-02-17,290,1041,2,1,AJ Auxerre,Olympique Lyon
+3840208,FR1,2022,25. Matchday,2023-02-26,1421,415,3,0,Stade Reims,FC Toulouse
+3840212,FR1,2022,26. Matchday,2023-03-04,583,995,4,2,Paris Saint-Germain,FC Nantes
+3840235,FR1,2022,28. Matchday,2023-03-19,667,290,2,0,RC Strasbourg Alsace,AJ Auxerre
+3840265,FR1,2022,30. Matchday,2023-04-09,1095,3524,0,2,ESTAC Troyes,Clermont Foot 63
+3840275,FR1,2022,31. Matchday,2023-04-14,415,1041,1,2,FC Toulouse,Olympique Lyon
+3844775,IT1,2022,4. Matchday,2022-08-31,410,430,1,0,Udinese Calcio,ACF Fiorentina
+3844833,IT1,2022,10. Matchday,2022-10-17,1038,12,0,1,UC Sampdoria,AS Roma
+3844846,IT1,2022,12. Matchday,2022-10-30,2239,410,0,0,US Cremonese,Udinese Calcio
+3844850,IT1,2022,12. Matchday,2022-10-30,398,380,1,3,SS Lazio,US Salernitana 1919
+3844870,IT1,2022,14. Matchday,2022-11-10,398,2919,1,0,SS Lazio,AC Monza
+3844884,IT1,2022,15. Matchday,2022-11-13,12,416,1,1,AS Roma,Torino FC
+3844891,IT1,2022,16. Matchday,2023-01-04,380,5,1,2,US Salernitana 1919,AC Milan
+3844911,IT1,2022,18. Matchday,2023-01-13,6195,506,5,1,SSC Napoli,Juventus FC
+3844918,IT1,2022,19. Matchday,2023-01-21,276,1005,2,0,Hellas Verona,US Lecce
+3844940,IT1,2022,21. Matchday,2023-02-06,2919,1038,2,2,AC Monza,UC Sampdoria
+3844958,IT1,2022,23. Matchday,2023-02-18,46,410,3,1,Inter Milan,Udinese Calcio
+3844979,IT1,2022,25. Matchday,2023-03-04,2919,749,2,1,AC Monza,FC Empoli
+3858323,ES1,2022,6. Matchday,2022-09-17,1049,940,3,0,Valencia CF,Celta de Vigo
+3886295,ES1,2022,5. Matchday,2022-09-10,367,1049,2,1,Rayo Vallecano,Valencia CF
+3886296,ES1,2022,5. Matchday,2022-09-10,714,368,2,3,RCD Espanyol Barcelona,Sevilla FC
+3886360,ES1,2022,11. Matchday,2022-10-24,940,3709,1,1,Celta de Vigo,Getafe CF
+3886363,ES1,2022,11. Matchday,2022-10-23,131,621,4,0,FC Barcelona,Athletic Bilbao
+3886448,ES1,2022,14. Matchday,2022-11-09,714,1050,0,1,RCD Espanyol Barcelona,Villarreal CF
+3886450,ES1,2022,14. Matchday,2022-11-09,237,13,1,0,RCD Mallorca,Atlético de Madrid
+3886516,ES1,2022,19. Matchday,2023-01-28,3709,150,0,1,Getafe CF,Real Betis Balompié
+3886535,ES1,2022,21. Matchday,2023-02-12,940,13,0,1,Celta de Vigo,Atlético de Madrid
+3886569,ES1,2022,24. Matchday,2023-03-04,13,368,6,1,Atlético de Madrid,Sevilla FC
+3886572,ES1,2022,24. Matchday,2023-03-04,3709,12321,3,2,Getafe CF,Girona FC
+3886585,ES1,2022,25. Matchday,2023-03-13,12321,13,0,1,Girona FC,Atlético de Madrid
+3886594,ES1,2022,26. Matchday,2023-03-19,331,1050,0,3,CA Osasuna,Villarreal CF
+3886601,ES1,2022,27. Matchday,2023-04-02,13,150,1,0,Atlético de Madrid,Real Betis Balompié
+3886610,ES1,2022,28. Matchday,2023-04-10,131,12321,0,0,FC Barcelona,Girona FC
+3921205,ES1,2022,5. Matchday,2022-09-11,3709,681,2,1,Getafe CF,Real Sociedad
+3838007,GB1,2022,8. Matchday,2022-09-17,543,281,0,3,Wolverhampton Wanderers,Manchester City
+3838009,GB1,2022,9. Matchday,2022-10-01,11,148,3,1,Arsenal FC,Tottenham Hotspur
+3838026,GB1,2022,10. Matchday,2022-10-10,703,405,1,1,Nottingham Forest,Aston Villa
+3838057,GB1,2022,12. Matchday,2022-10-19,762,29,1,0,Newcastle United,Everton FC
+3839249,L1,2022,14. Matchday,2022-11-08,27,86,6,1,Bayern Munich,SV Werder Bremen
+3840188,FR1,2022,23. Matchday,2023-02-12,415,273,3,1,FC Toulouse,Stade Rennais FC
+3845018,IT1,2022,29. Matchday,2023-04-08,276,6574,2,1,Hellas Verona,US Sassuolo
+3885853,ES1,2022,4. Matchday,2022-09-02,940,2687,3,0,Celta de Vigo,Cádiz CF
+3886291,ES1,2022,7. Matchday,2022-10-03,367,1531,2,1,Rayo Vallecano,Elche CF
+3886417,ES1,2022,13. Matchday,2022-11-05,131,3302,2,0,FC Barcelona,UD Almería
+3886576,ES1,2022,24. Matchday,2023-03-04,237,1531,0,1,RCD Mallorca,Elche CF
+3838006,GB1,2022,8. Matchday,2022-09-17,148,1003,6,2,Tottenham Hotspur,Leicester City
+3838028,GB1,2022,11. Matchday,2022-10-16,405,631,0,2,Aston Villa,Chelsea FC
+3838681,GB1,2022,31. Matchday,2023-04-15,281,1003,3,1,Manchester City,Leicester City
+3839414,L1,2022,24. Matchday,2023-03-10,3,80,0,2,1.FC Köln,VfL Bochum
+3840127,FR1,2022,17. Matchday,2023-01-02,273,417,2,1,Stade Rennais FC,OGC Nice
+3840215,FR1,2022,26. Matchday,2023-03-05,273,244,0,1,Stade Rennais FC,Olympique Marseille
+3885850,ES1,2022,3. Matchday,2022-08-29,2687,621,0,4,Cádiz CF,Athletic Bilbao
+3886486,ES1,2022,16. Matchday,2023-01-06,1531,940,0,1,Elche CF,Celta de Vigo
+3837830,GB1,2022,2. Matchday,2022-08-13,1237,762,0,0,Brighton & Hove Albion,Newcastle United
+3837979,GB1,2022,6. Matchday,2022-09-03,703,989,2,3,Nottingham Forest,AFC Bournemouth
+3837994,GB1,2022,7. Matchday,2023-03-01,31,543,2,0,Liverpool FC,Wolverhampton Wanderers
+3838018,GB1,2022,10. Matchday,2022-10-08,989,1003,2,1,AFC Bournemouth,Leicester City
+3838019,GB1,2022,10. Matchday,2022-10-09,11,31,3,2,Arsenal FC,Liverpool FC
+3838032,GB1,2022,11. Matchday,2022-10-15,1003,873,0,0,Leicester City,Crystal Palace
+3838189,GB1,2022,13. Matchday,2022-10-22,631,985,1,1,Chelsea FC,Manchester United
+3838701,GB1,2022,29. Matchday,2023-04-02,379,180,1,0,West Ham United,Southampton FC
+3838703,GB1,2022,29. Matchday,2023-04-02,762,985,2,0,Newcastle United,Manchester United
+3838767,GB1,2022,23. Matchday,2023-02-11,989,762,1,1,AFC Bournemouth,Newcastle United
+3838786,GB1,2022,21. Matchday,2023-01-21,31,631,0,0,Liverpool FC,Chelsea FC
+3838792,GB1,2022,20. Matchday,2023-01-14,1148,989,2,0,Brentford FC,AFC Bournemouth
+3838793,GB1,2022,20. Matchday,2023-01-14,1237,31,3,0,Brighton & Hove Albion,Liverpool FC
+3839033,L1,2022,1. Matchday,2022-08-07,79,23826,1,1,VfB Stuttgart,RB Leipzig
+3839109,L1,2022,5. Matchday,2022-09-03,24,23826,4,0,Eintracht Frankfurt,RB Leipzig
+3839118,L1,2022,6. Matchday,2022-09-10,533,39,4,1,TSG 1899 Hoffenheim,1.FSV Mainz 05
+3839120,L1,2022,6. Matchday,2022-09-10,44,15,2,2,Hertha BSC,Bayer 04 Leverkusen
+3839178,L1,2022,10. Matchday,2022-10-15,23826,44,3,2,RB Leipzig,Hertha BSC
+3839334,L1,2022,19. Matchday,2023-02-04,24,44,3,0,Eintracht Frankfurt,Hertha BSC
+3839372,L1,2022,21. Matchday,2023-02-18,80,60,0,2,VfL Bochum,SC Freiburg
+3839391,L1,2022,22. Matchday,2023-02-25,33,79,2,1,FC Schalke 04,VfB Stuttgart
+3839822,FR1,2022,3. Matchday,2022-08-20,244,995,2,1,Olympique Marseille,FC Nantes
+3839823,FR1,2022,3. Matchday,2022-08-21,667,1421,1,1,RC Strasbourg Alsace,Stade Reims
+3839841,FR1,2022,4. Matchday,2022-08-27,290,667,1,0,AJ Auxerre,RC Strasbourg Alsace
+3839845,FR1,2022,4. Matchday,2022-08-28,583,162,1,1,Paris Saint-Germain,AS Monaco
+3839866,FR1,2022,5. Matchday,2022-08-31,969,1147,2,0,Montpellier HSC,AC Ajaccio
+3840021,FR1,2022,7. Matchday,2022-09-10,244,1082,2,1,Olympique Marseille,LOSC Lille
+3840051,FR1,2022,10. Matchday,2022-10-09,1082,826,1,0,LOSC Lille,RC Lens
+3840089,FR1,2022,14. Matchday,2022-11-05,1147,667,4,2,AC Ajaccio,RC Strasbourg Alsace
+3840148,FR1,2022,19. Matchday,2023-01-15,415,3911,1,1,FC Toulouse,Stade Brestois 29
+3840156,FR1,2022,20. Matchday,2023-01-29,667,415,1,2,RC Strasbourg Alsace,FC Toulouse
+3840168,FR1,2022,21. Matchday,2023-02-01,415,1095,4,1,FC Toulouse,ESTAC Troyes
+3840169,FR1,2022,22. Matchday,2023-02-05,1147,995,0,2,AC Ajaccio,FC Nantes
+3840195,FR1,2022,24. Matchday,2023-02-19,3911,162,1,2,Stade Brestois 29,AS Monaco
+3840210,FR1,2022,26. Matchday,2023-03-03,417,290,1,1,OGC Nice,AJ Auxerre
+3840257,FR1,2022,30. Matchday,2023-04-08,1420,1082,1,0,Angers SCO,LOSC Lille
+3840273,FR1,2022,31. Matchday,2023-04-16,3911,417,1,0,Stade Brestois 29,OGC Nice
+3844598,ES1,2022,2. Matchday,2022-08-21,681,131,1,4,Real Sociedad,FC Barcelona
+3844760,IT1,2022,3. Matchday,2022-08-26,398,46,3,1,SS Lazio,Inter Milan
+3844779,IT1,2022,5. Matchday,2022-09-03,398,6195,1,2,SS Lazio,SSC Napoli
+3844809,IT1,2022,8. Matchday,2022-10-01,46,12,1,2,Inter Milan,AS Roma
+3844827,IT1,2022,10. Matchday,2022-10-15,749,2919,1,0,FC Empoli,AC Monza
+3844831,IT1,2022,10. Matchday,2022-10-17,1005,430,1,1,US Lecce,ACF Fiorentina
+3844871,IT1,2022,14. Matchday,2022-11-09,1005,800,2,1,US Lecce,Atalanta BC
+3844908,IT1,2022,18. Matchday,2023-01-16,749,1038,1,0,FC Empoli,UC Sampdoria
+3844936,IT1,2022,21. Matchday,2023-02-04,2239,1005,0,2,US Cremonese,US Lecce
+3844947,IT1,2022,22. Matchday,2023-02-11,749,3522,2,2,FC Empoli,Spezia Calcio
+3844956,IT1,2022,23. Matchday,2023-02-19,800,1005,1,2,Atalanta BC,US Lecce
+3844959,IT1,2022,23. Matchday,2023-02-18,2919,5,0,1,AC Monza,AC Milan
+3844997,IT1,2022,27. Matchday,2023-03-19,430,1005,1,0,ACF Fiorentina,US Lecce
+3844998,IT1,2022,27. Matchday,2023-03-19,46,506,0,1,Inter Milan,Juventus FC
+3845007,IT1,2022,28. Matchday,2023-04-01,2239,800,1,3,US Cremonese,Atalanta BC
+3886301,ES1,2022,5. Matchday,2022-09-10,13,940,4,1,Atlético de Madrid,Celta de Vigo
+3886322,ES1,2022,9. Matchday,2022-10-16,714,366,1,0,RCD Espanyol Barcelona,Real Valladolid CF
+3886466,ES1,2022,15. Matchday,2022-12-30,3709,237,2,0,Getafe CF,RCD Mallorca
+3886468,ES1,2022,15. Matchday,2022-12-29,150,621,0,0,Real Betis Balompié,Athletic Bilbao
+3886469,ES1,2022,15. Matchday,2022-12-31,681,331,2,0,Real Sociedad,CA Osasuna
+3886496,ES1,2022,17. Matchday,2023-02-01,150,131,1,2,Real Betis Balompié,FC Barcelona
+3886511,ES1,2022,19. Matchday,2023-01-29,418,681,0,0,Real Madrid,Real Sociedad
+3886514,ES1,2022,19. Matchday,2023-01-29,331,13,0,1,CA Osasuna,Atlético de Madrid
+3886574,ES1,2022,24. Matchday,2023-03-05,367,621,0,0,Rayo Vallecano,Athletic Bilbao
+3886593,ES1,2022,26. Matchday,2023-03-19,3709,368,2,0,Getafe CF,Sevilla FC
+3886620,ES1,2022,29. Matchday,2023-04-15,621,681,2,0,Athletic Bilbao,Real Sociedad
+3837857,GB1,2022,5. Matchday,2022-08-30,399,29,1,1,Leeds United,Everton FC
+3838012,GB1,2022,9. Matchday,2022-10-02,399,405,0,0,Leeds United,Aston Villa
+3838016,GB1,2022,9. Matchday,2022-10-01,180,29,1,2,Southampton FC,Everton FC
+3838765,GB1,2022,23. Matchday,2023-02-11,1003,148,4,1,Leicester City,Tottenham Hotspur
+3838789,GB1,2022,21. Matchday,2023-01-23,931,148,0,1,Fulham FC,Tottenham Hotspur
+3839264,L1,2022,15. Matchday,2022-11-12,44,3,2,0,Hertha BSC,1.FC Köln
+3839370,L1,2022,21. Matchday,2023-02-18,24,86,2,0,Eintracht Frankfurt,SV Werder Bremen
+3839846,FR1,2022,4. Matchday,2022-08-27,826,273,2,1,RC Lens,Stade Rennais FC
+3840233,FR1,2022,28. Matchday,2023-03-19,583,273,0,2,Paris Saint-Germain,Stade Rennais FC
+3844738,IT1,2022,1. Matchday,2022-08-15,506,6574,3,0,Juventus FC,US Sassuolo
+3844994,IT1,2022,26. Matchday,2023-03-12,12,6574,3,4,AS Roma,US Sassuolo
+3886520,ES1,2022,20. Matchday,2023-02-03,621,2687,4,1,Athletic Bilbao,Cádiz CF
+3838188,GB1,2022,13. Matchday,2022-10-23,405,1148,4,0,Aston Villa,Brentford FC
+3838192,GB1,2022,13. Matchday,2022-10-22,281,1237,3,1,Manchester City,Brighton & Hove Albion
+3838700,GB1,2022,30. Matchday,2023-04-08,405,703,2,0,Aston Villa,Nottingham Forest
+3838791,GB1,2022,20. Matchday,2023-01-13,405,399,2,1,Aston Villa,Leeds United
+3839387,L1,2022,22. Matchday,2023-02-25,3,82,0,2,1.FC Köln,VfL Wolfsburg
+3839736,FR1,2022,1. Matchday,2022-08-07,273,1158,0,1,Stade Rennais FC,FC Lorient
+3837856,GB1,2022,5. Matchday,2022-08-30,931,1237,2,1,Fulham FC,Brighton & Hove Albion
+3837974,GB1,2022,6. Matchday,2022-09-04,1237,1003,5,2,Brighton & Hove Albion,Leicester City
+3837978,GB1,2022,6. Matchday,2022-09-03,762,873,0,0,Newcastle United,Crystal Palace
+3838001,GB1,2022,8. Matchday,2023-04-04,631,31,0,0,Chelsea FC,Liverpool FC
+3838003,GB1,2022,8. Matchday,2023-02-08,985,399,2,2,Manchester United,Leeds United
+3838022,GB1,2022,10. Matchday,2022-10-09,873,399,2,1,Crystal Palace,Leeds United
+3838025,GB1,2022,10. Matchday,2022-10-08,762,1148,5,1,Newcastle United,Brentford FC
+3838050,GB1,2022,12. Matchday,2022-10-19,989,180,0,1,AFC Bournemouth,Southampton FC
+3838191,GB1,2022,13. Matchday,2022-10-23,399,931,2,3,Leeds United,Fulham FC
+3838244,GB1,2022,16. Matchday,2022-11-12,379,1003,0,2,West Ham United,Leicester City
+3838710,GB1,2022,29. Matchday,2023-04-01,11,399,4,1,Arsenal FC,Leeds United
+3838735,GB1,2022,26. Matchday,2023-03-05,31,985,7,0,Liverpool FC,Manchester United
+3838750,GB1,2022,25. Matchday,2023-02-25,379,703,4,0,West Ham United,Nottingham Forest
+3838752,GB1,2022,24. Matchday,2023-02-18,1148,873,1,1,Brentford FC,Crystal Palace
+3838772,GB1,2022,22. Matchday,2023-02-04,1148,180,3,0,Brentford FC,Southampton FC
+3838773,GB1,2022,22. Matchday,2023-02-04,1237,989,1,0,Brighton & Hove Albion,AFC Bournemouth
+3839052,L1,2022,2. Matchday,2022-08-14,27,82,2,0,Bayern Munich,VfL Wolfsburg
+3839059,L1,2022,2. Matchday,2022-08-13,33,18,2,2,FC Schalke 04,Borussia Mönchengladbach
+3839108,L1,2022,5. Matchday,2022-09-04,18,39,0,1,Borussia Mönchengladbach,1.FSV Mainz 05
+3839119,L1,2022,6. Matchday,2022-09-10,24,82,0,1,Eintracht Frankfurt,VfL Wolfsburg
+3839199,L1,2022,11. Matchday,2022-10-22,533,27,0,2,TSG 1899 Hoffenheim,Bayern Munich
+3839213,L1,2022,12. Matchday,2022-10-29,27,39,6,2,Bayern Munich,1.FSV Mainz 05
+3839255,L1,2022,14. Matchday,2022-11-08,80,18,2,1,VfL Bochum,Borussia Mönchengladbach
+3839257,L1,2022,14. Matchday,2022-11-09,33,39,1,0,FC Schalke 04,1.FSV Mainz 05
+3839281,L1,2022,16. Matchday,2023-01-21,24,33,3,0,Eintracht Frankfurt,FC Schalke 04
+3839350,L1,2022,20. Matchday,2023-02-11,60,79,2,1,SC Freiburg,VfB Stuttgart
+3839371,L1,2022,21. Matchday,2023-02-18,82,23826,0,3,VfL Wolfsburg,RB Leipzig
+3839781,FR1,2022,2. Matchday,2022-08-14,3911,244,1,1,Stade Brestois 29,Olympique Marseille
+3839870,FR1,2022,5. Matchday,2022-08-31,667,995,1,1,RC Strasbourg Alsace,FC Nantes
+3840028,FR1,2022,8. Matchday,2022-09-18,3524,1095,1,3,Clermont Foot 63,ESTAC Troyes
+3840045,FR1,2022,9. Matchday,2022-10-02,826,1041,1,0,RC Lens,Olympique Lyon
+3840048,FR1,2022,9. Matchday,2022-10-02,1095,1421,2,2,ESTAC Troyes,Stade Reims
+3840049,FR1,2022,10. Matchday,2022-10-09,1420,667,2,3,Angers SCO,RC Strasbourg Alsace
+3840087,FR1,2022,13. Matchday,2022-10-30,3911,1421,0,0,Stade Brestois 29,Stade Reims
+3840110,FR1,2022,16. Matchday,2022-12-28,290,162,2,3,AJ Auxerre,AS Monaco
+3840129,FR1,2022,18. Matchday,2023-01-11,1147,1421,0,1,AC Ajaccio,Stade Reims
+3840132,FR1,2022,18. Matchday,2023-01-11,1158,162,2,2,FC Lorient,AS Monaco
+3840133,FR1,2022,18. Matchday,2023-01-11,995,1041,0,0,FC Nantes,Olympique Lyon
+3840134,FR1,2022,18. Matchday,2023-01-11,417,969,6,1,OGC Nice,Montpellier HSC
+3840136,FR1,2022,18. Matchday,2023-01-11,667,826,2,2,RC Strasbourg Alsace,RC Lens
+3840158,FR1,2022,20. Matchday,2023-01-28,1095,826,1,1,ESTAC Troyes,RC Lens
+3840175,FR1,2022,22. Matchday,2023-02-05,667,969,2,0,RC Strasbourg Alsace,Montpellier HSC
+3840186,FR1,2022,23. Matchday,2023-02-12,1041,826,2,1,Olympique Lyon,RC Lens
+3840187,FR1,2022,23. Matchday,2023-02-12,1421,1095,4,0,Stade Reims,ESTAC Troyes
+3840205,FR1,2022,25. Matchday,2023-02-24,1082,3911,2,1,LOSC Lille,Stade Brestois 29
+3840222,FR1,2022,27. Matchday,2023-03-12,1420,415,0,2,Angers SCO,FC Toulouse
+3840232,FR1,2022,28. Matchday,2023-03-17,1041,995,1,1,Olympique Lyon,FC Nantes
+3840260,FR1,2022,30. Matchday,2023-04-09,969,415,1,2,Montpellier HSC,FC Toulouse
+3844737,IT1,2022,1. Matchday,2022-08-15,276,6195,2,5,Hellas Verona,SSC Napoli
+3844746,IT1,2022,2. Matchday,2022-08-21,800,5,1,1,Atalanta BC,AC Milan
+3844768,IT1,2022,4. Matchday,2022-08-31,749,276,1,1,FC Empoli,Hellas Verona
+3844807,IT1,2022,8. Matchday,2022-10-01,749,5,1,3,FC Empoli,AC Milan
+3844830,IT1,2022,10. Matchday,2022-10-16,398,410,0,0,SS Lazio,Udinese Calcio
+3844839,IT1,2022,11. Matchday,2022-10-22,430,46,3,4,ACF Fiorentina,Inter Milan
+3844856,IT1,2022,13. Matchday,2022-11-05,800,6195,1,2,Atalanta BC,SSC Napoli
+3844881,IT1,2022,15. Matchday,2022-11-13,5,430,2,1,AC Milan,ACF Fiorentina
+3844888,IT1,2022,16. Matchday,2023-01-04,46,6195,1,0,Inter Milan,SSC Napoli
+3844895,IT1,2022,16. Matchday,2023-01-04,410,749,1,1,Udinese Calcio,FC Empoli
+3844917,IT1,2022,19. Matchday,2023-01-21,430,416,0,1,ACF Fiorentina,Torino FC
+3844925,IT1,2022,19. Matchday,2023-01-22,3522,12,0,2,Spezia Calcio,AS Roma
+3844957,IT1,2022,23. Matchday,2023-02-19,430,749,1,1,ACF Fiorentina,FC Empoli
+3844977,IT1,2022,25. Matchday,2023-03-04,430,5,2,1,ACF Fiorentina,AC Milan
+3844978,IT1,2022,25. Matchday,2023-03-05,46,1005,2,0,Inter Milan,US Lecce
+3844996,IT1,2022,27. Matchday,2023-03-17,800,749,2,1,Atalanta BC,FC Empoli
+3845000,IT1,2022,27. Matchday,2023-03-18,2919,2239,1,1,AC Monza,US Cremonese
+3845004,IT1,2022,27. Matchday,2023-03-19,416,6195,0,4,Torino FC,SSC Napoli
+3845021,IT1,2022,29. Matchday,2023-04-07,5,749,0,0,AC Milan,FC Empoli
+3845024,IT1,2022,29. Matchday,2023-04-08,416,12,0,1,Torino FC,AS Roma
+3845035,IT1,2022,30. Matchday,2023-04-16,416,380,1,1,Torino FC,US Salernitana 1919
+3886329,ES1,2022,10. Matchday,2022-10-18,13,367,1,1,Atlético de Madrid,Rayo Vallecano
+3886408,ES1,2022,13. Matchday,2022-11-06,13,714,1,1,Atlético de Madrid,RCD Espanyol Barcelona
+3886411,ES1,2022,13. Matchday,2022-11-06,681,1049,1,1,Real Sociedad,Valencia CF
+3886452,ES1,2022,14. Matchday,2022-11-10,1049,150,3,0,Valencia CF,Real Betis Balompié
+3886455,ES1,2022,14. Matchday,2022-11-09,368,681,1,2,Sevilla FC,Real Sociedad
+3886467,ES1,2022,15. Matchday,2022-12-29,12321,367,2,2,Girona FC,Rayo Vallecano
+3886483,ES1,2022,16. Matchday,2023-01-07,714,12321,2,2,RCD Espanyol Barcelona,Girona FC
+3886485,ES1,2022,16. Matchday,2023-01-08,367,150,1,2,Rayo Vallecano,Real Betis Balompié
+3886501,ES1,2022,18. Matchday,2023-01-21,13,366,3,0,Atlético de Madrid,Real Valladolid CF
+3886552,ES1,2022,22. Matchday,2023-02-18,237,1050,4,2,RCD Mallorca,Villarreal CF
+3886591,ES1,2022,26. Matchday,2023-03-19,131,418,2,1,FC Barcelona,Real Madrid
+3886627,ES1,2022,29. Matchday,2023-04-14,367,331,2,1,Rayo Vallecano,CA Osasuna
+3837829,GB1,2022,2. Matchday,2022-08-14,631,148,2,2,Chelsea FC,Tottenham Hotspur
+3838051,GB1,2022,12. Matchday,2023-02-15,11,281,1,3,Arsenal FC,Manchester City
+3838731,GB1,2022,26. Matchday,2023-03-04,543,148,1,0,Wolverhampton Wanderers,Tottenham Hotspur
+3838760,GB1,2022,24. Matchday,2023-02-18,703,281,1,1,Nottingham Forest,Manchester City
+3839233,L1,2022,13. Matchday,2022-11-06,60,3,2,0,SC Freiburg,1.FC Köln
+3840131,FR1,2022,18. Matchday,2023-01-11,3524,273,2,1,Clermont Foot 63,Stade Rennais FC
+3844897,IT1,2022,17. Matchday,2023-01-07,430,6574,2,1,ACF Fiorentina,US Sassuolo
+3858321,ES1,2022,6. Matchday,2022-09-17,131,1531,3,0,FC Barcelona,Elche CF
+3837827,GB1,2022,2. Matchday,2022-08-13,281,989,4,0,Manchester City,AFC Bournemouth
+3837976,GB1,2022,6. Matchday,2022-09-03,29,31,0,0,Everton FC,Liverpool FC
+3838257,GB1,2022,17. Matchday,2022-12-26,29,543,1,2,Everton FC,Wolverhampton Wanderers
+3838712,GB1,2022,28. Matchday,2023-03-18,405,989,3,0,Aston Villa,AFC Bournemouth
+3839216,L1,2022,12. Matchday,2022-10-30,3,533,1,1,1.FC Köln,TSG 1899 Hoffenheim
+3839302,L1,2022,17. Matchday,2023-01-25,86,89,1,2,SV Werder Bremen,1.FC Union Berlin
+3839871,FR1,2022,5. Matchday,2022-08-31,273,3911,3,1,Stade Rennais FC,Stade Brestois 29
+3840025,FR1,2022,7. Matchday,2022-09-11,273,290,5,0,Stade Rennais FC,AJ Auxerre
+3886388,ES1,2022,12. Matchday,2022-10-29,2687,13,3,2,Cádiz CF,Atlético de Madrid
+3886510,ES1,2022,19. Matchday,2023-01-28,2687,237,2,0,Cádiz CF,RCD Mallorca
+3886573,ES1,2022,24. Matchday,2023-03-04,3302,1050,0,2,UD Almería,Villarreal CF
+3837834,GB1,2022,3. Matchday,2022-08-20,989,11,0,3,AFC Bournemouth,Arsenal FC
+3837839,GB1,2022,3. Matchday,2022-08-20,1003,180,1,2,Leicester City,Southampton FC
+3837854,GB1,2022,5. Matchday,2022-08-31,989,543,0,0,AFC Bournemouth,Wolverhampton Wanderers
+3837975,GB1,2022,6. Matchday,2022-09-03,631,379,2,1,Chelsea FC,West Ham United
+3837991,GB1,2022,7. Matchday,2023-01-12,931,631,2,1,Fulham FC,Chelsea FC
+3838013,GB1,2022,9. Matchday,2022-10-03,1003,703,4,0,Leicester City,Nottingham Forest
+3838205,GB1,2022,14. Matchday,2022-10-30,11,703,5,0,Arsenal FC,Nottingham Forest
+3838211,GB1,2022,14. Matchday,2022-10-29,31,399,1,2,Liverpool FC,Leeds United
+3838242,GB1,2022,16. Matchday,2022-11-12,703,873,1,0,Nottingham Forest,Crystal Palace
+3838720,GB1,2022,28. Matchday,2023-03-18,543,399,2,4,Wolverhampton Wanderers,Leeds United
+3838790,GB1,2022,21. Matchday,2023-01-21,873,762,0,0,Crystal Palace,Newcastle United
+3839097,L1,2022,4. Matchday,2022-08-27,23826,82,2,0,RB Leipzig,VfL Wolfsburg
+3839098,L1,2022,4. Matchday,2022-08-26,60,80,1,0,SC Freiburg,VfL Bochum
+3839165,L1,2022,9. Matchday,2022-10-08,167,82,1,1,FC Augsburg,VfL Wolfsburg
+3839182,L1,2022,10. Matchday,2022-10-15,82,18,2,2,VfL Wolfsburg,Borussia Mönchengladbach
+3839184,L1,2022,10. Matchday,2022-10-14,33,533,0,3,FC Schalke 04,TSG 1899 Hoffenheim
+3839203,L1,2022,11. Matchday,2022-10-23,44,33,2,1,Hertha BSC,FC Schalke 04
+3839220,L1,2022,12. Matchday,2022-10-30,33,60,0,2,FC Schalke 04,SC Freiburg
+3839261,L1,2022,15. Matchday,2022-11-12,533,82,1,2,TSG 1899 Hoffenheim,VfL Wolfsburg
+3839300,L1,2022,17. Matchday,2023-01-24,44,82,0,5,Hertha BSC,VfL Wolfsburg
+3839312,L1,2022,18. Matchday,2023-01-28,27,24,1,1,Bayern Munich,Eintracht Frankfurt
+3839331,L1,2022,19. Matchday,2023-02-04,89,39,2,1,1.FC Union Berlin,1.FSV Mainz 05
+3839396,L1,2022,23. Matchday,2023-03-04,39,533,1,0,1.FSV Mainz 05,TSG 1899 Hoffenheim
+3839398,L1,2022,23. Matchday,2023-03-05,82,24,2,2,VfL Wolfsburg,Eintracht Frankfurt
+3839447,L1,2022,26. Matchday,2023-04-01,27,16,4,2,Bayern Munich,Borussia Dortmund
+3839465,L1,2022,27. Matchday,2023-04-08,16,89,2,1,Borussia Dortmund,1.FC Union Berlin
+3839778,FR1,2022,2. Matchday,2022-08-12,995,1082,1,1,FC Nantes,LOSC Lille
+3839779,FR1,2022,2. Matchday,2022-08-14,417,667,1,1,OGC Nice,RC Strasbourg Alsace
+3840017,FR1,2022,7. Matchday,2022-09-11,1147,417,0,1,AC Ajaccio,OGC Nice
+3840019,FR1,2022,7. Matchday,2022-09-11,1420,969,2,1,Angers SCO,Montpellier HSC
+3840026,FR1,2022,7. Matchday,2022-09-11,415,1421,1,0,FC Toulouse,Stade Reims
+3840067,FR1,2022,11. Matchday,2022-10-16,415,1420,3,2,FC Toulouse,Angers SCO
+3840075,FR1,2022,12. Matchday,2022-10-22,244,826,0,1,Olympique Marseille,RC Lens
+3840076,FR1,2022,12. Matchday,2022-10-23,1421,290,2,1,Stade Reims,AJ Auxerre
+3840122,FR1,2022,17. Matchday,2023-01-02,1082,1421,1,1,LOSC Lille,Stade Reims
+3840143,FR1,2022,19. Matchday,2023-01-14,1041,667,1,2,Olympique Lyon,RC Strasbourg Alsace
+3840145,FR1,2022,19. Matchday,2023-01-14,826,290,1,0,RC Lens,AJ Auxerre
+3840160,FR1,2022,21. Matchday,2023-02-01,1420,1147,1,2,Angers SCO,AC Ajaccio
+3840190,FR1,2022,24. Matchday,2023-02-19,1158,1147,3,0,FC Lorient,AC Ajaccio
+3840230,FR1,2022,28. Matchday,2023-03-19,969,3524,2,1,Montpellier HSC,Clermont Foot 63
+3840254,FR1,2022,29. Matchday,2023-04-02,3911,415,3,1,Stade Brestois 29,FC Toulouse
+3844743,IT1,2022,1. Matchday,2022-08-14,380,12,0,1,US Salernitana 1919,AS Roma
+3844759,IT1,2022,3. Matchday,2022-08-27,506,12,1,1,Juventus FC,AS Roma
+3844785,IT1,2022,5. Matchday,2022-09-04,410,12,4,0,Udinese Calcio,AS Roma
+3844798,IT1,2022,7. Matchday,2022-09-18,430,276,2,0,ACF Fiorentina,Hellas Verona
+3844806,IT1,2022,8. Matchday,2022-10-02,800,430,1,0,Atalanta BC,ACF Fiorentina
+3844829,IT1,2022,10. Matchday,2022-10-16,46,380,2,0,Inter Milan,US Salernitana 1919
+3844854,IT1,2022,12. Matchday,2022-10-30,3522,430,1,2,Spezia Calcio,ACF Fiorentina
+3844868,IT1,2022,14. Matchday,2022-11-10,276,506,0,1,Hellas Verona,Juventus FC
+3844875,IT1,2022,14. Matchday,2022-11-09,416,1038,2,0,Torino FC,UC Sampdoria
+3844885,IT1,2022,15. Matchday,2022-11-12,1038,1005,0,2,UC Sampdoria,US Lecce
+3844900,IT1,2022,17. Matchday,2023-01-08,398,749,2,2,SS Lazio,FC Empoli
+3844901,IT1,2022,17. Matchday,2023-01-08,5,12,2,2,AC Milan,AS Roma
+3844902,IT1,2022,17. Matchday,2023-01-07,2919,46,2,2,AC Monza,Inter Milan
+3844935,IT1,2022,20. Matchday,2023-01-30,410,276,1,1,Udinese Calcio,Hellas Verona
+3844938,IT1,2022,21. Matchday,2023-02-06,276,398,1,1,Hellas Verona,SS Lazio
+3844991,IT1,2022,26. Matchday,2023-03-12,1005,416,0,2,US Lecce,Torino FC
+3844993,IT1,2022,26. Matchday,2023-03-11,6195,800,2,0,SSC Napoli,Atalanta BC
+3844995,IT1,2022,26. Matchday,2023-03-10,3522,46,2,1,Spezia Calcio,Inter Milan
+3845002,IT1,2022,27. Matchday,2023-03-19,1038,276,3,1,UC Sampdoria,Hellas Verona
+3858325,ES1,2022,6. Matchday,2022-09-18,681,714,2,1,Real Sociedad,RCD Espanyol Barcelona
+3886307,ES1,2022,8. Matchday,2022-10-08,3709,418,0,1,Getafe CF,Real Madrid
+3886337,ES1,2022,10. Matchday,2022-10-19,681,237,1,0,Real Sociedad,RCD Mallorca
+3886412,ES1,2022,13. Matchday,2022-11-07,367,418,3,2,Rayo Vallecano,Real Madrid
+3886465,ES1,2022,15. Matchday,2022-12-30,940,368,1,1,Celta de Vigo,Sevilla FC
+3886470,ES1,2022,15. Matchday,2022-12-30,366,418,0,2,Real Valladolid CF,Real Madrid
+3886530,ES1,2022,21. Matchday,2023-02-12,3709,367,1,1,Getafe CF,Rayo Vallecano
+3886618,ES1,2022,28. Matchday,2023-04-09,366,237,3,3,Real Valladolid CF,RCD Mallorca
+3837835,GB1,2022,3. Matchday,2022-08-20,873,405,3,1,Crystal Palace,Aston Villa
+3837993,GB1,2022,7. Matchday,2023-04-04,1003,405,1,2,Leicester City,Aston Villa
+3838204,GB1,2022,14. Matchday,2022-10-29,989,148,2,3,AFC Bournemouth,Tottenham Hotspur
+3838733,GB1,2022,26. Matchday,2023-03-05,703,29,2,2,Nottingham Forest,Everton FC
+3840046,FR1,2022,9. Matchday,2022-10-01,667,273,1,3,RC Strasbourg Alsace,Stade Rennais FC
+3844776,IT1,2022,5. Matchday,2022-09-04,2239,6574,0,0,US Cremonese,US Sassuolo
+3844826,IT1,2022,10. Matchday,2022-10-15,800,6574,2,1,Atalanta BC,US Sassuolo
+3844922,IT1,2022,19. Matchday,2023-01-22,2919,6574,1,1,AC Monza,US Sassuolo
+3858324,ES1,2022,6. Matchday,2022-09-16,366,2687,0,1,Real Valladolid CF,Cádiz CF
+3886324,ES1,2022,9. Matchday,2022-10-15,1049,1531,2,2,Valencia CF,Elche CF
+3886367,ES1,2022,11. Matchday,2022-10-22,367,2687,5,1,Rayo Vallecano,Cádiz CF
+3886454,ES1,2022,14. Matchday,2022-11-10,418,2687,2,1,Real Madrid,Cádiz CF
+3838683,GB1,2022,31. Matchday,2023-04-15,29,931,1,3,Everton FC,Fulham FC
+3839117,L1,2022,6. Matchday,2022-09-11,3,89,0,1,1.FC Köln,1.FC Union Berlin
+3839252,L1,2022,14. Matchday,2022-11-09,3,15,1,2,1.FC Köln,Bayer 04 Leverkusen
+3839266,L1,2022,15. Matchday,2022-11-12,86,23826,1,2,SV Werder Bremen,RB Leipzig
+3839486,L1,2022,28. Matchday,2023-04-15,3,39,1,1,1.FC Köln,1.FSV Mainz 05
+3844774,IT1,2022,4. Matchday,2022-08-30,6574,5,0,0,US Sassuolo,AC Milan
+3886297,ES1,2022,5. Matchday,2022-09-10,2687,131,0,4,Cádiz CF,FC Barcelona
+3886493,ES1,2022,17. Matchday,2023-01-15,3302,13,1,1,UD Almería,Atlético de Madrid
+3837815,GB1,2022,1. Matchday,2022-08-06,931,31,2,2,Fulham FC,Liverpool FC
+3837824,GB1,2022,2. Matchday,2022-08-13,543,931,0,0,Wolverhampton Wanderers,Fulham FC
+3837826,GB1,2022,2. Matchday,2022-08-14,703,379,1,0,Nottingham Forest,West Ham United
+3837848,GB1,2022,4. Matchday,2022-08-27,631,1003,2,1,Chelsea FC,Leicester City
+3837852,GB1,2022,4. Matchday,2022-08-27,180,985,0,1,Southampton FC,Manchester United
+3837973,GB1,2022,6. Matchday,2022-09-03,1148,399,5,2,Brentford FC,Leeds United
+3837999,GB1,2022,8. Matchday,2022-09-18,1148,11,0,3,Brentford FC,Arsenal FC
+3838017,GB1,2022,9. Matchday,2022-10-01,379,543,2,0,West Ham United,Wolverhampton Wanderers
+3838029,GB1,2022,11. Matchday,2022-10-14,1148,1237,2,0,Brentford FC,Brighton & Hove Albion
+3838196,GB1,2022,13. Matchday,2022-10-24,379,989,2,0,West Ham United,AFC Bournemouth
+3838197,GB1,2022,13. Matchday,2022-10-23,543,1003,0,4,Wolverhampton Wanderers,Leicester City
+3838235,GB1,2022,15. Matchday,2022-11-05,543,1237,2,3,Wolverhampton Wanderers,Brighton & Hove Albion
+3838241,GB1,2022,16. Matchday,2022-11-12,762,631,1,0,Newcastle United,Chelsea FC
+3838260,GB1,2022,17. Matchday,2022-12-27,985,703,3,0,Manchester United,Nottingham Forest
+3838274,GB1,2022,19. Matchday,2023-01-02,1148,31,3,1,Brentford FC,Liverpool FC
+3838281,GB1,2022,19. Matchday,2023-01-04,180,703,0,1,Southampton FC,Nottingham Forest
+3838708,GB1,2022,29. Matchday,2023-04-01,1237,1148,3,3,Brighton & Hove Albion,Brentford FC
+3838709,GB1,2022,29. Matchday,2023-04-01,989,931,2,1,AFC Bournemouth,Fulham FC
+3838732,GB1,2022,26. Matchday,2023-03-04,180,1003,1,0,Southampton FC,Leicester City
+3838758,GB1,2022,24. Matchday,2023-02-18,543,989,0,1,Wolverhampton Wanderers,AFC Bournemouth
+3838787,GB1,2022,21. Matchday,2023-01-21,1003,1237,2,2,Leicester City,Brighton & Hove Albion
+3838788,GB1,2022,21. Matchday,2023-01-22,399,1148,0,0,Leeds United,Brentford FC
+3838797,GB1,2022,20. Matchday,2023-01-14,703,1003,2,0,Nottingham Forest,Leicester City
+3839029,L1,2022,1. Matchday,2022-08-06,18,533,3,1,Borussia Mönchengladbach,TSG 1899 Hoffenheim
+3839032,L1,2022,1. Matchday,2022-08-06,167,60,0,4,FC Augsburg,SC Freiburg
+3839056,L1,2022,2. Matchday,2022-08-14,39,89,0,0,1.FSV Mainz 05,1.FC Union Berlin
+3839058,L1,2022,2. Matchday,2022-08-13,44,24,1,1,Hertha BSC,Eintracht Frankfurt
+3839082,L1,2022,3. Matchday,2022-08-19,18,44,1,0,Borussia Mönchengladbach,Hertha BSC
+3839087,L1,2022,3. Matchday,2022-08-20,79,60,0,1,VfB Stuttgart,SC Freiburg
+3839103,L1,2022,4. Matchday,2022-08-27,33,89,1,6,FC Schalke 04,1.FC Union Berlin
+3839105,L1,2022,5. Matchday,2022-09-02,16,533,1,0,Borussia Dortmund,TSG 1899 Hoffenheim
+3839160,L1,2022,9. Matchday,2022-10-08,15,33,4,0,Bayer 04 Leverkusen,FC Schalke 04
+3839183,L1,2022,10. Matchday,2022-10-15,79,80,4,1,VfB Stuttgart,VfL Bochum
+3839196,L1,2022,11. Matchday,2022-10-22,15,82,2,2,Bayer 04 Leverkusen,VfL Wolfsburg
+3839250,L1,2022,14. Matchday,2022-11-09,23826,60,3,1,RB Leipzig,SC Freiburg
+3839254,L1,2022,14. Matchday,2022-11-08,82,16,2,0,VfL Wolfsburg,Borussia Dortmund
+3839301,L1,2022,17. Matchday,2023-01-24,33,23826,1,6,FC Schalke 04,RB Leipzig
+3839316,L1,2022,18. Matchday,2023-01-28,39,80,5,2,1.FSV Mainz 05,VfL Bochum
+3839397,L1,2022,23. Matchday,2023-03-04,18,60,0,0,Borussia Mönchengladbach,SC Freiburg
+3839401,L1,2022,23. Matchday,2023-03-04,79,27,1,2,VfB Stuttgart,Bayern Munich
+3839449,L1,2022,26. Matchday,2023-04-01,89,79,3,0,1.FC Union Berlin,VfB Stuttgart
+3839454,L1,2022,26. Matchday,2023-04-01,33,15,0,3,FC Schalke 04,Bayer 04 Leverkusen
+3839466,L1,2022,27. Matchday,2023-04-08,15,24,3,1,Bayer 04 Leverkusen,Eintracht Frankfurt
+3839849,FR1,2022,4. Matchday,2022-08-28,1095,1420,3,1,ESTAC Troyes,Angers SCO
+3840023,FR1,2022,7. Matchday,2022-09-09,826,1095,1,0,RC Lens,ESTAC Troyes
+3840031,FR1,2022,8. Matchday,2022-09-17,969,667,2,1,Montpellier HSC,RC Strasbourg Alsace
+3840044,FR1,2022,9. Matchday,2022-10-01,583,417,2,1,Paris Saint-Germain,OGC Nice
+3840052,FR1,2022,10. Matchday,2022-10-09,969,162,0,2,Montpellier HSC,AS Monaco
+3840119,FR1,2022,17. Matchday,2023-01-01,162,3911,1,0,AS Monaco,Stade Brestois 29
+3840130,FR1,2022,18. Matchday,2023-01-11,290,415,0,5,AJ Auxerre,FC Toulouse
+3840153,FR1,2022,20. Matchday,2023-01-29,417,1082,1,0,OGC Nice,LOSC Lille
+3840170,FR1,2022,22. Matchday,2023-02-05,290,1421,0,0,AJ Auxerre,Stade Reims
+3840173,FR1,2022,22. Matchday,2023-02-05,244,417,1,3,Olympique Marseille,OGC Nice
+3840229,FR1,2022,28. Matchday,2023-03-19,1147,162,0,2,AC Ajaccio,AS Monaco
+3840258,FR1,2022,30. Matchday,2023-04-09,1158,244,0,0,FC Lorient,Olympique Marseille
+3844597,ES1,2022,2. Matchday,2022-08-19,368,366,1,1,Sevilla FC,Real Valladolid CF
+3844744,IT1,2022,1. Matchday,2022-08-13,1038,800,0,2,UC Sampdoria,Atalanta BC
+3844761,IT1,2022,3. Matchday,2022-08-28,1005,749,1,1,US Lecce,FC Empoli
+3844848,IT1,2022,12. Matchday,2022-10-31,276,12,1,3,Hellas Verona,AS Roma
+3844855,IT1,2022,12. Matchday,2022-10-30,416,5,2,1,Torino FC,AC Milan
+3844866,IT1,2022,14. Matchday,2022-11-08,2239,5,0,0,US Cremonese,AC Milan
+3844894,IT1,2022,16. Matchday,2023-01-04,416,276,1,1,Torino FC,Hellas Verona
+3844914,IT1,2022,18. Matchday,2023-01-15,416,3522,0,1,Torino FC,Spezia Calcio
+3844920,IT1,2022,19. Matchday,2023-01-22,506,800,3,3,Juventus FC,Atalanta BC
+3844941,IT1,2022,21. Matchday,2023-02-04,12,749,2,0,AS Roma,FC Empoli
+3844980,IT1,2022,25. Matchday,2023-03-03,6195,398,0,1,SSC Napoli,SS Lazio
+3845011,IT1,2022,28. Matchday,2023-04-02,2919,398,0,2,AC Monza,SS Lazio
+3845029,IT1,2022,30. Matchday,2023-04-15,46,2919,0,1,Inter Milan,AC Monza
+3845030,IT1,2022,30. Matchday,2023-04-16,1005,1038,1,1,US Lecce,UC Sampdoria
+3837851,GB1,2022,4. Matchday,2022-08-28,703,148,0,2,Nottingham Forest,Tottenham Hotspur
+3837855,GB1,2022,5. Matchday,2022-08-31,11,405,2,1,Arsenal FC,Aston Villa
+3839083,L1,2022,3. Matchday,2022-08-21,24,3,1,1,Eintracht Frankfurt,1.FC Köln
+3839110,L1,2022,5. Matchday,2022-09-03,82,3,2,4,VfL Wolfsburg,1.FC Köln
+3839198,L1,2022,11. Matchday,2022-10-21,39,3,5,0,1.FSV Mainz 05,1.FC Köln
+3839395,L1,2022,23. Matchday,2023-03-04,89,3,0,0,1.FC Union Berlin,1.FC Köln
+3844765,IT1,2022,3. Matchday,2022-08-27,3522,6574,2,2,Spezia Calcio,US Sassuolo
+3837863,GB1,2022,5. Matchday,2022-08-31,281,703,6,0,Manchester City,Nottingham Forest
+3837980,GB1,2022,6. Matchday,2022-09-03,148,931,2,1,Tottenham Hotspur,Fulham FC
+3838226,GB1,2022,15. Matchday,2022-11-06,405,985,3,1,Aston Villa,Manchester United
+3839104,L1,2022,4. Matchday,2022-08-28,86,24,3,4,SV Werder Bremen,Eintracht Frankfurt
+3839356,L1,2022,20. Matchday,2023-02-11,86,16,0,2,SV Werder Bremen,Borussia Dortmund
+3840274,FR1,2022,31. Matchday,2023-04-15,273,1421,3,0,Stade Rennais FC,Stade Reims
+3844815,IT1,2022,8. Matchday,2022-10-02,6574,380,5,0,US Sassuolo,US Salernitana 1919
+3844892,IT1,2022,16. Matchday,2023-01-04,6574,1038,1,2,US Sassuolo,UC Sampdoria
+3885855,ES1,2022,4. Matchday,2022-09-03,418,150,2,1,Real Madrid,Real Betis Balompié
+3886286,ES1,2022,7. Matchday,2022-10-02,714,1049,2,2,RCD Espanyol Barcelona,Valencia CF
+3886289,ES1,2022,7. Matchday,2022-10-01,237,131,0,1,RCD Mallorca,FC Barcelona
+3886302,ES1,2022,5. Matchday,2022-09-11,150,1050,1,0,Real Betis Balompié,Villarreal CF
+3886309,ES1,2022,8. Matchday,2022-10-07,331,1049,1,2,CA Osasuna,Valencia CF
+3886312,ES1,2022,8. Matchday,2022-10-08,368,621,1,1,Sevilla FC,Athletic Bilbao
+3886323,ES1,2022,9. Matchday,2022-10-16,418,131,3,1,Real Madrid,FC Barcelona
+3886332,ES1,2022,10. Matchday,2022-10-18,368,1049,1,1,Sevilla FC,Valencia CF
+3886410,ES1,2022,13. Matchday,2022-11-05,940,331,1,2,Celta de Vigo,CA Osasuna
+3886453,ES1,2022,14. Matchday,2022-11-10,367,940,0,0,Rayo Vallecano,Celta de Vigo
+3886480,ES1,2022,16. Matchday,2023-01-09,621,331,0,0,Athletic Bilbao,CA Osasuna
+3886482,ES1,2022,16. Matchday,2023-01-07,237,366,1,0,RCD Mallorca,Real Valladolid CF
+3886490,ES1,2022,17. Matchday,2023-01-13,940,1050,1,1,Celta de Vigo,Villarreal CF
+3886500,ES1,2022,18. Matchday,2023-01-22,621,418,0,2,Athletic Bilbao,Real Madrid
+3886518,ES1,2022,19. Matchday,2023-01-29,366,1049,1,0,Real Valladolid CF,Valencia CF
+3886575,ES1,2022,24. Matchday,2023-03-06,331,940,0,0,CA Osasuna,Celta de Vigo
+3886578,ES1,2022,24. Matchday,2023-03-05,366,714,2,1,Real Valladolid CF,RCD Espanyol Barcelona
+3886600,ES1,2022,27. Matchday,2023-04-01,621,3709,0,0,Athletic Bilbao,Getafe CF
+3886604,ES1,2022,27. Matchday,2023-04-02,418,366,6,0,Real Madrid,Real Valladolid CF
+3886621,ES1,2022,29. Matchday,2023-04-15,150,714,3,1,Real Betis Balompié,RCD Espanyol Barcelona
+3886624,ES1,2022,29. Matchday,2023-04-15,1050,366,1,2,Villarreal CF,Real Valladolid CF
+3886365,ES1,2022,11. Matchday,2022-10-23,714,1531,2,2,RCD Espanyol Barcelona,Elche CF
+3886537,ES1,2022,21. Matchday,2023-02-15,418,1531,4,0,Real Madrid,Elche CF
+3886558,ES1,2022,22. Matchday,2023-02-17,12321,3302,6,2,Girona FC,UD Almería
+3886306,ES1,2022,8. Matchday,2022-10-10,1531,237,1,1,Elche CF,RCD Mallorca
+3886385,ES1,2022,12. Matchday,2022-10-31,1531,3709,0,1,Elche CF,Getafe CF
+3886605,ES1,2022,27. Matchday,2023-04-01,1531,131,0,4,Elche CF,FC Barcelona
+3837814,GB1,2022,1. Matchday,2022-08-05,873,11,0,2,Crystal Palace,Arsenal FC
+3838055,GB1,2022,12. Matchday,2022-10-20,1003,399,2,0,Leicester City,Leeds United
+3838058,GB1,2022,12. Matchday,2022-10-19,31,379,1,0,Liverpool FC,West Ham United
+3838728,GB1,2022,27. Matchday,2023-03-12,762,543,2,1,Newcastle United,Wolverhampton Wanderers
+3838736,GB1,2022,26. Matchday,2023-03-04,631,399,1,0,Chelsea FC,Leeds United
+3838756,GB1,2022,24. Matchday,2023-02-19,985,1003,3,0,Manchester United,Leicester City
+3838757,GB1,2022,24. Matchday,2023-02-18,762,31,0,2,Newcastle United,Liverpool FC
+3838768,GB1,2022,23. Matchday,2023-02-11,873,1237,1,1,Crystal Palace,Brighton & Hove Albion
+3838777,GB1,2022,22. Matchday,2023-02-04,543,31,3,0,Wolverhampton Wanderers,Liverpool FC
+3839096,L1,2022,4. Matchday,2022-08-27,27,18,1,1,Bayern Munich,Borussia Mönchengladbach
+3839217,L1,2022,12. Matchday,2022-10-29,24,16,1,2,Eintracht Frankfurt,Borussia Dortmund
+3839251,L1,2022,14. Matchday,2022-11-09,89,167,2,2,1.FC Union Berlin,FC Augsburg
+3839318,L1,2022,18. Matchday,2023-01-28,44,89,0,2,Hertha BSC,1.FC Union Berlin
+3839337,L1,2022,19. Matchday,2023-02-03,167,15,1,0,FC Augsburg,Bayer 04 Leverkusen
+3839354,L1,2022,20. Matchday,2023-02-12,44,18,4,1,Hertha BSC,Borussia Mönchengladbach
+3839366,L1,2022,21. Matchday,2023-02-19,16,44,4,1,Borussia Dortmund,Hertha BSC
+3839393,L1,2022,23. Matchday,2023-03-03,16,23826,2,1,Borussia Dortmund,RB Leipzig
+3839411,L1,2022,24. Matchday,2023-03-11,27,167,5,3,Bayern Munich,FC Augsburg
+3839471,L1,2022,27. Matchday,2023-04-09,80,79,2,3,VfL Bochum,VfB Stuttgart
+3839777,FR1,2022,2. Matchday,2022-09-07,1158,1041,3,1,FC Lorient,Olympique Lyon
+3839816,FR1,2022,3. Matchday,2022-08-20,162,826,1,4,AS Monaco,RC Lens
+3839869,FR1,2022,5. Matchday,2022-08-31,826,1158,5,2,RC Lens,FC Lorient
+3839872,FR1,2022,5. Matchday,2022-08-31,415,583,0,3,FC Toulouse,Paris Saint-Germain
+3840014,FR1,2022,6. Matchday,2022-09-04,3911,667,1,1,Stade Brestois 29,RC Strasbourg Alsace
+3840043,FR1,2022,9. Matchday,2022-10-02,1158,1082,2,1,FC Lorient,LOSC Lille
+3840071,FR1,2022,12. Matchday,2022-10-23,3524,3911,1,3,Clermont Foot 63,Stade Brestois 29
+3840116,FR1,2022,16. Matchday,2022-12-28,3911,1041,2,4,Stade Brestois 29,Olympique Lyon
+3840118,FR1,2022,16. Matchday,2022-12-28,1095,995,0,0,ESTAC Troyes,FC Nantes
+3840159,FR1,2022,21. Matchday,2023-02-01,162,290,3,2,AS Monaco,AJ Auxerre
+3840206,FR1,2022,25. Matchday,2023-02-25,969,826,1,1,Montpellier HSC,RC Lens
+3840238,FR1,2022,28. Matchday,2023-03-19,1095,3911,2,2,ESTAC Troyes,Stade Brestois 29
+3840247,FR1,2022,29. Matchday,2023-04-02,162,667,4,3,AS Monaco,RC Strasbourg Alsace
+3840269,FR1,2022,31. Matchday,2023-04-16,1082,969,2,1,LOSC Lille,Montpellier HSC
+3844089,ES1,2022,1. Matchday,2022-08-13,131,367,0,0,FC Barcelona,Rayo Vallecano
+3844595,ES1,2022,2. Matchday,2022-08-20,940,418,1,4,Celta de Vigo,Real Madrid
+3844742,IT1,2022,1. Matchday,2022-08-13,2919,416,1,2,AC Monza,Torino FC
+3844780,IT1,2022,5. Matchday,2022-09-03,5,46,3,2,AC Milan,Inter Milan
+3844800,IT1,2022,7. Matchday,2022-09-18,2919,506,1,0,AC Monza,Juventus FC
+3844821,IT1,2022,9. Matchday,2022-10-09,12,1005,2,1,AS Roma,US Lecce
+3844836,IT1,2022,11. Matchday,2022-10-23,800,398,0,2,Atalanta BC,SS Lazio
+3844874,IT1,2022,14. Matchday,2022-11-08,3522,410,1,1,Spezia Calcio,Udinese Calcio
+3844880,IT1,2022,15. Matchday,2022-11-13,506,398,3,0,Juventus FC,SS Lazio
+3844932,IT1,2022,20. Matchday,2023-01-27,1005,380,1,2,US Lecce,US Salernitana 1919
+3844990,IT1,2022,26. Matchday,2023-03-12,506,1038,4,2,Juventus FC,UC Sampdoria
+3845005,IT1,2022,27. Matchday,2023-03-18,410,5,3,1,Udinese Calcio,AC Milan
+3845008,IT1,2022,28. Matchday,2023-04-03,749,1005,1,0,FC Empoli,US Lecce
+3845028,IT1,2022,30. Matchday,2023-04-17,430,800,1,1,ACF Fiorentina,Atalanta BC
+3845155,IT1,2022,13. Matchday,2022-11-04,410,1005,1,1,Udinese Calcio,US Lecce
+3858322,ES1,2022,6. Matchday,2022-09-18,150,12321,2,1,Real Betis Balompié,Girona FC
+3858326,ES1,2022,6. Matchday,2022-09-18,1050,368,1,1,Villarreal CF,Sevilla FC
+3885861,ES1,2022,4. Matchday,2022-09-04,1049,3709,5,1,Valencia CF,Getafe CF
+3886292,ES1,2022,7. Matchday,2022-10-02,418,331,1,1,Real Madrid,CA Osasuna
+3886294,ES1,2022,5. Matchday,2022-09-09,12321,366,2,1,Girona FC,Real Valladolid CF
+3886304,ES1,2022,8. Matchday,2022-10-08,13,12321,2,1,Atlético de Madrid,Girona FC
+3886489,ES1,2022,16. Matchday,2023-01-07,1050,418,2,1,Villarreal CF,Real Madrid
+3886590,ES1,2022,26. Matchday,2023-03-18,13,1049,3,0,Atlético de Madrid,Valencia CF
+3886592,ES1,2022,26. Matchday,2023-03-19,150,237,1,0,Real Betis Balompié,RCD Mallorca
+3886596,ES1,2022,26. Matchday,2023-03-17,366,621,1,3,Real Valladolid CF,Athletic Bilbao
+3838033,GB1,2022,11. Matchday,2022-10-16,31,281,1,0,Liverpool FC,Manchester City
+3838719,GB1,2022,28. Matchday,2023-03-18,180,148,3,3,Southampton FC,Tottenham Hotspur
+3840070,FR1,2022,12. Matchday,2022-10-23,1420,273,1,2,Angers SCO,Stade Rennais FC
+3840152,FR1,2022,20. Matchday,2023-01-27,1158,273,2,1,FC Lorient,Stade Rennais FC
+3844853,IT1,2022,12. Matchday,2022-10-29,6195,6574,4,0,SSC Napoli,US Sassuolo
+3885862,ES1,2022,4. Matchday,2022-09-05,366,3302,1,0,Real Valladolid CF,UD Almería
+3886416,ES1,2022,13. Matchday,2022-11-05,3709,2687,0,0,Getafe CF,Cádiz CF
+3886507,ES1,2022,18. Matchday,2023-01-21,368,2687,1,0,Sevilla FC,Cádiz CF
+3886517,ES1,2022,19. Matchday,2023-01-28,368,1531,3,0,Sevilla FC,Elche CF
+3837836,GB1,2022,3. Matchday,2022-08-20,29,703,1,1,Everton FC,Nottingham Forest
+3839060,L1,2022,2. Matchday,2022-08-13,86,79,2,2,SV Werder Bremen,VfB Stuttgart
+3839180,L1,2022,10. Matchday,2022-10-16,3,167,3,2,1.FC Köln,FC Augsburg
+3844823,IT1,2022,9. Matchday,2022-10-08,6574,46,1,2,US Sassuolo,Inter Milan
+3844873,IT1,2022,14. Matchday,2022-11-09,6574,12,1,1,US Sassuolo,AS Roma
+3844943,IT1,2022,21. Matchday,2023-02-04,6574,800,1,0,US Sassuolo,Atalanta BC
+3886311,ES1,2022,8. Matchday,2022-10-08,3302,367,3,1,UD Almería,Rayo Vallecano
+3886331,ES1,2022,10. Matchday,2022-10-19,1531,418,0,3,Elche CF,Real Madrid
+3886565,ES1,2022,23. Matchday,2023-02-24,1531,150,2,3,Elche CF,Real Betis Balompié
+3886613,ES1,2022,28. Matchday,2023-04-09,3302,1049,2,1,UD Almería,Valencia CF
+3837860,GB1,2022,5. Matchday,2022-08-30,873,1148,1,1,Crystal Palace,Brentford FC
+3837862,GB1,2022,5. Matchday,2022-08-31,31,762,2,1,Liverpool FC,Newcastle United
+3837988,GB1,2022,7. Matchday,2023-04-04,989,1237,0,2,AFC Bournemouth,Brighton & Hove Albion
+3837997,GB1,2022,7. Matchday,2023-04-05,379,762,1,5,West Ham United,Newcastle United
+3838014,GB1,2022,9. Matchday,2022-10-01,31,1237,3,3,Liverpool FC,Brighton & Hove Albion
+3838053,GB1,2022,12. Matchday,2022-10-18,1237,703,0,0,Brighton & Hove Albion,Nottingham Forest
+3838056,GB1,2022,12. Matchday,2022-10-18,873,543,2,1,Crystal Palace,Wolverhampton Wanderers
+3838268,GB1,2022,18. Matchday,2023-01-01,703,631,1,1,Nottingham Forest,Chelsea FC
+3838271,GB1,2022,18. Matchday,2022-12-31,543,985,0,1,Wolverhampton Wanderers,Manchester United
+3838679,GB1,2022,31. Matchday,2023-04-15,180,873,0,2,Southampton FC,Crystal Palace
+3838738,GB1,2022,26. Matchday,2023-03-06,1148,931,3,2,Brentford FC,Fulham FC
+3839053,L1,2022,2. Matchday,2022-08-13,15,167,1,2,Bayer 04 Leverkusen,FC Augsburg
+3839055,L1,2022,2. Matchday,2022-08-12,60,16,1,3,SC Freiburg,Borussia Dortmund
+3839080,L1,2022,3. Matchday,2022-08-20,15,533,0,3,Bayer 04 Leverkusen,TSG 1899 Hoffenheim
+3839081,L1,2022,3. Matchday,2022-08-20,89,23826,2,1,1.FC Union Berlin,RB Leipzig
+3839102,L1,2022,4. Matchday,2022-08-27,44,16,0,1,Hertha BSC,Borussia Dortmund
+3839139,L1,2022,7. Matchday,2022-09-17,167,27,1,0,FC Augsburg,Bayern Munich
+3839214,L1,2022,12. Matchday,2022-10-29,23826,15,2,0,RB Leipzig,Bayer 04 Leverkusen
+3839235,L1,2022,13. Matchday,2022-11-05,533,23826,1,3,TSG 1899 Hoffenheim,RB Leipzig
+3839259,L1,2022,15. Matchday,2022-11-13,60,89,4,1,SC Freiburg,1.FC Union Berlin
+3839336,L1,2022,19. Matchday,2023-02-04,80,533,5,2,VfL Bochum,TSG 1899 Hoffenheim
+3839353,L1,2022,20. Matchday,2023-02-11,533,15,1,3,TSG 1899 Hoffenheim,Bayer 04 Leverkusen
+3839394,L1,2022,23. Matchday,2023-03-05,15,44,4,1,Bayer 04 Leverkusen,Hertha BSC
+3839783,FR1,2022,2. Matchday,2022-08-14,1095,415,0,3,ESTAC Troyes,FC Toulouse
+3839842,FR1,2022,4. Matchday,2022-08-28,1158,3524,2,1,FC Lorient,Clermont Foot 63
+3839844,FR1,2022,4. Matchday,2022-08-28,417,244,0,3,OGC Nice,Olympique Marseille
+3840012,FR1,2022,6. Matchday,2022-09-04,417,162,0,1,OGC Nice,AS Monaco
+3840138,FR1,2022,18. Matchday,2023-01-11,1095,244,0,2,ESTAC Troyes,Olympique Marseille
+3840144,FR1,2022,19. Matchday,2023-01-14,244,1158,3,1,Olympique Marseille,FC Lorient
+3840198,FR1,2022,24. Matchday,2023-02-19,1095,969,0,1,ESTAC Troyes,Montpellier HSC
+3840201,FR1,2022,25. Matchday,2023-02-25,1420,1041,1,3,Angers SCO,Olympique Lyon
+3840216,FR1,2022,26. Matchday,2023-03-05,1421,1147,1,0,Stade Reims,AC Ajaccio
+3840224,FR1,2022,27. Matchday,2023-03-12,1158,1095,2,0,FC Lorient,ESTAC Troyes
+3840225,FR1,2022,27. Matchday,2023-03-12,995,417,2,2,FC Nantes,OGC Nice
+3840231,FR1,2022,28. Matchday,2023-03-19,417,1158,1,1,OGC Nice,FC Lorient
+3840237,FR1,2022,28. Matchday,2023-03-18,415,1082,0,2,FC Toulouse,LOSC Lille
+3840253,FR1,2022,29. Matchday,2023-04-02,583,1041,0,1,Paris Saint-Germain,Olympique Lyon
+3840264,FR1,2022,30. Matchday,2023-04-09,1421,3911,1,1,Stade Reims,Stade Brestois 29
+3840271,FR1,2022,31. Matchday,2023-04-15,583,826,3,1,Paris Saint-Germain,RC Lens
+3844594,ES1,2022,2. Matchday,2022-08-21,13,1050,0,2,Atlético de Madrid,Villarreal CF
+3844596,ES1,2022,2. Matchday,2022-08-19,714,367,0,2,RCD Espanyol Barcelona,Rayo Vallecano
+3844600,ES1,2022,2. Matchday,2022-08-22,12321,3709,3,1,Girona FC,Getafe CF
+3844786,IT1,2022,6. Matchday,2022-09-11,800,2239,1,1,Atalanta BC,US Cremonese
+3844859,IT1,2022,13. Matchday,2022-11-06,506,46,2,0,Juventus FC,Inter Milan
+3844860,IT1,2022,13. Matchday,2022-11-05,5,3522,2,1,AC Milan,Spezia Calcio
+3844862,IT1,2022,13. Matchday,2022-11-06,12,398,0,1,AS Roma,SS Lazio
+3844906,IT1,2022,18. Matchday,2023-01-15,800,380,8,2,Atalanta BC,US Salernitana 1919
+3844909,IT1,2022,18. Matchday,2023-01-14,46,276,1,0,Inter Milan,Hellas Verona
+3844939,IT1,2022,21. Matchday,2023-02-05,46,5,1,0,Inter Milan,AC Milan
+3844987,IT1,2022,26. Matchday,2023-03-12,2239,430,0,2,US Cremonese,ACF Fiorentina
+3844988,IT1,2022,26. Matchday,2023-03-11,749,410,0,1,FC Empoli,Udinese Calcio
+3885851,ES1,2022,3. Matchday,2022-08-29,1049,13,0,1,Valencia CF,Atlético de Madrid
+3885854,ES1,2022,4. Matchday,2022-09-03,237,12321,1,1,RCD Mallorca,Girona FC
+3886389,ES1,2022,12. Matchday,2022-10-29,1049,131,0,1,Valencia CF,FC Barcelona
+3886390,ES1,2022,12. Matchday,2022-10-30,681,150,0,2,Real Sociedad,Real Betis Balompié
+3886521,ES1,2022,20. Matchday,2023-02-04,13,3709,1,1,Atlético de Madrid,Getafe CF
+3886534,ES1,2022,21. Matchday,2023-02-11,1049,621,1,2,Valencia CF,Athletic Bilbao
+3886536,ES1,2022,21. Matchday,2023-02-12,1050,131,0,1,Villarreal CF,FC Barcelona
+3886555,ES1,2022,22. Matchday,2023-02-19,367,368,1,1,Rayo Vallecano,Sevilla FC
+3886570,ES1,2022,24. Matchday,2023-03-05,131,1049,1,0,FC Barcelona,Valencia CF
+3886587,ES1,2022,25. Matchday,2023-03-11,418,714,3,1,Real Madrid,RCD Espanyol Barcelona
+3886602,ES1,2022,27. Matchday,2023-03-31,237,331,0,0,RCD Mallorca,CA Osasuna
+3838209,GB1,2022,14. Matchday,2022-10-29,931,29,0,0,Fulham FC,Everton FC
+3839400,L1,2022,23. Matchday,2023-03-04,167,86,2,1,FC Augsburg,SV Werder Bremen
+3886611,ES1,2022,28. Matchday,2023-04-09,150,2687,0,2,Real Betis Balompié,Cádiz CF
+3844937,IT1,2022,21. Matchday,2023-02-05,430,1025,1,2,ACF Fiorentina,Bologna FC 1909
+3845001,IT1,2022,27. Matchday,2023-03-18,380,1025,2,2,US Salernitana 1919,Bologna FC 1909
+3838269,GB1,2022,18. Matchday,2023-01-01,148,405,0,2,Tottenham Hotspur,Aston Villa
+3838743,GB1,2022,25. Matchday,2023-02-25,29,405,0,2,Everton FC,Aston Villa
+3838763,GB1,2022,23. Matchday,2023-02-12,281,405,3,1,Manchester City,Aston Villa
+3886472,ES1,2022,15. Matchday,2022-12-30,2687,3302,1,1,Cádiz CF,UD Almería
+3844762,IT1,2022,3. Matchday,2022-08-27,5,1025,2,0,AC Milan,Bologna FC 1909
+3844869,IT1,2022,14. Matchday,2022-11-09,46,1025,6,1,Inter Milan,Bologna FC 1909
+3844890,IT1,2022,16. Matchday,2023-01-04,12,1025,1,0,AS Roma,Bologna FC 1909
+3839279,L1,2022,16. Matchday,2023-01-21,3,86,7,1,1.FC Köln,SV Werder Bremen
+3844739,IT1,2022,1. Matchday,2022-08-14,398,1025,2,1,SS Lazio,Bologna FC 1909
+3844810,IT1,2022,8. Matchday,2022-10-02,506,1025,3,0,Juventus FC,Bologna FC 1909
+3844915,IT1,2022,18. Matchday,2023-01-15,410,1025,1,2,Udinese Calcio,Bologna FC 1909
+3837995,GB1,2022,7. Matchday,2023-01-19,281,148,4,2,Manchester City,Tottenham Hotspur
+3838266,GB1,2022,18. Matchday,2022-12-31,281,29,1,1,Manchester City,Everton FC
+3886595,ES1,2022,26. Matchday,2023-03-18,3302,2687,1,1,UD Almería,Cádiz CF
+3844783,IT1,2022,5. Matchday,2022-09-04,3522,1025,2,2,Spezia Calcio,Bologna FC 1909
+3844832,IT1,2022,10. Matchday,2022-10-16,6195,1025,3,2,SSC Napoli,Bologna FC 1909
+3838036,GB1,2022,11. Matchday,2022-10-15,148,29,2,0,Tottenham Hotspur,Everton FC
+3844852,IT1,2022,12. Matchday,2022-10-31,2919,1025,1,2,AC Monza,Bologna FC 1909
+3837821,GB1,2022,1. Matchday,2022-08-06,29,631,0,1,Everton FC,Chelsea FC
+3837850,GB1,2022,4. Matchday,2022-08-27,281,873,4,2,Manchester City,Crystal Palace
+3837998,GB1,2022,8. Matchday,2022-09-16,405,180,1,0,Aston Villa,Southampton FC
+3838015,GB1,2022,9. Matchday,2022-10-02,281,985,6,3,Manchester City,Manchester United
+3838734,GB1,2022,26. Matchday,2023-03-04,281,762,2,0,Manchester City,Newcastle United
+3838775,GB1,2022,22. Matchday,2023-02-04,29,11,1,0,Everton FC,Arsenal FC
+3838796,GB1,2022,20. Matchday,2023-01-15,148,11,0,2,Tottenham Hotspur,Arsenal FC
+3839332,L1,2022,19. Matchday,2023-02-04,3,23826,0,0,1.FC Köln,RB Leipzig
+3840088,FR1,2022,13. Matchday,2022-10-30,273,969,3,0,Stade Rennais FC,Montpellier HSC
+3840177,FR1,2022,22. Matchday,2023-02-04,273,1082,1,3,Stade Rennais FC,LOSC Lille
+3845003,IT1,2022,27. Matchday,2023-03-17,6574,3522,1,0,US Sassuolo,Spezia Calcio
+3886449,ES1,2022,14. Matchday,2022-11-09,3302,3709,1,0,UD Almería,Getafe CF
+3886584,ES1,2022,25. Matchday,2023-03-10,2687,3709,2,2,Cádiz CF,Getafe CF
+3837819,GB1,2022,1. Matchday,2022-08-06,399,543,2,1,Leeds United,Wolverhampton Wanderers
+3837831,GB1,2022,2. Matchday,2022-08-13,1148,985,4,0,Brentford FC,Manchester United
+3838000,GB1,2022,8. Matchday,2023-03-15,1237,873,1,0,Brighton & Hove Albion,Crystal Palace
+3838004,GB1,2022,8. Matchday,2022-09-17,762,989,1,1,Newcastle United,AFC Bournemouth
+3838030,GB1,2022,11. Matchday,2022-10-15,931,989,2,2,Fulham FC,AFC Bournemouth
+3838207,GB1,2022,14. Matchday,2022-10-29,1237,631,4,1,Brighton & Hove Albion,Chelsea FC
+3838227,GB1,2022,15. Matchday,2022-11-06,631,11,0,1,Chelsea FC,Arsenal FC
+3838234,GB1,2022,15. Matchday,2022-11-06,379,873,1,2,West Ham United,Crystal Palace
+3838278,GB1,2022,19. Matchday,2023-01-04,399,379,2,2,Leeds United,West Ham United
+3838696,GB1,2022,30. Matchday,2023-04-08,1003,989,0,1,Leicester City,AFC Bournemouth
+3838702,GB1,2022,29. Matchday,2023-04-01,703,543,1,1,Nottingham Forest,Wolverhampton Wanderers
+3838754,GB1,2022,24. Matchday,2023-02-18,631,180,0,1,Chelsea FC,Southampton FC
+3838782,GB1,2022,21. Matchday,2023-01-21,989,703,1,1,AFC Bournemouth,Nottingham Forest
+3839134,L1,2022,7. Matchday,2022-09-18,89,82,2,0,1.FC Union Berlin,VfL Wolfsburg
+3839167,L1,2022,9. Matchday,2022-10-09,44,60,2,2,Hertha BSC,SC Freiburg
+3839282,L1,2022,16. Matchday,2023-01-21,82,60,6,0,VfL Wolfsburg,SC Freiburg
+3839284,L1,2022,16. Matchday,2023-01-21,79,39,1,1,VfB Stuttgart,1.FSV Mainz 05
+3839297,L1,2022,17. Matchday,2023-01-25,39,16,1,2,1.FSV Mainz 05,Borussia Dortmund
+3839298,L1,2022,17. Matchday,2023-01-24,533,79,2,2,TSG 1899 Hoffenheim,VfB Stuttgart
+3839488,L1,2022,28. Matchday,2023-04-16,82,15,0,0,VfL Wolfsburg,Bayer 04 Leverkusen
+3839774,FR1,2022,2. Matchday,2022-08-14,1147,826,0,0,AC Ajaccio,RC Lens
+3839864,FR1,2022,5. Matchday,2022-08-31,1420,1421,2,4,Angers SCO,Stade Reims
+3840007,FR1,2022,6. Matchday,2022-09-04,1147,1158,0,1,AC Ajaccio,FC Lorient
+3840010,FR1,2022,6. Matchday,2022-09-03,995,583,0,3,FC Nantes,Paris Saint-Germain
+3840039,FR1,2022,9. Matchday,2022-10-02,1147,3524,1,3,AC Ajaccio,Clermont Foot 63
+3840068,FR1,2022,11. Matchday,2022-10-16,1095,1147,1,1,ESTAC Troyes,AC Ajaccio
+3840098,FR1,2022,14. Matchday,2022-11-04,1095,290,1,1,ESTAC Troyes,AJ Auxerre
+3840113,FR1,2022,16. Matchday,2022-12-29,417,826,0,0,OGC Nice,RC Lens
+3840114,FR1,2022,16. Matchday,2022-12-29,244,415,6,1,Olympique Marseille,FC Toulouse
+3840115,FR1,2022,16. Matchday,2022-12-28,583,667,2,1,Paris Saint-Germain,RC Strasbourg Alsace
+3840125,FR1,2022,17. Matchday,2023-01-01,826,583,3,1,RC Lens,Paris Saint-Germain
+3840154,FR1,2022,20. Matchday,2023-01-28,244,162,1,1,Olympique Marseille,AS Monaco
+3840157,FR1,2022,20. Matchday,2023-01-29,3911,1420,4,0,Stade Brestois 29,Angers SCO
+3840162,FR1,2022,21. Matchday,2023-02-01,1082,3524,0,0,LOSC Lille,Clermont Foot 63
+3840180,FR1,2022,23. Matchday,2023-02-12,1420,290,1,1,Angers SCO,AJ Auxerre
+3840183,FR1,2022,23. Matchday,2023-02-12,1082,667,2,0,LOSC Lille,RC Strasbourg Alsace
+3840200,FR1,2022,25. Matchday,2023-02-26,162,417,0,3,AS Monaco,OGC Nice
+3840203,FR1,2022,25. Matchday,2023-02-26,1158,290,0,1,FC Lorient,AJ Auxerre
+3840251,FR1,2022,29. Matchday,2023-04-02,1082,1158,3,1,LOSC Lille,FC Lorient
+3840263,FR1,2022,30. Matchday,2023-04-07,826,667,2,1,RC Lens,RC Strasbourg Alsace
+3840266,FR1,2022,31. Matchday,2023-04-16,290,995,2,1,AJ Auxerre,FC Nantes
+3844745,IT1,2022,1. Matchday,2022-08-14,3522,749,1,0,Spezia Calcio,FC Empoli
+3844749,IT1,2022,2. Matchday,2022-08-20,46,3522,3,0,Inter Milan,Spezia Calcio
+3844766,IT1,2022,4. Matchday,2022-09-01,800,416,3,1,Atalanta BC,Torino FC
+3844799,IT1,2022,7. Matchday,2022-09-18,5,6195,1,2,AC Milan,SSC Napoli
+3844898,IT1,2022,17. Matchday,2023-01-09,276,2239,2,0,Hellas Verona,US Cremonese
+3844924,IT1,2022,19. Matchday,2023-01-22,1038,410,0,1,UC Sampdoria,Udinese Calcio
+3844928,IT1,2022,20. Matchday,2023-01-28,2239,46,1,2,US Cremonese,Inter Milan
+3845012,IT1,2022,28. Matchday,2023-04-02,6195,5,0,4,SSC Napoli,AC Milan
+3845019,IT1,2022,29. Matchday,2023-04-08,398,506,2,1,SS Lazio,Juventus FC
+3845025,IT1,2022,29. Matchday,2023-04-08,410,2919,2,2,Udinese Calcio,AC Monza
+3886415,ES1,2022,13. Matchday,2022-11-06,1050,237,0,2,Villarreal CF,RCD Mallorca
+3886481,ES1,2022,16. Matchday,2023-01-08,13,131,0,1,Atlético de Madrid,FC Barcelona
+3886487,ES1,2022,16. Matchday,2023-01-08,368,3709,2,1,Sevilla FC,Getafe CF
+3886495,ES1,2022,17. Matchday,2023-01-14,681,621,3,1,Real Sociedad,Athletic Bilbao
+3886497,ES1,2022,17. Matchday,2023-01-14,331,237,1,0,CA Osasuna,RCD Mallorca
+3886504,ES1,2022,18. Matchday,2023-01-21,367,681,0,2,Rayo Vallecano,Real Sociedad
+3886559,ES1,2022,23. Matchday,2023-02-26,621,12321,2,3,Athletic Bilbao,Girona FC
+3886560,ES1,2022,23. Matchday,2023-02-26,940,366,3,0,Celta de Vigo,Real Valladolid CF
+3886564,ES1,2022,23. Matchday,2023-02-25,418,13,1,1,Real Madrid,Atlético de Madrid
+3886567,ES1,2022,23. Matchday,2023-02-26,368,331,2,3,Sevilla FC,CA Osasuna
+3886608,ES1,2022,27. Matchday,2023-04-03,1049,367,1,1,Valencia CF,Rayo Vallecano
+3837859,GB1,2022,5. Matchday,2022-08-31,379,148,1,1,West Ham United,Tottenham Hotspur
+3837989,GB1,2022,7. Matchday,2023-03-01,11,29,4,0,Arsenal FC,Everton FC
+3838054,GB1,2022,12. Matchday,2022-10-20,931,405,3,0,Fulham FC,Aston Villa
+3838741,GB1,2022,25. Matchday,2023-02-25,989,281,1,4,AFC Bournemouth,Manchester City
+3838764,GB1,2022,23. Matchday,2023-02-13,31,29,2,0,Liverpool FC,Everton FC
+3839138,L1,2022,7. Matchday,2022-09-18,80,3,1,1,VfL Bochum,1.FC Köln
+3839197,L1,2022,11. Matchday,2022-10-22,60,86,2,0,SC Freiburg,SV Werder Bremen
+3839374,L1,2022,21. Matchday,2023-02-18,79,3,3,0,VfB Stuttgart,1.FC Köln
+3844601,ES1,2022,2. Matchday,2022-08-20,331,2687,2,0,CA Osasuna,Cádiz CF
+3885860,ES1,2022,4. Matchday,2022-09-04,1050,1531,4,0,Villarreal CF,Elche CF
+3886414,ES1,2022,13. Matchday,2022-11-05,366,1531,2,1,Real Valladolid CF,Elche CF
+3886488,ES1,2022,16. Matchday,2023-01-06,1049,2687,0,1,Valencia CF,Cádiz CF
+3886609,ES1,2022,27. Matchday,2023-04-02,940,3302,2,2,Celta de Vigo,UD Almería
+3838692,GB1,2022,30. Matchday,2023-04-08,148,1237,2,1,Tottenham Hotspur,Brighton & Hove Albion
+3838723,GB1,2022,27. Matchday,2023-03-11,29,1148,1,0,Everton FC,Brentford FC
+3838755,GB1,2022,24. Matchday,2023-02-18,29,399,1,0,Everton FC,Leeds United
+3839351,L1,2022,20. Matchday,2023-02-12,3,24,3,0,1.FC Köln,Eintracht Frankfurt
+3839392,L1,2022,22. Matchday,2023-02-25,86,80,3,0,SV Werder Bremen,VfL Bochum
+3839419,L1,2022,24. Matchday,2023-03-12,86,15,2,3,SV Werder Bremen,Bayer 04 Leverkusen
+3840196,FR1,2022,24. Matchday,2023-02-19,273,3524,2,0,Stade Rennais FC,Clermont Foot 63
+3886308,ES1,2022,8. Matchday,2022-10-09,2687,714,2,2,Cádiz CF,RCD Espanyol Barcelona
+3886582,ES1,2022,25. Matchday,2023-03-11,1531,366,1,1,Elche CF,Real Valladolid CF
+3837818,GB1,2022,1. Matchday,2022-08-07,1003,1148,2,2,Leicester City,Brentford FC
+3837837,GB1,2022,3. Matchday,2022-08-20,931,1148,3,2,Fulham FC,Brentford FC
+3837996,GB1,2022,7. Matchday,2023-03-15,180,1148,0,2,Southampton FC,Brentford FC
+3838206,GB1,2022,14. Matchday,2022-10-29,1148,543,1,1,Brentford FC,Wolverhampton Wanderers
+3838208,GB1,2022,14. Matchday,2022-10-29,873,180,1,0,Crystal Palace,Southampton FC
+3838232,GB1,2022,15. Matchday,2022-11-06,180,762,1,4,Southampton FC,Newcastle United
+3838245,GB1,2022,16. Matchday,2022-11-12,543,11,0,2,Wolverhampton Wanderers,Arsenal FC
+3838265,GB1,2022,18. Matchday,2022-12-30,31,1003,2,1,Liverpool FC,Leicester City
+3838267,GB1,2022,18. Matchday,2022-12-31,762,399,0,0,Newcastle United,Leeds United
+3838676,GB1,2022,31. Matchday,2023-04-15,543,1148,2,0,Wolverhampton Wanderers,Brentford FC
+3838691,GB1,2022,30. Matchday,2023-04-08,543,631,1,0,Wolverhampton Wanderers,Chelsea FC
+3838711,GB1,2022,28. Matchday,2023-03-19,11,873,4,1,Arsenal FC,Crystal Palace
+3838742,GB1,2022,25. Matchday,2023-02-25,873,31,0,0,Crystal Palace,Liverpool FC
+3838762,GB1,2022,23. Matchday,2023-02-11,180,543,1,2,Southampton FC,Wolverhampton Wanderers
+3838780,GB1,2022,22. Matchday,2023-02-04,762,379,1,1,Newcastle United,West Ham United
+3839106,L1,2022,5. Matchday,2022-09-03,15,60,2,3,Bayer 04 Leverkusen,SC Freiburg
+3839113,L1,2022,5. Matchday,2022-09-03,79,33,1,1,VfB Stuttgart,FC Schalke 04
+3839136,L1,2022,7. Matchday,2022-09-18,533,60,0,0,TSG 1899 Hoffenheim,SC Freiburg
+3839231,L1,2022,13. Matchday,2022-11-05,16,80,3,0,Borussia Dortmund,VfL Bochum
+3839234,L1,2022,13. Matchday,2022-11-05,39,82,0,3,1.FSV Mainz 05,VfL Wolfsburg
+3839256,L1,2022,14. Matchday,2022-11-08,79,44,2,1,VfB Stuttgart,Hertha BSC
+3839262,L1,2022,15. Matchday,2022-11-11,18,16,4,2,Borussia Mönchengladbach,Borussia Dortmund
+3839782,FR1,2022,2. Matchday,2022-08-14,1421,3524,2,4,Stade Reims,Clermont Foot 63
+3840009,FR1,2022,6. Matchday,2022-09-04,3524,415,2,0,Clermont Foot 63,FC Toulouse
+3840029,FR1,2022,8. Matchday,2022-09-18,995,826,0,0,FC Nantes,RC Lens
+3840036,FR1,2022,8. Matchday,2022-09-18,1421,162,0,3,Stade Reims,AS Monaco
+3840078,FR1,2022,12. Matchday,2022-10-23,1095,1158,2,2,ESTAC Troyes,FC Lorient
+3840135,FR1,2022,18. Matchday,2023-01-11,583,1420,2,0,Paris Saint-Germain,Angers SCO
+3840163,FR1,2022,21. Matchday,2023-02-01,969,583,1,3,Montpellier HSC,Paris Saint-Germain
+3840176,FR1,2022,22. Matchday,2023-02-05,3911,826,1,1,Stade Brestois 29,RC Lens
+3840192,FR1,2022,24. Matchday,2023-02-19,583,1082,4,3,Paris Saint-Germain,LOSC Lille
+3840221,FR1,2022,27. Matchday,2023-03-12,162,1421,0,1,AS Monaco,Stade Reims
+3840223,FR1,2022,27. Matchday,2023-03-12,3524,826,0,4,Clermont Foot 63,RC Lens
+3840252,FR1,2022,29. Matchday,2023-03-31,244,969,1,1,Olympique Marseille,Montpellier HSC
+3840261,FR1,2022,30. Matchday,2023-04-08,417,583,0,2,OGC Nice,Paris Saint-Germain
+3844593,ES1,2022,2. Matchday,2022-08-21,621,1049,1,0,Athletic Bilbao,Valencia CF
+3844781,IT1,2022,5. Matchday,2022-09-05,2919,800,0,2,AC Monza,Atalanta BC
+3844784,IT1,2022,5. Matchday,2022-09-05,416,1005,1,0,Torino FC,US Lecce
+3844788,IT1,2022,6. Matchday,2022-09-12,749,12,1,2,FC Empoli,AS Roma
+3844899,IT1,2022,17. Matchday,2023-01-07,506,410,1,0,Juventus FC,Udinese Calcio
+3844903,IT1,2022,17. Matchday,2023-01-08,380,416,1,1,US Salernitana 1919,Torino FC
+3844905,IT1,2022,17. Matchday,2023-01-08,3522,1005,0,0,Spezia Calcio,US Lecce
+3844926,IT1,2022,20. Matchday,2023-01-28,800,1038,2,0,Atalanta BC,UC Sampdoria
+3844931,IT1,2022,20. Matchday,2023-01-29,398,430,1,1,SS Lazio,ACF Fiorentina
+3844944,IT1,2022,21. Matchday,2023-02-05,3522,6195,0,3,Spezia Calcio,SSC Napoli
+3844964,IT1,2022,23. Matchday,2023-02-19,3522,506,0,2,Spezia Calcio,Juventus FC
+3844982,IT1,2022,25. Matchday,2023-03-05,1038,380,0,0,UC Sampdoria,US Salernitana 1919
+3845022,IT1,2022,29. Matchday,2023-04-07,380,46,1,1,US Salernitana 1919,Inter Milan
+3845023,IT1,2022,29. Matchday,2023-04-08,1038,2239,2,3,UC Sampdoria,US Cremonese
+3858319,ES1,2022,6. Matchday,2022-09-17,621,367,3,2,Athletic Bilbao,Rayo Vallecano
+3886384,ES1,2022,12. Matchday,2022-10-30,621,1050,1,0,Athletic Bilbao,Villarreal CF
+3886386,ES1,2022,12. Matchday,2022-10-30,331,366,2,0,CA Osasuna,Real Valladolid CF
+3886446,ES1,2022,14. Matchday,2022-11-08,621,366,3,0,Athletic Bilbao,Real Valladolid CF
+3886502,ES1,2022,18. Matchday,2023-01-22,131,3709,1,0,FC Barcelona,Getafe CF
+3886562,ES1,2022,23. Matchday,2023-02-25,714,237,2,1,RCD Espanyol Barcelona,RCD Mallorca
+3886581,ES1,2022,25. Matchday,2023-03-11,940,367,3,0,Celta de Vigo,Rayo Vallecano
+3886628,ES1,2022,29. Matchday,2023-04-16,1049,368,0,2,Valencia CF,Sevilla FC
+3838694,GB1,2022,30. Matchday,2023-04-08,985,29,2,0,Manchester United,Everton FC
+3839133,L1,2022,7. Matchday,2022-09-17,15,86,1,1,Bayer 04 Leverkusen,SV Werder Bremen
+3839319,L1,2022,18. Matchday,2023-01-29,33,3,0,0,FC Schalke 04,1.FC Köln
+3839338,L1,2022,19. Matchday,2023-02-05,79,86,0,2,VfB Stuttgart,SV Werder Bremen
+3839429,L1,2022,25. Matchday,2023-03-18,16,3,6,1,Borussia Dortmund,1.FC Köln
+3839468,L1,2022,27. Matchday,2023-04-08,39,86,2,2,1.FSV Mainz 05,SV Werder Bremen
+3840093,FR1,2022,14. Matchday,2022-11-06,1082,273,1,1,LOSC Lille,Stade Rennais FC
+3844858,IT1,2022,13. Matchday,2022-11-05,749,6574,1,0,FC Empoli,US Sassuolo
+3858327,ES1,2022,6. Matchday,2022-09-17,237,3302,1,0,RCD Mallorca,UD Almería
+3886598,ES1,2022,26. Matchday,2023-03-19,681,1531,2,0,Real Sociedad,Elche CF
+3837816,GB1,2022,1. Matchday,2022-08-06,148,180,4,1,Tottenham Hotspur,Southampton FC
+3840146,FR1,2022,19. Matchday,2023-01-15,273,583,1,0,Stade Rennais FC,Paris Saint-Germain
+3844963,IT1,2022,23. Matchday,2023-02-17,6574,6195,0,2,US Sassuolo,SSC Napoli
+3845014,IT1,2022,28. Matchday,2023-04-03,6574,416,1,1,US Sassuolo,Torino FC
+3886299,ES1,2022,5. Matchday,2022-09-11,1531,621,1,4,Elche CF,Athletic Bilbao
+3886531,ES1,2022,21. Matchday,2023-02-10,2687,12321,2,0,Cádiz CF,Girona FC
+3886533,ES1,2022,21. Matchday,2023-02-11,3302,150,2,3,UD Almería,Real Betis Balompié
+3837822,GB1,2022,1. Matchday,2022-08-07,985,1237,1,2,Manchester United,Brighton & Hove Albion
+3837844,GB1,2022,4. Matchday,2022-08-27,11,931,2,1,Arsenal FC,Fulham FC
+3837858,GB1,2022,5. Matchday,2022-09-01,1003,985,0,1,Leicester City,Manchester United
+3838212,GB1,2022,14. Matchday,2022-10-30,985,379,1,0,Manchester United,West Ham United
+3838229,GB1,2022,15. Matchday,2022-11-05,399,989,4,3,Leeds United,AFC Bournemouth
+3838231,GB1,2022,15. Matchday,2022-11-05,703,1148,2,2,Nottingham Forest,Brentford FC
+3838255,GB1,2022,17. Matchday,2022-12-27,631,989,2,0,Chelsea FC,AFC Bournemouth
+3838272,GB1,2022,19. Matchday,2023-01-03,11,762,0,0,Arsenal FC,Newcastle United
+3838718,GB1,2022,28. Matchday,2023-03-17,703,762,1,2,Nottingham Forest,Newcastle United
+3838740,GB1,2022,26. Matchday,2023-03-04,11,989,3,2,Arsenal FC,AFC Bournemouth
+3838779,GB1,2022,22. Matchday,2023-02-05,703,399,1,0,Nottingham Forest,Leeds United
+3838781,GB1,2022,21. Matchday,2023-01-22,11,985,3,2,Arsenal FC,Manchester United
+3839025,L1,2022,1. Matchday,2022-08-05,24,27,1,6,Eintracht Frankfurt,Bayern Munich
+3839085,L1,2022,3. Matchday,2022-08-21,80,27,0,7,VfL Bochum,Bayern Munich
+3839107,L1,2022,5. Matchday,2022-09-03,89,27,1,1,1.FC Union Berlin,Bayern Munich
+3839155,L1,2022,8. Matchday,2022-10-01,82,79,3,2,VfL Wolfsburg,VfB Stuttgart
+3839166,L1,2022,9. Matchday,2022-10-09,79,89,0,1,VfB Stuttgart,1.FC Union Berlin
+3839260,L1,2022,15. Matchday,2022-11-13,39,24,1,1,1.FSV Mainz 05,Eintracht Frankfurt
+3839295,L1,2022,17. Matchday,2023-01-25,15,80,2,0,Bayer 04 Leverkusen,VfL Bochum
+3839348,L1,2022,20. Matchday,2023-02-11,27,80,3,0,Bayern Munich,VfL Bochum
+3839389,L1,2022,22. Matchday,2023-02-25,533,16,0,1,TSG 1899 Hoffenheim,Borussia Dortmund
+3839399,L1,2022,23. Matchday,2023-03-04,80,33,0,2,VfL Bochum,FC Schalke 04
+3839413,L1,2022,24. Matchday,2023-03-12,60,533,2,1,SC Freiburg,TSG 1899 Hoffenheim
+3839435,L1,2022,25. Matchday,2023-03-18,80,23826,1,0,VfL Bochum,RB Leipzig
+3839436,L1,2022,25. Matchday,2023-03-18,167,33,1,1,FC Augsburg,FC Schalke 04
+3839469,L1,2022,27. Matchday,2023-04-09,533,33,2,0,TSG 1899 Hoffenheim,FC Schalke 04
+3839485,L1,2022,28. Matchday,2023-04-16,89,80,1,1,1.FC Union Berlin,VfL Bochum
+3839487,L1,2022,28. Matchday,2023-04-15,24,18,1,1,Eintracht Frankfurt,Borussia Mönchengladbach
+3839818,FR1,2022,3. Matchday,2022-08-21,3524,417,1,0,Clermont Foot 63,OGC Nice
+3839819,FR1,2022,3. Matchday,2022-08-21,1082,583,1,7,LOSC Lille,Paris Saint-Germain
+3840008,FR1,2022,6. Matchday,2022-09-03,290,244,0,2,AJ Auxerre,Olympique Marseille
+3840018,FR1,2022,7. Matchday,2022-09-11,162,1041,2,1,AS Monaco,Olympique Lyon
+3840055,FR1,2022,10. Matchday,2022-10-08,244,1147,1,2,Olympique Marseille,AC Ajaccio
+3840060,FR1,2022,11. Matchday,2022-10-16,162,3524,1,1,AS Monaco,Clermont Foot 63
+3840063,FR1,2022,11. Matchday,2022-10-16,583,244,1,0,Paris Saint-Germain,Olympique Marseille
+3840065,FR1,2022,11. Matchday,2022-10-14,667,1082,0,3,RC Strasbourg Alsace,LOSC Lille
+3840073,FR1,2022,12. Matchday,2022-10-22,969,1041,1,2,Montpellier HSC,Olympique Lyon
+3840084,FR1,2022,13. Matchday,2022-10-29,583,1095,4,3,Paris Saint-Germain,ESTAC Troyes
+3840094,FR1,2022,14. Matchday,2022-11-06,417,3911,1,0,OGC Nice,Stade Brestois 29
+3840097,FR1,2022,14. Matchday,2022-11-06,415,162,0,2,FC Toulouse,AS Monaco
+3840112,FR1,2022,16. Matchday,2022-12-29,1158,969,0,2,FC Lorient,Montpellier HSC
+3840120,FR1,2022,17. Matchday,2023-01-01,1420,1158,1,2,Angers SCO,FC Lorient
+3840121,FR1,2022,17. Matchday,2023-01-01,995,290,1,0,FC Nantes,AJ Auxerre
+3840124,FR1,2022,17. Matchday,2023-01-01,1041,3524,0,1,Olympique Lyon,Clermont Foot 63
+3840151,FR1,2022,20. Matchday,2023-01-29,3524,995,0,0,Clermont Foot 63,FC Nantes
+3840161,FR1,2022,21. Matchday,2023-02-01,995,244,0,2,FC Nantes,Olympique Marseille
+3840193,FR1,2022,24. Matchday,2023-02-19,826,995,3,1,RC Lens,FC Nantes
+3840209,FR1,2022,26. Matchday,2023-03-05,969,1420,5,0,Montpellier HSC,Angers SCO
+3840268,FR1,2022,31. Matchday,2023-04-16,3524,1420,2,1,Clermont Foot 63,Angers SCO
+3844764,IT1,2022,3. Matchday,2022-08-28,380,1038,4,0,US Salernitana 1919,UC Sampdoria
+3844791,IT1,2022,6. Matchday,2022-09-11,398,276,2,0,SS Lazio,Hellas Verona
+3844793,IT1,2022,6. Matchday,2022-09-10,6195,3522,1,0,SSC Napoli,Spezia Calcio
+3844805,IT1,2022,7. Matchday,2022-09-18,410,46,3,1,Udinese Calcio,Inter Milan
+3844818,IT1,2022,9. Matchday,2022-10-10,430,398,0,4,ACF Fiorentina,SS Lazio
+3844822,IT1,2022,9. Matchday,2022-10-09,380,276,2,1,US Salernitana 1919,Hellas Verona
+3844835,IT1,2022,10. Matchday,2022-10-15,416,506,0,1,Torino FC,Juventus FC
+3844849,IT1,2022,12. Matchday,2022-10-29,46,1038,3,0,Inter Milan,UC Sampdoria
+3844876,IT1,2022,15. Matchday,2022-11-13,800,46,2,3,Atalanta BC,Inter Milan
+3844879,IT1,2022,15. Matchday,2022-11-13,276,3522,1,2,Hellas Verona,Spezia Calcio
+3844923,IT1,2022,19. Matchday,2023-01-21,380,6195,0,2,US Salernitana 1919,SSC Napoli
+3844942,IT1,2022,21. Matchday,2023-02-07,380,506,0,3,US Salernitana 1919,Juventus FC
+3844945,IT1,2022,21. Matchday,2023-02-05,416,410,1,0,Torino FC,Udinese Calcio
+3844952,IT1,2022,22. Matchday,2023-02-10,5,416,1,0,AC Milan,Torino FC
+3844954,IT1,2022,22. Matchday,2023-02-13,1038,46,0,0,UC Sampdoria,Inter Milan
+3844960,IT1,2022,23. Matchday,2023-02-19,12,276,1,0,AS Roma,Hellas Verona
+3845013,IT1,2022,28. Matchday,2023-04-02,12,1038,3,0,AS Roma,UC Sampdoria
+3845032,IT1,2022,30. Matchday,2023-04-16,12,410,3,0,AS Roma,Udinese Calcio
+3885858,ES1,2022,4. Matchday,2022-09-04,331,367,2,1,CA Osasuna,Rayo Vallecano
+3885859,ES1,2022,4. Matchday,2022-09-04,621,714,0,1,Athletic Bilbao,RCD Espanyol Barcelona
+3886284,ES1,2022,7. Matchday,2022-10-01,3709,366,2,3,Getafe CF,Real Valladolid CF
+3886305,ES1,2022,8. Matchday,2022-10-09,131,940,1,0,FC Barcelona,Celta de Vigo
+3886313,ES1,2022,8. Matchday,2022-10-09,366,150,0,0,Real Valladolid CF,Real Betis Balompié
+3886368,ES1,2022,11. Matchday,2022-10-22,366,681,1,0,Real Valladolid CF,Real Sociedad
+3886393,ES1,2022,12. Matchday,2022-10-30,418,12321,1,1,Real Madrid,Girona FC
+3886413,ES1,2022,13. Matchday,2022-11-04,12321,621,2,1,Girona FC,Athletic Bilbao
+3886471,ES1,2022,15. Matchday,2022-12-31,1050,1049,2,1,Villarreal CF,Valencia CF
+3886492,ES1,2022,17. Matchday,2023-02-02,418,1049,2,0,Real Madrid,Valencia CF
+3886494,ES1,2022,17. Matchday,2023-01-14,12321,368,2,1,Girona FC,Sevilla FC
+3886525,ES1,2022,20. Matchday,2023-02-05,237,418,1,0,RCD Mallorca,Real Madrid
+3886528,ES1,2022,20. Matchday,2023-02-05,12321,1049,1,0,Girona FC,Valencia CF
+3886556,ES1,2022,22. Matchday,2023-02-19,13,621,1,0,Atlético de Madrid,Athletic Bilbao
+3886588,ES1,2022,25. Matchday,2023-03-11,1049,331,1,0,Valencia CF,CA Osasuna
+3886597,ES1,2022,26. Matchday,2023-03-18,714,940,1,3,RCD Espanyol Barcelona,Celta de Vigo
+3886607,ES1,2022,27. Matchday,2023-04-02,1050,681,2,0,Villarreal CF,Real Sociedad
+3886612,ES1,2022,28. Matchday,2023-04-08,418,1050,2,3,Real Madrid,Villarreal CF
+3886616,ES1,2022,28. Matchday,2023-04-07,368,940,2,2,Sevilla FC,Celta de Vigo
+3837846,GB1,2022,4. Matchday,2022-08-27,1148,29,1,1,Brentford FC,Everton FC
+3838020,GB1,2022,10. Matchday,2022-10-08,1237,148,0,1,Brighton & Hove Albion,Tottenham Hotspur
+3838275,GB1,2022,19. Matchday,2023-01-05,631,281,0,1,Chelsea FC,Manchester City
+3838693,GB1,2022,30. Matchday,2023-04-08,180,281,1,4,Southampton FC,Manchester City
+3840034,FR1,2022,8. Matchday,2022-09-18,244,273,1,1,Olympique Marseille,Stade Rennais FC
+3886529,ES1,2022,20. Matchday,2023-02-06,367,3302,2,0,Rayo Vallecano,UD Almería
+3886617,ES1,2022,28. Matchday,2023-04-08,331,1531,2,1,CA Osasuna,Elche CF
+3837845,GB1,2022,4. Matchday,2022-08-28,405,379,0,1,Aston Villa,West Ham United
+3838233,GB1,2022,15. Matchday,2022-11-06,148,31,1,2,Tottenham Hotspur,Liverpool FC
+3838739,GB1,2022,26. Matchday,2023-03-04,405,873,1,0,Aston Villa,Crystal Palace
+3839028,L1,2022,1. Matchday,2022-08-07,3,33,3,1,1.FC Köln,FC Schalke 04
+3844844,IT1,2022,11. Matchday,2022-10-24,6574,276,2,1,US Sassuolo,Hellas Verona
+3886285,ES1,2022,7. Matchday,2022-10-01,2687,1050,0,0,Cádiz CF,Villarreal CF
+3886303,ES1,2022,5. Matchday,2022-09-12,3302,331,0,1,UD Almería,CA Osasuna
+3886561,ES1,2022,23. Matchday,2023-02-25,2687,367,1,0,Cádiz CF,Rayo Vallecano
+3886603,ES1,2022,27. Matchday,2023-04-01,2687,368,0,2,Cádiz CF,Sevilla FC
+3837853,GB1,2022,4. Matchday,2022-08-28,543,762,1,1,Wolverhampton Wanderers,Newcastle United
+3837981,GB1,2022,6. Matchday,2022-09-03,543,180,1,0,Wolverhampton Wanderers,Southampton FC
+3838005,GB1,2022,8. Matchday,2022-09-16,703,931,2,3,Nottingham Forest,Fulham FC
+3838008,GB1,2022,9. Matchday,2022-10-01,989,1148,0,0,AFC Bournemouth,Brentford FC
+3838037,GB1,2022,11. Matchday,2022-10-15,543,703,1,0,Wolverhampton Wanderers,Nottingham Forest
+3838261,GB1,2022,17. Matchday,2022-12-26,180,1237,1,3,Southampton FC,Brighton & Hove Albion
+3838264,GB1,2022,18. Matchday,2022-12-31,931,180,2,1,Fulham FC,Southampton FC
+3838697,GB1,2022,30. Matchday,2023-04-09,399,873,1,5,Leeds United,Crystal Palace
+3838724,GB1,2022,27. Matchday,2023-03-12,931,11,0,3,Fulham FC,Arsenal FC
+3838747,GB1,2022,25. Matchday,2023-04-05,985,1148,1,0,Manchester United,Brentford FC
+3838761,GB1,2022,23. Matchday,2023-02-11,379,631,1,1,West Ham United,Chelsea FC
+3838798,GB1,2022,20. Matchday,2023-01-15,762,931,1,0,Newcastle United,Fulham FC
+3839132,L1,2022,7. Matchday,2022-09-17,16,33,1,0,Borussia Dortmund,FC Schalke 04
+3839140,L1,2022,7. Matchday,2022-09-17,79,24,1,3,VfB Stuttgart,Eintracht Frankfurt
+3839150,L1,2022,8. Matchday,2022-09-30,27,15,4,0,Bayern Munich,Bayer 04 Leverkusen
+3839154,L1,2022,8. Matchday,2022-10-01,24,89,2,0,Eintracht Frankfurt,1.FC Union Berlin
+3839157,L1,2022,8. Matchday,2022-10-02,33,167,2,3,FC Schalke 04,FC Augsburg
+3839181,L1,2022,10. Matchday,2022-10-15,24,15,5,1,Eintracht Frankfurt,Bayer 04 Leverkusen
+3839201,L1,2022,11. Matchday,2022-10-23,80,89,2,1,VfL Bochum,1.FC Union Berlin
+3839276,L1,2022,16. Matchday,2023-01-22,16,167,4,3,Borussia Dortmund,FC Augsburg
+3839299,L1,2022,17. Matchday,2023-01-25,167,18,1,0,FC Augsburg,Borussia Mönchengladbach
+3839335,L1,2022,19. Matchday,2023-02-05,82,27,2,4,VfL Wolfsburg,Bayern Munich
+3839349,L1,2022,20. Matchday,2023-02-11,23826,89,1,2,RB Leipzig,1.FC Union Berlin
+3839369,L1,2022,21. Matchday,2023-02-18,18,27,3,2,Borussia Mönchengladbach,Bayern Munich
+3839384,L1,2022,22. Matchday,2023-02-26,27,89,3,0,Bayern Munich,1.FC Union Berlin
+3839388,L1,2022,22. Matchday,2023-02-24,39,18,4,0,1.FSV Mainz 05,Borussia Mönchengladbach
+3839452,L1,2022,26. Matchday,2023-03-31,24,80,1,1,Eintracht Frankfurt,VfL Bochum
+3839453,L1,2022,26. Matchday,2023-04-01,82,167,2,2,VfL Wolfsburg,FC Augsburg
+3839467,L1,2022,27. Matchday,2023-04-08,60,27,0,1,SC Freiburg,Bayern Munich
+3839470,L1,2022,27. Matchday,2023-04-09,18,82,2,0,Borussia Mönchengladbach,VfL Wolfsburg
+3839729,FR1,2022,1. Matchday,2022-08-06,3524,583,0,5,Clermont Foot 63,Paris Saint-Germain
+3839733,FR1,2022,1. Matchday,2022-08-07,244,1421,4,1,Olympique Marseille,Stade Reims
+3839848,FR1,2022,4. Matchday,2022-08-28,1421,1041,1,1,Stade Reims,Olympique Lyon
+3840033,FR1,2022,8. Matchday,2022-09-18,1041,583,0,1,Olympique Lyon,Paris Saint-Germain
+3840040,FR1,2022,9. Matchday,2022-10-02,290,3911,1,1,AJ Auxerre,Stade Brestois 29
+3840053,FR1,2022,10. Matchday,2022-10-09,417,1095,3,2,OGC Nice,ESTAC Troyes
+3840074,FR1,2022,12. Matchday,2022-10-23,417,995,1,1,OGC Nice,FC Nantes
+3840077,FR1,2022,12. Matchday,2022-10-23,415,667,2,2,FC Toulouse,RC Strasbourg Alsace
+3840092,FR1,2022,14. Matchday,2022-11-06,1158,583,1,2,FC Lorient,Paris Saint-Germain
+3840109,FR1,2022,16. Matchday,2022-12-28,1147,1420,1,0,AC Ajaccio,Angers SCO
+3840140,FR1,2022,19. Matchday,2023-01-15,1420,3524,1,2,Angers SCO,Clermont Foot 63
+3840171,FR1,2022,22. Matchday,2023-02-05,3524,162,0,2,Clermont Foot 63,AS Monaco
+3840217,FR1,2022,26. Matchday,2023-03-05,415,3524,0,1,FC Toulouse,Clermont Foot 63
+3840219,FR1,2022,27. Matchday,2023-03-12,1147,969,0,1,AC Ajaccio,Montpellier HSC
+3840227,FR1,2022,27. Matchday,2023-03-12,244,667,2,2,Olympique Marseille,RC Strasbourg Alsace
+3840234,FR1,2022,28. Matchday,2023-03-18,826,1420,3,0,RC Lens,Angers SCO
+3840246,FR1,2022,29. Matchday,2023-04-01,290,1095,1,0,AJ Auxerre,ESTAC Troyes
+3840267,FR1,2022,31. Matchday,2023-04-16,162,1158,3,1,AS Monaco,FC Lorient
+3844096,ES1,2022,1. Matchday,2022-08-13,366,1050,0,3,Real Valladolid CF,Villarreal CF
+3844750,IT1,2022,2. Matchday,2022-08-21,6195,2919,4,0,SSC Napoli,AC Monza
+3844751,IT1,2022,2. Matchday,2022-08-22,12,2239,1,0,AS Roma,US Cremonese
+3844771,IT1,2022,4. Matchday,2022-08-31,6195,1005,1,1,SSC Napoli,US Lecce
+3844782,IT1,2022,5. Matchday,2022-09-05,380,749,2,2,US Salernitana 1919,FC Empoli
+3844803,IT1,2022,7. Matchday,2022-09-17,3522,1038,2,1,Spezia Calcio,UC Sampdoria
+3844813,IT1,2022,8. Matchday,2022-10-01,6195,416,3,1,SSC Napoli,Torino FC
+3844817,IT1,2022,9. Matchday,2022-10-09,2239,6195,1,4,US Cremonese,SSC Napoli
+3844820,IT1,2022,9. Matchday,2022-10-09,2919,3522,2,0,AC Monza,Spezia Calcio
+3844824,IT1,2022,9. Matchday,2022-10-09,416,749,1,1,Torino FC,FC Empoli
+3844834,IT1,2022,10. Matchday,2022-10-16,3522,2239,2,2,Spezia Calcio,US Cremonese
+3844842,IT1,2022,11. Matchday,2022-10-23,12,6195,0,1,AS Roma,SSC Napoli
+3844867,IT1,2022,14. Matchday,2022-11-09,430,380,2,1,ACF Fiorentina,US Salernitana 1919
+3844883,IT1,2022,15. Matchday,2022-11-12,6195,410,3,2,SSC Napoli,Udinese Calcio
+3844893,IT1,2022,16. Matchday,2023-01-04,3522,800,2,2,Spezia Calcio,Atalanta BC
+3844929,IT1,2022,20. Matchday,2023-01-28,749,416,2,2,FC Empoli,Torino FC
+3844930,IT1,2022,20. Matchday,2023-01-29,506,2919,0,2,Juventus FC,AC Monza
+3844961,IT1,2022,23. Matchday,2023-02-19,380,398,0,2,US Salernitana 1919,SS Lazio
+3844968,IT1,2022,24. Matchday,2023-02-25,749,6195,0,2,FC Empoli,SSC Napoli
+3844981,IT1,2022,25. Matchday,2023-03-05,12,506,1,0,AS Roma,Juventus FC
+3844984,IT1,2022,25. Matchday,2023-03-05,3522,276,0,0,Spezia Calcio,Hellas Verona
+3845017,IT1,2022,29. Matchday,2023-04-08,430,3522,1,1,ACF Fiorentina,Spezia Calcio
+3885843,ES1,2022,3. Matchday,2022-08-26,150,331,1,0,Real Betis Balompié,CA Osasuna
+3885845,ES1,2022,3. Matchday,2022-08-27,367,237,0,2,Rayo Vallecano,RCD Mallorca
+3886325,ES1,2022,9. Matchday,2022-10-14,367,3709,0,0,Rayo Vallecano,Getafe CF
+3886327,ES1,2022,9. Matchday,2022-10-17,1050,331,2,0,Villarreal CF,CA Osasuna
+3886330,ES1,2022,10. Matchday,2022-10-20,131,1050,3,0,FC Barcelona,Villarreal CF
+3886334,ES1,2022,10. Matchday,2022-10-18,3709,621,2,2,Getafe CF,Athletic Bilbao
+3886391,ES1,2022,12. Matchday,2022-10-28,237,714,1,1,RCD Mallorca,RCD Espanyol Barcelona
+3886526,ES1,2022,20. Matchday,2023-02-04,714,331,1,1,RCD Espanyol Barcelona,CA Osasuna
+3886539,ES1,2022,21. Matchday,2023-02-12,366,331,0,0,Real Valladolid CF,CA Osasuna
+3886554,ES1,2022,22. Matchday,2023-02-18,331,418,0,2,CA Osasuna,Real Madrid
+3886568,ES1,2022,23. Matchday,2023-02-25,1049,681,1,0,Valencia CF,Real Sociedad
+3886625,ES1,2022,29. Matchday,2023-04-16,3709,131,0,0,Getafe CF,FC Barcelona
+3838707,GB1,2022,29. Matchday,2023-04-01,631,405,0,2,Chelsea FC,Aston Villa
+3839054,L1,2022,2. Matchday,2022-08-13,23826,3,2,2,RB Leipzig,1.FC Köln
+3839111,L1,2022,5. Matchday,2022-09-03,80,86,0,2,VfL Bochum,SV Werder Bremen
+3839472,L1,2022,27. Matchday,2023-04-08,167,3,1,3,FC Augsburg,1.FC Köln
+3840220,FR1,2022,27. Matchday,2023-03-11,290,273,0,0,AJ Auxerre,Stade Rennais FC
+3844090,ES1,2022,1. Matchday,2022-08-15,150,1531,3,0,Real Betis Balompié,Elche CF
+3838240,GB1,2022,16. Matchday,2022-11-12,281,1148,1,2,Manchester City,Brentford FC
+3838678,GB1,2022,31. Matchday,2023-04-15,148,989,2,3,Tottenham Hotspur,AFC Bournemouth
+3838759,GB1,2022,24. Matchday,2023-02-19,148,379,2,0,Tottenham Hotspur,West Ham United
+3844094,ES1,2022,1. Matchday,2022-08-14,3302,418,1,2,UD Almería,Real Madrid
+3844983,IT1,2022,25. Matchday,2023-03-06,6574,2239,3,2,US Sassuolo,US Cremonese
+3885844,ES1,2022,3. Matchday,2022-08-27,1531,681,0,1,Elche CF,Real Sociedad
+3837843,GB1,2022,3. Matchday,2022-08-21,379,1237,0,2,West Ham United,Brighton & Hove Albion
+3837977,GB1,2022,6. Matchday,2022-09-04,985,11,3,1,Manchester United,Arsenal FC
+3838034,GB1,2022,11. Matchday,2022-10-16,985,762,0,0,Manchester United,Newcastle United
+3838035,GB1,2022,11. Matchday,2022-10-16,180,379,1,1,Southampton FC,West Ham United
+3838252,GB1,2022,17. Matchday,2022-12-26,11,379,3,1,Arsenal FC,West Ham United
+3838270,GB1,2022,18. Matchday,2022-12-30,379,1148,0,2,West Ham United,Brentford FC
+3838677,GB1,2022,31. Matchday,2023-04-16,379,11,2,2,West Ham United,Arsenal FC
+3838695,GB1,2022,30. Matchday,2023-04-09,31,11,2,2,Liverpool FC,Arsenal FC
+3838699,GB1,2022,30. Matchday,2023-04-08,1148,762,1,2,Brentford FC,Newcastle United
+3838713,GB1,2022,28. Matchday,2023-03-18,1148,1003,1,1,Brentford FC,Leicester City
+3838737,GB1,2022,26. Matchday,2023-03-04,1237,379,4,0,Brighton & Hove Albion,West Ham United
+3838746,GB1,2022,25. Matchday,2023-02-25,1003,11,0,1,Leicester City,Arsenal FC
+3838769,GB1,2022,23. Matchday,2023-02-11,931,703,2,0,Fulham FC,Nottingham Forest
+3839026,L1,2022,1. Matchday,2022-08-06,16,15,1,0,Borussia Dortmund,Bayer 04 Leverkusen
+3839084,L1,2022,3. Matchday,2022-08-20,82,33,0,0,VfL Wolfsburg,FC Schalke 04
+3839152,L1,2022,8. Matchday,2022-10-01,60,39,2,1,SC Freiburg,1.FSV Mainz 05
+3839161,L1,2022,9. Matchday,2022-10-08,39,23826,1,1,1.FSV Mainz 05,RB Leipzig
+3839177,L1,2022,10. Matchday,2022-10-16,27,60,5,0,Bayern Munich,SC Freiburg
+3839218,L1,2022,12. Matchday,2022-10-29,82,80,4,0,VfL Wolfsburg,VfL Bochum
+3839238,L1,2022,13. Matchday,2022-11-05,44,27,2,3,Hertha BSC,Bayern Munich
+3837841,GB1,2022,3. Matchday,2022-08-21,762,281,3,3,Newcastle United,Manchester City
+3838059,GB1,2022,12. Matchday,2022-10-19,985,148,2,0,Manchester United,Tottenham Hotspur
+3838715,GB1,2022,28. Matchday,2023-03-18,631,29,2,2,Chelsea FC,Everton FC
+3839163,L1,2022,9. Matchday,2022-10-09,18,3,5,2,Borussia Mönchengladbach,1.FC Köln
+3837842,GB1,2022,3. Matchday,2022-08-20,148,543,1,0,Tottenham Hotspur,Wolverhampton Wanderers
+3838023,GB1,2022,10. Matchday,2022-10-09,29,985,1,2,Everton FC,Manchester United
+3838190,GB1,2022,13. Matchday,2022-10-22,29,873,3,0,Everton FC,Crystal Palace
+3838230,GB1,2022,15. Matchday,2022-11-05,281,931,2,1,Manchester City,Fulham FC
+3838253,GB1,2022,17. Matchday,2022-12-26,405,31,1,3,Aston Villa,Liverpool FC
+3838785,GB1,2022,21. Matchday,2023-01-22,281,543,3,0,Manchester City,Wolverhampton Wanderers
+3839239,L1,2022,13. Matchday,2022-11-05,86,33,2,1,SV Werder Bremen,FC Schalke 04
+3839278,L1,2022,16. Matchday,2023-01-21,89,533,3,1,1.FC Union Berlin,TSG 1899 Hoffenheim
+3839314,L1,2022,18. Matchday,2023-01-27,23826,79,2,1,RB Leipzig,VfB Stuttgart
+3839333,L1,2022,19. Matchday,2023-02-04,18,33,0,0,Borussia Mönchengladbach,FC Schalke 04
+3839367,L1,2022,21. Matchday,2023-02-19,15,39,2,3,Bayer 04 Leverkusen,1.FSV Mainz 05
+3839368,L1,2022,21. Matchday,2023-02-19,89,33,0,0,1.FC Union Berlin,FC Schalke 04
+3839385,L1,2022,22. Matchday,2023-02-25,23826,24,2,1,RB Leipzig,Eintracht Frankfurt
+3839386,L1,2022,22. Matchday,2023-02-26,60,15,1,1,SC Freiburg,Bayer 04 Leverkusen
+3839412,L1,2022,24. Matchday,2023-03-11,23826,18,3,0,RB Leipzig,Borussia Mönchengladbach
+3839431,L1,2022,25. Matchday,2023-03-19,89,24,2,0,1.FC Union Berlin,Eintracht Frankfurt
+3839484,L1,2022,28. Matchday,2023-04-15,23826,167,3,2,RB Leipzig,FC Augsburg
+3839732,FR1,2022,1. Matchday,2022-08-05,1041,1147,2,1,Olympique Lyon,AC Ajaccio
+3839735,FR1,2022,1. Matchday,2022-08-06,667,162,1,2,RC Strasbourg Alsace,AS Monaco
+3839737,FR1,2022,1. Matchday,2022-08-07,415,417,1,1,FC Toulouse,OGC Nice
+3839775,FR1,2022,2. Matchday,2022-08-14,290,1420,2,2,AJ Auxerre,Angers SCO
+3839817,FR1,2022,3. Matchday,2022-08-21,1420,3911,1,3,Angers SCO,Stade Brestois 29
+3839865,FR1,2022,5. Matchday,2022-08-31,1082,417,1,2,LOSC Lille,OGC Nice
+3840015,FR1,2022,6. Matchday,2022-09-04,1421,826,1,1,Stade Reims,RC Lens
+3840069,FR1,2022,12. Matchday,2022-10-21,1147,583,0,3,AC Ajaccio,Paris Saint-Germain
+3840072,FR1,2022,12. Matchday,2022-10-23,1082,162,4,3,LOSC Lille,AS Monaco
+3840090,FR1,2022,14. Matchday,2022-11-05,1420,826,1,2,Angers SCO,RC Lens
+3840091,FR1,2022,14. Matchday,2022-11-06,3524,969,1,1,Clermont Foot 63,Montpellier HSC
+3840147,FR1,2022,19. Matchday,2023-01-15,1421,417,0,0,Stade Reims,OGC Nice
+3840185,FR1,2022,23. Matchday,2023-02-10,417,1147,3,0,OGC Nice,AC Ajaccio
+3840207,FR1,2022,25. Matchday,2023-02-26,244,583,0,3,Olympique Marseille,Paris Saint-Germain
+3840228,FR1,2022,27. Matchday,2023-03-11,3911,583,1,2,Stade Brestois 29,Paris Saint-Germain
+3840248,FR1,2022,29. Matchday,2023-04-02,1420,417,1,1,Angers SCO,OGC Nice
+3840256,FR1,2022,30. Matchday,2023-04-09,1147,290,0,3,AC Ajaccio,AJ Auxerre
+3840272,FR1,2022,31. Matchday,2023-04-16,667,1147,3,1,RC Strasbourg Alsace,AC Ajaccio
+3844088,ES1,2022,1. Matchday,2022-08-15,621,237,0,0,Athletic Bilbao,RCD Mallorca
+3844599,ES1,2022,2. Matchday,2022-08-20,237,150,1,2,RCD Mallorca,Real Betis Balompié
+3844741,IT1,2022,1. Matchday,2022-08-13,5,410,4,2,AC Milan,Udinese Calcio
+3844772,IT1,2022,4. Matchday,2022-08-30,12,2919,3,0,AS Roma,AC Monza
+3844789,IT1,2022,6. Matchday,2022-09-10,46,416,1,0,Inter Milan,Torino FC
+3844790,IT1,2022,6. Matchday,2022-09-11,506,380,2,2,Juventus FC,US Salernitana 1919
+3844802,IT1,2022,7. Matchday,2022-09-16,380,1005,1,2,US Salernitana 1919,US Lecce
+3844812,IT1,2022,8. Matchday,2022-10-02,1005,2239,1,1,US Lecce,US Cremonese
+3844843,IT1,2022,11. Matchday,2022-10-22,380,3522,1,0,US Salernitana 1919,Spezia Calcio
+3844863,IT1,2022,13. Matchday,2022-11-05,380,2239,2,2,US Salernitana 1919,US Cremonese
+3844882,IT1,2022,15. Matchday,2022-11-13,2919,380,3,0,AC Monza,US Salernitana 1919
+3844967,IT1,2022,24. Matchday,2023-02-28,2239,12,2,1,US Cremonese,AS Roma
+3844969,IT1,2022,24. Matchday,2023-02-27,276,430,0,3,Hellas Verona,ACF Fiorentina
+3845009,IT1,2022,28. Matchday,2023-04-01,46,430,0,1,Inter Milan,ACF Fiorentina
+3845015,IT1,2022,28. Matchday,2023-04-02,3522,380,1,1,Spezia Calcio,US Salernitana 1919
+3845154,IT1,2022,13. Matchday,2022-11-06,1038,430,0,2,UC Sampdoria,ACF Fiorentina
+3885857,ES1,2022,4. Matchday,2022-09-03,368,131,0,3,Sevilla FC,FC Barcelona
+3886392,ES1,2022,12. Matchday,2022-10-29,368,367,0,1,Sevilla FC,Rayo Vallecano
+3886506,ES1,2022,18. Matchday,2023-01-20,237,940,1,0,RCD Mallorca,Celta de Vigo
+3886513,ES1,2022,19. Matchday,2023-01-29,940,621,1,0,Celta de Vigo,Athletic Bilbao
+3886522,ES1,2022,20. Matchday,2023-02-05,131,368,3,0,FC Barcelona,Sevilla FC
+3886532,ES1,2022,21. Matchday,2023-02-13,714,681,2,3,RCD Espanyol Barcelona,Real Sociedad
+3886538,ES1,2022,21. Matchday,2023-02-11,368,237,2,0,Sevilla FC,RCD Mallorca
+3886553,ES1,2022,22. Matchday,2023-02-20,3709,1049,1,0,Getafe CF,Valencia CF
+3886566,ES1,2022,23. Matchday,2023-02-27,1050,3709,2,1,Villarreal CF,Getafe CF
+3886583,ES1,2022,25. Matchday,2023-03-12,237,681,1,1,RCD Mallorca,Real Sociedad
+3886614,ES1,2022,28. Matchday,2023-04-08,714,621,1,2,RCD Espanyol Barcelona,Athletic Bilbao
+3886293,ES1,2022,7. Matchday,2022-09-30,621,3302,4,0,Athletic Bilbao,UD Almería
+3886508,ES1,2022,18. Matchday,2023-01-23,1049,3302,2,2,Valencia CF,UD Almería
+3886549,ES1,2022,22. Matchday,2023-02-19,131,2687,2,0,FC Barcelona,Cádiz CF
+3839320,L1,2022,18. Matchday,2023-01-28,86,82,2,1,SV Werder Bremen,VfL Wolfsburg
+3839491,L1,2022,28. Matchday,2023-04-16,86,60,1,2,SV Werder Bremen,SC Freiburg
+3886524,ES1,2022,20. Matchday,2023-02-04,1531,1050,3,1,Elche CF,Villarreal CF
+3837828,GB1,2022,2. Matchday,2022-08-15,31,873,1,1,Liverpool FC,Crystal Palace
+3837840,GB1,2022,3. Matchday,2022-08-22,985,31,2,1,Manchester United,Liverpool FC
+3837861,GB1,2022,5. Matchday,2022-08-30,180,631,2,1,Southampton FC,Chelsea FC
+3838021,GB1,2022,10. Matchday,2022-10-08,631,543,3,0,Chelsea FC,Wolverhampton Wanderers
+3838256,GB1,2022,17. Matchday,2022-12-26,873,931,0,3,Crystal Palace,Fulham FC
+3838259,GB1,2022,17. Matchday,2022-12-26,1003,762,0,3,Leicester City,Newcastle United
+3838721,GB1,2022,27. Matchday,2023-03-11,989,31,1,0,AFC Bournemouth,Liverpool FC
+3838744,GB1,2022,25. Matchday,2023-02-24,931,543,1,1,Fulham FC,Wolverhampton Wanderers
+3838795,GB1,2022,20. Matchday,2023-01-14,543,379,1,0,Wolverhampton Wanderers,West Ham United
+3839115,L1,2022,6. Matchday,2022-09-10,23826,16,3,0,RB Leipzig,Borussia Dortmund
+3839159,L1,2022,9. Matchday,2022-10-08,16,27,2,2,Borussia Dortmund,Bayern Munich
+3839215,L1,2022,12. Matchday,2022-10-30,89,18,2,1,1.FC Union Berlin,Borussia Mönchengladbach
+3839277,L1,2022,16. Matchday,2023-01-20,23826,27,1,1,RB Leipzig,Bayern Munich
+3839296,L1,2022,17. Matchday,2023-01-25,60,24,1,1,SC Freiburg,Eintracht Frankfurt
+3839313,L1,2022,18. Matchday,2023-01-29,15,16,0,2,Bayer 04 Leverkusen,Borussia Dortmund
+3839418,L1,2022,24. Matchday,2023-03-11,33,16,2,2,FC Schalke 04,Borussia Dortmund
+3839430,L1,2022,25. Matchday,2023-03-19,15,27,2,1,Bayer 04 Leverkusen,Bayern Munich
+3839450,L1,2022,26. Matchday,2023-04-01,60,44,1,1,SC Freiburg,Hertha BSC
+3839730,FR1,2022,1. Matchday,2022-08-07,1082,290,4,1,LOSC Lille,AJ Auxerre
+3839820,FR1,2022,3. Matchday,2022-08-21,969,290,1,2,Montpellier HSC,AJ Auxerre
+3839821,FR1,2022,3. Matchday,2022-08-19,1041,1095,4,1,Olympique Lyon,ESTAC Troyes
+3839843,FR1,2022,4. Matchday,2022-08-28,995,415,3,1,FC Nantes,FC Toulouse
+3839863,FR1,2022,5. Matchday,2022-08-31,162,1095,2,4,AS Monaco,ESTAC Troyes
+3839867,FR1,2022,5. Matchday,2022-08-31,1041,290,2,1,Olympique Lyon,AJ Auxerre
+3840035,FR1,2022,8. Matchday,2022-09-18,3911,1147,0,1,Stade Brestois 29,AC Ajaccio
+3840047,FR1,2022,9. Matchday,2022-10-02,415,969,4,2,FC Toulouse,Montpellier HSC
+3840050,FR1,2022,10. Matchday,2022-10-09,3524,290,2,1,Clermont Foot 63,AJ Auxerre
+3840086,FR1,2022,13. Matchday,2022-10-29,667,244,2,2,RC Strasbourg Alsace,Olympique Marseille
+3840104,FR1,2022,15. Matchday,2022-11-13,583,290,5,0,Paris Saint-Germain,AJ Auxerre
+3840106,FR1,2022,15. Matchday,2022-11-13,667,1158,1,1,RC Strasbourg Alsace,FC Lorient
+3840107,FR1,2022,15. Matchday,2022-11-13,3911,1095,2,1,Stade Brestois 29,ESTAC Troyes
+3840111,FR1,2022,16. Matchday,2022-12-28,3524,1082,0,2,Clermont Foot 63,LOSC Lille
+3840128,FR1,2022,17. Matchday,2023-01-01,415,1147,2,0,FC Toulouse,AC Ajaccio
+3840165,FR1,2022,21. Matchday,2023-02-01,826,417,0,1,RC Lens,OGC Nice
+3840167,FR1,2022,21. Matchday,2023-02-01,1421,1158,4,2,Stade Reims,FC Lorient
+3840197,FR1,2022,24. Matchday,2023-02-19,415,244,2,3,FC Toulouse,Olympique Marseille
+3840199,FR1,2022,25. Matchday,2023-02-26,1147,1095,2,1,AC Ajaccio,ESTAC Troyes
+3840214,FR1,2022,26. Matchday,2023-03-05,667,3911,0,1,RC Strasbourg Alsace,Stade Brestois 29
+3840226,FR1,2022,27. Matchday,2023-03-10,1082,1041,3,3,LOSC Lille,Olympique Lyon
+3844091,ES1,2022,1. Matchday,2022-08-13,940,714,2,2,Celta de Vigo,RCD Espanyol Barcelona
+3844748,IT1,2022,2. Matchday,2022-08-21,749,430,0,0,FC Empoli,ACF Fiorentina
+3844769,IT1,2022,4. Matchday,2022-08-30,46,2239,3,1,Inter Milan,US Cremonese
+3844770,IT1,2022,4. Matchday,2022-08-31,506,3522,2,0,Juventus FC,Spezia Calcio
+3844819,IT1,2022,9. Matchday,2022-10-08,5,506,2,0,AC Milan,Juventus FC
+3844841,IT1,2022,11. Matchday,2022-10-22,5,2919,4,1,AC Milan,AC Monza
+3844861,IT1,2022,13. Matchday,2022-11-06,2919,276,2,0,AC Monza,Hellas Verona
+3844878,IT1,2022,15. Matchday,2022-11-11,749,2239,2,0,FC Empoli,US Cremonese
+3844907,IT1,2022,18. Matchday,2023-01-14,2239,2919,2,3,US Cremonese,AC Monza
+3844949,IT1,2022,22. Matchday,2023-02-12,506,430,1,0,Juventus FC,ACF Fiorentina
+3844953,IT1,2022,22. Matchday,2023-02-12,6195,2239,3,0,SSC Napoli,US Cremonese
+3844965,IT1,2022,23. Matchday,2023-02-20,416,2239,2,2,Torino FC,US Cremonese
+3845034,IT1,2022,30. Matchday,2023-04-14,3522,398,0,3,Spezia Calcio,SS Lazio
+3858320,ES1,2022,6. Matchday,2022-09-18,13,418,1,2,Atlético de Madrid,Real Madrid
+3885842,ES1,2022,3. Matchday,2022-08-26,12321,940,0,1,Girona FC,Celta de Vigo
+3885849,ES1,2022,3. Matchday,2022-08-28,714,418,1,3,RCD Espanyol Barcelona,Real Madrid
+3886310,ES1,2022,8. Matchday,2022-10-09,681,1050,1,0,Real Sociedad,Villarreal CF
+3886319,ES1,2022,9. Matchday,2022-10-15,621,13,0,1,Athletic Bilbao,Atlético de Madrid
+3886320,ES1,2022,9. Matchday,2022-10-16,940,681,1,2,Celta de Vigo,Real Sociedad
+3886336,ES1,2022,10. Matchday,2022-10-19,366,940,4,1,Real Valladolid CF,Celta de Vigo
+3886409,ES1,2022,13. Matchday,2022-11-06,150,368,1,1,Real Betis Balompié,Sevilla FC
+3886498,ES1,2022,17. Matchday,2023-01-15,3709,714,1,2,Getafe CF,RCD Espanyol Barcelona
+3886499,ES1,2022,17. Matchday,2023-01-14,366,367,0,1,Real Valladolid CF,Rayo Vallecano
+3886515,ES1,2022,19. Matchday,2023-01-28,12321,131,0,1,Girona FC,FC Barcelona
+3886523,ES1,2022,20. Matchday,2023-02-04,150,940,3,4,Real Betis Balompié,Celta de Vigo
+3886571,ES1,2022,24. Matchday,2023-03-05,150,418,0,0,Real Betis Balompié,Real Madrid
+3838237,GB1,2022,16. Matchday,2022-11-13,1237,405,1,2,Brighton & Hove Albion,Aston Villa
+3838722,GB1,2022,27. Matchday,2023-03-11,873,281,0,1,Crystal Palace,Manchester City
+3838726,GB1,2022,27. Matchday,2023-03-12,379,405,1,1,West Ham United,Aston Villa
+3839030,L1,2022,1. Matchday,2022-08-06,82,86,2,2,VfL Wolfsburg,SV Werder Bremen
+3839294,L1,2022,17. Matchday,2023-01-24,27,3,1,1,Bayern Munich,1.FC Köln
+3840117,FR1,2022,16. Matchday,2022-12-29,1421,273,3,1,Stade Reims,Stade Rennais FC
+3840262,FR1,2022,30. Matchday,2023-04-09,1041,273,3,1,Olympique Lyon,Stade Rennais FC
+3886369,ES1,2022,11. Matchday,2022-10-23,1050,3302,2,1,Villarreal CF,UD Almería
+3886463,ES1,2022,15. Matchday,2022-12-30,13,1531,2,0,Atlético de Madrid,Elche CF
+3838002,GB1,2022,8. Matchday,2022-09-18,29,379,1,0,Everton FC,West Ham United
+3838024,GB1,2022,10. Matchday,2022-10-08,281,180,4,0,Manchester City,Southampton FC
+3838228,GB1,2022,15. Matchday,2022-11-05,29,1003,0,2,Everton FC,Leicester City
+3838675,GB1,2022,31. Matchday,2023-04-15,405,762,3,0,Aston Villa,Newcastle United
+3838704,GB1,2022,29. Matchday,2023-04-01,281,31,4,1,Manchester City,Liverpool FC
+3838751,GB1,2022,24. Matchday,2023-02-18,405,11,2,4,Aston Villa,Arsenal FC
+3838771,GB1,2022,22. Matchday,2023-02-04,405,1003,2,4,Aston Villa,Leicester City
+3839185,L1,2022,10. Matchday,2022-10-15,86,39,0,2,SV Werder Bremen,1.FSV Mainz 05
+3840108,FR1,2022,15. Matchday,2022-11-12,273,415,2,1,Stade Rennais FC,FC Toulouse
+3845033,IT1,2022,30. Matchday,2023-04-16,6574,506,1,0,US Sassuolo,Juventus FC
+3886387,ES1,2022,12. Matchday,2022-10-29,3302,940,3,1,UD Almería,Celta de Vigo
+3886484,ES1,2022,16. Matchday,2023-01-08,3302,681,0,2,UD Almería,Real Sociedad
+3886551,ES1,2022,22. Matchday,2023-02-19,1531,714,0,1,Elche CF,RCD Espanyol Barcelona
+3886563,ES1,2022,23. Matchday,2023-02-26,3302,131,1,0,UD Almería,FC Barcelona
+3844966,IT1,2022,24. Matchday,2023-02-26,1025,46,1,0,Bologna FC 1909,Inter Milan
+3844796,IT1,2022,7. Matchday,2022-09-17,1025,749,0,1,Bologna FC 1909,FC Empoli
+3844916,IT1,2022,19. Matchday,2023-01-23,1025,2239,1,1,Bologna FC 1909,US Cremonese
+3845006,IT1,2022,28. Matchday,2023-04-02,1025,410,3,0,Bologna FC 1909,Udinese Calcio
+3844767,IT1,2022,4. Matchday,2022-09-01,1025,380,1,1,Bologna FC 1909,US Salernitana 1919
+3845026,IT1,2022,30. Matchday,2023-04-15,1025,5,1,1,Bologna FC 1909,AC Milan
+3844946,IT1,2022,22. Matchday,2023-02-12,1025,2919,0,1,Bologna FC 1909,AC Monza
+3844747,IT1,2022,2. Matchday,2022-08-21,1025,276,1,1,Bologna FC 1909,Hellas Verona
+3844816,IT1,2022,9. Matchday,2022-10-08,1025,1038,1,1,Bologna FC 1909,UC Sampdoria
+3844837,IT1,2022,11. Matchday,2022-10-23,1025,1005,2,0,Bologna FC 1909,US Lecce
+3844857,IT1,2022,13. Matchday,2022-11-06,1025,416,2,1,Bologna FC 1909,Torino FC
+3844896,IT1,2022,17. Matchday,2023-01-09,1025,800,1,2,Bologna FC 1909,Atalanta BC
+3844986,IT1,2022,26. Matchday,2023-03-11,1025,398,0,0,Bologna FC 1909,SS Lazio
+3844787,IT1,2022,6. Matchday,2022-09-11,1025,430,2,1,Bologna FC 1909,ACF Fiorentina
+3844927,IT1,2022,20. Matchday,2023-01-27,1025,3522,2,0,Bologna FC 1909,Spezia Calcio
+3844877,IT1,2022,15. Matchday,2022-11-12,1025,6574,3,0,Bologna FC 1909,US Sassuolo
+3838778,GB1,2022,22. Matchday,2023-02-05,148,281,1,0,Tottenham Hotspur,Manchester City
+3844602,ES1,2022,2. Matchday,2022-08-22,1531,3302,1,1,Elche CF,UD Almería
+3845016,IT1,2022,29. Matchday,2023-04-08,800,1025,0,2,Atalanta BC,Bologna FC 1909
+3837972,GB1,2022,6. Matchday,2022-09-03,405,281,1,1,Aston Villa,Manchester City
+3844962,IT1,2022,23. Matchday,2023-02-18,1038,1025,1,2,UC Sampdoria,Bologna FC 1909
+3844985,IT1,2022,25. Matchday,2023-03-06,416,1025,1,0,Torino FC,Bologna FC 1909
+3886491,ES1,2022,17. Matchday,2023-01-16,2687,1531,1,1,Cádiz CF,Elche CF
+3837832,GB1,2022,2. Matchday,2022-08-13,405,29,2,1,Aston Villa,Everton FC
+3838705,GB1,2022,29. Matchday,2023-04-03,29,148,1,1,Everton FC,Tottenham Hotspur

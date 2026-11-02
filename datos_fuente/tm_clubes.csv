@@ -1,0 +1,167 @@
+club_id,club_code,name,domestic_competition_id,stadium_name,stadium_seats,net_transfer_record,last_season
+127,sc-paderborn-07,null,L1,Home Deluxe Arena,15000,€-450k,2019
+2239,us-cremonese,US Cremonese,IT1,Giovanni Zini,16003,€-33.80m,2022
+2919,ac-monza,AC Monza,IT1,U-Power Stadium - Brianteo,15039,€-46.48m,2022
+5358,sd-huesca,null,ES1,El Alcoraz,9128,+€1.43m,2020
+60,sc-freiburg,SC Freiburg,L1,Europa-Park Stadion,34700,+€5.43m,2022
+603,cardiff-city,null,GB1,Cardiff City Stadium,33280,€-655k,2018
+607,venezia-fc,null,IT1,Pier Luigi Penzo,11150,+€4.83m,2021
+6574,us-sassuolo,US Sassuolo,IT1,Mapei Stadium - Città del Tricolore,21584,+€21.56m,2022
+667,rc-strassburg-alsace,RC Strasbourg Alsace,FR1,Stade de la Meinau,29000,+€3.90m,2022
+855,ea-guingamp,null,FR1,Stade du Roudourou,18120,+€3.70m,2018
+897,deportivo-la-coruna,null,ES1,Abanca Riazor,32912,€-435k,2017
+1039,queens-park-rangers,null,GB1,Loftus Road Stadium,18360,+€900k,2014
+1084,fc-malaga,null,ES1,La Rosaleda,30044,+€950k,2017
+1162,sm-caen,null,FR1,Stade Michel-d'Ornano,20500,+€3.05m,2018
+2687,fc-cadiz,Cádiz CF,ES1,Nuevo Mirandilla,21094,€-8.50m,2022
+3558,gfc-ajaccio,null,FR1,Stade Ange-Casanova,4050,+-0,2015
+46,inter-mailand,Inter Milan,IT1,Giuseppe Meazza,75923,€-34.55m,2022
+631,fc-chelsea,Chelsea FC,GB1,Stamford Bridge,40853,€-543.66m,2022
+86,sv-werder-bremen,SV Werder Bremen,L1,Wohninvest-Weserstadion,42100,€-2.15m,2022
+1082,losc-lille,LOSC Lille,FR1,Decathlon Arena-Stade Pierre-Mauroy,50186,+€75.50m,2022
+1387,acn-siena-1904,null,IT1,Artemio Franchi,15373,+-0,2012
+180,fc-southampton,Southampton FC,GB1,St Mary's Stadium,32384,€-138.15m,2022
+641,fc-middlesbrough,null,GB1,Riverside Stadium,33746,+€16.68m,2016
+703,nottingham-forest,Nottingham Forest,GB1,The City Ground,30445,€-185.75m,2022
+1041,olympique-lyon,Olympique Lyon,FR1,Groupama Stadium,59186,+€46.40m,2022
+131,fc-barcelona,FC Barcelona,ES1,Spotify Camp Nou,99354,€-118.50m,2022
+33,fc-schalke-04,FC Schalke 04,L1,Veltins-Arena,62271,+€11.12m,2022
+4083,fc-crotone,null,IT1,Ezio Scida,16640,+€3.90m,2020
+762,newcastle-united,Newcastle United,GB1,St James' Park,52338,€-176.55m,2022
+873,crystal-palace,Crystal Palace,GB1,Selhurst Park,26047,€-41.15m,2022
+989,afc-bournemouth,AFC Bournemouth,GB1,Vitality Stadium,11329,€-83.10m,2022
+1005,us-lecce,US Lecce,IT1,Ettore Giardiniero,31559,€-3.73m,2022
+1025,fc-bologna,Bologna FC 1909,IT1,Stadio Renato Dall’Ara,36462,+€9.28m,2022
+1123,norwich-city,null,GB1,Carrow Road,27244,€-10.33m,2021
+130,parma-calcio-1913,null,IT1,Ennio Tardini,22352,€-4.37m,2020
+142,real-saragossa,null,ES1,La Romareda,33608,+€1.50m,2012
+18,borussia-monchengladbach,Borussia Mönchengladbach,L1,Stadion im Borussia-Park,54042,€-2.00m,2022
+23826,rasenballsport-leipzig,RB Leipzig,L1,Red Bull Arena,47069,+€16.32m,2022
+27,fc-bayern-munchen,Bayern Munich,L1,Allianz Arena,75024,€-41.40m,2022
+273,fc-stade-rennes,Stade Rennais FC,FR1,Roazhon Park,29778,+€14.50m,2022
+289,afc-sunderland,null,GB1,Stadium of Light,48707,€-6.06m,2016
+3524,clermont-foot-63,Clermont Foot 63,FR1,Stade Gabriel-Montpied,13000,+€19.10m,2022
+39,1-fsv-mainz-05,1.FSV Mainz 05,L1,Mewa Arena,33305,+€450k,2022
+416,fc-turin,Torino FC,IT1,Stadio Olimpico Grande Torino,28177,+€22.12m,2022
+458,palermo-fc,null,IT1,"Comunale Renzo Barbera ""La Favorita""",36365,€-7.94m,2016
+80,vfl-bochum,VfL Bochum,L1,Vonovia Ruhrstadion,26000,+€14.27m,2022
+969,montpellier-hsc,Montpellier HSC,FR1,Stade de la Mosson,32939,+€500k,2022
+1050,fc-villarreal,Villarreal CF,ES1,La Cerámica,23500,+€25.12m,2022
+1110,huddersfield-town,null,GB1,John Smith's Stadium,24500,+€11.28m,2018
+1160,nimes-olympique,null,FR1,Stade des Antonins,8033,+€2.50m,2020
+12,as-rom,AS Roma,IT1,Olimpico di Roma,73261,+€58.49m,2022
+14171,thonon-evian-grand-geneve-fc,null,FR1,Stade Camille Fournier,2500,+-0,2014
+1421,stade-reims,Stade Reims,FR1,Stade Auguste-Delaune,21684,+€8.55m,2022
+1429,cesena-fc,null,IT1,Orogel Stadium - Dino Manuzzi,23860,+€335k,2014
+23,eintracht-braunschweig,null,L1,EINTRACHT-Stadion,23325,€-600k,2013
+24,eintracht-frankfurt,Eintracht Frankfurt,L1,Deutsche Bank Park,51500,€-9.40m,2022
+2722,spal,null,IT1,Paolo Mazza,16134,+€2.75m,2019
+398,lazio-rom,SS Lazio,IT1,Olimpico di Roma,73261,+€2.45m,2022
+543,wolverhampton-wanderers,Wolverhampton Wanderers,GB1,Molineux Stadium,32050,€-114.24m,2022
+1148,fc-brentford,Brentford FC,GB1,Brentford Community Stadium,17250,€-47.90m,2022
+1158,fc-lorient,FC Lorient,FR1,Stade du Moustoir,19010,+€9.25m,2022
+1159,as-nancy-lorraine,null,FR1,Stade Marcel-Picot,20087,+-0,2016
+1237,brighton-amp-hove-albion,Brighton & Hove Albion,GB1,AMEX Stadium,31800,+€82.17m,2022
+148,tottenham-hotspur,Tottenham Hotspur,GB1,Tottenham Hotspur Stadium,62062,€-139.15m,2022
+252,genua-cfc,null,IT1,Luigi Ferraris,34901,+€10.72m,2021
+3,1-fc-koln,1.FC Köln,L1,RheinEnergieSTADION,50000,+€5.52m,2022
+31,fc-liverpool,Liverpool FC,GB1,Anfield,54074,€-56.60m,2022
+379,west-ham-united,West Ham United,GB1,London Stadium,62500,€-172.45m,2022
+3911,stade-brest-29,Stade Brestois 29,FR1,Stade Francis-Le Blé,15097,€-3.25m,2022
+405,aston-villa,Aston Villa,GB1,Villa Park,42682,€-46.14m,2022
+417,ogc-nizza,OGC Nice,FR1,Allianz Riviera,36178,€-39.60m,2022
+4171,benevento-calcio,null,IT1,Ciro Vigorito,16867,€-1.93m,2020
+418,real-madrid,Real Madrid,ES1,Santiago Bernabéu,81044,+€12.15m,2022
+6195,ssc-neapel,SSC Napoli,IT1,Stadio Diego Armando Maradona,54726,+€4.40m,2022
+862,chievo-verona,null,IT1,Marcantonio Bentegodi,31045,+-0,2018
+931,fc-fulham,Fulham FC,GB1,Craven Cottage,22384,€-49.30m,2022
+1032,fc-reading,null,GB1,Select Car Leasing Stadium,24161,+-0,2012
+1423,fc-valenciennes,null,FR1,Stade du Hainaut,25000,€-500k,2013
+162,as-monaco,AS Monaco,FR1,Stade Louis-II,18523,+€112.70m,2022
+3008,hull-city,null,GB1,MKM Stadium,25586,+€7.50m,2016
+347,fc-metz,null,FR1,Stade Saint-Symphorien,26700,+€14.20m,2021
+350,sheffield-united,null,GB1,Bramall Lane,32702,€-4.50m,2020
+993,fc-cordoba,null,ES1,Nuevo Arcángel,21822,+-0,2014
+1049,fc-valencia,Valencia CF,ES1,Mestalla,48600,+€42.10m,2022
+1210,as-livorno,null,IT1,Armando Picchi,19238,+-0,2013
+826,rc-lens,RC Lens,FR1,Stade Bollaert-Delelis,38223,+€13.24m,2022
+985,manchester-united,Manchester United,GB1,Old Trafford,74879,€-230.03m,2022
+10,arminia-bielefeld,null,L1,SchücoArena,26515,+€5.90m,2021
+13,atletico-madrid,Atlético de Madrid,ES1,Civitas Metropolitano,68456,€-9.25m,2022
+16,borussia-dortmund,Borussia Dortmund,L1,SIGNAL IDUNA PARK,81365,€-25.10m,2022
+276,hellas-verona,Hellas Verona,IT1,Marcantonio Bentegodi,39211,€-5.68m,2022
+281,manchester-city,Manchester City,GB1,Etihad Stadium,55017,+€11.67m,2022
+2969,dijon-fco,null,FR1,Stade Gaston-Gérard,16098,+€1.50m,2020
+3302,ud-almeria,UD Almería,ES1,Power Horse Stadium,15274,€-14.88m,2022
+368,fc-sevilla,Sevilla FC,ES1,Ramón Sánchez-Pizjuán,43883,+€62.10m,2022
+430,ac-florenz,ACF Fiorentina,IT1,Artemio Franchi,43147,+€11.10m,2022
+506,juventus-turin,Juventus FC,IT1,Allianz Stadium,41507,+€5.03m,2022
+595,sc-bastia,null,FR1,Stade Armand-Cesari,16480,+€480k,2016
+618,as-saint-etienne,null,FR1,Stade Geoffroy-Guichard,42000,+€12.85m,2021
+65,spvgg-greuther-furth,null,L1,Sportpark Ronhof | Thomas Sommer,16626,+€3.97m,2021
+1071,wigan-athletic,null,GB1,DW Stadium,25133,+-0,2012
+1147,ac-ajaccio,AC Ajaccio,FR1,Stade François-Coty,10446,+€300k,2022
+1627,catania-calcio,null,IT1,Cibali - Angelo Massimino,20204,+-0,2013
+237,rcd-mallorca,RCD Mallorca,ES1,Mallorca Son Moix,20500,€-8.32m,2022
+244,olympique-marseille,Olympique Marseille,FR1,Orange Vélodrome,67394,€-77.93m,2022
+3368,ud-levante,null,ES1,Ciutat de València,26354,+€7.80m,2021
+366,real-valladolid,Real Valladolid CF,ES1,Nuevo José Zorrilla,27618,€-5.00m,2022
+533,tsg-1899-hoffenheim,TSG 1899 Hoffenheim,L1,PreZero Arena,30150,+€40.40m,2022
+89,1-fc-union-berlin,1.FC Union Berlin,L1,Stadion An der Alten Försterei,22012,+€6.02m,2022
+8970,frosinone-calcio,null,IT1,Benito Stirpe,16227,€-285k,2018
+995,fc-nantes,FC Nantes,FR1,Stade de la Beaujoire,37463,€-12.45m,2022
+1003,leicester-city,Leicester City,GB1,King Power Stadium,32273,+€33.40m,2022
+1010,fc-watford,null,GB1,Vicarage Road,21577,+€42.02m,2021
+11,fc-arsenal,Arsenal FC,GB1,Emirates Stadium,60704,€-168.56m,2022
+1108,deportivo-alaves,null,ES1,Mendizorroza,19840,+€625k,2021
+1132,fc-burnley,null,GB1,Turf Moor,21994,+€38.26m,2021
+1416,amiens-sc,null,FR1,Stade Crédit Agricole la Licorne,12999,+€700k,2019
+1420,sco-angers,Angers SCO,FR1,Stade Raymond Kopa,19350,+€31.00m,2022
+150,real-betis-sevilla,Real Betis Balompié,ES1,Benito Villamarín,59378,€-10.25m,2022
+167,fc-augsburg,FC Augsburg,L1,WWK ARENA,30660,€-4.65m,2022
+2921,delfino-pescara-1936,null,IT1,Adriatico,20476,+€4.60m,2016
+42,hannover-96,null,L1,Heinz-von-Heiden-Arena,49000,€-300k,2018
+44,hertha-bsc,Hertha BSC,L1,Olympiastadion Berlin,74667,+€16.20m,2022
+5,ac-mailand,AC Milan,IT1,Giuseppe Meazza,75923,€-37.42m,2022
+512,stoke-city,null,GB1,bet365 Stadium,30089,+€17.00m,2017
+621,athletic-bilbao,Athletic Bilbao,ES1,San Mamés,53289,+-0,2022
+681,real-sociedad-san-sebastian,Real Sociedad,ES1,Reale Arena,39313,+€27.50m,2022
+714,espanyol-barcelona,RCD Espanyol Barcelona,ES1,RCDE Stadium,40500,€-5.80m,2022
+800,atalanta-bergamo,Atalanta BC,IT1,Gewiss Stadium,21747,+€6.35m,2022
+984,west-bromwich-albion,null,GB1,The Hawthorns,26850,€-1.35m,2020
+105,sv-darmstadt-98,null,L1,Merck-Stadion am Böllenfalltor,17500,€-3.05m,2016
+2288,swansea-city,null,GB1,Swansea.com Stadium,21088,+€8.35m,2017
+2448,sporting-gijon,null,ES1,El Molinón - Enrique Castro Quini,29029,+€5.23m,2016
+29,fc-everton,Everton FC,GB1,Goodison Park,39571,+€25.40m,2022
+290,aj-auxerre,AJ Auxerre,FR1,Stade de l'Abbé-Deschamps,18541,€-1.25m,2022
+4795,fc-ingolstadt-04,null,L1,Audi Sportpark,15800,+€1.55m,2016
+1095,es-troyes-ac,ESTAC Troyes,FR1,Stade de l'Aube,21877,€-14.80m,2022
+1244,cd-leganes,null,ES1,Butarque,12454,+€1.00m,2019
+331,ca-osasuna,CA Osasuna,ES1,El Sadar,23576,€-2.00m,2022
+3522,spezia-calcio,Spezia Calcio,IT1,Alberto Picco,11676,+€23.32m,2022
+399,leeds-united,Leeds United,GB1,Elland Road,37890,€-31.09m,2022
+40,fc-girondins-bordeaux,null,FR1,Matmut Atlantique,42115,+€12.70m,2021
+410,udinese-calcio,Udinese Calcio,IT1,Dacia Arena,25144,+€9.30m,2022
+583,fc-paris-saint-germain,Paris Saint-Germain,FR1,Parc des Princes,49691,€-88.20m,2022
+1038,sampdoria-genua,UC Sampdoria,IT1,Luigi Ferraris,36348,+€28.60m,2022
+12321,fc-girona,Girona FC,ES1,Montilivi,13286,€-15.00m,2022
+1390,cagliari-calcio,null,IT1,Unipol Domus,16416,+€29.28m,2021
+15,bayer-04-leverkusen,Bayer 04 Leverkusen,L1,BayArena,30210,€-5.60m,2022
+1531,fc-elche,Elche CF,ES1,Manuel Martínez Valero,31388,€-7.66m,2022
+1533,sd-eibar,null,ES1,Ipurua,8164,+€2.60m,2020
+16795,fc-granada,null,ES1,Nuevo Los Cármenes,19336,+€27.46m,2021
+19,brescia-calcio,null,IT1,Mario Rigamonti,19550,+€3.65m,2019
+38,fortuna-dusseldorf,null,L1,MERKUR SPIEL-ARENA,54600,+€600k,2019
+4,1-fc-nurnberg,null,L1,Max-Morlock-Stadion,50000,+€2.63m,2018
+4102,carpi-fc-1909,null,IT1,Sandro Cabassi,5510,+-0,2015
+415,fc-toulouse,FC Toulouse,FR1,Stadium Municipal,33150,€-3.00m,2022
+79,vfb-stuttgart,VfB Stuttgart,L1,Mercedes-Benz Arena,60449,+€37.81m,2022
+367,rayo-vallecano,Rayo Vallecano,ES1,Campo de Fútbol de Vallecas,15105,€-11.10m,2022
+3709,fc-getafe,Getafe CF,ES1,Coliseum Alfonso Pérez,16800,+€4.75m,2022
+380,us-salernitana-1919,US Salernitana 1919,IT1,Arechi,29739,€-23.10m,2022
+41,hamburger-sv,null,L1,Volksparkstadion,57000,€-6.00m,2017
+472,ud-las-palmas,null,ES1,Estadio de Gran Canaria,32400,€-500k,2017
+749,fc-empoli,FC Empoli,IT1,Carlo Castellani,19847,+€16.51m,2022
+750,fc-sochaux-montbeliard,null,FR1,Stade Auguste-Bonal,20005,+€4.00m,2013
+82,vfl-wolfsburg,VfL Wolfsburg,L1,Volkswagen Arena,30000,€-12.05m,2022
+940,celta-vigo,Celta de Vigo,ES1,Abanca Balaídos,29000,€-5.15m,2022

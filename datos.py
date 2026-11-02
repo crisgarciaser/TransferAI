@@ -10,6 +10,8 @@ MARGEN_POTENCIAL = 3     # su potencial debe superar al mejor actual por al meno
 TOLERANCIA_PROMESA = 10  # una promesa puede tener hasta estos puntos menos de rating que el mejor actual
 
 def _numero(texto):
+    if texto in ("", None):
+        return None  # dato no disponible (por ejemplo, jugadores sin valor de Transfermarkt)
     valor = float(texto)
     return int(valor) if valor.is_integer() else valor
 
@@ -26,14 +28,18 @@ def cargar_clubes():
         "clubes.csv",
         ["nivel", "presupuesto_fichajes", "tope_salarial", "rating_club", "ataque",
          "mediocampo", "defensa", "prestigio_domestico", "rank_ataque", "rank_mediocampo",
-         "rank_defensa", "n_clubes_liga", "edad_media", "valor_plantilla"],
+         "rank_defensa", "n_clubes_liga", "edad_media", "valor_plantilla", "anchura_ofensiva",
+         "profundidad_defensiva", "jugadores_en_area", "posicion_22_23", "puntos_por_partido_22_23",
+         "aforo_estadio", "balance_traspasos"],
     )
 
 def cargar_jugadores():
     return _leer_csv(
         "jugadores.csv",
         ["id", "edad", "valor_mercado", "salario_anual", "anios_contrato", "rating",
-         "potencial", "reputacion_internacional", "clausula_rescision"],
+         "potencial", "reputacion_internacional", "clausula_rescision", "valor_ea", "valor_tm",
+         "valor_max_tm", "altura", "at_ritmo", "at_tiro", "at_pase", "at_regate", "at_defensa",
+         "at_fisico", "at_cabezazo", "at_vision", "at_resistencia", "at_porteria"],
     )
 
 def obtener_plantilla(club):

@@ -1,0 +1,97 @@
+coach_id,coach_url,short_name,long_name,dob,nationality_name,coach_face_url,nation_flag_url
+243,/coach/243/didier-digard/,D. Digard,Didier Digard,1986-07-12,France,https://cdn.sportmonks.com/images/soccer/players/19/243.png,https://cdn.sofifa.net/flags/fr.png
+270,/coach/270/gary-oneil/,G. O'Neil,Gary O'Neil,1983-05-18,England,,https://cdn.sofifa.net/flags/gb-eng.png
+307,/coach/307/mikel-arteta-amatriain/,M. Arteta,Mikel Arteta Amatriain,1982-03-26,Spain,https://cdn.sportmonks.com/images/soccer/players/19/307.png,https://cdn.sofifa.net/flags/es.png
+511,/coach/511/xabier-alonso-olano/,X. Alonso Olano,Xabier Alonso Olano,1981-11-25,Spain,https://cdn.sportmonks.com/images/soccer/players/31/511.png,https://cdn.sofifa.net/flags/es.png
+562,/coach/562/rob-edwards/,R. Edwards,Rob Edwards,1982-12-25,Wales,https://cdn.sportmonks.com/images/soccer/placeholder.png,https://cdn.sofifa.net/flags/gb-wls.png
+938,/coach/938/ryan-mason/,R. Mason,Ryan Mason,1991-06-13,England,https://cdn.sportmonks.com/images/soccer/players/10/938.png,https://cdn.sofifa.net/flags/gb-eng.png
+1346,/coach/1346/patrick-mccarthy/,P. McCarthy,Patrick McCarthy,1983-05-31,Republic of Ireland,https://cdn.sportmonks.com/images/soccer/placeholder.png,https://cdn.sofifa.net/flags/ie.png
+2922,/coach/2922/bruno-saltor-grau/,B. Saltor Grau,Bruno Saltor Grau,1980-10-01,Spain,https://cdn.sportmonks.com/images/soccer/players/10/2922.png,https://cdn.sofifa.net/flags/es.png
+9954,/coach/9954/michael-david-jackson/,M. Jackson,Michael David Jackson,1979-12-14,England,https://cdn.sportmonks.com/images/soccer/placeholder.png,https://cdn.sofifa.net/flags/gb-eng.png
+10127,/coach/10127/paul-heckingbottom/,P. Heckingbottom,Paul Heckingbottom,1977-07-17,England,https://cdn.sportmonks.com/images/soccer/placeholder.png,https://cdn.sofifa.net/flags/gb-eng.png
+29535,/coach/29535/bo-svensson/,B. Svensson,Bo Svensson,1979-08-04,Denmark,https://cdn.sportmonks.com/images/soccer/players/31/29535.png,https://cdn.sofifa.net/flags/dk.png
+29676,/coach/29676/steffen-baumgart/,S. Baumgart,Steffen Baumgart,1972-01-05,Germany,https://cdn.sportmonks.com/images/soccer/placeholder.png,https://cdn.sofifa.net/flags/de.png
+29710,/coach/29710/marco-rose/,M. Rose,Marco Rose,1976-09-11,Germany,https://cdn.sportmonks.com/images//soccer/coaches/14/29710.png,https://cdn.sofifa.net/flags/de.png
+32849,/coach/32849/dino-toppmoller/,D. Toppmöller,Dino Toppmöller,1980-11-23,Germany,https://cdn.sportmonks.com/images/soccer/placeholder.png,https://cdn.sofifa.net/flags/de.png
+33525,/coach/33525/jacques-abardonado/,J. Abardonado,Jacques Abardonado,1978-05-25,France,https://cdn.sportmonks.com/images/soccer/placeholder.png,https://cdn.sofifa.net/flags/fr.png
+38217,/coach/38217/sebastian-hoeness/,S. Hoeneß,Sebastian Hoeneß,1982-05-12,Germany,https://cdn.sportmonks.com/images/soccer/placeholder.png,https://cdn.sofifa.net/flags/de.png
+38927,/coach/38927/enrico-maassen/,E. Maaßen,Enrico Maaßen,1984-03-10,Germany,https://cdn.sportmonks.com/images//soccer/coaches/15/38927.png,https://cdn.sofifa.net/flags/de.png
+45305,/coach/45305/pellegrino-matarazzo/,P. Matarazzo,Pellegrino Matarazzo,1977-11-28,United States,https://cdn.sportmonks.com/images//soccer/coaches/25/45305.png,https://cdn.sofifa.net/flags/us.png
+94575,/coach/94575/fabio-grosso/,F. Grosso,Fabio Grosso,1977-11-28,Italy,https://cdn.sportmonks.com/images/soccer/placeholder.png,https://cdn.sofifa.net/flags/it.png
+95212,/coach/95212/bruno-grougi/,B. Grougi,Bruno Grougi,1983-04-26,France,https://cdn.sportmonks.com/images/soccer/players/12/95212.png,https://cdn.sofifa.net/flags/fr.png
+95726,/coach/95726/thiago-motta/,T. Motta,Thiago Motta,1982-08-28,Italy,https://cdn.sportmonks.com/images/soccer/players/14/95726.png,https://cdn.sofifa.net/flags/it.png
+127771,/coach/127771/alberto-gilardino/,A. Gilardino,Alberto Gilardino,1982-07-05,Italy,https://cdn.sportmonks.com/images/soccer/players/27/127771.png,https://cdn.sofifa.net/flags/it.png
+127889,/coach/127889/roberto-de-zerbi/,R. De Zerbi,Roberto De Zerbi,1979-06-06,Italy,,https://cdn.sofifa.net/flags/it.png
+127980,/coach/127980/ivan-juric/,I. Juric,Ivan Juric,1975-08-25,Croatia,https://cdn.sportmonks.com/images//soccer/coaches/12/127980.png,https://cdn.sofifa.net/flags/hr.png
+128160,/coach/128160/simone-inzaghi/,S. Inzaghi,Simone Inzaghi,1976-04-05,Italy,https://cdn.sportmonks.com/images//soccer/coaches/0/128160.png,https://cdn.sofifa.net/flags/it.png
+128261,/coach/128261/vincenzo-italiano/,V. Italiano,Vincenzo Italiano,1977-12-10,Italy,https://cdn.sportmonks.com/images/soccer/placeholder.png,https://cdn.sofifa.net/flags/it.png
+128295,/coach/128295/raffaele-palladino/,R. Palladino,Raffaele Palladino,1984-04-17,Italy,https://cdn.sportmonks.com/images/soccer/players/7/128295.png,https://cdn.sofifa.net/flags/it.png
+128311,/coach/128311/alessandro-agostini/,A. Agostini,Alessandro Agostini,1979-07-23,Italy,https://cdn.sportmonks.com/images/soccer/players/23/128311.png,https://cdn.sofifa.net/flags/it.png
+131252,/coach/131252/roberto-daversa/,R. D'Aversa,Roberto D'Aversa,1975-08-12,Italy,https://cdn.sportmonks.com/images/soccer/placeholder.png,https://cdn.sofifa.net/flags/it.png
+184794,/coach/184794/sergio-gonzalez-soriano/,S. González Soriano,Sergio González Soriano,1976-11-10,Spain,https://cdn.sportmonks.com/images//soccer/coaches/26/184794.png,https://cdn.sofifa.net/flags/es.png
+184942,/coach/184942/xavier-hernandez-creus/,X. Hernández,Xavier Hernández Creus,1980-01-25,Spain,https://cdn.sportmonks.com/images/soccer/players/14/184942.png,https://cdn.sofifa.net/flags/es.png
+185095,/coach/185095/ruben-baraja-vegas/,R. Baraja Vegas,Rubén Baraja Vegas,1975-07-11,Spain,https://cdn.sportmonks.com/images/soccer/placeholder.png,https://cdn.sofifa.net/flags/es.png
+185336,/coach/185336/vicente-moreno-peris/,V. Moreno Peris,Vicente Moreno Peris,1974-10-26,Spain,https://cdn.sportmonks.com/images/soccer/placeholder.png,https://cdn.sofifa.net/flags/es.png
+186018,/coach/186018/miguel-angel-sanchez-munoz/,M. Sánchez,Miguel Ángel Sánchez Muñoz,1975-10-30,Spain,https://cdn.sportmonks.com/images//soccer/coaches/2/186018.png,https://cdn.sofifa.net/flags/es.png
+361268,/coach/361268/pierre-aristouy/,P. Aristouy,Pierre Aristouy,1979-12-30,France,https://cdn.sportmonks.com/images/soccer/placeholder.png,https://cdn.sofifa.net/flags/fr.png
+367568,/coach/367568/alessio-dionisi/,A. Dionisi,Alessio Dionisi,1980-04-01,Italy,https://cdn.sportmonks.com/images/soccer/placeholder.png,https://cdn.sofifa.net/flags/it.png
+417317,/coach/417317/edin-terzic/,E. Terzic,Edin Terzic,1982-10-30,Croatia,https://cdn.sportmonks.com/images//soccer/coaches/5/417317.png,https://cdn.sofifa.net/flags/hr.png
+452946,/coach/452946/diego-pablo-simeone/,D. Simeone,Diego Pablo Simeone,1970-04-28,Argentina,https://cdn.sportmonks.com/images/soccer/players/18/452946.png,https://cdn.sofifa.net/flags/ar.png
+455353,/coach/455353/jurgen-klopp/,J. Klopp,Jürgen Klopp,1967-06-16,Germany,https://cdn.sportmonks.com/images/soccer/players/25/455353.png,https://cdn.sofifa.net/flags/de.png
+455355,/coach/455355/david-moyes/,D. Moyes,David Moyes,1963-04-25,Scotland,https://cdn.sportmonks.com/images/soccer/players/27/455355.png,https://cdn.sofifa.net/flags/gb-sct.png
+455361,/coach/455361/josep-guardiola-i-sala/,J. Guardiola i Sala,Josep Guardiola i Sala,1971-01-18,Spain,https://cdn.sportmonks.com/images/soccer/players/1/455361.png,https://cdn.sofifa.net/flags/es.png
+455375,/coach/455375/jose-mario-felix-dos-santos-mourinho/,José Mourinho,José Mario Felix dos Santos Mourinho,1963-01-26,Portugal,https://cdn.sportmonks.com/images/soccer/players/15/455375.png,https://cdn.sofifa.net/flags/pt.png
+455387,/coach/455387/rafael-benitez-maudes/,R. Benítez Maudes,Rafael Benítez Maudes,1960-04-16,Spain,https://cdn.sportmonks.com/images/soccer/players/27/455387.png,https://cdn.sofifa.net/flags/es.png
+455424,/coach/455424/marco-alexandre-saraiva-da-silva/,M. Saraiva da Silva,Marco Alexandre Saraiva da Silva,1977-07-12,Portugal,https://cdn.sportmonks.com/images/soccer/players/0/455424.png,https://cdn.sofifa.net/flags/pt.png
+455461,/coach/455461/sean-dyche/,S. Dyche,Sean Dyche,1971-06-28,England,https://cdn.sportmonks.com/images/soccer/players/5/455461.png,https://cdn.sofifa.net/flags/gb-eng.png
+455712,/coach/455712/urs-fischer/,U. Fischer,Urs Fischer,1966-02-20,Switzerland,https://cdn.sportmonks.com/images/soccer/players/0/455712.png,https://cdn.sofifa.net/flags/ch.png
+455800,/coach/455800/carlo-ancelotti/,C. Ancelotti,Carlo Ancelotti,1959-06-10,Italy,https://cdn.sportmonks.com/images/soccer/players/24/455800.png,https://cdn.sofifa.net/flags/it.png
+455848,/coach/455848/marco-baroni/,M. Baroni,Marco Baroni,1963-09-11,Italy,https://cdn.sportmonks.com/images/soccer/placeholder.png,https://cdn.sofifa.net/flags/it.png
+455907,/coach/455907/unai-emery-etxegoien/,U. Emery,Unai Emery Etxegoien,1971-11-03,Spain,https://cdn.sportmonks.com/images/soccer/players/3/455907.png,https://cdn.sofifa.net/flags/es.png
+455926,/coach/455926/maurizio-sarri/,M. Sarri,Maurizio Sarri,1959-01-10,Italy,https://cdn.sportmonks.com/images//soccer/coaches/22/455926.png,https://cdn.sofifa.net/flags/it.png
+455945,/coach/455945/paulo-alexandre-rodrigues-fonseca/,P. Rodrigues Fonseca,Paulo Alexandre Rodrigues Fonseca,1973-03-05,Portugal,https://cdn.sportmonks.com/images/soccer/players/9/455945.png,https://cdn.sofifa.net/flags/pt.png
+455957,/coach/455957/massimiliano-allegri/,M. Allegri,Massimiliano Allegri,1967-08-11,Italy,https://cdn.sportmonks.com/images/soccer/players/21/455957.png,https://cdn.sofifa.net/flags/it.png
+455978,/coach/455978/adolf-hutter/,A. Hütter,Adolf Hütter,1970-02-11,Austria,https://cdn.sportmonks.com/images/soccer/players/10/455978.png,https://cdn.sofifa.net/flags/at.png
+456038,/coach/456038/gian-piero-gasperini/,G. Gasperini,Gian Piero Gasperini,1958-01-26,Italy,https://cdn.sportmonks.com/images/soccer/placeholder.png,https://cdn.sofifa.net/flags/it.png
+456113,/coach/456113/erik-ten-hag/,E. ten Hag,Erik ten Hag,1970-02-02,Netherlands,https://cdn.sportmonks.com/images//soccer/players/17/456113.png,https://cdn.sofifa.net/flags/nl.png
+456423,/coach/456423/jagoba-arrasate-elustondo/,J. Arrasate,Jagoba Arrasate Elustondo,1978-04-22,Spain,https://cdn.sportmonks.com/images/soccer/players/7/456423.png,https://cdn.sofifa.net/flags/es.png
+456603,/coach/456603/michel-der-zakarian/,M. Der Zakarian,Michel Der Zakarian,1963-02-18,Armenia,https://cdn.sportmonks.com/images/soccer/players/27/456603.png,https://cdn.sofifa.net/flags/am.png
+458783,/coach/458783/eusebio-di-francesco/,E. Di Francesco,Eusebio Di Francesco,1969-09-08,Italy,https://cdn.sportmonks.com/images/soccer/placeholder.png,https://cdn.sofifa.net/flags/it.png
+458978,/coach/458978/frank-schmidt/,F. Schmidt,Frank Schmidt,1974-01-03,Germany,https://cdn.sportmonks.com/images/soccer/players/2/458978.png,https://cdn.sofifa.net/flags/de.png
+459100,/coach/459100/stefano-pioli/,S. Pioli,Stefano Pioli,1965-10-20,Italy,https://cdn.sportmonks.com/images/soccer/players/28/459100.png,https://cdn.sofifa.net/flags/it.png
+460197,/coach/460197/christian-streich/,C. Streich,Christian Streich,1965-06-11,Germany,https://cdn.sportmonks.com/images/soccer/players/5/460197.png,https://cdn.sofifa.net/flags/de.png
+460255,/coach/460255/torsten-lieberknecht/,T. Lieberknecht,Torsten Lieberknecht,1973-08-01,Germany,https://cdn.sportmonks.com/images/soccer/players/31/460255.png,https://cdn.sofifa.net/flags/de.png
+464975,/coach/464975/francisco-javier-rodriguez-vilchez/,F. Rodríguez Vílchez,Francisco Javier Rodríguez Vílchez,1978-06-17,Spain,https://cdn.sportmonks.com/images//soccer/coaches/15/464975.png,https://cdn.sofifa.net/flags/es.png
+470943,/coach/470943/ernesto-valverde-tejedor/,E. Valverde,Ernesto Valverde Tejedor,1964-02-09,Spain,https://cdn.sportmonks.com/images/soccer/players/31/470943.png,https://cdn.sofifa.net/flags/es.png
+474728,/coach/474728/julen-lopetegui-argote/,J. Lopetegui Argote,Julen Lopetegui Argote,1966-08-28,Spain,https://cdn.sportmonks.com/images/soccer/players/8/474728.png,https://cdn.sofifa.net/flags/es.png
+523898,/coach/523898/manuel-luis-pellegrini-ripamonti/,M. Pellegrini,Manuel Luis Pellegrini Ripamonti,1953-09-16,Chile,https://cdn.sportmonks.com/images/soccer/players/26/523898.png,https://cdn.sofifa.net/flags/cl.png
+523905,/coach/523905/rudi-garcia/,R. Garcia,Rudi Garcia,1964-02-20,France,https://cdn.sportmonks.com/images/soccer/players/1/523905.png,https://cdn.sofifa.net/flags/fr.png
+523911,/coach/523911/eddie-howe/,E. Howe,Eddie Howe,1977-11-29,England,https://cdn.sportmonks.com/images//soccer/coaches/7/523911.png,https://cdn.sofifa.net/flags/gb-eng.png
+523931,/coach/523931/jose-luis-mendilibar-etxebarria/,J. Mendilibar Etxebarria,José Luis Mendilibar Etxebarria,1961-03-14,Spain,https://cdn.sportmonks.com/images/soccer/players/27/523931.png,https://cdn.sofifa.net/flags/es.png
+523937,/coach/523937/thomas-tuchel/,T. Tuchel,Thomas Tuchel,1973-08-29,Germany,https://cdn.sportmonks.com/images/soccer/players/1/523937.png,https://cdn.sofifa.net/flags/de.png
+523953,/coach/523953/bruno-genesio/,B. Génésio,Bruno Génésio,1966-09-01,France,https://cdn.sportmonks.com/images/soccer/placeholder.png,https://cdn.sofifa.net/flags/fr.png
+523959,/coach/523959/luis-enrique-martinez-garcia/,L. Martínez García,Luis Enrique Martínez García,1970-05-08,Spain,https://cdn.sportmonks.com/images/soccer/players/23/523959.png,https://cdn.sofifa.net/flags/es.png
+524009,/coach/524009/jose-bordalas-jimenez/,J. Bordalás Jiménez,José Bordalás Jiménez,1964-03-05,Spain,https://cdn.sportmonks.com/images/soccer/players/9/524009.png,https://cdn.sofifa.net/flags/es.png
+524018,/coach/524018/paulo-manuel-carvalho-de-sousa/,P. Carvalho de Sousa,Paulo Manuel Carvalho de Sousa,1970-08-30,Portugal,https://cdn.sportmonks.com/images/soccer/players/18/524018.png,https://cdn.sofifa.net/flags/pt.png
+524537,/coach/524537/niko-kovac/,N. Kovač,Niko Kovač,1971-10-15,Croatia,https://cdn.sportmonks.com/images/soccer/players/25/524537.png,https://cdn.sofifa.net/flags/hr.png
+526236,/coach/526236/thomas-letsch/,T. Letsch,Thomas Letsch,1968-08-26,Germany,https://cdn.sportmonks.com/images/soccer/placeholder.png,https://cdn.sofifa.net/flags/de.png
+529482,/coach/529482/regis-le-bris/,R. Le Bris,Régis Le Bris,1975-12-06,France,https://cdn.sportmonks.com/images//soccer/coaches/10/529482.png,https://cdn.sofifa.net/flags/fr.png
+530329,/coach/530329/pascal-gastien/,P. Gastien,Pascal Gastien,1963-12-02,France,https://cdn.sportmonks.com/images//soccer/coaches/25/530329.png,https://cdn.sofifa.net/flags/fr.png
+530755,/coach/530755/imanol-alguacil-barrenetxea/,I. Alguacil Barrenetxea,Imanol Alguacil Barrenetxea,1971-07-04,Spain,https://cdn.sportmonks.com/images/soccer/placeholder.png,https://cdn.sofifa.net/flags/es.png
+533904,/coach/533904/francisco-jose-lopez-fernandez/,F. López Fernández,Francisco José López Fernández,1967-09-19,Spain,https://cdn.sportmonks.com/images/soccer/placeholder.png,https://cdn.sofifa.net/flags/es.png
+896608,/coach/896608/franck-haise/,F. Haise,Franck Haise,1971-04-15,France,https://cdn.sportmonks.com/images/soccer/players/0/896608.png,https://cdn.sofifa.net/flags/fr.png
+896798,/coach/896798/javier-aguirre-onaindia/,J. Aguirre Onaindía,Javier Aguirre Onaindía,1958-12-01,Mexico,https://cdn.sportmonks.com/images/soccer/placeholder.png,https://cdn.sofifa.net/flags/mx.png
+1068543,/coach/1068543/juan-jose-rojo-martin/,J. Rojo Martín,Juan José Rojo Martín,1968-03-23,Spain,https://cdn.sportmonks.com/images/soccer/placeholder.png,https://cdn.sofifa.net/flags/es.png
+1553200,/coach/1553200/andrea-sottil/,A. Sottil,Andrea Sottil,1974-01-04,Italy,https://cdn.sportmonks.com/images/soccer/placeholder.png,https://cdn.sofifa.net/flags/it.png
+2158433,/coach/2158433/laszlo-boloni/,L. Bölöni,László Bölöni,1953-03-11,Romania,,https://cdn.sofifa.net/flags/ro.png
+3187813,/coach/3187813/luka-elsner/,L. Elsner,Luka Elsner,1982-08-02,Slovenia,,https://cdn.sofifa.net/flags/si.png
+5961878,/coach/5961878/william-still/,W. Still,William Still,1992-10-14,Belgium,,https://cdn.sofifa.net/flags/be.png
+7330518,/coach/7330518/francisco-javier-garcia-pimienta/,F. García Pimienta,Francisco Javier García Pimienta,1974-08-03,Spain,https://cdn.sportmonks.com/images/soccer/placeholder.png,https://cdn.sofifa.net/flags/es.png
+10269848,/coach/10269848/aurelio-andreazzoli/,A. Andreazzoli,Aurelio Andreazzoli,1953-11-05,Italy,https://cdn.sportmonks.com/images/soccer/placeholder.png,https://cdn.sofifa.net/flags/it.png
+10966287,/coach/10966287/gerardo-seoane/,G. Seoane,Gerardo Seoane,1978-10-30,Switzerland,https://cdn.sportmonks.com/images/soccer/placeholder.png,https://cdn.sofifa.net/flags/ch.png
+16111977,/coach/16111977/luis-garcia-plaza/,L. García Plaza,Luis García Plaza,1972-12-01,Spain,https://cdn.sportmonks.com/images/soccer/players/9/16111977.png,https://cdn.sofifa.net/flags/es.png
+20693423,/coach/20693423/ole-werner/,O. Werner,Ole Werner,,Germany,https://cdn.sportmonks.com/images/soccer/placeholder.png,https://cdn.sofifa.net/flags/de.png
+24427744,/coach/24427744/thomas-frank/,T. Frank,Thomas Frank,1973-10-09,Denmark,https://cdn.sportmonks.com/images/soccer/players/0/24427744.png,https://cdn.sofifa.net/flags/dk.png
+37250724,/coach/37250724/steve-cooper/,S. Cooper,Steve Cooper,1979-12-10,Wales,https://cdn.sportmonks.com/images//soccer/coaches/4/37250724.png,https://cdn.sofifa.net/flags/gb-wls.png
+37558369,/coach/37558369/mathieu-le-scornet/,M. Le Scornet,Mathieu Le Scornet,1983-05-02,France,,https://cdn.sofifa.net/flags/fr.png
+37700640,/coach/37700640/carles-martinez-novell/,C. Martínez Novell,Carles Martínez Novell,1984-01-01,Spain,,https://cdn.sofifa.net/flags/es.png
