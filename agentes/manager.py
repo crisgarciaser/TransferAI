@@ -1,7 +1,9 @@
 """Manager Agent: perfila la plantilla y entrega el diagnóstico con las posiciones prioritarias."""
 import json
 
+from datos import cargar_clubes
 from llm import consultar_json
+from tactica import identidad_tactica, perfil_tactico
 from registro import emitir
 
 SISTEMA_MANAGER = """Eres el Manager Agent de un club de fútbol y asesoras al director deportivo.
@@ -13,6 +15,7 @@ Reglas estrictas:
 - Las posiciones se escriben con los códigos POR, DFC, LAT, MED, EXT, DEL.
 - Máximo 3 posiciones prioritarias, ordenadas de más a menos urgente.
 - Cada motivo debe apoyarse en datos concretos (edad, rating, años de contrato, cantidad de jugadores).
+- Considera la identidad táctica del club: si a una posición le falta el perfil que su estilo necesita (por ejemplo, un organizador en un equipo de posesión), menciónalo en el motivo.
 - Copia los nombres de los jugadores EXACTAMENTE como aparecen en la lista entregada.
 - Considera prescindible solo a un jugador que no aporta y cuya salida no deje la plantilla corta. Si la plantilla tiene menos de 18 jugadores, sé muy conservador y deja la lista vacía si no hay un caso claro.
 
@@ -69,10 +72,13 @@ def diagnosticar(estado):
             "anios_contrato": j["anios_contrato"],
             "salario_anual": j["salario_anual"],
             "titular": j["titular"],
+            "perfil_tactico": perfil_tactico(j),
         }
         for j in estado["plantilla"]
     ]
+    club = next(c for c in cargar_clubes() if c["club"] == estado["club"])
     datos = {
+        "identidad_tactica": identidad_tactica(club),
         "resumen_club": estado["resumen"],
         "perfil_posiciones": estado["perfil_posiciones"],
         "plantilla": plantilla_simple,

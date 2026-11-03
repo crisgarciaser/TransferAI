@@ -2,7 +2,8 @@
 import json
 
 from config import MAX_CANDIDATOS_POR_POSICION
-from datos import cargar_jugadores, evaluar_encaje
+from datos import cargar_clubes, cargar_jugadores, evaluar_encaje
+from tactica import identidad_tactica
 from herramientas import FUNCIONES_SCOUTING, HERRAMIENTAS_SCOUTING
 from llm import ejecutar_con_herramientas, extraer_json
 from registro import emitir
@@ -17,11 +18,12 @@ Proceso:
    Si una indicación no se puede traducir a filtros, no insistas con búsquedas repetidas: propone con lo que encontraste.
 3. Evalúa a los mejores candidatos con evaluar_encaje, usando el id que entrega la búsqueda.
 4. Cada evaluación incluye un tipo_de_fichaje. Propón SOLO candidatos con tipo mejora_inmediata (supera al mejor actual), sucesor_joven (joven que puede relevar a un titular veterano) o promesa (muy joven con potencial superior al mejor actual). Nunca propongas un candidato con tipo no_aporta.
-5. Propón como máximo 3 candidatos por posición e intenta incluir tipos distintos cuando existan. En la justificación de un sucesor_joven cita su edad, su rating y la edad_del_mejor_actual; en la de una promesa cita su edad, su rating y su potencial.
+5. Usa también el encaje táctico: entre candidatos parecidos prefiere los de nivel_encaje alto o los que superan el encaje del mejor actual, y descarta los de encaje bajo salvo que no haya alternativas. Tienes la identidad táctica del club en identidad_tactica.
+6. Propón como máximo 3 candidatos por posición e intenta incluir tipos distintos cuando existan. En la justificación de un sucesor_joven cita su edad, su rating y la edad_del_mejor_actual; en la de una promesa cita su edad, su rating y su potencial.
 
 Reglas estrictas:
 - Usa SOLO datos entregados por las herramientas. No inventes jugadores, ids ni cifras.
-- Cada justificación debe citar datos concretos (rating, edad, años de contrato, mejora sobre el mejor actual).
+- Cada justificación debe citar datos concretos (rating, edad, años de contrato, mejora sobre el mejor actual) y decir en pocas palabras cómo encaja en el estilo del club (su perfil y sus atributos clave).
 - No juzgues el precio ni el salario: la viabilidad económica la evalúa otro agente.
 - Si recibes ids_ya_propuestos, NO propongas a ninguno de esos jugadores: busca otros.
 - Si recibes indicacion_del_director, ajusta los filtros de búsqueda a esa indicación (por ejemplo edad_max o valor_max más bajos), sin superar nunca el presupuesto de fichajes.
@@ -52,7 +54,8 @@ def validar_candidatos(candidatos, club, prioridades, excluidos=()):
         if jugador["club"] == club or jugador["posicion"] not in prioridades:
             emitir("aviso", f"Candidato no válido descartado: {jugador['nombre']}", agente="scouting")
             continue
-        tipo = evaluar_encaje(jugador["id"], club).get("tipo_de_fichaje", "no_aporta")
+        encaje = evaluar_encaje(jugador["id"], club)
+        tipo = encaje.get("tipo_de_fichaje", "no_aporta")
         if tipo == "no_aporta":
             emitir("aviso", f"Candidato descartado por no aportar al club: {jugador['nombre']}", agente="scouting")
             continue
@@ -61,7 +64,9 @@ def validar_candidatos(candidatos, club, prioridades, excluidos=()):
         if por_posicion.get(jugador["posicion"], 0) >= MAX_CANDIDATOS_POR_POSICION:
             continue
         por_posicion[jugador["posicion"]] = por_posicion.get(jugador["posicion"], 0) + 1
-        validos.append({**jugador, "justificacion": c.get("justificacion", ""), "tipo_de_fichaje": tipo})
+        validos.append({**jugador, "justificacion": c.get("justificacion", ""), "tipo_de_fichaje": tipo,
+                        **{k: encaje[k] for k in ("perfil_tactico", "encaje_tactico", "nivel_encaje",
+                                                "atributos_clave_para_el_estilo", "encaje_del_mejor_actual")}})
     return validos
 
 
@@ -76,7 +81,9 @@ def hacer_scouting(estado):
         "presupuesto_fichajes": estado["resumen"]["presupuesto_fichajes"],
         "posiciones_prioritarias": prioridades,
         "perfil_posiciones": {p: estado["perfil_posiciones"].get(p) for p in prioridades},
+        "identidad_tactica": identidad_tactica(next(c for c in cargar_clubes() if c["club"] == club))["descripcion"],
     }
+    
     if excluidos:
         contexto["ids_ya_propuestos"] = excluidos
     if estado.get("feedback_usuario"):

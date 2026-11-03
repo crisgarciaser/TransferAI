@@ -17,6 +17,7 @@ from config import (
     UMBRAL_AJUSTADO_PRESUPUESTO,
 )
 
+from tactica import encaje_tactico
 CARPETA = Path(__file__).parent / "datos_reales"
 
 
@@ -210,6 +211,7 @@ def evaluar_encaje(id_jugador, club):
         "edad_del_mejor_actual": edad_mejor,
         "mejora_sobre_el_mejor_actual": mejora,
         "tipo_de_fichaje": tipo,
+        **encaje_tactico(jugador, clubes[club], obtener_plantilla(club)),
     }
 
 def analizar_viabilidad(jugador, resumen):

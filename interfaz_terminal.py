@@ -11,6 +11,7 @@ from langgraph.types import Command
 
 from datos import cargar_clubes
 from grafo import app
+from tactica import identidad_tactica, perfil_tactico
 from registro import emitir, iniciar_sesion, suscribir
 
 ORDEN_POSICIONES = ["POR", "DFC", "LAT", "MED", "EXT", "DEL"]
@@ -20,6 +21,10 @@ ORDEN_POSICIONES = ["POR", "DFC", "LAT", "MED", "EXT", "DEL"]
 def mostrar_plantilla(resumen, plantilla):
     r = resumen
     print(f"\n=== PLANTILLA DE {r['club'].upper()} ===")
+    club = next((c for c in cargar_clubes() if c["club"] == r["club"]), None)
+    if club:
+        identidad = identidad_tactica(club)
+        print(f"Entrenador: {identidad['entrenador']} | Estilo: {identidad['descripcion']}")
     print(f"Presupuesto de fichajes: {r['presupuesto_fichajes']} | Tope salarial: {r['tope_salarial']} | "
           f"Masa salarial: {r['masa_salarial_actual']} | Margen: {r['margen_salarial']} (millones de euros)")
     for pos in ORDEN_POSICIONES:
@@ -29,7 +34,7 @@ def mostrar_plantilla(resumen, plantilla):
         print(f"\n{pos} ({len(grupo)})")
         for j in grupo:
             titular = "titular" if j["titular"] == "si" else "suplente"
-            print(f"  {j['nombre']:<22} {j['edad']:>2} años  rating {j['rating']:>2}  "
+            print(f"  {j['nombre']:<22} {perfil_tactico(j):<26} {j['edad']:>2} años  rating {j['rating']:>2}  "
                   f"pot {j.get('potencial', '-'):>2}  {titular:<8}  contrato {j['anios_contrato']} a  "
                   f"salario {j['salario_anual']:>6}  valor {j['valor_mercado']:>6}")
 
@@ -176,6 +181,11 @@ def preguntar(pausa):
                   f"{a['salario_estimado_min']}-{a['salario_estimado_max']} | presupuesto restante "
                   f"{a['presupuesto_restante']} | margen salarial restante (peor caso) "
                   f"{a['margen_salarial_restante_peor_caso']}")
+            if c.get("perfil_tactico"):
+                comparacion = (f" (el mejor actual: {c['encaje_del_mejor_actual']})"
+                               if c.get("encaje_del_mejor_actual") is not None else "")
+                print(f"   Táctica: {c['perfil_tactico']} | encaje {c['encaje_tactico']}/100 ({c['nivel_encaje']})"
+                      f"{comparacion} | clave: {', '.join(c['atributos_clave_para_el_estilo'])}")
             print(f"   Scout: {c['justificacion']}")
             if c.get("comentario"):
                 print(f"   Financial: {c['comentario']}")
