@@ -41,7 +41,6 @@ class Estado(TypedDict, total=False):
     feedback_usuario: str
     intentos_scouting: int
     decision_objetivo: str
-    jugador_objetivo: dict
     # --- ventana de fichajes (Hito 3)
     dia: int                  # día actual de la ventana (1 a DIAS_VENTANA)
     calendario: list          # eventos futuros (ver ventana.py)

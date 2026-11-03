@@ -18,7 +18,6 @@ import re
 import sys
 import unicodedata
 from collections import Counter, defaultdict
-from datetime import date
 from pathlib import Path
 
 RAIZ = Path(__file__).parent
