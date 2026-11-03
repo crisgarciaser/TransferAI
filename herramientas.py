@@ -33,6 +33,7 @@ HERRAMIENTAS_SCOUTING = [
                     "rating_max": {"type": "integer", "description": "Rating máximo (calidad actual)"},
                     "potencial_min": {"type": "integer", "description": "Potencial mínimo (calidad que puede alcanzar)"},
                     "ordenar_por": {"type": "string", "enum": ["rating", "potencial"], "description": "Criterio de orden descendente. Usa \"potencial\" para buscar promesas; por defecto \"rating\""},
+                    "pie": {"type": "string", "enum": ["izquierdo", "derecho"], "description": "Pie hábil (opcional): si el director pide un zurdo usa \"izquierdo\""},
                 },
                 "required": ["posicion"],
             },

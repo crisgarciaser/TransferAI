@@ -341,7 +341,8 @@ def interpretar_turno(estado):
     if i == "aceptar_condiciones":
         inter["oferta"] = normalizar_oferta(reg["ultima_peticion"])
     if i in ("otro", "interes"):
-        emitir("aviso", "No entendí una oferta concreta. Escribe cifras, acepta sus condiciones, pide 'consejo' o retírate.")
+        emitir("aviso", "Tu mensaje no indica un monto fijo. Escribe una cifra (por ejemplo, '20 millones en 2 cuotas "
+                        "y que mantengan un 20 % de una futura venta'), acepta sus condiciones o retírate.")
         return {"siguiente": "turno_comprador"}
     error = _validar_oferta(estado, reg, inter)
     if error:
@@ -349,6 +350,13 @@ def interpretar_turno(estado):
         return {"siguiente": "turno_comprador"}
     if i == "clausula":
         inter["oferta"] = normalizar_oferta({"fijo": reg["perfil"]["clausula"], "clausula": True})
+    # Advertencia: la oferta vale más que lo que pide el vendedor (se estaría pagando de más)
+    ref = reg["perfil"]["valor_referencia"]
+    if i == "oferta" and valor_efectivo(inter["oferta"], ref) > valor_efectivo(reg["ultima_peticion"], ref) + 0.01:
+        inter["ambigua"] = True
+        inter["duda"] = (f"tu oferta vale {valor_efectivo(inter['oferta'], ref)} M€ para el vendedor, más que su "
+                         f"exigencia actual ({valor_efectivo(reg['ultima_peticion'], ref)} M€). Aceptar sus "
+                         "condiciones te saldría más barato.")
     emitir("interpretacion", inter["resumen"] or describir_oferta(inter["oferta"]), intencion=i, oferta=inter["oferta"])
     return {"siguiente": "confirmar_interpretacion" if inter["ambigua"] else "responder_vendedor",
             "interpretacion": inter}
@@ -372,10 +380,17 @@ def dar_consejo(estado):
         if consejo:
             emitir("consejo", consejo, agente="manager")
     else:
-        consejo = financiero.aconsejar(
-            reg["ultima_peticion"]["fijo"], estado["resumen"]["presupuesto_fichajes"],
-            {"valor_mercado_estimado": j["valor_mercado"], "ultima_oferta_propia": ultima_oferta})
-        emitir("consejo", consejo, agente="financiero")
+        texto, oferta = financiero.aconsejar(
+            reg["ultima_peticion"], estado["resumen"]["presupuesto_fichajes"], j["valor_mercado"],
+            {"edad_del_jugador": j["edad"], "ultima_oferta_propia": ultima_oferta,
+             "rondas_restantes": MAX_RONDAS_CLUB - reg["ronda"],
+             "historial": [f"{h['de']}: {h['texto']}" for h in reg["historial"][-4:]]})
+        sugerencia = ""
+        if oferta:
+            ref = j["valor_mercado"]
+            sugerencia = (f"{describir_oferta(oferta)} (vale {valor_efectivo(oferta, ref)} M€ hoy para el vendedor; "
+                          f"primer pago {primer_pago(oferta)} M€)")
+        emitir("consejo", texto, agente="financiero", sugerencia=sugerencia)
     return {"siguiente": "turno_comprador"}
 
 

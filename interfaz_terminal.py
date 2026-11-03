@@ -75,6 +75,8 @@ def mostrar_evento(evento):
     elif tipo == "consejo":
         quien = {"manager": "Manager Agent", "financiero": "Financial Agent"}.get(datos.get("agente"), "Asesor")
         print(f"\n{quien}: {mensaje}")
+        if datos.get("sugerencia"):
+            print(f"  -> Oferta sugerida: {datos['sugerencia']}")
     elif tipo == "desempeno":
         mostrar_desempeno(datos)
     elif tipo == "desempeno_jugador":
@@ -153,17 +155,12 @@ def preguntar(pausa):
     """Muestra la pausa del grafo y devuelve lo que escribe el usuario."""
     tipo = pausa["tipo"]
 
-    if tipo == "menu_plantilla":
-        print(f"\n=== {pausa['club']} cargado ({pausa['n_jugadores']} jugadores) ===")
-        print("1. Ver la plantilla y luego continuar con las recomendaciones")
-        print("2. Ir directo a las recomendaciones")
-        return input("¿Qué quieres hacer? (1 o 2): ")
-
     if tipo == "confirmar_prioridades":
         print("\n=== PROPUESTA DEL MANAGER AGENT ===")
         for p in pausa["propuestas"]:
             print(f"- {p['posicion']} (urgencia {p['urgencia']}): {p['motivo']}")
-        print(f"\nPosiciones válidas: {', '.join(pausa['posiciones_validas'])}")
+        print("\nPosiciones: POR (portero), DFC (central), LAT (lateral), MED (mediocampista), EXT (extremo), "
+              "DEL (delantero). También: 'defensas' = DFC + LAT.")
         return input("¿Qué posiciones quieres priorizar? (separa con comas, ej: DFC,MED): ")
 
     if tipo == "elegir_objetivo":
@@ -189,20 +186,21 @@ def preguntar(pausa):
         print(f"\n=== CENTRO DE MANDO | {pausa['club']} | día {pausa['dia']} (quedan {pausa['dias_restantes']}) ===")
         print(f"Presupuesto {pausa['presupuesto_fichajes']} M€ | margen salarial {pausa['margen_salarial']} M€ | "
               f"mensajes nuevos: {pausa['mensajes_nuevos']} | objetivos: {len(pausa['objetivos'])}")
-        print("1. Buscar refuerzos (scouting)")
-        print(f"2. Revisar bandeja ({pausa['mensajes_nuevos']} nuevos)")
-        print("3. Avanzar días  (escribe '3' para un día o '3 5' para cinco)")
-        print("4. Ver estado del club")
-        print("5. Cerrar el mercado")
         abiertas = pausa.get("negociaciones_abiertas", 0)
-        print(f"6. Fichajes: ofertar o negociar por tus objetivos"
+        print("1. Ver la plantilla")
+        print("2. Ver estado del club")
+        print(f"3. Revisar bandeja ({pausa['mensajes_nuevos']} nuevos)")
+        print("4. Buscar refuerzos (scouting)")
+        print("5. Fichajes: ofertar o negociar por tus objetivos"
               + (f" ({abiertas} negociación(es) lista(s) para empezar)" if abiertas else ""))
+        print("6. Avanzar días  (escribe '6' para un día o '6 5' para cinco)")
+        print("7. Cerrar el mercado")
         return input("¿Qué quieres hacer?: ")
 
     if tipo == "menu_fichajes":
         print(f"\n=== FICHAJES (día {pausa['dia']}) ===")
         if not pausa["objetivos"]:
-            print("No tienes objetivos. Busca refuerzos (opción 1) y agrega jugadores a tu lista.")
+            print("No tienes objetivos. Busca refuerzos (opción 4) y agrega jugadores a tu lista.")
         for i, o in enumerate(pausa["objetivos"], start=1):
             print(f"{i}. {o['nombre']} ({o['posicion']}, {o['club']}) - {o['estado']}")
         return input("Elige el número del objetivo, o 'volver': ")
@@ -218,9 +216,9 @@ def preguntar(pausa):
         return input("Tu mensaje (o 'volver'): ")
 
     if tipo == "confirmar_interpretacion":
-        print(f"\nEl mensaje admite más de una lectura: {pausa['duda']}")
-        print(f"Entendí: {pausa['oferta']}")
-        return input("¿Es correcto? (s/n): ")
+        print(f"\nAntes de enviar: {pausa['duda']}")
+        print(f"Oferta entendida: {pausa['oferta']}")
+        return input("¿La envío así? (s/n): ")
 
     if tipo == "negociacion_club":
         print(f"\n[Ronda {pausa['ronda']} de {pausa['max_rondas']}] Exigencia de {pausa['club_vendedor']}: "

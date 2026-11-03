@@ -29,7 +29,9 @@ Clasifica la intención en una de estas:
 Reglas para las cifras (montos en millones de euros):
 - Un monto sin más detalle es pago FIJO ("100 millones" -> fijo 100, variables 0).
 - "variables", "bonus", "por objetivos" o "incentivos" van en variables.
-- "X% de una futura venta" o "porcentaje de reventa" va en pct_reventa (0 a {MAX_PCT_REVENTA}).
+- "X% de una futura venta", "porcentaje de reventa" o que el vendedor "mantenga/conserve/se quede con un X%
+  del pase, de la ficha, de la propiedad o de los derechos del jugador" van en pct_reventa (0 a {MAX_PCT_REVENTA}).
+- Si el resumen menciona una condición, esa condición DEBE aparecer en los campos numéricos.
 - Recompra: "opción de recompra reteniendo X%" -> recompra_pct (0 a {MAX_PCT_RECOMPRA}) y recompra_temporadas.
 - "en N cuotas/pagos/años" -> cuotas N (1 a {MAX_CUOTAS}); si no se dice, cuotas 1.
 - No inventes cifras que el mensaje no dice; los campos no mencionados van en 0.

@@ -12,10 +12,12 @@ TEMPERATURA = 0.2              # baja: respuestas estables en tareas de análisi
 MAX_PASOS_HERRAMIENTAS = 12    # máximo de ciclos pensar-actuar-observar del Scouting Agent
 # Agentes que usan el modo de razonamiento del modelo (escribe un borrador interno antes de responder).
 # Es lento y consume más tokens; solo se deja donde ayuda a decidir. El resto responde directo.
-# Etiquetas posibles: "scouting", "manager" (diagnóstico), "manager_consejo", "financiero",
+# Etiquetas posibles: "scouting", "manager" (diagnóstico), "manager_consejo", "financiero" (comentarios del
+# scouting), "financiero_consejo" (diseña una oferta en la negociación),
 # "club_vendedor" (decisión de cada ronda), "club_vendedor_redaccion" (solo redacta), "interprete",
 # "agente_jugador" (decisión de cada ronda) y "agente_jugador_redaccion".
-AGENTES_CON_RAZONAMIENTO = {"scouting", "manager", "manager_consejo", "club_vendedor", "agente_jugador"}
+AGENTES_CON_RAZONAMIENTO = {"scouting", "manager", "manager_consejo", "financiero_consejo", "club_vendedor",
+                            "agente_jugador"}
 
 # ======================================================================
 # VENTANA DE FICHAJES

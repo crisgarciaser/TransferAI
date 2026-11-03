@@ -46,62 +46,99 @@ def analizar_finanzas(estado):
         except Exception:
             emitir("aviso", "No se pudieron generar los comentarios del Financial Agent.", agente="financiero")
 
-    return {"lista_final": viables}
+    vistos = {c["id"]: c for c in estado.get("candidatos_busqueda", [])}
+    vistos.update({c["id"]: c for c in viables})
+    return {"lista_final": viables, "candidatos_busqueda": list(vistos.values())}
 
 
 # ------------------------------------------------------------- CONSEJO EN NEGOCIACIÓN
-SISTEMA_CONSEJO_FINANCIERO = """Eres el Financial Agent de un club de fútbol. El director deportivo está negociando un
-fichaje y te pide tu opinión ECONÓMICA. Recibirás en JSON cifras ya calculadas por el sistema: presupuesto,
-primer pago de la exigencia actual del vendedor al contado y en cuotas, y si cabe en el presupuesto.
+# El Financial Agent piensa y propone una oferta concreta; el código la valida (rangos, presupuesto,
+# margen salarial) y calcula cuánto vale. No conoce el mínimo del vendedor ni el del jugador.
+from config import FACTOR_VALOR_RECOMPRA, FACTOR_VALOR_REVENTA, PESO_VARIABLES, TASA_DESCUENTO
 
-En 2 o 3 frases y sin listas: di si la exigencia actual es pagable y qué estructura conviene (al contado,
-en cuotas, mover parte a variables o a % de reventa), citando al menos una cifra.
-Usa SOLO las cifras entregadas; no recalcules ni inventes montos. No conoces el mínimo del vendedor.
+SISTEMA_CONSEJO_FINANCIERO = f"""Eres el Financial Agent de un club de fútbol. El director deportivo está negociando un
+traspaso y te pide que DISEÑES la próxima oferta. Recibirás en JSON: presupuesto disponible, valor de mercado
+estimado del jugador, la exigencia actual del vendedor (con su valor de hoy), la última oferta propia, las rondas
+que quedan y el historial.
 
-Responde SOLO con un objeto JSON: {"consejo": "..."}"""
+Cómo valora el vendedor una oferta (ya lo calcula el sistema; úsalo para pensar):
+- El pago en cuotas se descuenta al {int(TASA_DESCUENTO * 100)} % anual: pagar en más cuotas alivia el presupuesto
+  de hoy, pero el vendedor lo valora menos.
+- Cada euro en variables vale {PESO_VARIABLES} para el vendedor (puede no cumplirse).
+- El % de una futura venta y la opción de recompra suman valor sin gastar presupuesto hoy (factores
+  {FACTOR_VALOR_REVENTA} y {FACTOR_VALOR_RECOMPRA} sobre el valor de mercado).
+
+Tu objetivo: una oferta que tenga opciones reales de ser aceptada sin pagar de más. Nunca propongas algo que valga
+más que la exigencia actual (sería mejor aceptarla) y respeta el presupuesto (cuenta solo la primera cuota).
+
+Responde SOLO con un objeto JSON con esta forma exacta:
+{{"oferta": {{"fijo": 0, "variables": 0, "pct_reventa": 0, "recompra_pct": 0, "recompra_temporadas": 0, "cuotas": 1}},
+ "consejo": "2 o 3 frases, sin listas: qué ofrecer y por qué esa estructura"}}"""
 
 
-def cifras_consejo(exigencia_fijo, presupuesto):
-    """El código calcula el primer pago de la exigencia actual al contado y en cuotas."""
-    pagos = {f"{n}_cuota(s)": round(exigencia_fijo / n, 2) for n in range(1, MAX_CUOTAS + 1)}
-    cabe = [n for n in range(1, MAX_CUOTAS + 1) if exigencia_fijo / n <= presupuesto]
-    return {"presupuesto_disponible": presupuesto, "exigencia_fija_del_vendedor": exigencia_fijo,
-            "primer_pago_segun_cuotas": pagos,
-            "cuotas_minimas_para_que_quepa": cabe[0] if cabe else None}
-
-
-def aconsejar(exigencia_fijo, presupuesto, contexto_extra=None):
-    """Consejo económico del Financial Agent: cifras del código + comentario del modelo."""
-    cifras = cifras_consejo(exigencia_fijo, presupuesto)
+def aconsejar(exigencia, presupuesto, valor_referencia, contexto_extra=None):
+    """El agente diseña una oferta; el código la valida. Devuelve (texto_consejo, oferta_validada o None)."""
+    from negociacion.reglas import describir_oferta, normalizar_oferta, primer_pago, valor_efectivo
+    datos = {"presupuesto_disponible": presupuesto, "valor_mercado_estimado": valor_referencia,
+             "exigencia_del_vendedor": describir_oferta(exigencia),
+             "valor_hoy_de_la_exigencia": valor_efectivo(exigencia, valor_referencia), **(contexto_extra or {})}
     try:
-        r = consultar_json(SISTEMA_CONSEJO_FINANCIERO,
-                           json.dumps({**cifras, **(contexto_extra or {})}, ensure_ascii=False), agente="financiero")
-        return r["consejo"]
+        r = consultar_json(SISTEMA_CONSEJO_FINANCIERO, json.dumps(datos, ensure_ascii=False), agente="financiero_consejo")
     except Exception:
-        n = cifras["cuotas_minimas_para_que_quepa"]
-        return (f"La exigencia de {exigencia_fijo} M€ cabe en el presupuesto si se paga en {n} cuota(s)." if n
-                else f"La exigencia de {exigencia_fijo} M€ no cabe en el presupuesto de {presupuesto} M€ ni en "
-                     f"{MAX_CUOTAS} cuotas.")
+        return "El Financial Agent no pudo preparar una recomendación.", None
+    oferta = normalizar_oferta(r.get("oferta"))
+    texto = str(r.get("consejo") or "")
+    if oferta["fijo"] <= 0:
+        return texto or "El Financial Agent no propuso una oferta concreta.", None
+    # Validaciones del código sobre la propuesta del agente
+    notas = []
+    while primer_pago(oferta) > presupuesto and oferta["cuotas"] < MAX_CUOTAS:
+        oferta["cuotas"] += 1
+        notas.append(f"se repartió en {oferta['cuotas']} cuotas para caber en el presupuesto")
+    if primer_pago(oferta) > presupuesto:
+        notas.append("aun así el primer pago supera el presupuesto")
+    if valor_efectivo(oferta, valor_referencia) > valor_efectivo(exigencia, valor_referencia):
+        notas.append("vale más que la exigencia actual: conviene más aceptarla")
+    if notas:
+        emitir("correccion_arbitro", "Revisión de la sugerencia del Financial: " + "; ".join(notas), agente="financiero")
+    return texto, oferta
 
 
 SISTEMA_CONSEJO_SALARIO = """Eres el Financial Agent de un club de fútbol. El director deportivo negocia el contrato de un
-jugador y te pide tu opinión ECONÓMICA. Recibirás en JSON cifras ya calculadas por el sistema: margen salarial
-disponible, la exigencia actual del jugador y su costo anual, el presupuesto que queda para la prima y el
-intervalo estimado del salario actual del jugador.
+jugador y te pide que DISEÑES la próxima oferta. Recibirás en JSON: margen salarial, presupuesto disponible para
+una prima, el salario actual estimado del jugador (un intervalo), su exigencia actual (con su valor anual), la
+probabilidad de cumplir cada tipo de bono según su posición, la última oferta propia y las rondas que quedan.
 
-En 2 o 3 frases y sin listas: di si la exigencia cabe en la masa salarial y qué conviene ofrecer (más años
-con menos salario, bonos por objetivos o una prima en vez de salario fijo), citando al menos una cifra.
-Usa SOLO las cifras entregadas. No conoces la exigencia mínima del jugador.
+Cómo funciona (ya lo calcula el sistema; úsalo para pensar):
+- La masa salarial cuenta el salario fijo más el valor esperado de los bonos; la prima sale del presupuesto,
+  no de la masa salarial.
+- Para el jugador, la prima vale como salario repartido en los años del contrato, y un año opcional vale medio año.
+- Un bono vale para el jugador su monto por la probabilidad de cumplirlo.
 
-Responde SOLO con un objeto JSON: {"consejo": "..."}"""
+Tu objetivo: un contrato con opciones reales de ser aceptado que cuide la masa salarial. Nunca propongas algo que
+valga más que la exigencia actual y respeta el margen salarial y el presupuesto.
+
+Responde SOLO con un objeto JSON con esta forma exacta:
+{"contrato": {"salario": 0, "bonos": {}, "anios": 0, "anio_opcional": false, "prima": 0},
+ "consejo": "2 o 3 frases, sin listas: qué ofrecer y por qué esa estructura"}"""
 
 
-def aconsejar_salario(cifras):
-    """Consejo económico durante la negociación con el jugador (cifras calculadas por el código)."""
+def aconsejar_salario(datos, posicion, margen, presupuesto_prima):
+    """El agente diseña un contrato; el código lo valida. Devuelve (texto_consejo, contrato_validado o None)."""
+    from negociacion.reglas_jugador import costo_anual_club, normalizar_oferta_jugador
     try:
-        return consultar_json(SISTEMA_CONSEJO_SALARIO, json.dumps(cifras, ensure_ascii=False),
-                              agente="financiero")["consejo"]
+        r = consultar_json(SISTEMA_CONSEJO_SALARIO, json.dumps(datos, ensure_ascii=False), agente="financiero_consejo")
     except Exception:
-        cabe = cifras["costo_anual_exigencia"] <= cifras["margen_salarial"]
-        return (f"La exigencia cuesta {cifras['costo_anual_exigencia']} M€ por temporada y el margen salarial es "
-                f"{cifras['margen_salarial']} M€: " + ("cabe." if cabe else "no cabe; conviene usar bonos o una prima."))
+        return "El Financial Agent no pudo preparar una recomendación.", None
+    contrato = normalizar_oferta_jugador(r.get("contrato"))
+    texto = str(r.get("consejo") or "")
+    if contrato["salario"] <= 0 or contrato["anios"] <= 0:
+        return texto or "El Financial Agent no propuso un contrato concreto.", None
+    notas = []
+    if costo_anual_club(contrato, posicion) > margen:
+        notas.append("su costo anual supera el margen salarial")
+    if contrato["prima"] > presupuesto_prima:
+        notas.append("la prima supera el presupuesto disponible")
+    if notas:
+        emitir("correccion_arbitro", "Revisión de la sugerencia del Financial: " + "; ".join(notas), agente="financiero")
+    return texto, contrato

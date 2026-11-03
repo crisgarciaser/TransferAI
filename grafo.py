@@ -1,7 +1,8 @@
 """Grafo de TransferAI: estado compartido, pausas humanas y conexiones entre nodos.
 
-Flujo: club -> (ver plantilla) -> diagnóstico del Manager -> CENTRO DE MANDO, desde donde el usuario
-busca refuerzos, revisa la bandeja, avanza días, ve el estado del club o cierra el mercado.
+Flujo: club -> CENTRO DE MANDO, desde donde el usuario busca refuerzos, revisa la bandeja, avanza días,
+ve el estado del club o la plantilla, negocia fichajes o cierra el mercado. El Manager diagnostica la
+plantilla al buscar refuerzos por primera vez y otra vez cada vez que la plantilla cambia.
 La ventana dura DIAS_VENTANA días (config.py) y se cierra sola al terminar.
 
 Los agentes están en agentes/. Este archivo no imprime ni lee del teclado: los nodos emiten
@@ -41,7 +42,6 @@ class Estado(TypedDict, total=False):
     intentos_scouting: int
     decision_objetivo: str
     jugador_objetivo: dict
-    vio_plantilla: bool
     # --- ventana de fichajes (Hito 3)
     dia: int                  # día actual de la ventana (1 a DIAS_VENTANA)
     calendario: list          # eventos futuros (ver ventana.py)
@@ -60,6 +60,8 @@ class Estado(TypedDict, total=False):
     resultado_negociacion: str
     tipo_consejo: str         # "manager" o "financiero"
     compromisos: list         # cuotas de traspasos que se pagan en temporadas futuras
+    diagnostico_vigente: bool # False cuando la plantilla cambió y el Manager debe volver a analizarla
+    candidatos_busqueda: list # todos los candidatos mostrados en las rondas de la búsqueda actual
     siguiente: str            # nodo siguiente que decidió el último nodo de negociación
 
 
@@ -72,26 +74,40 @@ def cargar_club(estado: Estado) -> dict:
         "resumen": obtener_resumen_club(club),
         "plantilla": obtener_plantilla(club),
         "dia": 1, "calendario": [], "bandeja": [], "objetivos": [], "fichajes": [], "ventas": [],
-        "negociaciones": {}, "compromisos": [],
+        "negociaciones": {}, "compromisos": [], "diagnostico_vigente": False,
     }
 
 
 # ---------------------------------------------------------------- PAUSAS HUMANAS
-def menu_plantilla(estado: Estado) -> dict:
-    """Pausa 1: el usuario decide si quiere ver la plantilla antes del diagnóstico."""
-    respuesta = interrupt({
-        "tipo": "menu_plantilla",
-        "club": estado["club"],
-        "n_jugadores": len(estado["plantilla"]),
-    })
-    opcion = str(respuesta).strip().lower()
-    if opcion in ("1", "ver", "plantilla"):
-        emitir("plantilla", f"Plantilla de {estado['club']}",
-               resumen=estado["resumen"], plantilla=estado["plantilla"])
-        return {"vio_plantilla": True}
-    if opcion not in ("2", "ir", "recomendaciones"):
-        emitir("aviso", "Opción no reconocida; se continúa directamente con las recomendaciones.")
-    return {"vio_plantilla": False}
+def ver_plantilla(estado: Estado) -> dict:
+    """Muestra la plantilla actual (incluye los fichajes de la ventana)."""
+    emitir("plantilla", f"Plantilla de {estado['club']}",
+           resumen=obtener_resumen_club(estado["club"]), plantilla=obtener_plantilla(estado["club"]))
+    return {}
+
+
+ALIAS_POSICIONES = {
+    "POR": ["POR"], "PORTERO": ["POR"], "PORTEROS": ["POR"], "ARQUERO": ["POR"], "ARQUEROS": ["POR"], "GK": ["POR"],
+    "DFC": ["DFC"], "CENTRAL": ["DFC"], "CENTRALES": ["DFC"],
+    "LAT": ["LAT"], "LATERAL": ["LAT"], "LATERALES": ["LAT"],
+    "DEF": ["DFC", "LAT"], "DEFENSA": ["DFC", "LAT"], "DEFENSAS": ["DFC", "LAT"],
+    "MED": ["MED"], "MEDIO": ["MED"], "MEDIOS": ["MED"], "MEDIOCAMPISTA": ["MED"], "MEDIOCAMPISTAS": ["MED"],
+    "VOLANTE": ["MED"], "VOLANTES": ["MED"],
+    "EXT": ["EXT"], "EXTREMO": ["EXT"], "EXTREMOS": ["EXT"],
+    "DEL": ["DEL"], "DELANTERO": ["DEL"], "DELANTEROS": ["DEL"], "PUNTA": ["DEL"],
+}
+
+
+def leer_posiciones(texto):
+    """'DEF, med' -> ['DFC', 'LAT', 'MED']. Acepta códigos y nombres en español."""
+    import unicodedata
+    limpio = unicodedata.normalize("NFKD", str(texto)).encode("ascii", "ignore").decode().upper()
+    elegidas = []
+    for palabra in limpio.replace(";", ",").replace("/", ",").replace(" Y ", ",").replace(" ", ",").split(","):
+        for codigo in ALIAS_POSICIONES.get(palabra.strip(), []):
+            if codigo not in elegidas:
+                elegidas.append(codigo)
+    return elegidas
 
 
 def confirmar_prioridades(estado: Estado) -> dict:
@@ -100,14 +116,11 @@ def confirmar_prioridades(estado: Estado) -> dict:
     respuesta = interrupt({"tipo": "confirmar_prioridades", "propuestas": propuestas,
                            "posiciones_validas": POSICIONES_VALIDAS})
 
-    elegidas = []
-    for texto in str(respuesta).replace(";", ",").split(","):
-        codigo = texto.strip().upper()
-        if codigo in POSICIONES_VALIDAS and codigo not in elegidas:
-            elegidas.append(codigo)
+    elegidas = leer_posiciones(respuesta)
 
     if not elegidas:
-        emitir("aviso", f"No se reconoció ninguna posición en '{respuesta}'. Escribe códigos como MED o DFC,MED.")
+        emitir("aviso", f"No se reconoció ninguna posición en '{respuesta}'. Escribe códigos o nombres, "
+                        "por ejemplo 'MED', 'DFC, LAT' o 'defensas'.")
         return {"prioridades_confirmadas": []}   # vacío: el grafo vuelve a preguntar
 
     emitir("info", f"Prioridades confirmadas: {', '.join(elegidas)}", prioridades=elegidas)
@@ -153,10 +166,13 @@ def elegir_objetivo(estado: Estado) -> dict:
             "descartados_ids": estado.get("descartados_ids", []) + ya_vistos,
         }
 
-    elegido = next((c for c in candidatos if c["id"] == id_elegido), None)
+    # Se puede elegir un candidato de cualquier ronda de esta búsqueda
+    vistos = {c["id"]: c for c in estado.get("candidatos_busqueda", [])}
+    vistos.update({c["id"]: c for c in candidatos})
+    elegido = vistos.get(id_elegido)
 
     if elegido is None:
-        emitir("aviso", f"El id {id_elegido} no está en la lista de candidatos de esta ronda.")
+        emitir("aviso", f"El id {id_elegido} no aparece entre los candidatos de esta búsqueda.")
         return {"decision_objetivo": "invalido"}
 
     objetivos = estado.get("objetivos", [])
@@ -199,20 +215,30 @@ def centro_de_mando(estado: Estado) -> dict:
     respuesta = interrupt({"tipo": "centro_de_mando", **panel(estado)})
     comando, dias = leer_comando(respuesta)
     if comando == "invalido":
-        emitir("aviso", "Opción no reconocida. Escribe un número del 1 al 6 (por ejemplo '3 5' para avanzar 5 días).")
+        emitir("aviso", "Opción no reconocida. Escribe un número del 1 al 7 (por ejemplo '6 5' para avanzar 5 días).")
     return {"comando": comando, "dias_a_avanzar": dias or 1}
 
 
 def ruta_centro(estado: Estado) -> str:
     return {"buscar": "iniciar_busqueda", "bandeja": "ver_bandeja", "avanzar": "avanzar_dias",
             "estado": "ver_estado", "cerrar": "confirmar_cierre",
-            "fichajes": "menu_fichajes"}.get(estado.get("comando"), "centro_de_mando")
+            "fichajes": "menu_fichajes", "plantilla": "ver_plantilla"}.get(estado.get("comando"), "centro_de_mando")
 
 
 def iniciar_busqueda(estado: Estado) -> dict:
     """Reinicia las variables del scouting para una búsqueda nueva."""
     return {"intentos_scouting": 0, "descartados_ids": [], "feedback_usuario": "",
-            "lista_corta": [], "lista_final": [], "decision_objetivo": ""}
+            "lista_corta": [], "lista_final": [], "decision_objetivo": "", "candidatos_busqueda": [],
+            "plantilla": obtener_plantilla(estado["club"]), "resumen": obtener_resumen_club(estado["club"])}
+
+
+def ruta_busqueda(estado: Estado) -> str:
+    """El Manager solo vuelve a diagnosticar si la plantilla cambió desde su último análisis."""
+    return "confirmar_prioridades" if estado.get("diagnostico_vigente") else "perfilar_plantilla"
+
+
+def marcar_diagnostico(estado: Estado) -> dict:
+    return {"diagnostico_vigente": True}
 
 
 def ver_bandeja(estado: Estado) -> dict:
@@ -270,7 +296,8 @@ def construir_grafo():
     g = StateGraph(Estado)
     # Inicio: club, plantilla y diagnóstico (una sola vez)
     g.add_node("cargar_club", cargar_club)
-    g.add_node("menu_plantilla", menu_plantilla)
+    g.add_node("ver_plantilla", ver_plantilla)
+    g.add_node("marcar_diagnostico", marcar_diagnostico)
     g.add_node("perfilar_plantilla", perfilar_plantilla)
     g.add_node("diagnosticar", diagnosticar)
     # Centro de mando y ventana
@@ -288,16 +315,14 @@ def construir_grafo():
     g.add_node("elegir_objetivo", elegir_objetivo)
 
     g.add_edge(START, "cargar_club")
-    g.add_edge("cargar_club", "menu_plantilla")
-    g.add_edge("menu_plantilla", "perfilar_plantilla")
-    g.add_edge("perfilar_plantilla", "diagnosticar")
-    g.add_edge("diagnosticar", "centro_de_mando")
+    g.add_edge("cargar_club", "centro_de_mando")
+    g.add_edge("ver_plantilla", "centro_de_mando")
 
     g.add_conditional_edges("centro_de_mando", ruta_centro, {
         "iniciar_busqueda": "iniciar_busqueda", "ver_bandeja": "ver_bandeja",
         "avanzar_dias": "avanzar_dias", "ver_estado": "ver_estado",
         "confirmar_cierre": "confirmar_cierre", "centro_de_mando": "centro_de_mando",
-        "menu_fichajes": "menu_fichajes"})
+        "menu_fichajes": "menu_fichajes", "ver_plantilla": "ver_plantilla"})
     g.add_edge("ver_bandeja", "centro_de_mando")
     g.add_edge("ver_estado", "centro_de_mando")
     g.add_conditional_edges("avanzar_dias", ruta_tras_avanzar,
@@ -306,7 +331,11 @@ def construir_grafo():
                             {"resumen_ventana": "resumen_ventana", "centro_de_mando": "centro_de_mando"})
     g.add_edge("resumen_ventana", END)
 
-    g.add_edge("iniciar_busqueda", "confirmar_prioridades")
+    g.add_conditional_edges("iniciar_busqueda", ruta_busqueda,
+                            {"confirmar_prioridades": "confirmar_prioridades", "perfilar_plantilla": "perfilar_plantilla"})
+    g.add_edge("perfilar_plantilla", "diagnosticar")
+    g.add_edge("diagnosticar", "marcar_diagnostico")
+    g.add_edge("marcar_diagnostico", "confirmar_prioridades")
     g.add_conditional_edges("confirmar_prioridades", ruta_prioridades,
                             {"hacer_scouting": "hacer_scouting", "confirmar_prioridades": "confirmar_prioridades"})
     g.add_edge("hacer_scouting", "analizar_finanzas")

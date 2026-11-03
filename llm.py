@@ -43,9 +43,19 @@ def _registrar_llamada(agente, respuesta):
 
 
 def extraer_json(texto):
-    """Recorta el texto desde la primera '{' hasta la última '}' y lo convierte en diccionario."""
+    """Recorta el texto desde la primera '{' hasta la última '}' y lo convierte en diccionario.
+    Si el modelo olvidó cerrar el JSON (pasa sin razonamiento), intenta completarlo."""
     inicio, fin = texto.find("{"), texto.rfind("}")
-    return json.loads(texto[inicio : fin + 1])
+    try:
+        return json.loads(texto[inicio : fin + 1])
+    except json.JSONDecodeError:
+        recorte = texto[inicio:].rstrip()
+        for cierre in ("}", '"}', '"}}', "}}"):
+            try:
+                return json.loads(recorte + cierre)
+            except json.JSONDecodeError:
+                continue
+        raise
 
 
 def consultar_json(sistema, usuario, agente="modelo"):
@@ -95,4 +105,10 @@ def ejecutar_con_herramientas(sistema, usuario, herramientas, funciones, agente=
                     "content": json.dumps(resultado, ensure_ascii=False),
                 }
             )
-    return None
+    # Se agotaron los pasos: se pide una respuesta final con lo que ya encontró, sin más herramientas
+    emitir("aviso", "El agente agotó sus pasos de búsqueda; se le pide cerrar con lo encontrado.", agente=agente)
+    mensajes.append({"role": "user", "content": "Se acabaron tus búsquedas. Responde AHORA solo con el JSON final, "
+                                                 "usando únicamente los jugadores que ya evaluaste."})
+    respuesta = _crear(agente, messages=mensajes)
+    _registrar_llamada(agente, respuesta)
+    return respuesta.choices[0].message.content

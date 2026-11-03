@@ -147,3 +147,10 @@ def test_desempeno(perfil):
     assert d["captura_pct"] == 0
     d = desempeno(perfil, ultima_oferta={"fijo": perfil["precio_minimo"] - 4})
     assert d["resultado"] == "fracaso" and d["faltaron"] == pytest.approx(4, abs=0.01)
+
+
+def test_cuotas_se_comparan_en_valor_de_hoy():
+    # 14 M€ en 2 cuotas vale más que 13 al contado (pagar así sería pagar de más) ...
+    assert valor_efectivo({"fijo": 14, "cuotas": 2}, 11) > valor_efectivo({"fijo": 13}, 11)
+    # ... pero 14 M€ en 4 cuotas vale menos que 13 al contado
+    assert valor_efectivo({"fijo": 14, "cuotas": 4}, 11) < valor_efectivo({"fijo": 13}, 11)

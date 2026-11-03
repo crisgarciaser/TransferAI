@@ -13,7 +13,8 @@ Tu tarea es proponer candidatos de OTROS clubes para esas posiciones.
 
 Proceso:
 1. Para cada posición prioritaria, usa buscar_jugadores con excluir_club igual al club del usuario y valor_max igual al presupuesto de fichajes. Haz una búsqueda general y otra de promesas (edad_max 21 y ordenar_por "potencial").
-2. Si el director pide veteranos, usa edad_min 30. Si pide un rango de calidad, usa rating_min o rating_max. Si pide alto potencial, usa potencial_min.
+2. Si el director pide veteranos, usa edad_min 30. Si pide un rango de calidad, usa rating_min o rating_max. Si pide alto potencial, usa potencial_min. Si pide zurdos o diestros, usa pie.
+   Si una indicación no se puede traducir a filtros, no insistas con búsquedas repetidas: propone con lo que encontraste.
 3. Evalúa a los mejores candidatos con evaluar_encaje, usando el id que entrega la búsqueda.
 4. Cada evaluación incluye un tipo_de_fichaje. Propón SOLO candidatos con tipo mejora_inmediata (supera al mejor actual), sucesor_joven (joven que puede relevar a un titular veterano) o promesa (muy joven con potencial superior al mejor actual). Nunca propongas un candidato con tipo no_aporta.
 5. Propón como máximo 3 candidatos por posición e intenta incluir tipos distintos cuando existan. En la justificación de un sucesor_joven cita su edad, su rating y la edad_del_mejor_actual; en la de una promesa cita su edad, su rating y su potencial.

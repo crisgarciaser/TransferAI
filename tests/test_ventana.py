@@ -40,13 +40,17 @@ def test_marcar_leidos():
 
 
 def test_leer_comando():
-    assert leer_comando("1") == ("buscar", None)
-    assert leer_comando("3") == ("avanzar", 1)
-    assert leer_comando("3 5") == ("avanzar", 5)
+    assert leer_comando("1") == ("plantilla", None)
+    assert leer_comando("2") == ("estado", None)
+    assert leer_comando("3") == ("bandeja", None)
+    assert leer_comando("4") == ("buscar", None)
+    assert leer_comando("5") == ("fichajes", None)
+    assert leer_comando("6") == ("avanzar", 1)
+    assert leer_comando("6 5") == ("avanzar", 5)
     assert leer_comando("avanzar 2") == ("avanzar", 2)
-    assert leer_comando("3 cero") == ("invalido", None)
-    assert leer_comando("3 -2") == ("invalido", None)
+    assert leer_comando("7") == ("cerrar", None)
+    assert leer_comando("6 cero") == ("invalido", None)
+    assert leer_comando("6 -2") == ("invalido", None)
     assert leer_comando("") == ("invalido", None)
     assert leer_comando("9") == ("invalido", None)
     assert leer_comando("  CERRAR ") == ("cerrar", None)
-    assert leer_comando("6") == ("fichajes", None)

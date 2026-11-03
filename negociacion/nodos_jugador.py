@@ -96,7 +96,8 @@ def interpretar_turno_jugador(estado):
     if inter["intencion"] == "aceptar_condiciones":
         inter["oferta"] = normalizar_oferta_jugador(reg["peticion_jugador"])
     if inter["intencion"] == "otro":
-        emitir("aviso", "No entendí una oferta concreta. Indica al menos salario por temporada y años de contrato.")
+        emitir("aviso", "Tu mensaje no indica un contrato completo. Escribe al menos salario por temporada y años "
+                        "(por ejemplo, '2,5 millones por temporada durante 4 años y una prima de 500 mil').")
         return {"siguiente": "turno_jugador"}
     error = _validar_contrato(estado, reg, inter["oferta"])
     if error:
@@ -106,6 +107,14 @@ def interpretar_turno_jugador(estado):
     if raros:
         emitir("aviso", f"Los bonos por {', '.join(r.replace('_', ' ') for r in raros)} casi no tienen valor "
                         f"para un {reg['jugador']['posicion']}: el jugador apenas los considerará.")
+    pos = reg["jugador"]["posicion"]
+    if inter["intencion"] == "oferta" and \
+            valor_anual_para_jugador(inter["oferta"], pos) > valor_anual_para_jugador(reg["peticion_jugador"], pos) + 0.01:
+        inter["ambigua"] = True
+        inter["duda"] = (f"tu oferta vale {valor_anual_para_jugador(inter['oferta'], pos)} M€ por temporada para el "
+                         f"jugador, más que su exigencia actual "
+                         f"({valor_anual_para_jugador(reg['peticion_jugador'], pos)} M€). Aceptar sus condiciones "
+                         "te saldría más barato.")
     emitir("interpretacion", inter["resumen"] or describir_oferta_jugador(inter["oferta"]),
            intencion=inter["intencion"], oferta=inter["oferta"])
     return {"siguiente": "confirmar_interpretacion" if inter["ambigua"] else "responder_agente_jugador",
@@ -127,14 +136,23 @@ def dar_consejo_jugador(estado):
             emitir("consejo", consejo, agente="manager")
     else:
         minimo, maximo = intervalo_salario(j)
-        consejo = financiero.aconsejar_salario({
-            "margen_salarial": estado["resumen"]["margen_salarial"],
+        from config import ORDEN_POSICIONES_BONO, PROB_BONO
+        para_prima = round(estado["resumen"]["presupuesto_fichajes"] - primer_pago(reg["acuerdo"]), 2)
+        margen = estado["resumen"]["margen_salarial"]
+        i = ORDEN_POSICIONES_BONO.index(j["posicion"])
+        texto, contrato = financiero.aconsejar_salario({
+            "margen_salarial": margen, "presupuesto_disponible_para_prima": para_prima,
+            "salario_actual_estimado": f"{minimo}-{maximo}",
             "exigencia_del_jugador": describir_oferta_jugador(exigencia),
-            "costo_anual_exigencia": costo_anual_club(exigencia, j["posicion"]),
-            "presupuesto_disponible_para_prima": round(estado["resumen"]["presupuesto_fichajes"]
-                                                       - primer_pago(reg["acuerdo"]), 2),
-            "salario_actual_estimado": f"{minimo}-{maximo}"})
-        emitir("consejo", consejo, agente="financiero")
+            "valor_anual_de_la_exigencia": valor_anual_para_jugador(exigencia, j["posicion"]),
+            "probabilidad_de_bonos_para_su_posicion": {t: v[i] for t, v in PROB_BONO.items()},
+            "ultima_oferta_propia": describir_oferta_jugador(reg["oferta_jugador"]) if reg.get("oferta_jugador") else "ninguna",
+            "rondas_restantes": MAX_RONDAS_JUGADOR - reg["ronda_jugador"]}, j["posicion"], margen, para_prima)
+        sugerencia = ""
+        if contrato:
+            sugerencia = (f"{describir_oferta_jugador(contrato)} (vale {valor_anual_para_jugador(contrato, j['posicion'])} "
+                          f"M€ por temporada para el jugador; costo anual {costo_anual_club(contrato, j['posicion'])} M€)")
+        emitir("consejo", texto, agente="financiero", sugerencia=sugerencia)
     return {"siguiente": "turno_jugador"}
 
 
@@ -233,7 +251,8 @@ def cerrar_fichaje(estado):
         cambios = {"fichajes": estado.get("fichajes", []) + [fichaje],
                    "objetivos": [o for o in estado.get("objetivos", []) if o["id"] != j["id"]],
                    "compromisos": estado.get("compromisos", []) + compromisos,
-                   "resumen": obtener_resumen_club(club), "plantilla": obtener_plantilla(club)}
+                   "resumen": obtener_resumen_club(club), "plantilla": obtener_plantilla(club),
+                   "diagnostico_vigente": False}
         emitir("fichaje", f"¡{j['nombre']} es nuevo jugador de {club}!", **fichaje)
     else:
         reg["fase"] = "fracasada"
