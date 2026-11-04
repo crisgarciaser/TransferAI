@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TransferAI</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <!-- Barra superior: club, día, presupuesto y margen (se oculta antes de elegir club) -->
+  <header id="barra" class="oculto"></header>
+
+  <!-- Aquí se dibuja la pantalla actual (menú, plantilla, negociación, etc.) -->
+  <main id="pantalla"></main>
+
+  <!-- Ventanas emergentes (confirmaciones, fichaje cerrado, venta, etc.) -->
+  <div id="modal-fondo" class="oculto"><div id="modal"></div></div>
+
+  <!-- Indicador de espera mientras trabajan los agentes -->
+  <div id="cargando" class="oculto"><div class="girando"></div><div id="cargando-texto">Pensando…</div></div>
+
+  <!-- Avisos breves -->
+  <div id="avisos"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
