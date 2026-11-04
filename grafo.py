@@ -24,6 +24,7 @@ from datos import obtener_plantilla, obtener_resumen_club, reiniciar_mercado
 from registro import emitir
 from negociacion import nodos_club as nc
 from negociacion import nodos_jugador as nj
+from negociacion import nodos_venta as nv
 from ventana import leer_comando, marcar_leidos, no_leidos
 
 
@@ -62,7 +63,11 @@ class Estado(TypedDict, total=False):
     diagnostico_vigente: bool # False cuando la plantilla cambió y el Manager debe volver a analizarla
     candidatos_busqueda: list # todos los candidatos mostrados en las rondas de la búsqueda actual
     siguiente: str            # nodo siguiente que decidió el último nodo de negociación
-
+    # --- ventas
+    ofertas_venta: dict       # id de la oferta -> oferta de otro club por un jugador propio
+    oferta_activa: str        # oferta que se está respondiendo
+    transferibles: list       # ids de jugadores propios puestos en venta
+    ingresos_futuros: list    # cuotas de ventas que se cobran en temporadas futuras
 
 # ---------------------------------------------------------------- NODOS DE CÓDIGO
 def cargar_club(estado: Estado) -> dict:
@@ -74,6 +79,7 @@ def cargar_club(estado: Estado) -> dict:
         "plantilla": obtener_plantilla(club),
         "dia": 1, "calendario": [], "bandeja": [], "objetivos": [], "fichajes": [], "ventas": [],
         "negociaciones": {}, "compromisos": [], "diagnostico_vigente": False,
+        "ofertas_venta": {}, "transferibles": [], "ingresos_futuros": [],   
     }
 
 
@@ -206,6 +212,7 @@ def panel(estado: Estado) -> dict:
         "eventos_pendientes": len(estado.get("calendario", [])),
         "objetivos": [{"id": o["id"], "nombre": o["nombre"], "club": o["club"]} for o in estado.get("objetivos", [])],
         "negociaciones_abiertas": sum(1 for n in estado.get("negociaciones", {}).values() if n["fase"] == "abierta"),
+        "ofertas_recibidas": sum(1 for o in estado.get("ofertas_venta", {}).values() if o["fase"] == "pendiente"),    
     }
 
 
@@ -214,14 +221,14 @@ def centro_de_mando(estado: Estado) -> dict:
     respuesta = interrupt({"tipo": "centro_de_mando", **panel(estado)})
     comando, dias = leer_comando(respuesta)
     if comando == "invalido":
-        emitir("aviso", "Opción no reconocida. Escribe un número del 1 al 7 (por ejemplo '6 5' para avanzar 5 días).")
+        emitir("aviso", "Opción no reconocida. Escribe un número del 1 al 8 (por ejemplo '7 5' para avanzar 5 días).")
     return {"comando": comando, "dias_a_avanzar": dias or 1}
 
 
 def ruta_centro(estado: Estado) -> str:
     return {"buscar": "iniciar_busqueda", "bandeja": "ver_bandeja", "avanzar": "avanzar_dias",
             "estado": "ver_estado", "cerrar": "confirmar_cierre",
-            "fichajes": "menu_fichajes", "plantilla": "ver_plantilla"}.get(estado.get("comando"), "centro_de_mando")
+            "fichajes": "menu_fichajes", "plantilla": "ver_plantilla", "ventas": "menu_ventas"}.get(estado.get("comando"), "centro_de_mando")
 
 
 def iniciar_busqueda(estado: Estado) -> dict:
@@ -285,6 +292,7 @@ def resumen_ventana(estado: Estado) -> dict:
     emitir("resumen_ventana", f"Mercado cerrado el día {estado['dia']}",
            club=estado["club"], dia=estado["dia"], fichajes=estado.get("fichajes", []),
            ventas=estado.get("ventas", []), compromisos=estado.get("compromisos", []),
+           ingresos_futuros=estado.get("ingresos_futuros", []),           
            presupuesto_final=r["presupuesto_fichajes"],
            margen_salarial_final=r["margen_salarial"], objetivos_sin_cerrar=estado.get("objetivos", []))
     return {}
@@ -321,7 +329,7 @@ def construir_grafo():
         "iniciar_busqueda": "iniciar_busqueda", "ver_bandeja": "ver_bandeja",
         "avanzar_dias": "avanzar_dias", "ver_estado": "ver_estado",
         "confirmar_cierre": "confirmar_cierre", "centro_de_mando": "centro_de_mando",
-        "menu_fichajes": "menu_fichajes", "ver_plantilla": "ver_plantilla"})
+        "menu_fichajes": "menu_fichajes", "ver_plantilla": "ver_plantilla", "menu_ventas": "menu_ventas"})
     g.add_edge("ver_bandeja", "centro_de_mando")
     g.add_edge("ver_estado", "centro_de_mando")
     g.add_conditional_edges("avanzar_dias", ruta_tras_avanzar,
@@ -362,6 +370,13 @@ def construir_grafo():
         "dar_consejo_jugador": nj.dar_consejo_jugador,
         "responder_agente_jugador": nj.responder_agente_jugador,
         "cerrar_fichaje": nj.cerrar_fichaje,
+        # Ventas de jugadores propios
+        "menu_ventas": nv.menu_ventas,
+        "elegir_transferible": nv.elegir_transferible,
+        "turno_venta": nv.turno_venta,
+        "interpretar_venta": nv.interpretar_venta,
+        "responder_comprador": nv.responder_comprador,
+        "cerrar_venta": nv.cerrar_venta,
     }
     for nombre, funcion in nodos_negociacion.items():
         g.add_node(nombre, funcion)
@@ -371,12 +386,14 @@ def construir_grafo():
     for nombre in ("menu_fichajes", "escribir_primer_contacto", "interpretar_primer_contacto",
                    "confirmar_interpretacion", "enviar_primer_contacto", "interpretar_turno",
                    "dar_consejo", "responder_vendedor", "cerrar_negociacion_club",
-                   "interpretar_turno_jugador", "dar_consejo_jugador", "responder_agente_jugador", "cerrar_fichaje"):
+                   "interpretar_turno_jugador", "dar_consejo_jugador", "responder_agente_jugador", "cerrar_fichaje",
+                   "menu_ventas", "elegir_transferible", "interpretar_venta", "responder_comprador", "cerrar_venta"):
         g.add_conditional_edges(nombre, seguir, destinos)
     g.add_edge("entrar_negociacion", "turno_comprador")
     g.add_edge("turno_comprador", "interpretar_turno")
     g.add_edge("entrar_negociacion_jugador", "turno_jugador")
     g.add_edge("turno_jugador", "interpretar_turno_jugador")
+    g.add_edge("turno_venta", "interpretar_venta")   
     return g.compile(checkpointer=InMemorySaver())
 
 

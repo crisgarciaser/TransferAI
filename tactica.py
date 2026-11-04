@@ -75,8 +75,13 @@ def identidad_tactica(club):
         rasgos.append("ataca abierto")
     if club.get("jugadores_en_area", 0) >= AREA_LLENA:
         rasgos.append("llega con mucha gente al área")
-    texto = (f"{club['formacion']}, {club['estilo_defensivo']} en defensa, {club['construccion']} y "
-             f"creación por {club['creacion_ocasiones']}" + (f"; {', '.join(rasgos)}" if rasgos else ""))
+    construccion = club["construccion"]
+    if construccion == "equilibrada":
+        construccion = "construcción equilibrada"
+    creacion = club["creacion_ocasiones"]
+    creacion = "creación equilibrada" if creacion == "equilibrada" else f"creación por {creacion}"
+    texto = (f"{club['formacion']}, {club['estilo_defensivo']} en defensa, {construccion} y {creacion}"
+             + (f"; {', '.join(rasgos)}" if rasgos else ""))
     return {"formacion": club["formacion"], "estilo_defensivo": club["estilo_defensivo"],
             "construccion": club["construccion"], "creacion_ocasiones": club["creacion_ocasiones"],
             "descripcion": texto, "entrenador": club.get("entrenador", "")}

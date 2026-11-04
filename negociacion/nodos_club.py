@@ -18,7 +18,7 @@ from langgraph.types import interrupt
 
 from agentes import club_vendedor, financiero, manager
 from negociacion import interprete
-from config import DIAS_PLAZO_JUGADOR, DIAS_POR_NEGOCIACION, DIAS_VENTANA, MAX_RONDAS_CLUB
+from config import DIAS_PLAZO_JUGADOR, DIAS_POR_NEGOCIACION, DIAS_VALIDEZ_OFERTA, DIAS_VENTANA, MAX_RONDAS_CLUB
 from datos import cargar_clubes, obtener_plantilla
 from negociacion.reglas import (
     arbitrar, decision_respaldo, describir_oferta, desempeno, es_ridicula, evaluar_oferta_inicial,
@@ -91,9 +91,29 @@ def pasar_dias(estado, dias):
                                   "asunto": f"El agente de {nombre} cierra la puerta", "datos": {"mensaje": texto},
                                   "leido": False}]
             emitir("mensaje", f"El agente de {nombre} cierra la puerta (venció el plazo)", dia=dia)
+    # Ventas: ofertas de otros clubes por jugadores propios (día por día) y ofertas que caducan
+    from negociacion.ventas import generar_ofertas
+    ofertas = dict(estado.get("ofertas_venta", {}))
+    for d in range(estado["dia"] + 1, dia + 1):
+        for nueva in generar_ofertas(estado, d, list(ofertas.values())):
+            ofertas[nueva["id"]] = nueva
+            asunto = (f"{nueva['club_comprador']} ofrece {describir_oferta(nueva['oferta'])} "
+                      f"por {nueva['jugador']['nombre']}")
+            bandeja = bandeja + [{"id": 20_000 + len(bandeja), "dia": d, "tipo": "oferta_venta", "asunto": asunto,
+                                  "datos": {"mensaje": "Puedes responderla en el menú Ventas."}, "leido": False}]
+            emitir("mensaje", asunto, dia=d, tipo_mensaje="oferta_venta")
+    for clave, o in ofertas.items():
+        if o["fase"] == "pendiente" and dia > o["dia"] + DIAS_VALIDEZ_OFERTA:
+            ofertas[clave] = {**o, "fase": "caducada"}
+            asunto = f"Caducó la oferta de {o['club_comprador']} por {o['jugador']['nombre']} (no se respondió a tiempo)"
+            bandeja = bandeja + [{"id": 20_000 + len(bandeja), "dia": dia, "tipo": "oferta_caducada", "asunto": asunto,
+                                  "datos": {"mensaje": f"Las ofertas recibidas valen {DIAS_VALIDEZ_OFERTA} días."},
+                                  "leido": False}]
+            emitir("mensaje", asunto, dia=dia, tipo_mensaje="oferta_caducada")            
     if cerrada:
         emitir("aviso", f"Se cumplieron los {DIAS_VENTANA} días: el mercado de fichajes se cierra.")
-    return {"dia": dia, "calendario": calendario, "bandeja": bandeja, "negociaciones": negociaciones}, cerrada
+    return {"dia": dia, "calendario": calendario, "bandeja": bandeja, "negociaciones": negociaciones,
+            "ofertas_venta": ofertas}, cerrada
 
 
 def aplicar_respuesta(registro, evento):
@@ -219,6 +239,8 @@ def confirmar_interpretacion(estado):
         return {"siguiente": "enviar_primer_contacto" if ok else "escribir_primer_contacto"}
     if estado["etapa"] == "jugador":
         return {"siguiente": "responder_agente_jugador" if ok else "turno_jugador"}
+    if estado["etapa"] == "venta":
+        return {"siguiente": "responder_comprador" if ok else "turno_venta"}    
     return {"siguiente": "responder_vendedor" if ok else "turno_comprador"}
 
 

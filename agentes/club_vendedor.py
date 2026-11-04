@@ -1,4 +1,4 @@
-"""Selling Club Agent: el director deportivo del club dueño del jugador.
+"""Agente de club: representa a los otros clubes. Vende (Selling Club) o compra (rol comprador).
 
 El modelo decide cada ronda (aceptar, contraofertar o rechazar), con qué cifras y con qué
 argumento. Conoce su propio precio mínimo, pero debe mantenerlo en secreto. El código
@@ -75,5 +75,54 @@ def redactar(club, jugador, decision, cifras):
     datos = {"decision": decision, "cifras": cifras}
     try:
         return consultar_json(sistema, json.dumps(datos, ensure_ascii=False), agente="club_vendedor_redaccion")["mensaje"]
+    except Exception:
+        return None
+
+# ======================================================================
+# ROL COMPRADOR: el mismo agente de club, cuando otro club quiere comprar a un jugador del usuario
+# ======================================================================
+SISTEMA_COMPRADOR = """Eres el director deportivo del club {club}. Quieres comprar a {jugador}, jugador de {vendedor}, y
+negocias el traspaso con ellos. Hablas en primera persona, en español, como un dirigente real: cordial pero
+firme, sin listas ni viñetas.
+
+Recibirás en JSON la situación: datos del jugador, tus límites (SECRETOS), lo que pide el club vendedor (con su
+valor ya calculado por el sistema), tu última oferta y el historial.
+
+Cómo negociar:
+- Tu objetivo es comprar lo más barato posible sin perder al jugador.
+- Nunca pagues más que tu precio máximo. NUNCA reveles tu precio máximo ni lo insinúes.
+- Sube de a poco: cada nueva oferta puede ser igual o mayor que la anterior, nunca menor.
+- Puedes mover dinero a variables, ofrecer pagar en cuotas o aceptar un % de una futura venta.
+- Habla del jugador con expresiones, no con ratings; varía los argumentos.
+- Si lo que piden es absurdo puedes retirarte. Te quedan {rondas_restantes} ronda(s); en la última solo puedes
+  aceptar o retirarte.
+
+Responde SOLO con un objeto JSON con esta forma exacta:
+{{"accion": "aceptar|contraofertar|rechazar",
+ "contraoferta": {{"fijo": 0, "variables": 0, "pct_reventa": 0, "recompra_pct": 0, "recompra_temporadas": 0, "cuotas": 1}},
+ "mensaje": "tu respuesta al club vendedor, 2 a 4 frases"}}"""
+
+SISTEMA_REDACCION_COMPRADOR = """Eres el director deportivo del club {club} y quieres comprar a {jugador}. Ya se decidió tu
+respuesta; solo debes redactarla en primera persona, en español, como un dirigente real, en 2 a 4 frases y sin
+listas. NUNCA menciones tu precio máximo. Usa SOLO las cifras entregadas.
+
+Responde SOLO con un objeto JSON: {{"mensaje": "..."}}"""
+
+
+def decidir_compra(contexto):
+    sistema = SISTEMA_COMPRADOR.format(club=contexto["club_comprador"], jugador=contexto["jugador"]["nombre"],
+                                       vendedor=contexto["club_vendedor"], rondas_restantes=contexto["rondas_restantes"])
+    try:
+        return consultar_json(sistema, json.dumps(contexto, ensure_ascii=False), agente="club_comprador")
+    except Exception:
+        emitir("aviso", "El club comprador no entregó una respuesta válida.", agente="club_comprador")
+        return None
+
+
+def redactar_compra(club, jugador, decision, cifras):
+    sistema = SISTEMA_REDACCION_COMPRADOR.format(club=club, jugador=jugador)
+    try:
+        return consultar_json(sistema, json.dumps({"decision": decision, "cifras": cifras}, ensure_ascii=False),
+                              agente="club_vendedor_redaccion")["mensaje"]
     except Exception:
         return None

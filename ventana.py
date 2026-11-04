@@ -48,17 +48,17 @@ def marcar_leidos(bandeja):
 def leer_comando(texto):
     """Interpreta lo que escribe el usuario en el centro de mando.
 
-    1 ver plantilla | 2 ver estado del club | 3 revisar bandeja | 4 buscar refuerzos | 5 fichajes
-    6 avanzar días ('6' = un día, '6 5' = cinco) | 7 cerrar el mercado | otro -> ("invalido", None)
-    También acepta las palabras: plantilla, estado, bandeja, buscar, fichajes, avanzar 5, cerrar.
+    1 ver plantilla | 2 ver estado del club | 3 revisar bandeja | 4 buscar refuerzos | 5 fichajes  | 6 ventas
+    7 avanzar días ('6' = un día, '6 5' = cinco) | 8 cerrar el mercado | otro -> ("invalido", None)
+    También acepta las palabras: plantilla, estado, bandeja, buscar, fichajes, ventas, avanzar 5, cerrar.
     """
     partes = str(texto).strip().lower().split()
     if not partes:
         return "invalido", None
     comandos = {"1": "plantilla", "plantilla": "plantilla", "2": "estado", "estado": "estado",
                 "3": "bandeja", "bandeja": "bandeja", "4": "buscar", "buscar": "buscar",
-                "5": "fichajes", "fichajes": "fichajes", "6": "avanzar", "avanzar": "avanzar",
-                "7": "cerrar", "cerrar": "cerrar"}
+                "5": "fichajes", "fichajes": "fichajes", "6": "ventas", "ventas": "ventas",
+                "7": "avanzar", "avanzar": "avanzar", "8": "cerrar", "cerrar": "cerrar"}
     comando = comandos.get(partes[0], "invalido")
     if comando == "avanzar":
         try:

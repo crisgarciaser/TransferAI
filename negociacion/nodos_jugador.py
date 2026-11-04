@@ -14,7 +14,7 @@ from datos import ajustar_presupuesto, cargar_clubes, intervalo_salario, obtener
     registrar_traspaso
 from negociacion import interprete
 from negociacion.nodos_club import _activa, _guardar, _pedido_de_consejo, pasar_dias
-from negociacion.reglas import describir_oferta, normalizar_oferta, primer_pago, valor_presente
+from negociacion.reglas import describir_oferta, normalizar_oferta, primer_pago
 from negociacion.reglas_jugador import (
     arbitrar_jugador, bonos_poco_probables, costo_anual_club, decision_respaldo, desempeno_jugador,
     describir_oferta_jugador, es_ridicula_jugador, normalizar_oferta_jugador, perfil_jugador, peticion_inicial,
@@ -70,7 +70,7 @@ def _validar_contrato(estado, reg, oferta):
     costo = costo_anual_club(oferta, pos)
     if costo > estado["resumen"]["margen_salarial"]:
         return (f"El costo anual ({costo} M€ entre salario y bonos esperados) supera tu margen salarial "
-                f"({estado['resumen']['margen_salarial']} M€).")
+                 "({estado['resumen']['margen_salarial']} M€).")
     pago_ventana = primer_pago(reg["acuerdo"]) + oferta["prima"]
     if pago_ventana > estado["resumen"]["presupuesto_fichajes"]:
         return (f"El primer pago del traspaso más la prima ({round(pago_ventana, 2)} M€) supera tu presupuesto "

@@ -74,7 +74,8 @@ def mostrar_evento(evento):
     elif tipo == "mensaje_club":
         print(f"\n{datos['club']}: \"{mensaje}\"")
         if datos.get("contraoferta"):
-            print(f"  -> Nueva exigencia: {datos['contraoferta']}")
+            etiqueta = "Nueva oferta" if datos.get("rol") == "comprador" else "Nueva exigencia"
+            print(f"  -> {etiqueta}: {datos['contraoferta']}")
     elif tipo == "correccion_arbitro":
         print(f"  [árbitro] {mensaje}")
     elif tipo == "consejo":
@@ -86,6 +87,13 @@ def mostrar_evento(evento):
         mostrar_desempeno(datos)
     elif tipo == "desempeno_jugador":
         mostrar_desempeno_jugador(datos)
+    elif tipo == "venta":
+        print(f"\n*** {mensaje} ***")
+        print(f"Traspaso: {datos['traspaso']} | Ingreso en esta ventana: {datos['ingreso_esta_ventana']} M€")
+        d = datos["desempeno"]
+        print(f"--- DESEMPEÑO DE LA VENTA ---\nSu primera oferta fue {d['oferta_inicial']} M€ y habría pagado hasta "
+              f"{d['precio_maximo']} M€. Cobraste {d['valor_cobrado']} M€ (valor de hoy): capturaste el "
+              f"{d['captura_pct']} % del margen.")    
     elif tipo == "fichaje":
         print(f"\n*** {mensaje} ***")
         print(f"Traspaso: {datos['traspaso']} | Contrato: {datos['contrato']}")
@@ -146,7 +154,10 @@ def mostrar_resumen(titulo, datos):
     print(f"\n=== {titulo.upper()} ===")
     print(f"Club: {datos['club']}")
     print("Fichajes:", ", ".join(f"{f['nombre']} ({f['traspaso']}; {f['contrato']})" for f in datos["fichajes"]) or "ninguno")
-    print("Ventas:", ", ".join(v["nombre"] for v in datos["ventas"]) or "ninguna")
+    print("Ventas:", ", ".join(f"{v['nombre']} a {v['club_destino']} ({v['traspaso']})" for v in datos["ventas"]) or "ninguna")
+    if datos.get("ingresos_futuros"):
+        print("Cuotas por cobrar en próximas temporadas:",
+              ", ".join(f"{c['jugador']} {c['monto']} M€ (temporada +{c['temporada']})" for c in datos["ingresos_futuros"]))
     if datos.get("compromisos"):
         print("Cuotas pendientes para próximas temporadas:",
               ", ".join(f"{c['jugador']} {c['monto']} M€ (temporada +{c['temporada']})" for c in datos["compromisos"]))
@@ -203,8 +214,11 @@ def preguntar(pausa):
         print("4. Buscar refuerzos (scouting)")
         print("5. Fichajes: ofertar o negociar por tus objetivos"
               + (f" ({abiertas} negociación(es) lista(s) para empezar)" if abiertas else ""))
-        print("6. Avanzar días  (escribe '6' para un día o '6 5' para cinco)")
-        print("7. Cerrar el mercado")
+        recibidas = pausa.get("ofertas_recibidas", 0)
+        print("6. Ventas: poner jugadores en venta y responder ofertas"
+              + (f" ({recibidas} oferta(s) recibida(s))" if recibidas else ""))
+        print("7. Avanzar días  (escribe '7' para un día o '7 5' para cinco)")
+        print("8. Cerrar el mercado")
         return input("¿Qué quieres hacer?: ")
 
     if tipo == "menu_fichajes":
@@ -240,7 +254,33 @@ def preguntar(pausa):
         aviso = (f" Quedan {pausa['eventos_pendientes']} respuestas pendientes que se perderán."
                  if pausa["eventos_pendientes"] else "")
         return input(f"\n¿Seguro que quieres cerrar el mercado en el día {pausa['dia']}?{aviso} (s/n): ")
+    if tipo == "menu_ventas":
+        print(f"\n=== VENTAS (día {pausa['dia']}) ===")
+        print("En venta:", ", ".join(pausa["transferibles"]) or "ningún jugador")
+        if not pausa["ofertas"]:
+            print("No hay ofertas pendientes.")
+        for i, o in enumerate(pausa["ofertas"], start=1):
+            origen = "espontánea" if o["motivo"] == "espontanea" else "por jugador en venta"
+            print(f"{i}. {o['club']} ofrece {o['oferta']} por {o['jugador']} (día {o['dia']}, {origen})")
+        return input("Número de la oferta para responderla, 'vender' para poner a un jugador en venta, o 'volver': ")
 
+    if tipo == "elegir_transferible":
+        print(f"\n=== PONER EN VENTA (día {pausa['dia']}) ===")
+        for i, j in enumerate(pausa["jugadores"], start=1):
+            print(f"{i}. {j['nombre']} ({j['posicion']}, {j['edad']} años, rating {j['rating']}, "
+                  f"valor {j['valor_mercado']} M€)")
+        if not pausa["jugadores"]:
+            print("No hay jugadores disponibles para vender (plantilla mínima de 18).")
+        return input("Número del jugador a poner en venta, o 'volver': ")
+
+    if tipo == "negociacion_venta":
+        print(f"\n[Ronda {pausa['ronda']} de {pausa['max_rondas']}] {pausa['club']} ofrece {pausa['oferta']} "
+              f"por {pausa['jugador']} (valor de mercado {pausa['valor_mercado']} M€)")
+        if pausa["ultimo_mensaje"]:
+            print(f"Último mensaje: \"{pausa['ultimo_mensaje']}\"")
+        print("Escribe 'aceptar', 'rechazar' o lo que pides (por ejemplo, '30 millones y un 10 % de una futura venta').")
+        return input("Tu respuesta: ")
+    
     if tipo == "negociacion_jugador":
         print(f"\n[Ronda {pausa['ronda']} de {pausa['max_rondas']}] Exigencia de {pausa['jugador']}: {pausa['exigencia']}")
         print(f"Tu margen salarial: {pausa['margen_salarial']} M€ | presupuesto: {pausa['presupuesto']} M€ | "

@@ -5,7 +5,7 @@ El usuario escribe como una persona ("Saludos, ofrecemos 100 millones por Colina
 identifica qué quiere decir y el código valida las cifras (rangos y presupuesto).
 """
 import json
-
+import re
 from config import MAX_CUOTAS, MAX_PCT_RECOMPRA, MAX_PCT_REVENTA
 from llm import consultar_json
 from negociacion.reglas import normalizar_oferta
@@ -21,7 +21,7 @@ Clasifica la intención en una de estas:
 - "interes": muestra interés o pide negociar, pero NO propone cifras.
 - "oferta": propone cifras concretas.
 - "clausula": dice que paga la cláusula de rescisión.
-- "aceptar_condiciones": acepta la última exigencia del club vendedor tal como está.
+- "aceptar_condiciones": acepta la última exigencia del club vendedor tal como está, SIN cambiar ninguna cifra. Si acepta una parte pero propone cualquier cifra distinta, es "oferta" (completa la oferta con lo que acepta).
 - "consejo": pide ayuda o consejo a su propio equipo (no es un mensaje para el otro club).
 - "retirarse": abandona la negociación.
 - "otro": no se entiende o no tiene relación.
@@ -44,6 +44,20 @@ Responde SOLO con un objeto JSON con esta forma exacta:
 
 INTENCIONES = {"interes", "oferta", "clausula", "aceptar_condiciones", "consejo", "retirarse", "otro"}
 
+def _cifras(texto):
+    return {round(float(n.replace(",", ".")), 2) for n in re.findall(r"\d+(?:[.,]\d+)?", str(texto))}
+
+def _revisar_aceptacion(resultado, mensaje, ultima_exigencia):
+    """Aceptar cierra el acuerdo: si el mensaje trae cifras que no están en la exigencia, se pide confirmar."""
+    if resultado["intencion"] != "aceptar_condiciones":
+        return resultado
+    nuevas = sorted(_cifras(mensaje) - _cifras(ultima_exigencia))
+    if nuevas:
+        resultado["ambigua"] = True
+        resultado["duda"] = (f"entendí que aceptas sus condiciones tal cual, pero tu mensaje menciona "
+                             f"{', '.join(str(n) for n in nuevas)}, que no está en su exigencia. Si querías "
+                             f"proponer otra cifra, responde 'n' y escríbela como oferta.")
+    return resultado
 
 def interpretar(mensaje, etapa, ultima_exigencia=None):
     """Devuelve {"intencion", "oferta", "ambigua", "duda", "resumen"} ya validado por el código."""
@@ -63,8 +77,9 @@ def interpretar(mensaje, etapa, ultima_exigencia=None):
         intencion = "interes" if etapa == "primer_contacto" else "otro"
     if intencion == "clausula":
         oferta = normalizar_oferta({"clausula": True})
-    return {"intencion": intencion, "oferta": oferta, "ambigua": bool(r.get("ambigua")),
-            "duda": str(r.get("duda") or ""), "resumen": str(r.get("resumen") or "")}
+    resultado = {"intencion": intencion, "oferta": oferta, "ambigua": bool(r.get("ambigua")),
+                 "duda": str(r.get("duda") or ""), "resumen": str(r.get("resumen") or "")}
+    return _revisar_aceptacion(resultado, mensaje, ultima_exigencia)
 
 
 # ======================================================================
@@ -77,7 +92,7 @@ Recibirás en JSON el mensaje y la última exigencia del jugador.
 
 Clasifica la intención en una de estas:
 - "oferta": propone condiciones de contrato.
-- "aceptar_condiciones": acepta la última exigencia del jugador tal como está.
+- "aceptar_condiciones": acepta la última exigencia del jugador tal como está, SIN cambiar ninguna cifra. Si acepta una parte pero propone cualquier cifra distinta (por ejemplo, otro salario), es "oferta" (completa la oferta con lo que acepta de la exigencia).
 - "retirarse": abandona la negociación.
 - "otro": no se entiende o no tiene relación.
 
@@ -107,5 +122,6 @@ def interpretar_jugador(mensaje, ultima_exigencia):
     oferta = normalizar_oferta_jugador(r.get("oferta"))
     if intencion == "oferta" and (oferta["salario"] <= 0 or oferta["anios"] <= 0):
         intencion = "otro"
-    return {"intencion": intencion, "oferta": oferta, "ambigua": bool(r.get("ambigua")),
-            "duda": str(r.get("duda") or ""), "resumen": str(r.get("resumen") or "")}
+    resultado = {"intencion": intencion, "oferta": oferta, "ambigua": bool(r.get("ambigua")),
+                 "duda": str(r.get("duda") or ""), "resumen": str(r.get("resumen") or "")}
+    return _revisar_aceptacion(resultado, mensaje, ultima_exigencia)

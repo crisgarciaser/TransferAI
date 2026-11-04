@@ -17,7 +17,7 @@ MAX_PASOS_HERRAMIENTAS = 12    # máximo de ciclos pensar-actuar-observar del Sc
 # "club_vendedor" (decisión de cada ronda), "club_vendedor_redaccion" (solo redacta), "interprete",
 # "agente_jugador" (decisión de cada ronda) y "agente_jugador_redaccion".
 AGENTES_CON_RAZONAMIENTO = {"scouting", "manager", "manager_consejo", "financiero_consejo", "club_vendedor",
-                            "agente_jugador"}
+                            "agente_jugador", "club_comprador"}
 
 # ======================================================================
 # VENTANA DE FICHAJES
@@ -138,3 +138,24 @@ UMBRAL_RUPTURA_ESTRELLA = 0.75
 CONCESION_JUGADOR = 1.5                   # forma de la regla de respaldo (más alto = cede más lento)
 CONCESION_ESTRELLA = 3.0
 DIAS_PLAZO_JUGADOR = 5                    # días para empezar a negociar con el jugador tras el acuerdo con el club
+
+
+# ======================================================================
+# VENTAS DE JUGADORES PROPIOS
+# ======================================================================
+SEMILLA_MERCADO = None                # número fijo = el mercado genera siempre las mismas ofertas (útil para la demo)
+DIA_LIMITE_OFERTAS_VENTA = 20         # después de este día ya no llegan ofertas por jugadores transferibles
+PROB_OFERTA_TRANSFERIBLE = 0.45       # probabilidad diaria (día 1) de recibir una oferta por un transferible;
+                                      # baja en línea recta hasta 0 el día DIA_LIMITE_OFERTAS_VENTA
+MAX_OFERTAS_POR_JUGADOR = 3
+PROB_OFERTA_ESPONTANEA = 0.10         # probabilidad diaria de una oferta no solicitada por algún jugador propio
+DIAS_VALIDEZ_OFERTA = 5               # una oferta recibida caduca si no se responde en estos días
+MIN_JUGADORES_PLANTILLA = 18          # no se puede vender si la plantilla quedaría con menos jugadores
+OFERTA_INICIAL_COMPRADOR = (0.75, 0.95)  # la primera oferta vale entre estas fracciones del valor de mercado
+
+# --- Precio máximo del club comprador = valor de mercado x factores (información privada)
+PESO_NECESIDAD_ALTA = 1.25            # el jugador supera por 3 o más puntos al mejor de su posición en el comprador
+PESO_NECESIDAD_MEDIA = 1.10           # lo supera o lo iguala
+PESO_QUITAR_AL_RIVAL = 1.15           # el vendedor es su rival
+MAX_RONDAS_VENTA = 4
+UMBRAL_RIDICULO_VENTA = 2.0           # si lo que pides vale más que esto x su máximo, el comprador se retira
