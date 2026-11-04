@@ -70,7 +70,7 @@ def _validar_contrato(estado, reg, oferta):
     costo = costo_anual_club(oferta, pos)
     if costo > estado["resumen"]["margen_salarial"]:
         return (f"El costo anual ({costo} M€ entre salario y bonos esperados) supera tu margen salarial "
-                 "({estado['resumen']['margen_salarial']} M€).")
+                f"({estado['resumen']['margen_salarial']} M€).")
     pago_ventana = primer_pago(reg["acuerdo"]) + oferta["prima"]
     if pago_ventana > estado["resumen"]["presupuesto_fichajes"]:
         return (f"El primer pago del traspaso más la prima ({round(pago_ventana, 2)} M€) supera tu presupuesto "
