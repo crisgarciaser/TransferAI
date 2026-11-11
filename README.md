@@ -1,5 +1,3 @@
-[README (1).md](https://github.com/user-attachments/files/34719413/README.1.md)
-
 
 # TransferAI 
 
