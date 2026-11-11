@@ -1,15 +1,26 @@
-[README.md](https://github.com/user-attachments/files/33136312/README.md)
+[README (1).md](https://github.com/user-attachments/files/34719413/README.1.md)
+
+
 # TransferAI 
 
 *Curso Agentic AI — Universidad de Los Andes. Autor: Cristian García S.*
 
-1. Copia la plantilla:
+1. Clona el repositorio e instala las dependencias (requiere Python 3.10 o superior):
+
+   ```bash
+   git clone https://github.com/crisgarciaser/TransferAI.git
+   cd TransferAI
+   pip install -r requirements.txt
+   ```
+
+2. Copia la plantilla de variables de entorno:
 
    ```bash
    copy .env.example .env      # Windows
    cp .env.example .env        # macOS / Linux
+   ```
 
-2. Abre `.env` y completa estas tres variables:
+3. Abre `.env` y completa estas tres variables:
 
    | Variable | Qué poner |
    |---|---|
@@ -27,72 +38,63 @@
 
 ## Uso
 
+Hay dos formas de jugar, ambas sobre el mismo grafo:
+
 ```bash
-python grafo.py
+python web.py      # página web: abre http://localhost:5000 en el navegador
+python grafo.py    # terminal
 ```
 
-Cada sesión pide, en este orden:
+Primero se elige el club: el nombre completo o parcial, sin importar mayúsculas ni tildes (por ejemplo, `fiorentina` o `atletico`). Luego se llega al **centro de mando**, al que se vuelve después de cada acción hasta cerrar el mercado o llegar al día 30:
 
-| Paso | Qué escribir |
+| Opción | Qué hace |
 |---|---|
-| 1. Club | El nombre completo o parcial, sin importar mayúsculas ni tildes (por ejemplo, `fiorentina` o `atletico`). |
-| 2. Menú de plantilla | `1` para ver la plantilla antes de continuar, `2` para ir directo al diagnóstico. |
-| 3. Prioridades | Los códigos de las posiciones a reforzar, separados por coma: `POR`, `DFC`, `LAT`, `MED`, `EXT`, `DEL` (por ejemplo, `MED` o `DFC, MED`). |
-| 4. Elección del objetivo | El `id` de un candidato de la lista, `nueva` para otra ronda, `nueva: <indicación>` para otra ronda guiada, o `salir`. |
+| `1` Ver plantilla | Plantilla actual por posición, incluidos los fichajes de la ventana. |
+| `2` Estado del club | Día, presupuesto, margen salarial, operaciones y negociaciones abiertas. |
+| `3` Bandeja | Respuestas de los clubes y ofertas recibidas. |
+| `4` Buscar refuerzos | Diagnóstico del Manager, scouting, análisis financiero y elección de objetivos. |
+| `5` Fichajes | Primer contacto y negociación con el club vendedor y luego con el jugador. |
+| `6` Ventas | Poner jugadores a la venta y responder las ofertas que llegan. |
+| `7` Avanzar días | `7` avanza un día; `7 5`, cinco. Llegan respuestas y ofertas, y vencen plazos. |
+| `8` Cerrar mercado | Termina la ventana y muestra el resumen final. |
 
-Ejemplos de indicaciones para otra ronda: `nueva: más jóvenes`, `nueva: veteranos`, `nueva: más baratos`, `nueva: promesas con alto potencial`. Solo se pueden cumplir las que se traducen en filtros de búsqueda (edad, valor, rating y potencial). Hay un máximo de **3 rondas** por sesión.
+En **Buscar refuerzos** se confirman las posiciones a reforzar con códigos o nombres (`MED`, `DFC, LAT`, `defensas`) y luego se elige un candidato por su `id`, se pide otra ronda con una indicación (`nueva: más jóvenes`, `nueva: zurdos`, `nueva: promesas con alto potencial`) o se escribe `salir`. Hay un máximo de **3 rondas** por búsqueda.
 
-Cada línea `ACTUAR` que aparece durante el scouting es una llamada del agente a una de sus herramientas. Cada ejecución completa hace varias llamadas al modelo y consume cuota de la API.
+En **Fichajes** y **Ventas** los mensajes se escriben en lenguaje natural, como a un club real (por ejemplo, `Ofrecemos 30 millones más 5 en variables, en dos cuotas`). Se puede mostrar interés sin cifras, ofertar, pagar la cláusula, aceptar las condiciones del otro o retirarse, y pedir consejo con `consejo m` (Manager) o `consejo f` (Financial). Si una oferta es ambigua, el sistema pide confirmarla (`s/n`).
 
-## Cómo funciona
-
-Un grafo de **LangGraph** lleva un estado compartido por ocho nodos. Tres agentes usan un modelo de lenguaje (Qwen) y el usuario interviene en tres pausas.
-
-```mermaid
-graph TD;
-    cargar_club --> menu_plantilla
-    menu_plantilla --> perfilar_plantilla
-    perfilar_plantilla --> diagnosticar
-    diagnosticar --> confirmar_prioridades
-    confirmar_prioridades --> hacer_scouting
-    hacer_scouting --> analizar_finanzas
-    analizar_finanzas --> elegir_objetivo
-    elegir_objetivo -. objetivo elegido o salir .-> fin([Fin])
-    elegir_objetivo -. nueva ronda .-> hacer_scouting
-    elegir_objetivo -. entrada inválida .-> elegir_objetivo
-```
-
-| Parte | Qué hace |
-|---|---|
-| **Manager Agent** (`diagnosticar`) | Recibe el perfil de la plantilla y entrega un diagnóstico en JSON con hasta 3 posiciones prioritarias. |
-| **Scouting Agent** (`hacer_scouting`) | Ciclo pensar-actuar-observar: llama a `buscar_jugadores` y `evaluar_encaje` y propone candidatos de otros clubes. |
-| **Financial Agent** (`analizar_finanzas`) | El código calcula si cada candidato es viable, ajustado o inviable según el presupuesto y el margen salarial; el modelo solo redacta un comentario. |
-| **Pausas humanas** | `menu_plantilla` (ver plantilla), `confirmar_prioridades` (elegir posiciones) y `elegir_objetivo` (elegir jugador o pedir otra ronda). |
-
-**Principio de diseño: el modelo propone y el código valida.** El modelo solo entrega ids y justificaciones; el código reconstruye cada candidato desde la base de datos, descarta ids o nombres inexistentes y calcula todas las cifras. Cada candidato se clasifica como `mejora_inmediata`, `sucesor_joven`, `promesa` o `no_aporta`, y estos últimos se descartan.
+En la terminal, cada línea `ACTUAR` que aparece durante el scouting es una llamada del agente a una de sus herramientas. Cada partida hace varias llamadas al modelo y consume cuota de la API. Cada sesión queda registrada en `logs/sesion_<fecha>.jsonl`.
 
 ## Estructura del repositorio
 
 | Archivo | Contenido |
 |---|---|
-| `grafo.py` | Grafo, estado, agentes, validaciones, pausas humanas y punto de entrada. |
-| `llm.py` | Conexión con el modelo y ciclo con herramientas. |
-| `herramientas.py` | Esquemas de las herramientas del Scouting Agent. |
-| `datos.py` | Lectura de los CSV, búsqueda de jugadores, evaluación de encaje y viabilidad financiera. |
-| `convertir_datos.py` | Construye `datos_reales/` a partir del dataset de EA FC 24 (opcional). |
+| `grafo.py` | Estado compartido, nodos de la ventana, pausas humanas, construcción del grafo y punto de entrada de la terminal. |
+| `config.py` | Parámetros de diseño: límites, ponderaciones y umbrales. |
+| `llm.py` | Conexión con el modelo, control del razonamiento, ciclo con herramientas y reparación de JSON. |
+| `herramientas.py` | Esquemas de las herramientas del Scouting Agent; oculta el salario real. |
+| `datos.py` | Lectura de los CSV, búsqueda de jugadores, evaluación de encaje, viabilidad e intervalo salarial. |
+| `tactica.py` | Identidad táctica del club, perfil del jugador y encaje táctico. |
+| `ventana.py` | Calendario, bandeja y lectura de comandos del centro de mando. |
+| `registro.py` | Emisión de eventos y escritura del log de cada sesión. |
+| `agentes/` | Manager, Scouting & Tactical, Financial, agente de club y Player Agent. |
+| `negociacion/` | Intérprete, reglas del árbitro y nodos de compra, contrato y venta. |
+| `interfaz_terminal.py` | Interfaz de terminal. |
+| `web.py` y `web/` | Servidor Flask y página web (HTML, CSS y JavaScript). |
+| `filtrar_originales.py` | Filtra los archivos originales de Kaggle y genera `datos_fuente/`. |
+| `convertir_datos.py` | Construye `datos_reales/` a partir de `datos_fuente/`. |
+| `datos_fuente/` | CSV filtrados de EA Sports FC 24 y Transfermarkt. |
 | `datos_reales/` | Base de datos usada: 96 clubes y 2.808 jugadores de las cinco grandes ligas (temporada 2023/24). |
-| `datos/` | CSV sintéticos de la etapa de pruebas. No se usan en el flujo actual. |
 | `.env.example` | Plantilla de variables de entorno. |
 | `requirements.txt` | Dependencias. |
 
 
 ## Datos
 
-`datos_reales/` ya viene incluida, así que no hace falta descargar nada. Para regenerarla:
+`datos_reales/` ya viene incluida, así que no hace falta descargar nada. Combina el dataset [EA Sports FC 24 Complete Player Dataset](https://www.kaggle.com/datasets/stefanoleone992/ea-sports-fc-24-complete-player-dataset) con [Football Data from Transfermarkt](https://www.kaggle.com/datasets/mexwell/football-data-from-transfermarkt) (Kaggle), de donde proviene el valor de mercado del 79 % de los jugadores.
 
-1. Descarga `male_players.csv` y `male_teams.csv` del dataset [EA Sports FC 24 Complete Player Dataset](https://www.kaggle.com/datasets/stefanoleone992/ea-sports-fc-24-complete-player-dataset) (Kaggle, dominio público) y colócalos en `datos_originales/`.
-2. Ejecuta `python convertir_datos.py`.
+Para regenerarla basta con ejecutar `python convertir_datos.py`, que usa los archivos ya incluidos en `datos_fuente/`. Para reconstruir también `datos_fuente/` desde cero:
 
-El presupuesto de fichajes, el tope salarial y la competición internacional **no existen en el dataset** y son estimaciones de diseño (editables al inicio de `convertir_datos.py`). Los umbrales de edad, rating y viabilidad financiera se editan al inicio de `datos.py`.
+1. Descarga los archivos completos de ambos datasets y colócalos en `datos_originales/` (los de Transfermarkt en `datos_originales/transfermarkt/`).
+2. Ejecuta `python filtrar_originales.py` y luego `python convertir_datos.py`.
 
-
+El presupuesto de fichajes, el bono por competición europea y el tope salarial **no existen en los datos** y son estimaciones de diseño (editables al inicio de `convertir_datos.py`). Las reglas del simulador (umbrales de edad y rating, viabilidad financiera, negociación y ventas) se editan en `config.py`.
