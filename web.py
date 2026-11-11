@@ -2,12 +2,6 @@
 
 Se ejecuta con:  python web.py   y se abre en el navegador:  http://localhost:5000
 
-Cómo funciona: el grafo (grafo.py) es el mismo que usa la terminal. Este servidor lo ejecuta en
-segundo plano y la página (carpeta web/) le consulta cada medio segundo qué pasó:
-- "pausa": la pausa humana actual del grafo (su "tipo" decide qué pantalla se dibuja),
-- "eventos": lo que emitieron los agentes desde la última consulta (registro.emitir),
-- "juego": una foto del estado de la partida (presupuesto, plantilla, bandeja...).
-Cuando el usuario responde, la respuesta se entrega al grafo con Command(resume=...).
 """
 import threading
 

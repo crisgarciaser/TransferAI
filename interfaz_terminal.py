@@ -1,10 +1,4 @@
-"""Interfaz de terminal de TransferAI.
-
-Es la única parte del programa que imprime en pantalla y lee del teclado:
-- mostrar_evento() recibe cada evento que emiten los agentes y lo muestra.
-- preguntar() recibe una pausa humana del grafo (según su "tipo") y devuelve la respuesta del usuario.
-Una interfaz HTML futura solo tendría que reemplazar estas dos funciones.
-"""
+"""Interfaz de terminal de TransferAI."""
 import unicodedata
 
 from langgraph.types import Command

@@ -1,9 +1,4 @@
-"""Agente de club: representa a los otros clubes. Vende (Selling Club) o compra (rol comprador).
-
-El modelo decide cada ronda (aceptar, contraofertar o rechazar), con qué cifras y con qué
-argumento. Conoce su propio precio mínimo, pero debe mantenerlo en secreto. El código
-(negociacion/reglas.arbitrar) revisa la decisión antes de que llegue al usuario.
-"""
+"""Agente de club: representa a los otros clubes. Vende (Selling Club) o compra (rol comprador)."""
 import json
 import random
 
@@ -49,8 +44,7 @@ Recibirás en JSON la decisión y las cifras exactas que debes comunicar. Usa SO
 Responde SOLO con un objeto JSON: {{"mensaje": "..."}}"""
 
 
-# ARGUMENTO HUMANO (recurso ocasional): se agrega al prompt con probabilidad PROB_ARGUMENTO_HUMANO.
-# Para eliminarlo: PROB_ARGUMENTO_HUMANO = 0 en config.py (o borrar este bloque y su uso en decidir()).
+# ARGUMENTO HUMANO (recurso ocasional): se agrega al prompt con probabilidad PROB_ARGUMENTO_HUMANO. Para eliminarlo: PROB_ARGUMENTO_HUMANO = 0 en config.py (o borrar este bloque y su uso en decidir()).
 INSTRUCCION_ARGUMENTO_HUMANO = """
 - Solo en este mensaje: puedes sumar UNA frase breve sobre una cualidad humana del jugador
   (por ejemplo, su peso en el vestuario o su cariño por el club), sin exagerar."""

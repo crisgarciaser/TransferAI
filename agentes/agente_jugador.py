@@ -1,9 +1,5 @@
-"""Player Agent: el representante del jugador (su agencia real si se conoce).
+"""Player Agent: el representante del jugador (su agencia real si se conoce). """
 
-El modelo decide cada ronda (aceptar, contraofertar o rechazar), con qué condiciones y con qué
-argumento. Conoce el salario actual y la exigencia mínima del jugador, pero debe mantenerlos en
-secreto. El código (negociacion/reglas_jugador.arbitrar_jugador) revisa la decisión.
-"""
 import json
 import random
 
@@ -38,8 +34,7 @@ NUNCA menciones el salario actual ni la exigencia mínima. Usa SOLO las cifras e
 
 Responde SOLO con un objeto JSON: {{"mensaje": "..."}}"""
 
-# ARGUMENTO HUMANO (recurso ocasional): igual que en el Selling Club Agent; se controla con
-# PROB_ARGUMENTO_HUMANO en config.py (0 para eliminarlo).
+# ARGUMENTO HUMANO (recurso ocasional): igual que en el Selling Club Agent; se controla con PROB_ARGUMENTO_HUMANO en config.py (0 para eliminarlo).
 INSTRUCCION_ARGUMENTO_HUMANO = """
 - Solo en este mensaje: puedes sumar UNA frase breve sobre lo que siente o quiere el jugador
   (su ilusión por el proyecto, su familia, su deseo de jugar), sin exagerar."""

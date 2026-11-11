@@ -1,11 +1,4 @@
-"""Registro de eventos de TransferAI.
-
-Los agentes y nodos no imprimen en pantalla: emiten eventos con emitir(). Cada evento
-1) se guarda en un archivo logs/sesion_<fecha>.jsonl (trazabilidad de la sesión) y
-2) se entrega a las interfaces suscritas (hoy la terminal; más adelante, la página HTML).
-
-Tipos de evento usados: info, aviso, error, agente, herramienta, descarte, plantilla, llm.
-"""
+"""Registro de eventos (logs) de TransferAI."""
 import json
 from datetime import datetime
 from pathlib import Path

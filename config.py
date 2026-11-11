@@ -1,8 +1,5 @@
 """Parámetros de diseño de TransferAI.
-
-Todas las reglas numéricas del simulador están aquí, con nombre y comentario, para poder
-modificarlas sin tocar la lógica. Los parámetros de construcción de la base de datos
-(presupuesto, bonus europeo, etc.) están al inicio de convertir_datos.py.
+Los parámetros de construcción de la base de datos (presupuesto, bonus europeo, etc.) están al inicio de convertir_datos.py.
 """
 
 # ======================================================================
@@ -10,12 +7,7 @@ modificarlas sin tocar la lógica. Los parámetros de construcción de la base d
 # ======================================================================
 TEMPERATURA = 0.2              # baja: respuestas estables en tareas de análisis
 MAX_PASOS_HERRAMIENTAS = 12    # máximo de ciclos pensar-actuar-observar del Scouting Agent
-# Agentes que usan el modo de razonamiento del modelo (escribe un borrador interno antes de responder).
-# Es lento y consume más tokens; solo se deja donde ayuda a decidir. El resto responde directo.
-# Etiquetas posibles: "scouting", "manager" (diagnóstico), "manager_consejo", "financiero" (comentarios del
-# scouting), "financiero_consejo" (diseña una oferta en la negociación),
-# "club_vendedor" (decisión de cada ronda), "club_vendedor_redaccion" (solo redacta), "interprete",
-# "agente_jugador" (decisión de cada ronda) y "agente_jugador_redaccion".
+# Agentes que usan el modo de razonamiento del modelo.
 AGENTES_CON_RAZONAMIENTO = {"scouting", "manager", "manager_consejo", "financiero_consejo", "club_vendedor",
                             "agente_jugador", "club_comprador"}
 

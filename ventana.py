@@ -1,14 +1,4 @@
-"""Ventana de fichajes: calendario de eventos futuros y bandeja de mensajes.
-
-Funciones puras (reciben y devuelven listas/diccionarios, sin efectos ocultos), para que los
-nodos del grafo las usen y se puedan probar por separado.
-
-- calendario: eventos programados para un día futuro, por ejemplo la respuesta de un club.
-  Forma: {"id": 3, "dia": 7, "tipo": "respuesta_oferta", "asunto": "...", "datos": {...}}
-- bandeja: mensajes que ya llegaron. Al avanzar el tiempo, los eventos del calendario
-  que vencen pasan a la bandeja.
-  Forma: {"id": 3, "dia": 7, "tipo": "respuesta_oferta", "asunto": "...", "datos": {...}, "leido": False}
-"""
+"""Ventana de fichajes: calendario de eventos futuros y bandeja de mensajes."""
 from config import DIAS_VENTANA
 
 

@@ -3,11 +3,7 @@
 Flujo: club -> CENTRO DE MANDO, desde donde el usuario busca refuerzos, revisa la bandeja, avanza días,
 ve el estado del club o la plantilla, negocia fichajes o cierra el mercado. El Manager diagnostica la
 plantilla al buscar refuerzos por primera vez y otra vez cada vez que la plantilla cambia.
-La ventana dura DIAS_VENTANA días (config.py) y se cierra sola al terminar.
-
-Los agentes están en agentes/. Este archivo no imprime ni lee del teclado: los nodos emiten
-eventos (registro.emitir) y las pausas humanas usan interrupt(). Una interfaz (interfaz_terminal.py
-o, más adelante, la página HTML) muestra los eventos y responde a las pausas.
+Los nodos emiten eventos (registro.emitir) y las pausas humanas usan interrupt(). 
 Cada pausa entrega un diccionario con la clave "tipo" para que la interfaz sepa qué preguntar.
 """
 from typing import TypedDict
@@ -401,6 +397,5 @@ app = construir_grafo()
 
 
 if __name__ == "__main__":
-    # Compatibilidad con el Hito 2: "python grafo.py" sigue funcionando
     from interfaz_terminal import main
     main()

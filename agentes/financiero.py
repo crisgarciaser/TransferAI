@@ -52,8 +52,7 @@ def analizar_finanzas(estado):
 
 
 # ------------------------------------------------------------- CONSEJO EN NEGOCIACIÓN
-# El Financial Agent piensa y propone una oferta concreta; el código la valida (rangos, presupuesto,
-# margen salarial) y calcula cuánto vale. No conoce el mínimo del vendedor ni el del jugador.
+# El Financial Agent piensa y propone una oferta concreta; el código la valida (rangos, presupuesto, margen salarial) y calcula cuánto vale. No conoce el mínimo del vendedor ni el del jugador.
 from config import FACTOR_VALOR_RECOMPRA, FACTOR_VALOR_REVENTA, PESO_VARIABLES, TASA_DESCUENTO
 
 SISTEMA_CONSEJO_FINANCIERO = f"""Eres el Financial Agent de un club de fútbol. El director deportivo está negociando un

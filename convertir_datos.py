@@ -1,16 +1,4 @@
 """Construye la base de datos de TransferAI combinando EA Sports FC 24 y Transfermarkt.
-
-Entrada : datos_fuente/  (CSV ya filtrados por filtrar_originales.py, incluidos en el repositorio)
-    male_players_fc24_top5.csv, male_teams_fc24_top5.csv, male_coaches_fc24_top5.csv  (EA Sports FC 24)
-    tm_jugadores.csv, tm_clubes.csv, tm_partidos_22_23.csv                            (Transfermarkt)
-Salida  : datos_reales/clubes.csv y datos_reales/jugadores.csv
-
-Etapas:
-    1. EA Sports FC 24: plantillas, ratings, salarios, contratos, atributos y táctica de cada club.
-    2. Transfermarkt: valor de mercado real, agencia del jugador y datos del club (estadio, balance de traspasos).
-    3. Temporada 2022/23: tabla de cada liga con los partidos disponibles.
-    4. Cálculos propios: valor de referencia, competición europea 2023/24, presupuesto y perfil de mercado.
-
 Uso: python convertir_datos.py
 """
 import csv
